@@ -31,7 +31,9 @@
         apiToken: localStorage.getItem('discogs_api_token') || '',
         showTokenInput: !localStorage.getItem('discogs_api_token'),
         importedData: null,
-        fillStatus: null, // 'success', 'error', or null
+        fillStatus: null, // 'success', 'error', 'filling', or null
+        copyStatus: null,
+        filledFieldsCount: 0,
       };
     },
 
@@ -173,12 +175,29 @@
     handleAutoFill() {
       if (!this.state.importedData) return;
 
+      this.setState({ fillStatus: 'filling' });
+      
       try {
         this.fillFormFields(this.state.importedData);
-        this.setState({ fillStatus: 'success' });
       } catch (error) {
         console.error('Error filling form fields:', error);
         this.setState({ fillStatus: 'error' });
+      }
+    },
+
+    /**
+     * Copy JSON to clipboard
+     */
+    async handleCopyJSON() {
+      if (!this.state.importedData) return;
+
+      try {
+        await navigator.clipboard.writeText(JSON.stringify(this.state.importedData, null, 2));
+        this.setState({ copyStatus: 'success' });
+        setTimeout(() => this.setState({ copyStatus: null }), 3000);
+      } catch (error) {
+        console.error('Copy failed:', error);
+        this.setState({ copyStatus: 'error' });
       }
     },
 
@@ -187,38 +206,67 @@
      * @param {object} data - Record data to fill
      */
     fillFormFields(data) {
-      // This is a workaround since DecapCMS doesn't provide a direct API
-      // We'll try to find and fill form fields by their labels
-      
-      const setFieldValue = (label, value) => {
-        // Try to find field by label text
-        const labels = document.querySelectorAll('label');
-        for (const labelEl of labels) {
-          if (labelEl.textContent.includes(label)) {
-            // Find the input/textarea/select associated with this label
-            const fieldId = labelEl.getAttribute('for');
-            if (fieldId) {
-              const field = document.getElementById(fieldId);
-              if (field) {
-                field.value = value;
-                // Trigger change event
-                field.dispatchEvent(new Event('change', { bubbles: true }));
-                field.dispatchEvent(new Event('input', { bubbles: true }));
-              }
+      // Enhanced DOM manipulation with better selectors
+      // Wait a bit for React to render
+      setTimeout(() => {
+        const setTextFieldValue = (label, value) => {
+          // Find all labels and inputs
+          const labels = Array.from(document.querySelectorAll('label'));
+          const targetLabel = labels.find(l => l.textContent.trim().includes(label));
+          
+          if (targetLabel) {
+            // Try to find associated input
+            const fieldId = targetLabel.getAttribute('for');
+            let field = fieldId ? document.getElementById(fieldId) : null;
+            
+            // If not found by ID, try finding next input/textarea
+            if (!field) {
+              const container = targetLabel.closest('div[class*="ControlContainer"]') || 
+                              targetLabel.closest('div[class*="Widget"]') ||
+                              targetLabel.parentElement;
+              field = container?.querySelector('input, textarea');
+            }
+            
+            if (field && (field.type === 'text' || field.type === 'number' || field.tagName === 'TEXTAREA')) {
+              field.value = value;
+              field.focus();
+              field.blur();
+              
+              // Trigger multiple events to ensure React picks it up
+              const events = ['input', 'change', 'blur'];
+              events.forEach(eventType => {
+                field.dispatchEvent(new Event(eventType, { bubbles: true }));
+                field.dispatchEvent(new InputEvent(eventType, { bubbles: true, data: value }));
+              });
+              
+              return true;
             }
           }
-        }
-      };
+          return false;
+        };
 
-      // Fill simple fields
-      if (data.catalogNumber) setFieldValue('Catalog Number', data.catalogNumber);
-      if (data.recordLabel) setFieldValue('Record Label', data.recordLabel);
-      if (data.album) setFieldValue('Album Title', data.album);
-      if (data.year) setFieldValue('Release Year', data.year);
-      if (data.format) setFieldValue('Format', data.format);
-      if (data.imageUrl) setFieldValue('Cover Image', data.imageUrl);
-      
-      // Note: Artists, genres, sides are more complex (lists) and may need manual entry
+        // Fill simple text fields
+        const filled = {
+          catalogNumber: setTextFieldValue('Catalog Number', data.catalogNumber),
+          recordLabel: setTextFieldValue('Record Label', data.recordLabel),
+          album: setTextFieldValue('Album Title', data.album),
+          year: setTextFieldValue('Release Year', String(data.year)),
+          format: setTextFieldValue('Format', data.format),
+        };
+
+        console.warn('Auto-fill results:', filled);
+        
+        // Show which fields were filled
+        const filledCount = Object.values(filled).filter(Boolean).length;
+        if (filledCount > 0) {
+          this.setState({ 
+            fillStatus: 'success',
+            filledFieldsCount: filledCount,
+          });
+        } else {
+          this.setState({ fillStatus: 'error' });
+        }
+      }, 300);
     },
 
     /**
@@ -575,16 +623,53 @@
                   e.target.style.color = '#FFFF00';
                   e.target.style.transform = 'translateY(0)';
                 },
-              }, '⚡ Auto-Fill Form Fields Below'),
+              }, '⚡ Auto-Fill Form Fields'),
               
-              // Status message
-              this.state.fillStatus === 'success' && window.h('span', { 
-                style: { color: '#155724', fontWeight: 'bold' } 
-              }, '✓ Fields filled! Please review and complete list fields (artists, genres, tracklist).'),
+              window.h('button', {
+                type: 'button',
+                onClick: () => this.handleCopyJSON(),
+                style: {
+                  padding: '12px 24px',
+                  fontSize: '16px',
+                  fontWeight: 'bold',
+                  backgroundColor: '#FF10F0',
+                  color: '#FFF',
+                  border: '3px solid #000',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                },
+                onMouseEnter: (e) => {
+                  e.target.style.backgroundColor = '#00D9FF';
+                  e.target.style.transform = 'translateY(-2px)';
+                },
+                onMouseLeave: (e) => {
+                  e.target.style.backgroundColor = '#FF10F0';
+                  e.target.style.transform = 'translateY(0)';
+                },
+              }, '📋 Copy Full JSON'),
               
-              this.state.fillStatus === 'error' && window.h('span', { 
-                style: { color: '#721c24', fontWeight: 'bold' } 
-              }, '⚠ Auto-fill may not work perfectly. Please copy data manually from above.'),
+              // Status messages
+              window.h('div', { style: { marginTop: '12px' } }, [
+                this.state.fillStatus === 'filling' && window.h('span', { 
+                  style: { color: '#856404', fontWeight: 'bold' } 
+                }, '⏳ Attempting to fill fields...'),
+                
+                this.state.fillStatus === 'success' && window.h('span', { 
+                  style: { color: '#155724', fontWeight: 'bold' } 
+                }, `✓ Filled ${this.state.filledFieldsCount} text fields! Now manually add: artists, genres, tracks, and image.`),
+                
+                this.state.fillStatus === 'error' && window.h('span', { 
+                  style: { color: '#721c24', fontWeight: 'bold' } 
+                }, '⚠ Auto-fill didn\'t work. Use the data above or click "Copy Full JSON".'),
+                
+                this.state.copyStatus === 'success' && window.h('span', { 
+                  style: { color: '#155724', fontWeight: 'bold' } 
+                }, '✓ JSON copied to clipboard!'),
+                
+                this.state.copyStatus === 'error' && window.h('span', { 
+                  style: { color: '#721c24', fontWeight: 'bold' } 
+                }, '⚠ Copy failed. Please select and copy the JSON manually.'),
+              ]),
             ]),
             
             window.h('details', { style: { marginTop: '12px' } }, [

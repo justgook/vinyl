@@ -17,6 +17,9 @@ export default [
         URL: 'readonly',
         URLSearchParams: 'readonly',
         Event: 'readonly',
+        InputEvent: 'readonly',
+        navigator: 'readonly',
+        setTimeout: 'readonly',
         // Node globals
         process: 'readonly',
         __dirname: 'readonly',
