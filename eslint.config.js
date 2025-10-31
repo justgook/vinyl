@@ -16,6 +16,7 @@ export default [
         fetch: 'readonly',
         URL: 'readonly',
         URLSearchParams: 'readonly',
+        Event: 'readonly',
         // Node globals
         process: 'readonly',
         __dirname: 'readonly',

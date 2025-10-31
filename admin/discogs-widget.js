@@ -30,6 +30,7 @@
         error: null,
         apiToken: localStorage.getItem('discogs_api_token') || '',
         showTokenInput: !localStorage.getItem('discogs_api_token'),
+        importedData: null,
       };
     },
 
@@ -135,7 +136,7 @@
      * @param {object} release - Discogs release object
      */
     autoFillFields(release) {
-      const { onChange, setInactive } = this.props;
+      const { onChange } = this.props;
 
       // Map Discogs data to our schema
       const recordData = {
@@ -153,14 +154,63 @@
         },
       };
 
-      // Notify DecapCMS of the changes
+      // Store the data in widget value and state
+      this.setState({ 
+        importedData: recordData,
+        loading: false,
+        results: [],
+      });
+
+      // Store in widget value so it appears in the form
       onChange(JSON.stringify(recordData, null, 2));
       
-      // Show success message
-      alert(`✅ Successfully imported:\n${recordData.album} by ${recordData.artists.join(', ')}\n\nPlease review the auto-filled data and adjust as needed.`);
+      // Try to fill other form fields using DOM manipulation
+      try {
+        this.fillFormFields(recordData);
+        alert(`✅ Successfully imported:\n${recordData.album} by ${recordData.artists.join(', ')}\n\nData has been filled in the form fields below. Please review and adjust as needed.`);
+      } catch (error) {
+        console.error('Error filling form fields:', error);
+        alert(`✅ Data imported!\n\n${recordData.album} by ${recordData.artists.join(', ')}\n\nPlease scroll down and copy the data from the "Imported Data" section below into the form fields.`);
+      }
+    },
+
+    /**
+     * Try to fill form fields using DOM manipulation
+     * @param {object} data - Record data to fill
+     */
+    fillFormFields(data) {
+      // This is a workaround since DecapCMS doesn't provide a direct API
+      // We'll try to find and fill form fields by their labels
       
-      // Close the widget
-      setInactive();
+      const setFieldValue = (label, value) => {
+        // Try to find field by label text
+        const labels = document.querySelectorAll('label');
+        for (const labelEl of labels) {
+          if (labelEl.textContent.includes(label)) {
+            // Find the input/textarea/select associated with this label
+            const fieldId = labelEl.getAttribute('for');
+            if (fieldId) {
+              const field = document.getElementById(fieldId);
+              if (field) {
+                field.value = value;
+                // Trigger change event
+                field.dispatchEvent(new Event('change', { bubbles: true }));
+                field.dispatchEvent(new Event('input', { bubbles: true }));
+              }
+            }
+          }
+        }
+      };
+
+      // Fill simple fields
+      if (data.catalogNumber) setFieldValue('Catalog Number', data.catalogNumber);
+      if (data.recordLabel) setFieldValue('Record Label', data.recordLabel);
+      if (data.album) setFieldValue('Album Title', data.album);
+      if (data.year) setFieldValue('Release Year', data.year);
+      if (data.format) setFieldValue('Format', data.format);
+      if (data.imageUrl) setFieldValue('Cover Image', data.imageUrl);
+      
+      // Note: Artists, genres, sides are more complex (lists) and may need manual entry
     },
 
     /**
@@ -268,7 +318,7 @@
      * Render the widget
      */
     render() {
-      const { value, forID, classNameWrapper } = this.props;
+      const { forID, classNameWrapper } = this.props;
       const { loading, results, error, showTokenInput, apiToken } = this.state;
 
       return window.h(
@@ -434,28 +484,70 @@
             ),
           ]),
 
-          // Current Value Display
-          value && window.h('div', { 
-            className: 'discogs-current-value',
+          // Imported Data Display
+          this.state.importedData && window.h('div', { 
+            className: 'discogs-imported-data',
             style: { 
               marginTop: '16px', 
-              padding: '12px', 
-              backgroundColor: '#f5f5f5',
-              border: '1px solid #ddd',
-              borderRadius: '4px',
-              fontSize: '12px',
+              padding: '16px', 
+              backgroundColor: '#d4edda',
+              border: '3px solid #000',
+              borderRadius: '0',
+              fontSize: '13px',
             },
-            key: 'value',
+            key: 'imported',
           }, [
-            window.h('strong', {}, 'Current Data:'),
-            window.h('pre', { 
-              style: { 
-                marginTop: '8px', 
-                maxHeight: '200px', 
-                overflow: 'auto',
-                fontSize: '11px',
-              } 
-            }, value || '{}'),
+            window.h('h4', { style: { marginTop: 0, marginBottom: '12px' } }, '✅ Imported Data - Copy to Form Fields Below'),
+            window.h('div', { style: { marginBottom: '8px' } }, [
+              window.h('strong', {}, 'Album: '),
+              this.state.importedData.album,
+            ]),
+            window.h('div', { style: { marginBottom: '8px' } }, [
+              window.h('strong', {}, 'Artists: '),
+              this.state.importedData.artists.join(', '),
+            ]),
+            window.h('div', { style: { marginBottom: '8px' } }, [
+              window.h('strong', {}, 'Year: '),
+              this.state.importedData.year,
+            ]),
+            window.h('div', { style: { marginBottom: '8px' } }, [
+              window.h('strong', {}, 'Label: '),
+              this.state.importedData.recordLabel,
+            ]),
+            window.h('div', { style: { marginBottom: '8px' } }, [
+              window.h('strong', {}, 'Catalog #: '),
+              this.state.importedData.catalogNumber,
+            ]),
+            window.h('div', { style: { marginBottom: '8px' } }, [
+              window.h('strong', {}, 'Genres: '),
+              this.state.importedData.genre.join(', '),
+            ]),
+            window.h('div', { style: { marginBottom: '8px' } }, [
+              window.h('strong', {}, 'Format: '),
+              this.state.importedData.format,
+            ]),
+            window.h('div', { style: { marginBottom: '12px' } }, [
+              window.h('strong', {}, 'Cover URL: '),
+              window.h('a', { 
+                href: this.state.importedData.imageUrl,
+                target: '_blank',
+                rel: 'noopener noreferrer',
+              }, 'View Image'),
+            ]),
+            window.h('details', { style: { marginTop: '12px' } }, [
+              window.h('summary', { style: { cursor: 'pointer', fontWeight: 'bold' } }, 'View Full JSON (for advanced users)'),
+              window.h('pre', { 
+                style: { 
+                  marginTop: '8px', 
+                  maxHeight: '300px', 
+                  overflow: 'auto',
+                  fontSize: '11px',
+                  padding: '8px',
+                  backgroundColor: '#fff',
+                  border: '1px solid #ccc',
+                } 
+              }, JSON.stringify(this.state.importedData, null, 2)),
+            ]),
           ]),
         ]
       );
