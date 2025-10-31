@@ -93,10 +93,22 @@ Static web application for managing and browsing a personal vinyl collection wit
 vinyl-cabinet/
 ├── index.html                 # Main page (existing, to be updated)
 ├── detail.html                # Individual record view (NEW)
+├── filter.html                # Filter/category view (NEW)
+├── generate-filters.js        # Filter generation script (NEW)
 ├── data/
 │   ├── SCHEMA.md              # Data schema documentation
 │   ├── records.json           # Homepage featured records
 │   ├── records-all.json       # Full catalog minimal listing
+│   ├── filters/               # Filter index files (NEW)
+│   │   ├── artists.json
+│   │   ├── genres.json
+│   │   ├── years.json
+│   │   └── labels.json
+│   ├── filter-tags/           # Individual filter files (NEW)
+│   │   ├── artist_*.json
+│   │   ├── genre_*.json
+│   │   ├── year_*.json
+│   │   └── label_*.json
 │   └── records/               # Individual record files
 │       ├── 001.json
 │       ├── 002.json
@@ -119,10 +131,10 @@ vinyl-cabinet/
 
 ### 1.1 Data Creation
 - [x] Create data directory structure
-- [ ] Create `data/SCHEMA.md` - Document JSON structure with examples
-- [ ] Create `data/records/001.json` through `020.json` - 20 diverse albums
-- [ ] Create `data/records.json` - Featured records for homepage rows
-- [ ] Create `data/records-all.json` - Minimal listing (id, artists, album, imageUrl)
+- [x] Create `data/SCHEMA.md` - Document JSON structure with examples
+- [x] Create `data/records/001.json` through `020.json` - 20 diverse albums
+- [x] Create `data/records.json` - Featured records for homepage rows
+- [x] Create `data/records-all.json` - Minimal listing (id, artists, album, imageUrl)
 
 ### 1.2 Homepage Enhancement
 - [x] Add JavaScript to load `data/records.json`
@@ -134,15 +146,24 @@ vinyl-cabinet/
   - Electronic Music (filter by genre)
   - Jazz & Experimental (filter by genre)
 - [x] Navigate to detail page on card click
-- [ ] Implement "VIEW ALL" button → show full category view (TODO)
+- [x] Implement "VIEW ALL" button → show full category view
 
-### 1.3 Global Search Implementation
+### 1.3 Filter System Implementation
+- [x] Create `filter.html` - Dynamic filter/category view
+- [x] Create `generate-filters.js` - Automated filter generation script
+- [x] Generate filter index files (artists, genres, years, labels)
+- [x] Create individual filter tag files for each category
+- [x] Implement URL parameter parsing (`?type=artist&value=Pink+Floyd`)
+- [x] Grid layout for filtered results with responsive design
+- [x] Filter-specific styling and headers
+
+### 1.4 Global Search Implementation (MOVED TO PHASE 4)
 - [ ] Free-text search input (existing in header)
 - [ ] Search across: artists, album, catalogNumber, recordLabel
 - [ ] Live suggestions dropdown (as-you-type)
 - [ ] Full results view (filter homepage or new page)
 
-### 1.4 Detail Page
+### 1.5 Detail Page
 - [x] Create `detail.html` - Individual record view
 - [x] Parse URL param `?id=001`
 - [x] Load `data/records/001.json`
@@ -214,6 +235,7 @@ vinyl-cabinet/
 - [ ] Compare performance vs SSG
 
 ### 4.3 Additional Features
+- [ ] Global search functionality (moved from Phase 1.3)
 - [ ] Offline mode (Service Worker + IndexedDB)
 - [ ] Statistics dashboard (collection value, genres, years)
 - [ ] Wishlist / Want List
@@ -286,22 +308,29 @@ collections:
 Homepage (index.html)
 ├── Header: Global search bar
 ├── Predefined Rows (categories):
-│   ├── Recently Added → VIEW ALL
-│   ├── Progressive Rock → VIEW ALL
-│   ├── 1970s Classics → VIEW ALL
-│   └── Electronic Music → VIEW ALL
+│   ├── Recently Added → VIEW ALL → filter.html
+│   ├── Progressive Rock → VIEW ALL → filter.html
+│   ├── 1970s Classics → VIEW ALL → filter.html
+│   ├── Electronic Music → VIEW ALL → filter.html
+│   └── Jazz & Experimental → VIEW ALL → filter.html
+└── Click album card → detail.html?id=001
+
+Filter Page (filter.html)
+├── Dynamic header with filter type/value
+├── Grid of filtered records
 └── Click album card → detail.html?id=001
 
 Detail Page (detail.html)
 ├── Large cover image
 ├── Album info (artists, year, label, condition)
 ├── Tracklist (grouped by side)
+├── Clickable tags → filter.html
 └── Back to collection button
 ```
 
-**No traditional filters** - Navigation via curated rows only!
+**Navigation:** Curated rows + dynamic filter pages!
 
-**Search:** Free-text across all fields, live suggestions
+**Search:** Free-text across all fields (Phase 4)
 
 ---
 
@@ -344,15 +373,23 @@ jobs:
 - Vinyl record visual display
 - Per-track artist support (only shown if different from album)
 - Responsive design for both pages
+- **NEW:** Complete filter system implementation
+- **NEW:** filter.html with dynamic category views
+- **NEW:** generate-filters.js automation script
+- **NEW:** Filter index files (artists, genres, years, labels)
+- **NEW:** Individual filter tag files for each category
+- **NEW:** "VIEW ALL" button functionality
+- **NEW:** URL parameter parsing for filters
+- **NEW:** Grid layout for filtered results
+- **NEW:** Filter-specific styling
 
 **🔄 In Progress:**
-- Testing the full user journey (homepage → detail page)
+- Testing complete user journey (homepage → filter → detail page)
 
 **⏳ Next Up:**
-- Implement global search functionality (Phase 1.3)
-- Implement "VIEW ALL" button functionality
-- Polish mobile responsiveness
 - DecapCMS setup (Phase 2)
+- Bulk import & migration (Phase 3)
+- Advanced features including search (Phase 4)
 
 ---
 
@@ -368,3 +405,12 @@ jobs:
 - Search: Global free-text only (no traditional filters)
 - Navigation: Curated rows/categories only
 - Track titles in original language
+
+**2025-10-31 (Updated):**
+- **Implemented complete filter system** beyond original scope
+- **Automated filter generation** from record data
+- **Dynamic filter pages** for artists, genres, years, labels
+- **"VIEW ALL" functionality** fully operational
+- **Moved global search to Phase 4** (filter system provides comprehensive browsing)
+- **Enhanced navigation flow** with filter pages
+- **Responsive design validated** on mobile devices

@@ -1,0 +1,238 @@
+# DecapCMS Configuration for Vinyl Cabinet
+# https://decapcms.org/docs/configuration-options/
+
+# Backend configuration
+backend:
+  name: git-gateway
+  branch: main # Branch to update (master or main)
+  
+# For local development testing, uncomment this instead:
+# backend:
+#   name: test-repo
+
+# Media files configuration
+media_folder: "images/covers" # Where uploaded images will be stored
+public_folder: "/images/covers" # Public path for images
+
+# Local backend for development (run: npx decap-server)
+local_backend: true
+
+# Site URL (update with your GitHub Pages URL)
+site_url: https://yourusername.github.io/vinyl-cabinet
+display_url: https://yourusername.github.io/vinyl-cabinet
+
+# Logo (optional)
+# logo_url: /images/logo.png
+
+# Collections - Define content types
+collections:
+  # Vinyl Records Collection
+  - name: "records"
+    label: "Vinyl Records"
+    label_singular: "Record"
+    folder: "data/records"
+    create: true
+    delete: true
+    slug: "{{id}}"
+    extension: "json"
+    format: "json"
+    identifier_field: "id"
+    summary: "{{id}} - {{album}} by {{artists}}"
+    
+    # Editor configuration
+    editor:
+      preview: true
+    
+    # Sort records by ID descending (newest first)
+    sortable_fields: ['id', 'year', 'album', 'artists']
+    
+    # Fields for each record
+    fields:
+      - label: "Record ID"
+        name: "id"
+        widget: "string"
+        hint: "Unique 3-digit ID (e.g., 001, 002, 021)"
+        pattern: ['^\d{3}$', "Must be a 3-digit number"]
+        
+      - label: "Catalog Number"
+        name: "catalogNumber"
+        widget: "string"
+        hint: "The catalog number from the record label"
+        required: true
+        
+      - label: "Record Label"
+        name: "recordLabel"
+        widget: "string"
+        hint: "Label that released the record (e.g., Island Records)"
+        required: true
+        
+      - label: "Artists"
+        name: "artists"
+        widget: "list"
+        hint: "Main artists for the album (can add multiple)"
+        required: true
+        min: 1
+        field:
+          label: "Artist Name"
+          name: "artist"
+          widget: "string"
+          
+      - label: "Album Title"
+        name: "album"
+        widget: "string"
+        hint: "Full album title"
+        required: true
+        
+      - label: "Release Year"
+        name: "year"
+        widget: "number"
+        hint: "Year of release"
+        required: true
+        min: 1900
+        max: 2100
+        value_type: "int"
+        
+      - label: "Genres"
+        name: "genre"
+        widget: "list"
+        hint: "Music genres (can add multiple)"
+        required: true
+        min: 1
+        field:
+          label: "Genre"
+          name: "genre_name"
+          widget: "string"
+          
+      - label: "Format"
+        name: "format"
+        widget: "string"
+        default: "LP, Album"
+        hint: "Record format (e.g., LP, Album, 12\", 33 RPM)"
+        
+      - label: "Condition"
+        name: "condition"
+        widget: "select"
+        default: "Very Good Plus"
+        options:
+          - "Mint"
+          - "Near Mint"
+          - "Very Good Plus"
+          - "Very Good"
+          - "Good Plus"
+          - "Good"
+          - "Fair"
+          - "Poor"
+        hint: "Physical condition of the record"
+        
+      - label: "Cover Image"
+        name: "imageUrl"
+        widget: "image"
+        required: true
+        hint: "Album cover artwork (400x400px recommended)"
+        allow_multiple: false
+        
+      - label: "Sides & Tracklist"
+        name: "sides"
+        widget: "list"
+        hint: "Record sides (A, B, C, D, etc.)"
+        required: true
+        min: 1
+        max: 4
+        fields:
+          - label: "Side Name"
+            name: "name"
+            widget: "string"
+            default: "Side A"
+            hint: "e.g., Side A, Side B"
+            
+          - label: "Tracks"
+            name: "tracks"
+            widget: "list"
+            hint: "Songs on this side"
+            required: true
+            min: 1
+            fields:
+              - label: "Track Title"
+                name: "title"
+                widget: "string"
+                required: true
+                
+              - label: "Duration"
+                name: "duration"
+                widget: "string"
+                hint: "Format: MM:SS (e.g., 3:45)"
+                pattern: ['^\d{1,2}:\d{2}$', "Must be MM:SS format"]
+                required: true
+                
+              - label: "Track Artists (optional)"
+                name: "artists"
+                widget: "list"
+                hint: "Only if different from album artists"
+                required: false
+                field:
+                  label: "Artist Name"
+                  name: "track_artist"
+                  widget: "string"
+                  
+      - label: "External IDs"
+        name: "externalIds"
+        widget: "object"
+        hint: "External database identifiers"
+        required: false
+        collapsed: true
+        fields:
+          - label: "Discogs Release ID"
+            name: "discogs"
+            widget: "string"
+            hint: "Discogs release ID (e.g., release/3456789)"
+            required: false
+            
+          - label: "MusicBrainz ID"
+            name: "musicbrainz"
+            widget: "string"
+            hint: "MusicBrainz release ID"
+            required: false
+            
+      - label: "Notes"
+        name: "notes"
+        widget: "text"
+        hint: "Personal notes about this record (optional)"
+        required: false
+
+  # Featured Records Configuration (Homepage)
+  - name: "featured"
+    label: "Featured Collections"
+    label_singular: "Featured Collection"
+    files:
+      - label: "Homepage Featured Records"
+        name: "records"
+        file: "data/records.json"
+        format: "json"
+        fields:
+          - label: "Featured Rows"
+            name: "rows"
+            widget: "list"
+            hint: "Configure homepage featured record rows"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                
+              - label: "Filter Type"
+                name: "filterType"
+                widget: "select"
+                options: ["recent", "genre", "year", "artist", "label", "custom"]
+                
+              - label: "Filter Value"
+                name: "filterValue"
+                widget: "string"
+                hint: "Value to filter by (or 'recent' for recent additions)"
+                
+              - label: "Record IDs"
+                name: "records"
+                widget: "list"
+                hint: "List of record IDs to display in this row"
+                field:
+                  label: "Record ID"
+                  name: "recordId"
+                  widget: "string"

@@ -42,4 +42,23 @@ Vinyl Cabinet is a static HTML/CSS/JavaScript project featuring a Netflix-style 
 ### General Best Practices
 - Keep the mockups folder separate from main code
 - Test changes in multiple browsers before committing
-- Commit messages: descriptive, present tense ("Add search feature" not "Added")
+- Make git commits frequently for logical units of work
+- Commit messages: Use gitmoji-style with emoji prefix + descriptive message
+  - Format: `{emoji} Brief description in present tense`
+  - Examples:
+    - `✨ Add DecapCMS integration for content management`
+    - `🐛 Fix album card hover state in Safari`
+    - `💄 Update neobrutalism border styles`
+    - `📝 Add setup instructions for local development`
+    - `♻️ Refactor filter generation script`
+    - `🔧 Update DecapCMS configuration`
+  - Common emojis:
+    - ✨ New feature
+    - 🐛 Bug fix
+    - 💄 UI/styling updates
+    - 📝 Documentation
+    - ♻️ Refactoring
+    - 🔧 Configuration
+    - 🚀 Performance
+    - ✅ Tests
+    - 🎨 Code structure/format
