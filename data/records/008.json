@@ -1,0 +1,63 @@
+{
+  "id": "008",
+  "catalogNumber": "PCS7251",
+  "recordLabel": "Polar",
+  "artists": ["ABBA"],
+  "album": "Arrival",
+  "year": 1976,
+  "genre": ["Pop", "Disco"],
+  "format": "LP, Album",
+  "condition": "Very Good Plus",
+  "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=ABBA",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "When I Kissed the Teacher",
+          "duration": "3:11"
+        },
+        {
+          "title": "Dancing Queen",
+          "duration": "3:51"
+        },
+        {
+          "title": "My Love, My Life",
+          "duration": "4:02"
+        },
+        {
+          "title": "Zing Went the Strings of My Heart",
+          "duration": "2:47"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Why Did It Have to Be Me?",
+          "duration": "3:06"
+        },
+        {
+          "title": "Mamma Mia",
+          "duration": "3:34"
+        },
+        {
+          "title": "The Arrival",
+          "duration": "0:50"
+        },
+        {
+          "title": "Knowing Me, Knowing You",
+          "duration": "3:57"
+        },
+        {
+          "title": "Monster",
+          "duration": "3:54"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/387265"
+  }
+}

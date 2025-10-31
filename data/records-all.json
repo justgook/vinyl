@@ -1,0 +1,144 @@
+{
+  "records": [
+    {
+      "id": "001",
+      "artists": ["Pink Floyd"],
+      "album": "The Dark Side of the Moon",
+      "year": 1973,
+      "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Pink+Floyd"
+    },
+    {
+      "id": "002",
+      "artists": ["The Beatles"],
+      "album": "Abbey Road",
+      "year": 1969,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=The+Beatles"
+    },
+    {
+      "id": "003",
+      "artists": ["Led Zeppelin"],
+      "album": "Led Zeppelin IV",
+      "year": 1971,
+      "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Led+Zeppelin"
+    },
+    {
+      "id": "004",
+      "artists": ["Miles Davis"],
+      "album": "Kind of Blue",
+      "year": 1959,
+      "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Miles+Davis"
+    },
+    {
+      "id": "005",
+      "artists": ["Fleetwood Mac"],
+      "album": "Rumours",
+      "year": 1977,
+      "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Fleetwood+Mac"
+    },
+    {
+      "id": "006",
+      "artists": ["David Bowie"],
+      "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+      "year": 1972,
+      "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=David+Bowie"
+    },
+    {
+      "id": "007",
+      "artists": ["Kraftwerk"],
+      "album": "Autobahn",
+      "year": 1974,
+      "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Kraftwerk"
+    },
+    {
+      "id": "008",
+      "artists": ["ABBA"],
+      "album": "Arrival",
+      "year": 1976,
+      "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=ABBA"
+    },
+    {
+      "id": "009",
+      "artists": ["The Velvet Underground", "Nico"],
+      "album": "The Velvet Underground & Nico",
+      "year": 1967,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Velvet+Underground"
+    },
+    {
+      "id": "010",
+      "artists": ["Talking Heads"],
+      "album": "Remain in Light",
+      "year": 1980,
+      "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Talking+Heads"
+    },
+    {
+      "id": "011",
+      "artists": ["Joy Division"],
+      "album": "Unknown Pleasures",
+      "year": 1979,
+      "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=Joy+Division"
+    },
+    {
+      "id": "012",
+      "artists": ["Depeche Mode"],
+      "album": "Violator",
+      "year": 1990,
+      "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Depeche+Mode"
+    },
+    {
+      "id": "013",
+      "artists": ["Radiohead"],
+      "album": "OK Computer",
+      "year": 1997,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Radiohead"
+    },
+    {
+      "id": "014",
+      "artists": ["Massive Attack"],
+      "album": "Blue Lines",
+      "year": 1991,
+      "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Massive+Attack"
+    },
+    {
+      "id": "015",
+      "artists": ["Daft Punk"],
+      "album": "Discovery",
+      "year": 2001,
+      "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Daft+Punk"
+    },
+    {
+      "id": "016",
+      "artists": ["Björk"],
+      "album": "Homogenic",
+      "year": 1997,
+      "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Björk"
+    },
+    {
+      "id": "017",
+      "artists": ["The Smiths"],
+      "album": "The Queen Is Dead",
+      "year": 1986,
+      "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=The+Smiths"
+    },
+    {
+      "id": "018",
+      "artists": ["Sonic Youth"],
+      "album": "Daydream Nation",
+      "year": 1988,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Sonic+Youth"
+    },
+    {
+      "id": "019",
+      "artists": ["My Bloody Valentine"],
+      "album": "Loveless",
+      "year": 1991,
+      "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=My+Bloody+Valentine"
+    },
+    {
+      "id": "020",
+      "artists": ["Portishead"],
+      "album": "Dummy",
+      "year": 1994,
+      "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Portishead"
+    }
+  ]
+}

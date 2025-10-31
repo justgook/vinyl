@@ -1,0 +1,63 @@
+{
+  "id": "016",
+  "catalogNumber": "WARPCD50",
+  "recordLabel": "Warp Records",
+  "artists": ["Björk"],
+  "album": "Homogenic",
+  "year": 1997,
+  "genre": ["Electronic", "Avant-Garde", "Trip Hop"],
+  "format": "LP, Album",
+  "condition": "Very Good Plus",
+  "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Björk",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Hunter",
+          "duration": "4:08"
+        },
+        {
+          "title": "Pluto",
+          "duration": "4:08"
+        },
+        {
+          "title": "All Is Full of Love",
+          "duration": "4:44"
+        },
+        {
+          "title": "Immature",
+          "duration": "4:56"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Alarm Call",
+          "duration": "5:34"
+        },
+        {
+          "title": "5 Years",
+          "duration": "4:28"
+        },
+        {
+          "title": "Ripcord",
+          "duration": "3:52"
+        },
+        {
+          "title": "Isobel",
+          "duration": "4:45"
+        },
+        {
+          "title": "Jóga",
+          "duration": "4:21"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/160872"
+  }
+}

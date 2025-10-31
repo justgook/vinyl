@@ -1,0 +1,63 @@
+{
+  "id": "010",
+  "catalogNumber": "SIRE6076",
+  "recordLabel": "Sire",
+  "artists": ["Talking Heads"],
+  "album": "Remain in Light",
+  "year": 1980,
+  "genre": ["Post-Punk", "New Wave"],
+  "format": "LP, Album",
+  "condition": "Very Good Plus",
+  "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Talking+Heads",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Crosseyed and Painless",
+          "duration": "3:50"
+        },
+        {
+          "title": "The Great Curve",
+          "duration": "3:23"
+        },
+        {
+          "title": "Once in a Lifetime",
+          "duration": "4:20"
+        },
+        {
+          "title": "Houses in Motion",
+          "duration": "3:39"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Seen and Not Seen",
+          "duration": "1:53"
+        },
+        {
+          "title": "The Listening Pool",
+          "duration": "2:16"
+        },
+        {
+          "title": "The Overload",
+          "duration": "5:08"
+        },
+        {
+          "title": "I Zimbra",
+          "duration": "3:28"
+        },
+        {
+          "title": "Totally Fuzzy Feeling",
+          "duration": "3:36"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/587449"
+  }
+}

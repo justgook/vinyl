@@ -1,0 +1,47 @@
+{
+  "id": "004",
+  "catalogNumber": "CL1355",
+  "recordLabel": "Columbia",
+  "artists": ["Miles Davis"],
+  "album": "Kind of Blue",
+  "year": 1959,
+  "genre": ["Jazz", "Modal Jazz"],
+  "format": "LP, Album",
+  "condition": "Good Plus",
+  "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Miles+Davis",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "So What",
+          "duration": "9:33"
+        },
+        {
+          "title": "Freddie Freeloader",
+          "duration": "9:49"
+        },
+        {
+          "title": "Blue in Green",
+          "duration": "5:37"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "All Blues",
+          "duration": "11:26"
+        },
+        {
+          "title": "Flamenco Sketches",
+          "duration": "9:25"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/1773349"
+  }
+}

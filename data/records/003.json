@@ -1,0 +1,55 @@
+{
+  "id": "003",
+  "catalogNumber": "A-54391",
+  "recordLabel": "Atlantic",
+  "artists": ["Led Zeppelin"],
+  "album": "Led Zeppelin IV",
+  "year": 1971,
+  "genre": ["Hard Rock", "Heavy Metal"],
+  "format": "LP, Album",
+  "condition": "Very Good",
+  "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Led+Zeppelin",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Black Dog",
+          "duration": "4:54"
+        },
+        {
+          "title": "Rock and Roll",
+          "duration": "3:40"
+        },
+        {
+          "title": "The Battle of Evermore",
+          "duration": "5:51"
+        },
+        {
+          "title": "Misty Mountain Hop",
+          "duration": "4:38"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Four Sticks",
+          "duration": "4:44"
+        },
+        {
+          "title": "Going to California",
+          "duration": "3:31"
+        },
+        {
+          "title": "When the Levee Breaks",
+          "duration": "7:07"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/429498"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "014",
+  "catalogNumber": "WBRX161",
+  "recordLabel": "Wild Bunch Recordings",
+  "artists": ["Massive Attack"],
+  "album": "Blue Lines",
+  "year": 1991,
+  "genre": ["Trip Hop", "Electronic"],
+  "format": "LP, Album",
+  "condition": "Very Good",
+  "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Massive+Attack",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Safe from Harm",
+          "duration": "5:01"
+        },
+        {
+          "title": "Overseas",
+          "duration": "3:39"
+        },
+        {
+          "title": "Falling",
+          "duration": "5:14"
+        },
+        {
+          "title": "Any Minute Now",
+          "duration": "4:13"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Daydreaming",
+          "duration": "4:01"
+        },
+        {
+          "title": "Blue Lines",
+          "duration": "5:02"
+        },
+        {
+          "title": "Be Sweet",
+          "duration": "4:28"
+        },
+        {
+          "title": "Five Man Army",
+          "duration": "4:51"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/385632"
+  }
+}

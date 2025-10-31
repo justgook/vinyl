@@ -1,0 +1,59 @@
+{
+  "id": "005",
+  "catalogNumber": "K50087",
+  "recordLabel": "Warner Bros.",
+  "artists": ["Fleetwood Mac"],
+  "album": "Rumours",
+  "year": 1977,
+  "genre": ["Pop Rock", "Soft Rock"],
+  "format": "LP, Album",
+  "condition": "Very Good Plus",
+  "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Fleetwood+Mac",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Second Hand News",
+          "duration": "3:14"
+        },
+        {
+          "title": "Dreams",
+          "duration": "4:28"
+        },
+        {
+          "title": "Don't Stop",
+          "duration": "3:11"
+        },
+        {
+          "title": "Go Your Own Way",
+          "duration": "3:38"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Songbird",
+          "duration": "3:20"
+        },
+        {
+          "title": "The Chain",
+          "duration": "6:17"
+        },
+        {
+          "title": "You Make Loving Fun",
+          "duration": "3:07"
+        },
+        {
+          "title": "Gold Dust Woman",
+          "duration": "4:58"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/611160"
+  }
+}

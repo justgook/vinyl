@@ -1,0 +1,67 @@
+{
+  "id": "013",
+  "catalogNumber": "OK2",
+  "recordLabel": "Parlophone",
+  "artists": ["Radiohead"],
+  "album": "OK Computer",
+  "year": 1997,
+  "genre": ["Alternative Rock", "Experimental Rock"],
+  "format": "LP, Album",
+  "condition": "Very Good Plus",
+  "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Radiohead",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Airbag",
+          "duration": "4:45"
+        },
+        {
+          "title": "Paranoid Android",
+          "duration": "6:55"
+        },
+        {
+          "title": "Subterranean Homesick Alien",
+          "duration": "4:27"
+        },
+        {
+          "title": "Exit Music (For a Film)",
+          "duration": "4:24"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Let Down",
+          "duration": "4:59"
+        },
+        {
+          "title": "Karma Police",
+          "duration": "4:39"
+        },
+        {
+          "title": "Fitter Happier",
+          "duration": "3:50"
+        },
+        {
+          "title": "Electioneering",
+          "duration": "3:47"
+        },
+        {
+          "title": "Climbing Up the Walls",
+          "duration": "4:44"
+        },
+        {
+          "title": "No Surprises",
+          "duration": "3:48"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/14248"
+  }
+}

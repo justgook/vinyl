@@ -1,0 +1,67 @@
+{
+  "id": "006",
+  "catalogNumber": "RCA-PL-12623",
+  "recordLabel": "RCA",
+  "artists": ["David Bowie"],
+  "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+  "year": 1972,
+  "genre": ["Glam Rock", "Rock"],
+  "format": "LP, Album",
+  "condition": "Very Good",
+  "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=David+Bowie",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Five Years",
+          "duration": "4:44"
+        },
+        {
+          "title": "Soul Love",
+          "duration": "3:34"
+        },
+        {
+          "title": "Moonage Daydream",
+          "duration": "4:36"
+        },
+        {
+          "title": "Starman",
+          "duration": "4:16"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "It Ain't Easy",
+          "duration": "3:02"
+        },
+        {
+          "title": "Lady Stardust",
+          "duration": "3:20"
+        },
+        {
+          "title": "Star",
+          "duration": "3:00"
+        },
+        {
+          "title": "Hang On to Yourself",
+          "duration": "2:37"
+        },
+        {
+          "title": "Ziggy Stardust",
+          "duration": "3:12"
+        },
+        {
+          "title": "Suffragette City",
+          "duration": "3:48"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/374856"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "002",
+  "catalogNumber": "PCS7088",
+  "recordLabel": "Apple Records",
+  "artists": ["The Beatles"],
+  "album": "Abbey Road",
+  "year": 1969,
+  "genre": ["Rock", "Pop"],
+  "format": "LP, Album",
+  "condition": "Very Good Plus",
+  "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=The+Beatles",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Come Together",
+          "duration": "4:15"
+        },
+        {
+          "title": "Something",
+          "duration": "3:02"
+        },
+        {
+          "title": "Maxwell's Silver Hammer",
+          "duration": "3:27"
+        },
+        {
+          "title": "Oh! Darling",
+          "duration": "3:26"
+        },
+        {
+          "title": "Octopus's Garden",
+          "duration": "2:51"
+        },
+        {
+          "title": "I Want You (She's So Heavy)",
+          "duration": "7:47"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Here Comes the Sun",
+          "duration": "3:05"
+        },
+        {
+          "title": "Because",
+          "duration": "2:45"
+        },
+        {
+          "title": "You Never Give Me Your Money",
+          "duration": "4:02"
+        },
+        {
+          "title": "Sun King",
+          "duration": "2:26"
+        },
+        {
+          "title": "Mean Mr. Mustard",
+          "duration": "1:06"
+        },
+        {
+          "title": "Polythene Pam",
+          "duration": "1:12"
+        },
+        {
+          "title": "She Came in Through the Bathroom Window",
+          "duration": "1:57"
+        },
+        {
+          "title": "Golden Slumbers",
+          "duration": "1:31"
+        },
+        {
+          "title": "Carry That Weight",
+          "duration": "1:36"
+        },
+        {
+          "title": "The End",
+          "duration": "2:18"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/249504"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "007",
+  "catalogNumber": "4700001",
+  "recordLabel": "Philips",
+  "artists": ["Kraftwerk"],
+  "album": "Autobahn",
+  "year": 1974,
+  "genre": ["Electronic", "Krautrock"],
+  "format": "LP, Album",
+  "condition": "Near Mint",
+  "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Kraftwerk",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Autobahn",
+          "duration": "22:42"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Kometenmelodie 1",
+          "duration": "6:13"
+        },
+        {
+          "title": "Kometenmelodie 2",
+          "duration": "4:33"
+        },
+        {
+          "title": "Kristallo",
+          "duration": "7:46"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/349319"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "011",
+  "catalogNumber": "FACT25",
+  "recordLabel": "Factory",
+  "artists": ["Joy Division"],
+  "album": "Unknown Pleasures",
+  "year": 1979,
+  "genre": ["Post-Punk", "Darkwave"],
+  "format": "LP, Album",
+  "condition": "Very Good",
+  "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=Joy+Division",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Disorder",
+          "duration": "3:15"
+        },
+        {
+          "title": "Day of the Lords",
+          "duration": "4:48"
+        },
+        {
+          "title": "Candidate",
+          "duration": "3:28"
+        },
+        {
+          "title": "Insight",
+          "duration": "4:13"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "New Dawn Fades",
+          "duration": "4:47"
+        },
+        {
+          "title": "She's Lost Control",
+          "duration": "3:57"
+        },
+        {
+          "title": "Shadowplay",
+          "duration": "4:09"
+        },
+        {
+          "title": "Wilderness",
+          "duration": "2:59"
+        },
+        {
+          "title": "Interzone",
+          "duration": "4:06"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/278935"
+  }
+}

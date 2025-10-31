@@ -1,0 +1,63 @@
+{
+  "id": "020",
+  "catalogNumber": "IDEALP5",
+  "recordLabel": "Idealogical Organ",
+  "artists": ["Portishead"],
+  "album": "Dummy",
+  "year": 1994,
+  "genre": ["Trip Hop", "Electronic"],
+  "format": "LP, Album",
+  "condition": "Very Good Plus",
+  "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Portishead",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Mysterons",
+          "duration": "5:02"
+        },
+        {
+          "title": "Wandering Star",
+          "duration": "4:55"
+        },
+        {
+          "title": "It Could Be Sweet",
+          "duration": "3:35"
+        },
+        {
+          "title": "Glory Box",
+          "duration": "5:10"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Roads",
+          "duration": "4:36"
+        },
+        {
+          "title": "Nylon Smile",
+          "duration": "2:44"
+        },
+        {
+          "title": "Pedestal",
+          "duration": "4:19"
+        },
+        {
+          "title": "Biscuit",
+          "duration": "4:40"
+        },
+        {
+          "title": "Give Me a Reason",
+          "duration": "3:35"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/368963"
+  }
+}

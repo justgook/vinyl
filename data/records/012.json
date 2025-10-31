@@ -1,0 +1,59 @@
+{
+  "id": "012",
+  "catalogNumber": "STUMM63",
+  "recordLabel": "Mute",
+  "artists": ["Depeche Mode"],
+  "album": "Violator",
+  "year": 1990,
+  "genre": ["Electronic", "Synth-Pop"],
+  "format": "LP, Album",
+  "condition": "Near Mint",
+  "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Depeche+Mode",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "World in My Eyes",
+          "duration": "4:55"
+        },
+        {
+          "title": "Sweetest Perfection",
+          "duration": "4:32"
+        },
+        {
+          "title": "Personal Jesus",
+          "duration": "4:50"
+        },
+        {
+          "title": "Enjoy the Silence",
+          "duration": "5:31"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Policy of Truth",
+          "duration": "4:35"
+        },
+        {
+          "title": "World in My Eyes (Reprise)",
+          "duration": "1:06"
+        },
+        {
+          "title": "Waiting for the Night",
+          "duration": "4:25"
+        },
+        {
+          "title": "Violator",
+          "duration": "5:07"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/588263"
+  }
+}

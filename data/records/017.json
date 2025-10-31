@@ -1,0 +1,63 @@
+{
+  "id": "017",
+  "catalogNumber": "ROUGH73",
+  "recordLabel": "Rough Trade",
+  "artists": ["The Smiths"],
+  "album": "The Queen Is Dead",
+  "year": 1986,
+  "genre": ["Alternative Rock", "Indie Rock"],
+  "format": "LP, Album",
+  "condition": "Good Plus",
+  "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=The+Smiths",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "The Queen Is Dead",
+          "duration": "4:02"
+        },
+        {
+          "title": "Frankly, Mr. Shankly",
+          "duration": "3:32"
+        },
+        {
+          "title": "I Know It's Over",
+          "duration": "5:34"
+        },
+        {
+          "title": "Never Had No One Ever",
+          "duration": "3:48"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Cemetery Gates",
+          "duration": "3:32"
+        },
+        {
+          "title": "Bigmouth Strikes Again",
+          "duration": "3:17"
+        },
+        {
+          "title": "The Boy with the Thorn in His Side",
+          "duration": "3:20"
+        },
+        {
+          "title": "Vicar in a Tutu",
+          "duration": "2:40"
+        },
+        {
+          "title": "There Is a Light That Never Goes Out",
+          "duration": "4:25"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/335425"
+  }
+}

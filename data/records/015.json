@@ -1,0 +1,63 @@
+{
+  "id": "015",
+  "catalogNumber": "FKT001",
+  "recordLabel": "Daft Life Limited",
+  "artists": ["Daft Punk"],
+  "album": "Discovery",
+  "year": 2001,
+  "genre": ["Electronic", "House", "Funk"],
+  "format": "LP, Album",
+  "condition": "Near Mint",
+  "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Daft+Punk",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "One More Time",
+          "duration": "5:20"
+        },
+        {
+          "title": "Aerodynamic",
+          "duration": "3:48"
+        },
+        {
+          "title": "Digital Love",
+          "duration": "4:59"
+        },
+        {
+          "title": "Homework",
+          "duration": "5:09"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Face to Face",
+          "duration": "4:08"
+        },
+        {
+          "title": "Too Long",
+          "duration": "5:33"
+        },
+        {
+          "title": "Something About Us",
+          "duration": "4:08"
+        },
+        {
+          "title": "Within",
+          "duration": "3:23"
+        },
+        {
+          "title": "Nightvision",
+          "duration": "3:13"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "release/161798"
+  }
+}
