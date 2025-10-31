@@ -31,6 +31,7 @@
         apiToken: localStorage.getItem('discogs_api_token') || '',
         showTokenInput: !localStorage.getItem('discogs_api_token'),
         importedData: null,
+        fillStatus: null, // 'success', 'error', or null
       };
     },
 
@@ -159,18 +160,25 @@
         importedData: recordData,
         loading: false,
         results: [],
+        fillStatus: null,
       });
 
       // Store in widget value so it appears in the form
       onChange(JSON.stringify(recordData, null, 2));
-      
-      // Try to fill other form fields using DOM manipulation
+    },
+
+    /**
+     * Manually trigger form fill
+     */
+    handleAutoFill() {
+      if (!this.state.importedData) return;
+
       try {
-        this.fillFormFields(recordData);
-        alert(`✅ Successfully imported:\n${recordData.album} by ${recordData.artists.join(', ')}\n\nData has been filled in the form fields below. Please review and adjust as needed.`);
+        this.fillFormFields(this.state.importedData);
+        this.setState({ fillStatus: 'success' });
       } catch (error) {
         console.error('Error filling form fields:', error);
-        alert(`✅ Data imported!\n\n${recordData.album} by ${recordData.artists.join(', ')}\n\nPlease scroll down and copy the data from the "Imported Data" section below into the form fields.`);
+        this.setState({ fillStatus: 'error' });
       }
     },
 
@@ -534,6 +542,51 @@
                 rel: 'noopener noreferrer',
               }, 'View Image'),
             ]),
+            
+            // Auto-fill button and status
+            window.h('div', { 
+              style: { 
+                marginTop: '16px', 
+                paddingTop: '16px', 
+                borderTop: '2px solid #c3e6cb',
+              } 
+            }, [
+              window.h('button', {
+                type: 'button',
+                onClick: () => this.handleAutoFill(),
+                style: {
+                  padding: '12px 24px',
+                  fontSize: '16px',
+                  fontWeight: 'bold',
+                  backgroundColor: '#000',
+                  color: '#FFFF00',
+                  border: '3px solid #000',
+                  cursor: 'pointer',
+                  marginRight: '12px',
+                  transition: 'all 0.2s',
+                },
+                onMouseEnter: (e) => {
+                  e.target.style.backgroundColor = '#FFFF00';
+                  e.target.style.color = '#000';
+                  e.target.style.transform = 'translateY(-2px)';
+                },
+                onMouseLeave: (e) => {
+                  e.target.style.backgroundColor = '#000';
+                  e.target.style.color = '#FFFF00';
+                  e.target.style.transform = 'translateY(0)';
+                },
+              }, '⚡ Auto-Fill Form Fields Below'),
+              
+              // Status message
+              this.state.fillStatus === 'success' && window.h('span', { 
+                style: { color: '#155724', fontWeight: 'bold' } 
+              }, '✓ Fields filled! Please review and complete list fields (artists, genres, tracklist).'),
+              
+              this.state.fillStatus === 'error' && window.h('span', { 
+                style: { color: '#721c24', fontWeight: 'bold' } 
+              }, '⚠ Auto-fill may not work perfectly. Please copy data manually from above.'),
+            ]),
+            
             window.h('details', { style: { marginTop: '12px' } }, [
               window.h('summary', { style: { cursor: 'pointer', fontWeight: 'bold' } }, 'View Full JSON (for advanced users)'),
               window.h('pre', { 
