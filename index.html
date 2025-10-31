@@ -915,76 +915,7 @@
     </header>
 
     <div class="main-container">
-        <!-- Recently Added -->
-        <div class="section-row">
-            <div class="section-header">
-                <div class="section-title pink">Recently Added</div>
-                <button class="view-all-btn">View All →</button>
-            </div>
-            <div class="scroll-container">
-                <div class="vinyl-row" id="recentRow"></div>
-            </div>
-        </div>
-
-        <!-- Rock Classics -->
-        <div class="section-row">
-            <div class="section-header">
-                <div class="section-title yellow">Rock Classics</div>
-                <button class="view-all-btn">View All →</button>
-            </div>
-            <div class="scroll-container">
-                <div class="vinyl-row" id="rockRow"></div>
-            </div>
-        </div>
-
-        <!-- Jazz Collection -->
-        <div class="section-row">
-            <div class="section-header">
-                <div class="section-title cyan">Jazz Collection</div>
-                <button class="view-all-btn">View All →</button>
-            </div>
-            <div class="scroll-container">
-                <div class="vinyl-row" id="jazzRow"></div>
-            </div>
-        </div>
-
-        <!-- 1970s Era -->
-        <div class="section-row">
-            <div class="section-header">
-                <div class="section-title green">1970s Era</div>
-                <button class="view-all-btn">View All →</button>
-            </div>
-            <div class="scroll-container">
-                <div class="vinyl-row" id="seventiesRow"></div>
-            </div>
-        </div>
-
-        <!-- Electronic -->
-        <div class="section-row">
-            <div class="section-header">
-                <div class="section-title orange">Electronic</div>
-                <button class="view-all-btn">View All →</button>
-            </div>
-            <div class="scroll-container">
-                <div class="vinyl-row" id="electronicRow"></div>
-            </div>
-        </div>
-
-        <!-- Favorites -->
-        <div class="section-row">
-            <div class="section-header">
-                <div class="section-title purple">Your Favorites</div>
-                <button class="view-all-btn">View All →</button>
-            </div>
-            <div class="scroll-container">
-                <div class="vinyl-row" id="favoritesRow"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-progress" id="scrollProgress">
-        SECTION <span id="currentSection">1</span> / <span id="totalSections">6</span>
+        <!-- Rows will be dynamically loaded from data/records.json -->
     </div>
 
     <!-- Modal -->
@@ -1052,7 +983,128 @@
     </div>
 
     <script>
-        // Sample Data
+        // Global data storage
+        let allRecords = {};  // Store full record details by ID
+        let recordsData = null;  // Homepage featured records
+        let currentRecord = null;
+
+        // Load JSON data
+        async function loadData() {
+            try {
+                // Load full catalog for lookups
+                const allResponse = await fetch('data/records-all.json');
+                const allData = await allResponse.json();
+                
+                // Store in lookup object
+                allData.records.forEach(record => {
+                    allRecords[record.id] = record;
+                });
+
+                // Load homepage featured records
+                const recordsResponse = await fetch('data/records.json');
+                recordsData = await recordsResponse.json();
+
+                // Initialize the page
+                initializePage();
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        // Initialize page with loaded data
+        function initializePage() {
+            renderRows();
+            updateSectionCount();
+        }
+
+        // Render all category rows
+        function renderRows() {
+            const mainContainer = document.querySelector('.main-container');
+            
+            // Clear existing rows
+            mainContainer.innerHTML = '';
+
+            // Color mapping for categories
+            const colors = ['pink', 'yellow', 'cyan', 'green', 'orange', 'purple'];
+
+            // Render each row from recordsData
+            recordsData.rows.forEach((row, index) => {
+                const color = colors[index % colors.length];
+                const rowHTML = createRowHTML(row.category, row.records, color);
+                mainContainer.insertAdjacentHTML('beforeend', rowHTML);
+            });
+
+            // Add scroll progress indicator
+            mainContainer.insertAdjacentHTML('beforeend', `
+                <div class="scroll-progress" id="scrollProgress">
+                    SECTION <span id="currentSection">1</span> / <span id="totalSections">${recordsData.rows.length}</span>
+                </div>
+            `);
+        }
+
+        // Create HTML for a row
+        function createRowHTML(category, recordIds, color) {
+            return `
+                <div class="section-row">
+                    <div class="section-header">
+                        <div class="section-title ${color}">${category}</div>
+                        <button class="view-all-btn" onclick="viewAll('${category}')">View All →</button>
+                    </div>
+                    <div class="scroll-container">
+                        <div class="vinyl-row">
+                            ${recordIds.map(id => createCardHTML(id)).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Create HTML for a vinyl card
+        function createCardHTML(recordId) {
+            const record = allRecords[recordId];
+            if (!record) return '';
+
+            const artistsText = record.artists.join(', ');
+            const genreText = record.genre ? record.genre[0] : '';
+
+            return `
+                <div class="vinyl-card" onclick="navigateToDetail('${recordId}')">
+                    <div class="card-inner">
+                        <div class="cover-wrapper">
+                            <div class="album-cover" style="background-image: url('${record.imageUrl}'); background-size: cover; background-position: center;"></div>
+                            <div class="vinyl-disc"></div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">${record.album}</div>
+                            <div class="card-artist">${artistsText}</div>
+                            <div class="card-meta">${record.year}${genreText ? ' • ' + genreText : ''}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Navigate to detail page
+        function navigateToDetail(recordId) {
+            window.location.href = `detail.html?id=${recordId}`;
+        }
+
+        // View all records in a category
+        function viewAll(category) {
+            // For now, just log - will implement later
+            console.log('View all:', category);
+            // TODO: Show all records from this category in a grid view
+        }
+
+        // Update section count
+        function updateSectionCount() {
+            const totalSections = document.getElementById('totalSections');
+            if (totalSections && recordsData) {
+                totalSections.textContent = recordsData.rows.length;
+            }
+        }
+
+        // Old mock vinyl data (keeping for backwards compatibility with modal)
         const vinylData = [
             {
                 id: 1,
@@ -1219,39 +1271,7 @@
             }
         ];
 
-        let currentRecord = null;
 
-        // Populate Rows
-        function populateRow(rowId, category) {
-            const row = document.getElementById(rowId);
-            const filtered = category === 'recent' 
-                ? vinylData.slice().reverse().slice(0, 10)
-                : vinylData.filter(v => v.category.includes(category));
-            
-            row.innerHTML = filtered.map(vinyl => `
-                <div class="vinyl-card" onclick="openModal(${vinyl.id})">
-                    <div class="card-inner">
-                        <div class="cover-wrapper">
-                            <div class="album-cover" style="background: ${vinyl.cover}"></div>
-                            <div class="vinyl-disc"></div>
-                        </div>
-                        <div class="card-info">
-                            <div class="card-title">${vinyl.title}</div>
-                            <div class="card-artist">${vinyl.artist}</div>
-                            <div class="card-meta">${vinyl.year} • ${vinyl.genre}</div>
-                        </div>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Initialize Rows
-        populateRow('recentRow', 'recent');
-        populateRow('rockRow', 'rock');
-        populateRow('jazzRow', 'jazz');
-        populateRow('seventiesRow', 'seventies');
-        populateRow('electronicRow', 'electronic');
-        populateRow('favoritesRow', 'favorites');
 
         // Open Modal
         function openModal(id) {
@@ -1374,11 +1394,12 @@
         // Scroll Progress
         let scrollTimeout;
         let lastScroll = 0;
-        const sections = document.querySelectorAll('.section-row');
         const header = document.getElementById('header');
 
         window.addEventListener('scroll', () => {
             const scrollProgress = document.getElementById('scrollProgress');
+            if (!scrollProgress) return;
+            
             scrollProgress.classList.add('visible');
 
             // Hide header on scroll down
@@ -1391,6 +1412,7 @@
             lastScroll = currentScroll;
 
             // Update section indicator
+            const sections = document.querySelectorAll('.section-row');
             let currentSection = 1;
             sections.forEach((section, index) => {
                 const rect = section.getBoundingClientRect();
@@ -1398,6 +1420,17 @@
                     currentSection = index + 1;
                 }
             });
+
+            const currentSectionEl = document.getElementById('currentSection');
+            if (currentSectionEl) {
+                currentSectionEl.textContent = currentSection;
+            }
+
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                scrollProgress.classList.remove('visible');
+            }, 1500);
+        });
 
             document.getElementById('currentSection').textContent = currentSection;
             document.getElementById('totalSections').textContent = sections.length;
@@ -1428,6 +1461,11 @@
             if (e.target.id === 'modalOverlay') {
                 closeModal();
             }
+        });
+
+        // Initialize app when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
         });
     </script>
 </body>

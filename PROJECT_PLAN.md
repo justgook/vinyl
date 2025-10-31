@@ -125,15 +125,16 @@ vinyl-cabinet/
 - [ ] Create `data/records-all.json` - Minimal listing (id, artists, album, imageUrl)
 
 ### 1.2 Homepage Enhancement
-- [ ] Add JavaScript to load `data/records.json`
-- [ ] Render cards dynamically (replace hardcoded mockups)
-- [ ] Implement "VIEW ALL" button → load `records-all.json`
-- [ ] Create predefined rows:
+- [x] Add JavaScript to load `data/records.json`
+- [x] Render cards dynamically (replace hardcoded mockups)
+- [x] Create predefined rows (loaded from data/records.json):
   - Recently Added (newest 10)
   - Progressive Rock (filter by genre)
   - 1970s Classics (filter by year)
   - Electronic Music (filter by genre)
   - Jazz & Experimental (filter by genre)
+- [x] Navigate to detail page on card click
+- [ ] Implement "VIEW ALL" button → show full category view (TODO)
 
 ### 1.3 Global Search Implementation
 - [ ] Free-text search input (existing in header)
@@ -333,13 +334,17 @@ jobs:
 - Full catalog listing (records-all.json)
 - Data schema documentation (SCHEMA.md)
 - PROJECT_PLAN.md created
+- index.html now loads data dynamically from JSON
+- Homepage renders featured rows from data/records.json
+- Card click navigation to detail page
 
 **🔄 In Progress:**
-- (Phase 1.2) Updating index.html with JSON loading
+- (Phase 1.4) Creating detail.html for individual record view
 
 **⏳ Next Up:**
-- Create detail.html (Phase 1.4)
-- Implement search functionality (Phase 1.3)
+- Complete detail.html with full tracklist display
+- Implement global search functionality (Phase 1.3)
+- Implement "VIEW ALL" button functionality
 - DecapCMS setup (Phase 2)
 
 ---
