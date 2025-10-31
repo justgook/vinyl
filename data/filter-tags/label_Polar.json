@@ -1,0 +1,16 @@
+{
+  "type": "label",
+  "name": "Polar",
+  "count": 1,
+  "records": [
+    {
+      "id": "008",
+      "album": "Arrival",
+      "artists": [
+        "ABBA"
+      ],
+      "year": 1976,
+      "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=ABBA"
+    }
+  ]
+}

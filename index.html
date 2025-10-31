@@ -149,15 +149,16 @@
         .scroll-container {
             position: relative;
             padding: 0 3rem;
+            overflow: hidden; /* Prevent vertical scrollbar */
         }
 
         .vinyl-row {
             display: flex;
             gap: 2rem;
             overflow-x: auto;
-            overflow-y: visible;
+            overflow-y: hidden; /* Changed from visible to hidden */
             scroll-behavior: smooth;
-            padding: 1rem 0 2rem 0;
+            padding: 1rem 100px 2rem 0; /* Extra right padding for vinyl hover effect */
             scrollbar-width: none;
             -ms-overflow-style: none;
         }
@@ -175,6 +176,7 @@
             cursor: pointer;
             perspective: 1000px;
             transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            overflow: visible; /* Allow hover effects */
         }
 
         .vinyl-card:hover {
@@ -262,7 +264,7 @@
 
         /* IMPROVED: Vinyl slides OUT to the right on hover */
         .vinyl-card:hover .vinyl-disc {
-            right: -140px; /* Slides out beyond the cover */
+            right: -80px; /* Slides out beyond the cover (reduced to prevent scrollbar) */
             opacity: 1; /* Becomes visible */
             transform: rotate(15deg);
         }
@@ -1091,9 +1093,21 @@
 
         // View all records in a category
         function viewAll(category) {
-            // For now, just log - will implement later
-            console.log('View all:', category);
-            // TODO: Show all records from this category in a grid view
+            // Map categories to filter types and values using DSL
+            const categoryMap = {
+                'Recently Added': { type: 'year', value: '2024' }, // Assuming recent additions are from 2024
+                'Progressive Rock': { type: 'genre', value: 'Progressive Rock' },
+                '1970s Classics': { type: 'year', value: '1970,1971,1972,1973,1974,1975,1976,1977,1978,1979' }, // Explicit years
+                'Electronic Music': { type: 'genre', value: 'Electronic' },
+                'Jazz & Experimental': { type: 'genre', value: 'Jazz,Experimental' } // Multiple genres
+            };
+            
+            const filter = categoryMap[category];
+            if (filter) {
+                window.location.href = `filter.html?type=${filter.type}&value=${encodeURIComponent(filter.value)}`;
+            } else {
+                console.log('No filter mapping for category:', category);
+            }
         }
 
         // Update section count

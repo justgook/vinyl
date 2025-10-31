@@ -1,0 +1,553 @@
+{
+  "genres": {
+    "Progressive Rock": {
+      "name": "Progressive Rock",
+      "count": 1,
+      "records": [
+        {
+          "id": "001",
+          "album": "The Dark Side of the Moon",
+          "artists": [
+            "Pink Floyd"
+          ],
+          "year": 1973,
+          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Pink+Floyd"
+        }
+      ]
+    },
+    "Art Rock": {
+      "name": "Art Rock",
+      "count": 2,
+      "records": [
+        {
+          "id": "001",
+          "album": "The Dark Side of the Moon",
+          "artists": [
+            "Pink Floyd"
+          ],
+          "year": 1973,
+          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Pink+Floyd"
+        },
+        {
+          "id": "009",
+          "album": "The Velvet Underground & Nico",
+          "artists": [
+            "The Velvet Underground",
+            "Nico"
+          ],
+          "year": 1967,
+          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Velvet+Underground"
+        }
+      ]
+    },
+    "Rock": {
+      "name": "Rock",
+      "count": 3,
+      "records": [
+        {
+          "id": "006",
+          "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+          "artists": [
+            "David Bowie"
+          ],
+          "year": 1972,
+          "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=David+Bowie"
+        },
+        {
+          "id": "002",
+          "album": "Abbey Road",
+          "artists": [
+            "The Beatles"
+          ],
+          "year": 1969,
+          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=The+Beatles"
+        },
+        {
+          "id": "009",
+          "album": "The Velvet Underground & Nico",
+          "artists": [
+            "The Velvet Underground",
+            "Nico"
+          ],
+          "year": 1967,
+          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Velvet+Underground"
+        }
+      ]
+    },
+    "Pop": {
+      "name": "Pop",
+      "count": 2,
+      "records": [
+        {
+          "id": "008",
+          "album": "Arrival",
+          "artists": [
+            "ABBA"
+          ],
+          "year": 1976,
+          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=ABBA"
+        },
+        {
+          "id": "002",
+          "album": "Abbey Road",
+          "artists": [
+            "The Beatles"
+          ],
+          "year": 1969,
+          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=The+Beatles"
+        }
+      ]
+    },
+    "Hard Rock": {
+      "name": "Hard Rock",
+      "count": 1,
+      "records": [
+        {
+          "id": "003",
+          "album": "Led Zeppelin IV",
+          "artists": [
+            "Led Zeppelin"
+          ],
+          "year": 1971,
+          "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Led+Zeppelin"
+        }
+      ]
+    },
+    "Heavy Metal": {
+      "name": "Heavy Metal",
+      "count": 1,
+      "records": [
+        {
+          "id": "003",
+          "album": "Led Zeppelin IV",
+          "artists": [
+            "Led Zeppelin"
+          ],
+          "year": 1971,
+          "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Led+Zeppelin"
+        }
+      ]
+    },
+    "Jazz": {
+      "name": "Jazz",
+      "count": 1,
+      "records": [
+        {
+          "id": "004",
+          "album": "Kind of Blue",
+          "artists": [
+            "Miles Davis"
+          ],
+          "year": 1959,
+          "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Miles+Davis"
+        }
+      ]
+    },
+    "Modal Jazz": {
+      "name": "Modal Jazz",
+      "count": 1,
+      "records": [
+        {
+          "id": "004",
+          "album": "Kind of Blue",
+          "artists": [
+            "Miles Davis"
+          ],
+          "year": 1959,
+          "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Miles+Davis"
+        }
+      ]
+    },
+    "Pop Rock": {
+      "name": "Pop Rock",
+      "count": 1,
+      "records": [
+        {
+          "id": "005",
+          "album": "Rumours",
+          "artists": [
+            "Fleetwood Mac"
+          ],
+          "year": 1977,
+          "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Fleetwood+Mac"
+        }
+      ]
+    },
+    "Soft Rock": {
+      "name": "Soft Rock",
+      "count": 1,
+      "records": [
+        {
+          "id": "005",
+          "album": "Rumours",
+          "artists": [
+            "Fleetwood Mac"
+          ],
+          "year": 1977,
+          "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Fleetwood+Mac"
+        }
+      ]
+    },
+    "Glam Rock": {
+      "name": "Glam Rock",
+      "count": 1,
+      "records": [
+        {
+          "id": "006",
+          "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+          "artists": [
+            "David Bowie"
+          ],
+          "year": 1972,
+          "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=David+Bowie"
+        }
+      ]
+    },
+    "Electronic": {
+      "name": "Electronic",
+      "count": 6,
+      "records": [
+        {
+          "id": "015",
+          "album": "Discovery",
+          "artists": [
+            "Daft Punk"
+          ],
+          "year": 2001,
+          "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Daft+Punk"
+        },
+        {
+          "id": "016",
+          "album": "Homogenic",
+          "artists": [
+            "Björk"
+          ],
+          "year": 1997,
+          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Björk"
+        },
+        {
+          "id": "020",
+          "album": "Dummy",
+          "artists": [
+            "Portishead"
+          ],
+          "year": 1994,
+          "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Portishead"
+        },
+        {
+          "id": "014",
+          "album": "Blue Lines",
+          "artists": [
+            "Massive Attack"
+          ],
+          "year": 1991,
+          "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Massive+Attack"
+        },
+        {
+          "id": "012",
+          "album": "Violator",
+          "artists": [
+            "Depeche Mode"
+          ],
+          "year": 1990,
+          "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Depeche+Mode"
+        },
+        {
+          "id": "007",
+          "album": "Autobahn",
+          "artists": [
+            "Kraftwerk"
+          ],
+          "year": 1974,
+          "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Kraftwerk"
+        }
+      ]
+    },
+    "Krautrock": {
+      "name": "Krautrock",
+      "count": 1,
+      "records": [
+        {
+          "id": "007",
+          "album": "Autobahn",
+          "artists": [
+            "Kraftwerk"
+          ],
+          "year": 1974,
+          "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Kraftwerk"
+        }
+      ]
+    },
+    "Disco": {
+      "name": "Disco",
+      "count": 1,
+      "records": [
+        {
+          "id": "008",
+          "album": "Arrival",
+          "artists": [
+            "ABBA"
+          ],
+          "year": 1976,
+          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=ABBA"
+        }
+      ]
+    },
+    "Post-Punk": {
+      "name": "Post-Punk",
+      "count": 2,
+      "records": [
+        {
+          "id": "010",
+          "album": "Remain in Light",
+          "artists": [
+            "Talking Heads"
+          ],
+          "year": 1980,
+          "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Talking+Heads"
+        },
+        {
+          "id": "011",
+          "album": "Unknown Pleasures",
+          "artists": [
+            "Joy Division"
+          ],
+          "year": 1979,
+          "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=Joy+Division"
+        }
+      ]
+    },
+    "New Wave": {
+      "name": "New Wave",
+      "count": 1,
+      "records": [
+        {
+          "id": "010",
+          "album": "Remain in Light",
+          "artists": [
+            "Talking Heads"
+          ],
+          "year": 1980,
+          "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Talking+Heads"
+        }
+      ]
+    },
+    "Darkwave": {
+      "name": "Darkwave",
+      "count": 1,
+      "records": [
+        {
+          "id": "011",
+          "album": "Unknown Pleasures",
+          "artists": [
+            "Joy Division"
+          ],
+          "year": 1979,
+          "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=Joy+Division"
+        }
+      ]
+    },
+    "Synth-Pop": {
+      "name": "Synth-Pop",
+      "count": 1,
+      "records": [
+        {
+          "id": "012",
+          "album": "Violator",
+          "artists": [
+            "Depeche Mode"
+          ],
+          "year": 1990,
+          "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Depeche+Mode"
+        }
+      ]
+    },
+    "Alternative Rock": {
+      "name": "Alternative Rock",
+      "count": 3,
+      "records": [
+        {
+          "id": "013",
+          "album": "OK Computer",
+          "artists": [
+            "Radiohead"
+          ],
+          "year": 1997,
+          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Radiohead"
+        },
+        {
+          "id": "018",
+          "album": "Daydream Nation",
+          "artists": [
+            "Sonic Youth"
+          ],
+          "year": 1988,
+          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Sonic+Youth"
+        },
+        {
+          "id": "017",
+          "album": "The Queen Is Dead",
+          "artists": [
+            "The Smiths"
+          ],
+          "year": 1986,
+          "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=The+Smiths"
+        }
+      ]
+    },
+    "Experimental Rock": {
+      "name": "Experimental Rock",
+      "count": 1,
+      "records": [
+        {
+          "id": "013",
+          "album": "OK Computer",
+          "artists": [
+            "Radiohead"
+          ],
+          "year": 1997,
+          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Radiohead"
+        }
+      ]
+    },
+    "Trip Hop": {
+      "name": "Trip Hop",
+      "count": 3,
+      "records": [
+        {
+          "id": "016",
+          "album": "Homogenic",
+          "artists": [
+            "Björk"
+          ],
+          "year": 1997,
+          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Björk"
+        },
+        {
+          "id": "020",
+          "album": "Dummy",
+          "artists": [
+            "Portishead"
+          ],
+          "year": 1994,
+          "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Portishead"
+        },
+        {
+          "id": "014",
+          "album": "Blue Lines",
+          "artists": [
+            "Massive Attack"
+          ],
+          "year": 1991,
+          "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Massive+Attack"
+        }
+      ]
+    },
+    "House": {
+      "name": "House",
+      "count": 1,
+      "records": [
+        {
+          "id": "015",
+          "album": "Discovery",
+          "artists": [
+            "Daft Punk"
+          ],
+          "year": 2001,
+          "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Daft+Punk"
+        }
+      ]
+    },
+    "Funk": {
+      "name": "Funk",
+      "count": 1,
+      "records": [
+        {
+          "id": "015",
+          "album": "Discovery",
+          "artists": [
+            "Daft Punk"
+          ],
+          "year": 2001,
+          "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Daft+Punk"
+        }
+      ]
+    },
+    "Avant-Garde": {
+      "name": "Avant-Garde",
+      "count": 1,
+      "records": [
+        {
+          "id": "016",
+          "album": "Homogenic",
+          "artists": [
+            "Björk"
+          ],
+          "year": 1997,
+          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Björk"
+        }
+      ]
+    },
+    "Indie Rock": {
+      "name": "Indie Rock",
+      "count": 1,
+      "records": [
+        {
+          "id": "017",
+          "album": "The Queen Is Dead",
+          "artists": [
+            "The Smiths"
+          ],
+          "year": 1986,
+          "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=The+Smiths"
+        }
+      ]
+    },
+    "Noise Rock": {
+      "name": "Noise Rock",
+      "count": 1,
+      "records": [
+        {
+          "id": "018",
+          "album": "Daydream Nation",
+          "artists": [
+            "Sonic Youth"
+          ],
+          "year": 1988,
+          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Sonic+Youth"
+        }
+      ]
+    },
+    "Dream Pop": {
+      "name": "Dream Pop",
+      "count": 1,
+      "records": [
+        {
+          "id": "019",
+          "album": "Loveless",
+          "artists": [
+            "My Bloody Valentine"
+          ],
+          "year": 1991,
+          "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=My+Bloody+Valentine"
+        }
+      ]
+    },
+    "Noise Pop": {
+      "name": "Noise Pop",
+      "count": 1,
+      "records": [
+        {
+          "id": "019",
+          "album": "Loveless",
+          "artists": [
+            "My Bloody Valentine"
+          ],
+          "year": 1991,
+          "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=My+Bloody+Valentine"
+        }
+      ]
+    }
+  },
+  "total": 28
+}

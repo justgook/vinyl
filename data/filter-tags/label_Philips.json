@@ -1,0 +1,16 @@
+{
+  "type": "label",
+  "name": "Philips",
+  "count": 1,
+  "records": [
+    {
+      "id": "007",
+      "album": "Autobahn",
+      "artists": [
+        "Kraftwerk"
+      ],
+      "year": 1974,
+      "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Kraftwerk"
+    }
+  ]
+}

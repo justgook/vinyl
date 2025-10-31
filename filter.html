@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter - Vinyl Cabinet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #000000;
+            --white: #FFFFFF;
+            --pink: #FF10F0;
+            --yellow: #FFEB3B;
+            --cyan: #00E5FF;
+            --green: #76FF03;
+            --orange: #FF6B35;
+            --purple: #9C27B0;
+            --red: #FF1744;
+        }
+
+        body {
+            font-family: 'Space Grotesk', 'Arial Black', sans-serif;
+            background: var(--white);
+            color: var(--black);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: var(--purple);
+            border-bottom: 8px solid var(--black);
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            max-width: 1800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .filter-info {
+            flex: 1;
+        }
+
+        .filter-type {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: var(--white);
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .filter-value {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: var(--white);
+            text-shadow: 4px 4px 0 var(--black);
+            letter-spacing: -2px;
+        }
+
+        .filter-count {
+            font-size: 1.1rem;
+            color: var(--white);
+            margin-top: 1rem;
+            font-weight: 700;
+        }
+
+        .close-modal-btn {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 60px;
+            height: 60px;
+            background: var(--red);
+            border: 5px solid var(--black);
+            cursor: pointer;
+            font-size: 2rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 0 var(--black);
+            transition: all 0.2s ease;
+            z-index: 10;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .close-modal-btn:hover {
+            transform: rotate(90deg) scale(1.1);
+            background: var(--pink);
+        }
+
+        /* Main Container */
+        .main-container {
+            background: var(--white);
+            min-height: 100vh;
+            padding: 3rem;
+        }
+
+        /* Records Grid - Using same vinyl card style as index.html */
+        .records-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: flex-start;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 0 3rem;
+        }
+
+        /* Vinyl Card - Same as index.html */
+        .vinyl-card {
+            min-width: 280px;
+            width: 280px;
+            height: 360px;
+            position: relative;
+            cursor: pointer;
+            perspective: 1000px;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            overflow: visible;
+        }
+
+        .vinyl-card:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cover-wrapper {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            overflow: visible;
+        }
+
+        .album-cover {
+            width: 100%;
+            height: 100%;
+            border: 6px solid var(--black);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 8px 8px 0 var(--black);
+            position: relative;
+            z-index: 2;
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .album-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Vinyl Disc - Same as index.html */
+        .vinyl-disc {
+            position: absolute;
+            width: 260px;
+            height: 260px;
+            top: 10px;
+            right: 10px;
+            background: radial-gradient(circle at 30% 30%, #2a2a2a 0%, #000 40%, #1a1a1a 45%, #000 100%);
+            border-radius: 50%;
+            border: 5px solid var(--black);
+            z-index: 1;
+            opacity: 0;
+            transition: right 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                        opacity 0.4s ease,
+                        transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+        }
+
+        .vinyl-disc::before {
+            content: '';
+            position: absolute;
+            width: 35%;
+            height: 35%;
+            top: 32.5%;
+            left: 32.5%;
+            background: radial-gradient(circle, #dc143c 0%, #8b0000 100%);
+            border-radius: 50%;
+            border: 4px solid var(--black);
+        }
+
+        .vinyl-disc::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: repeating-conic-gradient(
+                from 0deg,
+                transparent 0deg,
+                transparent 0.5deg,
+                rgba(255,255,255,0.04) 0.5deg,
+                rgba(255,255,255,0.04) 1deg
+            );
+            border-radius: 50%;
+        }
+
+        .vinyl-card:hover .vinyl-disc {
+            right: -80px;
+            opacity: 1;
+            transform: rotate(15deg);
+        }
+
+        .vinyl-card:hover .album-cover {
+            transform: translateX(-15px) rotate(-2deg);
+            box-shadow: 12px 12px 0 var(--black);
+        }
+
+        /* Card Info - Same as index.html */
+        .card-info {
+            padding: 1rem 0.5rem 0 0.5rem;
+            font-weight: 900;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .card-artist {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #666;
+        }
+
+        .card-meta {
+            font-size: 0.75rem;
+            margin-top: 0.3rem;
+            font-weight: 600;
+        }
+
+        /* Loading and Error States */
+        .loading {
+            text-align: center;
+            padding: 6rem;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--black);
+        }
+
+        .error {
+            text-align: center;
+            padding: 6rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--red);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 1rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+
+            .filter-value {
+                font-size: 2rem;
+            }
+
+            .main-container {
+                padding: 2rem 1rem;
+            }
+
+            .records-grid {
+                gap: 1.5rem;
+                justify-content: center;
+                padding: 0 1.5rem;
+            }
+
+            .vinyl-card {
+                min-width: 250px;
+                width: 250px;
+                height: 320px;
+            }
+
+            .vinyl-disc {
+                width: 230px;
+                height: 230px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .vinyl-card {
+                width: 100%;
+                max-width: 300px;
+                min-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="filter-info">
+                <div class="filter-type" id="filterType">Loading...</div>
+                <div class="filter-value" id="filterValue">...</div>
+                <div class="filter-count" id="filterCount">...</div>
+            </div>
+            <a href="index.html" class="close-modal-btn">✕</a>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div id="content">
+            <div class="loading">Loading records...</div>
+        </div>
+    </main>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const filterType = urlParams.get('type');
+        const filterValue = urlParams.get('value');
+
+        if (!filterType || !filterValue) {
+            document.getElementById('content').innerHTML = `<div class="error">Missing filter parameters. Type: ${filterType}, Value: ${filterValue}</div>`;
+        } else {
+            loadFilterData(filterType, filterValue);
+        }
+
+        async function loadFilterData(type, value) {
+            try {
+                // Update header
+                updateHeader(type, value);
+
+                // Load filter data
+                const filePath = `data/filters/${type}s.json`;
+                console.log('Loading filter data from:', filePath, 'for type:', type, 'value:', value);
+                const response = await fetch(filePath);
+
+                if (!response.ok) {
+                    throw new Error(`Filter data not found: ${response.status} ${response.statusText}`);
+                }
+
+                const filterData = await response.json();
+                console.log('Loaded filter data:', filterData);
+                const records = getRecordsForFilter(filterData, type, value);
+                console.log('Found records:', records.length);
+
+                if (records.length === 0) {
+                    document.getElementById('content').innerHTML = '<div class="error">No records found for this filter</div>';
+                    return;
+                }
+
+                renderRecords(records);
+                updateCount(records.length);
+
+            } catch (error) {
+                console.error('Error loading filter data:', error);
+                document.getElementById('content').innerHTML = `
+                    <div class="error">
+                        <p>Failed to load filter data</p>
+                        <p style="font-size: 1rem; margin-top: 1rem;">${error.message}</p>
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #666;">Type: ${type}, Value: ${value}</p>
+                    </div>
+                `;
+            }
+        }
+
+        function updateHeader(type, value) {
+            const typeElement = document.getElementById('filterType');
+            const valueElement = document.getElementById('filterValue');
+            
+            const typeLabels = {
+                'artist': 'Artist',
+                'genre': 'Genre',
+                'year': 'Year',
+                'label': 'Record Label'
+            };
+            
+            typeElement.textContent = typeLabels[type] || type;
+            valueElement.textContent = decodeURIComponent(value);
+            
+            document.title = `${decodeURIComponent(value)} - ${typeLabels[type] || type} - Vinyl Cabinet`;
+        }
+
+        function updateCount(count) {
+            const countElement = document.getElementById('filterCount');
+            countElement.textContent = `${count} record${count !== 1 ? 's' : ''} found`;
+        }
+
+        function getRecordsForFilter(filterData, type, value) {
+            const decodedValue = decodeURIComponent(value);
+            const allRecords = [];
+
+            switch(type) {
+                case 'artist':
+                    return getRecordsFromMultipleValues(filterData.artists, decodedValue);
+                case 'genre':
+                    return getRecordsFromMultipleValues(filterData.genres, decodedValue);
+                case 'year':
+                    return getRecordsFromYearFilter(filterData.years, decodedValue);
+                case 'label':
+                    return getRecordsFromMultipleValues(filterData.labels, decodedValue);
+                default:
+                    return [];
+            }
+        }
+
+        function getRecordsFromMultipleValues(filterObj, value) {
+            const allRecords = [];
+            const values = parseMultipleValues(value);
+            
+            values.forEach(val => {
+                const records = filterObj[val]?.records || [];
+                allRecords.push(...records);
+            });
+            
+            // Remove duplicates by record ID
+            const uniqueRecords = allRecords.filter((record, index, self) => 
+                index === self.findIndex(r => r.id === record.id)
+            );
+            
+            return uniqueRecords;
+        }
+
+        function getRecordsFromYearFilter(yearsObj, value) {
+            const allRecords = [];
+            const yearValues = parseYearValues(value);
+            
+            yearValues.forEach(year => {
+                const records = yearsObj[year]?.records || [];
+                allRecords.push(...records);
+            });
+            
+            // Remove duplicates by record ID
+            const uniqueRecords = allRecords.filter((record, index, self) => 
+                index === self.findIndex(r => r.id === record.id)
+            );
+            
+            return uniqueRecords;
+        }
+
+        function parseMultipleValues(value) {
+            // Handle comma-separated values: "Jazz,Experimental"
+            if (value.includes(',')) {
+                return value.split(',').map(v => v.trim()).filter(v => v);
+            }
+            return [value];
+        }
+
+        function parseYearValues(value) {
+            const years = [];
+            
+            // Handle comma-separated years: "1970,1971,1972"
+            if (value.includes(',')) {
+                return value.split(',').map(v => v.trim()).filter(v => v);
+            }
+            
+            // Handle decade ranges: "1970s" -> ["1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979"]
+            if (value.endsWith('s')) {
+                const decadeStart = parseInt(value.slice(0, -2));
+                if (!isNaN(decadeStart)) {
+                    for (let year = decadeStart; year < decadeStart + 10; year++) {
+                        years.push(year.toString());
+                    }
+                    return years;
+                }
+            }
+            
+            // Handle year ranges: "1970-1979"
+            if (value.includes('-')) {
+                const [start, end] = value.split('-').map(v => v.trim());
+                const startYear = parseInt(start);
+                const endYear = parseInt(end);
+                
+                if (!isNaN(startYear) && !isNaN(endYear)) {
+                    for (let year = startYear; year <= endYear; year++) {
+                        years.push(year.toString());
+                    }
+                    return years;
+                }
+            }
+            
+            // Single year
+            return [value];
+        }
+
+        function renderRecords(records) {
+            const content = document.getElementById('content');
+            
+            const recordsHTML = `
+                <div class="records-grid">
+                    ${records.map(record => {
+                        const artistsText = record.artists.join(', ');
+                        const genreText = record.genre ? record.genre[0] : '';
+                        
+                        return `
+                            <div class="vinyl-card" onclick="window.location.href='detail.html?id=${record.id}'">
+                                <div class="card-inner">
+                                    <div class="cover-wrapper">
+                                        <div class="album-cover" style="background-image: url('${record.imageUrl}'); background-size: cover; background-position: center;"></div>
+                                        <div class="vinyl-disc"></div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-title">${record.album}</div>
+                                        <div class="card-artist">${artistsText}</div>
+                                        <div class="card-meta">${record.year}${genreText ? ' • ' + genreText : ''}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
+            `;
+            
+            content.innerHTML = recordsHTML;
+        }
+    </script>
+</body>
+</html>

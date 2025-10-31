@@ -1,0 +1,16 @@
+{
+  "type": "genre",
+  "name": "Hard Rock",
+  "count": 1,
+  "records": [
+    {
+      "id": "003",
+      "album": "Led Zeppelin IV",
+      "artists": [
+        "Led Zeppelin"
+      ],
+      "year": 1971,
+      "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Led+Zeppelin"
+    }
+  ]
+}

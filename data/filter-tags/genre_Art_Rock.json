@@ -1,0 +1,26 @@
+{
+  "type": "genre",
+  "name": "Art Rock",
+  "count": 2,
+  "records": [
+    {
+      "id": "001",
+      "album": "The Dark Side of the Moon",
+      "artists": [
+        "Pink Floyd"
+      ],
+      "year": 1973,
+      "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Pink+Floyd"
+    },
+    {
+      "id": "009",
+      "album": "The Velvet Underground & Nico",
+      "artists": [
+        "The Velvet Underground",
+        "Nico"
+      ],
+      "year": 1967,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Velvet+Underground"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "year",
+  "name": "1979",
+  "count": 1,
+  "records": [
+    {
+      "id": "011",
+      "album": "Unknown Pleasures",
+      "artists": [
+        "Joy Division"
+      ],
+      "year": 1979,
+      "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=Joy+Division"
+    }
+  ]
+}

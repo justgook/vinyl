@@ -1,0 +1,16 @@
+{
+  "type": "genre",
+  "name": "Avant-Garde",
+  "count": 1,
+  "records": [
+    {
+      "id": "016",
+      "album": "Homogenic",
+      "artists": [
+        "Björk"
+      ],
+      "year": 1997,
+      "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Björk"
+    }
+  ]
+}

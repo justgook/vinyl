@@ -1,0 +1,16 @@
+{
+  "type": "genre",
+  "name": "Indie Rock",
+  "count": 1,
+  "records": [
+    {
+      "id": "017",
+      "album": "The Queen Is Dead",
+      "artists": [
+        "The Smiths"
+      ],
+      "year": 1986,
+      "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=The+Smiths"
+    }
+  ]
+}

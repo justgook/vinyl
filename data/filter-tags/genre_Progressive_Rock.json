@@ -1,0 +1,16 @@
+{
+  "type": "genre",
+  "name": "Progressive Rock",
+  "count": 1,
+  "records": [
+    {
+      "id": "001",
+      "album": "The Dark Side of the Moon",
+      "artists": [
+        "Pink Floyd"
+      ],
+      "year": 1973,
+      "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Pink+Floyd"
+    }
+  ]
+}

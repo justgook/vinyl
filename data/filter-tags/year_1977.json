@@ -1,0 +1,16 @@
+{
+  "type": "year",
+  "name": "1977",
+  "count": 1,
+  "records": [
+    {
+      "id": "005",
+      "album": "Rumours",
+      "artists": [
+        "Fleetwood Mac"
+      ],
+      "year": 1977,
+      "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Fleetwood+Mac"
+    }
+  ]
+}

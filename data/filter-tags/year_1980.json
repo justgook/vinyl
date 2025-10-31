@@ -1,0 +1,16 @@
+{
+  "type": "year",
+  "name": "1980",
+  "count": 1,
+  "records": [
+    {
+      "id": "010",
+      "album": "Remain in Light",
+      "artists": [
+        "Talking Heads"
+      ],
+      "year": 1980,
+      "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Talking+Heads"
+    }
+  ]
+}

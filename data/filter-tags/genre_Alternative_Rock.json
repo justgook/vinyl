@@ -1,0 +1,34 @@
+{
+  "type": "genre",
+  "name": "Alternative Rock",
+  "count": 3,
+  "records": [
+    {
+      "id": "013",
+      "album": "OK Computer",
+      "artists": [
+        "Radiohead"
+      ],
+      "year": 1997,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Radiohead"
+    },
+    {
+      "id": "018",
+      "album": "Daydream Nation",
+      "artists": [
+        "Sonic Youth"
+      ],
+      "year": 1988,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Sonic+Youth"
+    },
+    {
+      "id": "017",
+      "album": "The Queen Is Dead",
+      "artists": [
+        "The Smiths"
+      ],
+      "year": 1986,
+      "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=The+Smiths"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "genre",
+  "name": "Synth-Pop",
+  "count": 1,
+  "records": [
+    {
+      "id": "012",
+      "album": "Violator",
+      "artists": [
+        "Depeche Mode"
+      ],
+      "year": 1990,
+      "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Depeche+Mode"
+    }
+  ]
+}

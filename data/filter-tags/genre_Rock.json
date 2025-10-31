@@ -1,0 +1,35 @@
+{
+  "type": "genre",
+  "name": "Rock",
+  "count": 3,
+  "records": [
+    {
+      "id": "006",
+      "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+      "artists": [
+        "David Bowie"
+      ],
+      "year": 1972,
+      "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=David+Bowie"
+    },
+    {
+      "id": "002",
+      "album": "Abbey Road",
+      "artists": [
+        "The Beatles"
+      ],
+      "year": 1969,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=The+Beatles"
+    },
+    {
+      "id": "009",
+      "album": "The Velvet Underground & Nico",
+      "artists": [
+        "The Velvet Underground",
+        "Nico"
+      ],
+      "year": 1967,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Velvet+Underground"
+    }
+  ]
+}

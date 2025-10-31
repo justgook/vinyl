@@ -25,295 +25,505 @@
 
         body {
             font-family: 'Space Grotesk', 'Arial Black', sans-serif;
-            background: var(--white);
+            background: rgba(0, 0, 0, 0.95);
             color: var(--black);
+            overflow-x: hidden;
             min-height: 100vh;
-            padding: 2rem;
+            padding: 0;
+            margin: 0;
         }
 
-        .back-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: var(--yellow);
-            border: 5px solid var(--black);
-            font-weight: 900;
-            font-size: 1.1rem;
-            cursor: pointer;
-            box-shadow: 6px 6px 0 var(--black);
-            text-transform: uppercase;
-            text-decoration: none;
-            color: var(--black);
-            transition: all 0.2s ease;
-            margin-bottom: 2rem;
-        }
-
-        .back-button:hover {
-            transform: translate(-3px, -3px);
-            box-shadow: 9px 9px 0 var(--black);
-            background: var(--cyan);
-        }
-
-        .detail-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .record-header {
-            display: grid;
-            grid-template-columns: 400px 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .cover-section {
-            position: relative;
-        }
-
-        .vinyl-display {
-            width: 400px;
-            height: 400px;
-            position: relative;
-        }
-
-        .vinyl-record {
+        /* Detail Modal Container */
+        .detail-modal {
+            background: var(--white);
+            border: none;
             width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
-            border-radius: 50%;
+            height: 100vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: none;
+            margin: 0;
+        }
+
+        .close-modal-btn {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 60px;
+            height: 60px;
+            background: var(--red);
             border: 5px solid var(--black);
-            box-shadow: 8px 8px 0 var(--black);
+            cursor: pointer;
+            font-size: 2rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 5px 5px 0 var(--black);
+            transition: all 0.2s ease;
+            z-index: 10;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .close-modal-btn:hover {
+            transform: rotate(90deg) scale(1.1);
+            background: var(--pink);
+        }
+
+        /* Modal Header with Vinyl Animation */
+        .modal-header {
+            background: var(--purple);
+            border-bottom: 8px solid var(--black);
+            padding: 3rem;
             position: relative;
             overflow: hidden;
         }
 
-        .vinyl-grooves {
+        .modal-vinyl-display {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+        }
+
+        .modal-vinyl-container {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            flex-shrink: 0;
+            perspective: 1000px;
+            overflow: visible;
+        }
+
+        .modal-cover {
             position: absolute;
             width: 100%;
             height: 100%;
-            background: repeating-radial-gradient(
-                circle at center,
-                transparent 0px,
-                transparent 2px,
-                rgba(255, 255, 255, 0.03) 2px,
-                rgba(255, 255, 255, 0.03) 4px
-            );
+            border: 8px solid var(--black);
+            box-shadow: none;
+            z-index: 4;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+            animation: coverSlide 2s ease-in-out forwards;
+        }
+
+        .modal-cover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 12px 12px 0 var(--black);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .modal-vinyl {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #2a2a2a 0%, #000 40%, #1a1a1a 45%, #000 100%);
+            border: 8px solid var(--black);
+            box-shadow: -12px 12px 30px rgba(0, 0, 0, 0.6);
+            z-index: 3;
+            animation: vinylRollOut 2s ease-in-out forwards;
+            overflow: hidden;
+        }
+
+        .modal-vinyl-rotating {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            z-index: 2;
+            animation: spin 3s linear infinite;
+        }
+
+        .modal-vinyl-rotating::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: 
+                repeating-conic-gradient(
+                    from 0deg,
+                    rgba(255,255,255,0.08) 0deg,
+                    rgba(255,255,255,0.08) 2deg,
+                    rgba(0,0,0,0.3) 2deg,
+                    rgba(0,0,0,0.3) 4deg
+                ),
+                repeating-radial-gradient(
+                    circle at center,
+                    transparent 0%,
+                    transparent 8%,
+                    rgba(255,255,255,0.03) 8%,
+                    rgba(255,255,255,0.03) 10%
+                );
+        }
+
+        .modal-vinyl-center {
+            position: absolute;
+            width: 35%;
+            height: 35%;
+            top: 32.5%;
+            left: 32.5%;
+            background: radial-gradient(circle, #dc143c 0%, #8b0000 100%);
+            border-radius: 50%;
+            border: 5px solid var(--black);
+            overflow: hidden;
+        }
+
+        .modal-vinyl-center {
+            position: absolute;
+            width: 35%;
+            height: 35%;
+            top: 32.5%;
+            left: 32.5%;
+            background: radial-gradient(circle, #dc143c 0%, #8b0000 100%);
+            border-radius: 50%;
+            border: 5px solid var(--black);
+            overflow: hidden;
         }
 
         .vinyl-label {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 120px;
-            height: 120px;
-            background: var(--white);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
             border-radius: 50%;
-            border: 3px solid var(--black);
+            z-index: 3;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 1rem;
+            pointer-events: none;
         }
 
         .vinyl-label-text {
-            font-size: 0.7rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.45rem;
             font-weight: 900;
+            text-transform: uppercase;
+            color: var(--white);
             text-align: center;
             line-height: 1.2;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            letter-spacing: 0.3px;
+            max-width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
 
         .vinyl-label-text.large {
-            font-size: 1rem;
-            margin-bottom: 0.3rem;
+            font-size: 0.55rem;
+            margin-bottom: 0.2rem;
+            letter-spacing: 0.5px;
         }
 
-        .album-cover-overlay {
+        .vinyl-label-text.small {
+            font-size: 0.4rem;
+            opacity: 0.9;
+            margin-top: 0.15rem;
+        }
+
+        .vinyl-label-divider {
+            width: 60%;
+            height: 1px;
+            background: var(--white);
+            margin: 0.25rem 0;
+            opacity: 0.6;
+        }
+
+        .modal-vinyl-shine {
             position: absolute;
-            top: 10%;
-            right: -10%;
-            width: 320px;
-            height: 320px;
-            border: 5px solid var(--black);
-            box-shadow: 8px 8px 0 var(--black);
-            background-size: cover;
-            background-position: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .modal-vinyl-shine::before {
+            content: '';
+            position: absolute;
+            width: 250%;
+            height: 250%;
+            top: -75%;
+            left: -125%;
+            background: linear-gradient(
+                to right,
+                transparent 0%,
+                transparent 35%,
+                rgba(255, 255, 255, 0.15) 40%,
+                rgba(255, 255, 255, 0.6) 45%,
+                rgba(255, 255, 255, 0.9) 50%,
+                rgba(255, 255, 255, 0.6) 55%,
+                rgba(255, 255, 255, 0.15) 60%,
+                transparent 65%,
+                transparent 100%
+            );
+            animation: retroSwoosh 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.2s forwards;
+            transform: translateX(-100%) rotate(-15deg);
+            opacity: 0;
+        }
+
+        @keyframes retroSwoosh {
+            0% {
+                transform: translateX(-100%) rotate(-15deg);
+                opacity: 0;
+            }
+            15% {
+                opacity: 1;
+            }
+            85% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100%) rotate(-15deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes coverSlide {
+            0% {
+                transform: translateX(0) rotate(0deg);
+            }
+            50% {
+                transform: translateX(-80%) rotate(-10deg);
+            }
+            100% {
+                transform: translateX(-40%) rotate(-5deg);
+            }
+        }
+
+        @keyframes vinylRollOut {
+            0% {
+                transform: translateX(0);
+                opacity: 0;
+            }
+            50% {
+                transform: translateX(60%);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(30%);
+                opacity: 1;
+            }
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .modal-info {
+            flex: 1;
+            color: var(--white);
+            position: relative;
             z-index: 10;
         }
 
-        .info-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .album-title {
+        .modal-title {
             font-size: 3rem;
             font-weight: 900;
             text-transform: uppercase;
-            letter-spacing: -2px;
             margin-bottom: 1rem;
-            line-height: 1;
+            line-height: 0.9;
+            letter-spacing: -2px;
+            position: relative;
+            z-index: 11;
         }
 
-        .artist-name {
-            font-size: 2rem;
+        .modal-artist {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
             font-weight: 700;
-            color: var(--pink);
-            margin-bottom: 2rem;
+            position: relative;
+            z-index: 11;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.8rem;
         }
 
-        .meta-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .meta-box {
-            padding: 1.5rem;
-            background: var(--yellow);
-            border: 5px solid var(--black);
-            box-shadow: 6px 6px 0 var(--black);
-        }
-
-        .meta-box:nth-child(2) { background: var(--cyan); }
-        .meta-box:nth-child(3) { background: var(--green); }
-        .meta-box:nth-child(4) { background: var(--orange); }
-
-        .meta-label {
-            font-size: 0.8rem;
-            font-weight: 700;
+        .artist-label {
+            font-size: 1rem;
             text-transform: uppercase;
-            margin-bottom: 0.5rem;
-            opacity: 0.7;
-        }
-
-        .meta-value {
-            font-size: 1.3rem;
+            opacity: 0.8;
             font-weight: 900;
         }
 
-        .tracklist-section {
-            margin-top: 3rem;
-        }
-
-        .tracklist-header {
-            font-size: 2rem;
+        .artist-link {
+            padding: 0.6rem 1.2rem;
+            background: var(--white);
+            border: 3px solid var(--black);
             font-weight: 900;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-            background: var(--pink);
-            border: 5px solid var(--black);
-            padding: 1rem 2rem;
-            box-shadow: 6px 6px 0 var(--black);
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 3px 3px 0 var(--black);
+            transition: all 0.2s ease;
+            color: var(--black);
+            text-decoration: none;
             display: inline-block;
+        }
+
+        .artist-link:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 var(--black);
+            background: var(--green);
+        }
+
+        .modal-tags {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 11;
+        }
+
+        .tag-btn {
+            padding: 0.8rem 1.5rem;
+            background: var(--cyan);
+            border: 4px solid var(--black);
+            font-weight: 900;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 4px 4px 0 var(--black);
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+            color: var(--black);
+            position: relative;
+            z-index: 12;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .tag-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 var(--black);
+            background: var(--yellow);
+        }
+
+        .genre-tag {
+            background: var(--pink);
+        }
+
+        .genre-tag:hover {
+            background: var(--orange);
+        }
+
+        .modal-body {
+            padding: 3rem;
         }
 
         .sides-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 2rem;
+            margin-bottom: 2rem;
         }
 
-        .side-box {
-            background: var(--white);
-            border: 5px solid var(--black);
-            box-shadow: 6px 6px 0 var(--black);
-            padding: 2rem;
+        .tracklist-section {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 900px) {
+            .sides-container {
+                grid-template-columns: 1fr;
+            }
         }
 
         .side-title {
+            background: var(--yellow);
+            border: 5px solid var(--black);
+            padding: 1.2rem 1.5rem;
             font-size: 1.5rem;
             font-weight: 900;
-            text-transform: uppercase;
             margin-bottom: 1.5rem;
-            background: var(--yellow);
-            border: 4px solid var(--black);
-            padding: 0.8rem 1.5rem;
-            display: inline-block;
-            box-shadow: 4px 4px 0 var(--black);
+            text-transform: uppercase;
+            box-shadow: 6px 6px 0 var(--black);
         }
 
-        .side-box:nth-child(even) .side-title {
-            background: var(--purple);
-            color: var(--white);
+        .track-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
         }
 
         .track {
-            display: grid;
-            grid-template-columns: 40px 1fr auto;
-            gap: 1rem;
-            padding: 1rem;
-            border-bottom: 3px solid var(--black);
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-        }
-
-        .track:last-child {
-            border-bottom: none;
+            padding: 1rem 1.5rem;
+            border: 4px solid var(--black);
+            background: var(--white);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
         .track:hover {
-            background: var(--cyan);
+            background: var(--green);
+            transform: translateX(10px);
+            box-shadow: 6px 6px 0 var(--black);
         }
 
         .track-num {
             font-weight: 900;
-            font-size: 1.1rem;
-            font-family: 'Courier New', monospace;
+            font-size: 1.2rem;
+            min-width: 40px;
         }
 
         .track-name {
+            flex: 1;
             font-weight: 700;
-            font-size: 1rem;
-        }
-
-        .track-artists {
-            font-size: 0.85rem;
-            color: var(--purple);
-            font-weight: 600;
-            margin-top: 0.3rem;
+            font-size: 1.1rem;
         }
 
         .track-time {
-            font-weight: 900;
             font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
+            font-weight: 900;
+            font-size: 1rem;
         }
 
-        @media (max-width: 900px) {
-            .record-header {
-                grid-template-columns: 1fr;
-                gap: 2rem;
+        
+
+        @media (max-width: 768px) {
+            .modal-header {
+                padding: 2rem 1rem;
             }
 
-            .vinyl-display {
-                width: 100%;
-                max-width: 400px;
-                height: auto;
-                aspect-ratio: 1;
-                margin: 0 auto;
+            .modal-vinyl-display {
+                flex-direction: column;
             }
 
-            .album-cover-overlay {
-                position: static;
-                width: 100%;
-                max-width: 320px;
-                height: auto;
-                aspect-ratio: 1;
-                margin: 2rem auto 0;
+            .modal-vinyl-container {
+                width: 250px;
+                height: 250px;
             }
 
-            .album-title {
+            .modal-title {
                 font-size: 2rem;
             }
 
-            .artist-name {
-                font-size: 1.5rem;
+            .modal-artist {
+                font-size: 1rem;
             }
 
-            .meta-grid {
-                grid-template-columns: 1fr;
+            .artist-link {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .tag-btn, .genre-tag {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
             }
 
             .sides-container {
@@ -326,6 +536,7 @@
             padding: 4rem;
             font-size: 2rem;
             font-weight: 900;
+            color: var(--white);
         }
 
         .error {
@@ -338,18 +549,19 @@
     </style>
 </head>
 <body>
-    <div class="detail-container">
-        <a href="index.html" class="back-button">← Back to Collection</a>
-        
+    <div class="detail-modal">
+        <a href="index.html" class="close-modal-btn">✕</a>
         <div id="content">
             <div class="loading">Loading...</div>
         </div>
     </div>
 
+    
+
     <script>
-        // Get record ID from URL
         const urlParams = new URLSearchParams(window.location.search);
         const recordId = urlParams.get('id');
+        let currentRecord = null;
 
         if (!recordId) {
             document.getElementById('content').innerHTML = '<div class="error">No record ID provided</div>';
@@ -366,9 +578,9 @@
                 }
 
                 const record = await response.json();
+                currentRecord = record;
                 renderRecord(record);
                 
-                // Update page title
                 document.title = `${record.album} - ${record.artists.join(', ')} - Vinyl Cabinet`;
             } catch (error) {
                 console.error('Error loading record:', error);
@@ -383,52 +595,72 @@
 
         function renderRecord(record) {
             const artistsText = record.artists.join(', ');
-            const genreText = record.genre ? record.genre.join(', ') : '';
+            
+            // Generate artist links HTML
+            const artistsHTML = record.artists.map(artist => 
+                `<a href="filter.html?type=artist&value=${encodeURIComponent(artist)}" class="artist-link">${artist}</a>`
+            ).join('');
+            
+            // Generate genre tags HTML
+            const genreTagsHTML = record.genre ? record.genre.map(genre => 
+                `<a href="filter.html?type=genre&value=${encodeURIComponent(genre)}" class="tag-btn genre-tag">${genre}</a>`
+            ).join('') : '';
 
             const html = `
-                <div class="record-header">
-                    <div class="cover-section">
-                        <div class="vinyl-display">
-                            <div class="vinyl-record">
-                                <div class="vinyl-grooves"></div>
-                                <div class="vinyl-label">
-                                    <div class="vinyl-label-text large">${record.recordLabel}</div>
-                                    <div class="vinyl-label-text">${record.catalogNumber}</div>
+                <div class="modal-header">
+                    <div class="modal-vinyl-display">
+                        <div class="modal-vinyl-container">
+                            <div class="modal-vinyl">
+                                <div class="modal-vinyl-shine"></div>
+                                <div class="modal-vinyl-rotating">
+                                    <div class="modal-vinyl-center">
+                                        <div class="vinyl-label">
+                                            <div class="vinyl-label-text large">${record.recordLabel}</div>
+                                            <div class="vinyl-label-divider"></div>
+                                            <div class="vinyl-label-text">${artistsText}</div>
+                                            <div class="vinyl-label-divider"></div>
+                                            <div class="vinyl-label-text small">${record.catalogNumber}</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="modal-cover" style="background-image: url('${record.imageUrl}'); background-size: cover; background-position: center;"></div>
                         </div>
-                        <div class="album-cover-overlay" style="background-image: url('${record.imageUrl}');"></div>
-                    </div>
-
-                    <div class="info-section">
-                        <h1 class="album-title">${record.album}</h1>
-                        <div class="artist-name">${artistsText}</div>
-
-                        <div class="meta-grid">
-                            <div class="meta-box">
-                                <div class="meta-label">Year</div>
-                                <div class="meta-value">${record.year}</div>
+                        <div class="modal-info">
+                            <h2 class="modal-title">${record.album}</h2>
+                            <div class="modal-artist">
+                                <span class="artist-label">by</span>
+                                ${artistsHTML}
                             </div>
-                            <div class="meta-box">
-                                <div class="meta-label">Label</div>
-                                <div class="meta-value">${record.recordLabel}</div>
-                            </div>
-                            <div class="meta-box">
-                                <div class="meta-label">Genre</div>
-                                <div class="meta-value">${genreText}</div>
-                            </div>
-                            <div class="meta-box">
-                                <div class="meta-label">Condition</div>
-                                <div class="meta-value">${record.condition}</div>
+                            <div class="modal-tags">
+                                <a href="filter.html?type=year&value=${encodeURIComponent(record.year)}" class="tag-btn">
+                                    📅 ${record.year}
+                                </a>
+                                <a href="filter.html?type=label&value=${encodeURIComponent(record.recordLabel)}" class="tag-btn">
+                                    🏷️ ${record.recordLabel}
+                                </a>
+                                ${genreTagsHTML}
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="tracklist-section">
-                    <h2 class="tracklist-header">Tracklist</h2>
+                <div class="modal-body">
                     <div class="sides-container">
-                        ${record.sides.map((side, sideIndex) => renderSide(side, sideIndex, record.artists)).join('')}
+                        ${record.sides.map((side, index) => `
+                            <div class="tracklist-section">
+                                <div class="side-title">${index === 0 ? '◀' : '▶'} ${side.name}</div>
+                                <div class="track-list">
+                                    ${side.tracks.map((track, trackIndex) => `
+                                        <div class="track">
+                                            <span class="track-num">${String.fromCharCode(65 + index)}${trackIndex + 1}</span>
+                                            <span class="track-name">${track.title}</span>
+                                            <span class="track-time">${track.duration}</span>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        `).join('')}
                     </div>
                 </div>
             `;
@@ -436,35 +668,7 @@
             document.getElementById('content').innerHTML = html;
         }
 
-        function renderSide(side, sideIndex, albumArtists) {
-            return `
-                <div class="side-box">
-                    <h3 class="side-title">${side.name}</h3>
-                    ${side.tracks.map((track, trackIndex) => renderTrack(track, trackIndex, sideIndex, albumArtists)).join('')}
-                </div>
-            `;
-        }
-
-        function renderTrack(track, trackIndex, sideIndex, albumArtists) {
-            // Show per-track artists only if different from album artists
-            const hasCustomArtists = track.artists && track.artists.length > 0;
-            const artistsHtml = hasCustomArtists 
-                ? `<div class="track-artists">feat. ${track.artists.join(', ')}</div>`
-                : '';
-
-            const trackNumber = String.fromCharCode(65 + sideIndex) + (trackIndex + 1);
-
-            return `
-                <div class="track">
-                    <span class="track-num">${trackNumber}</span>
-                    <div class="track-info">
-                        <span class="track-name">${track.title}</span>
-                        ${artistsHtml}
-                    </div>
-                    <span class="track-time">${track.duration}</span>
-                </div>
-            `;
-        }
+        
     </script>
 </body>
 </html>

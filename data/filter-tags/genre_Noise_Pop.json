@@ -1,0 +1,16 @@
+{
+  "type": "genre",
+  "name": "Noise Pop",
+  "count": 1,
+  "records": [
+    {
+      "id": "019",
+      "album": "Loveless",
+      "artists": [
+        "My Bloody Valentine"
+      ],
+      "year": 1991,
+      "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=My+Bloody+Valentine"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "label",
+  "name": "Columbia",
+  "count": 1,
+  "records": [
+    {
+      "id": "004",
+      "album": "Kind of Blue",
+      "artists": [
+        "Miles Davis"
+      ],
+      "year": 1959,
+      "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Miles+Davis"
+    }
+  ]
+}

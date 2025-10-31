@@ -1,0 +1,16 @@
+{
+  "type": "artist",
+  "name": "Sonic Youth",
+  "count": 1,
+  "records": [
+    {
+      "id": "018",
+      "album": "Daydream Nation",
+      "artists": [
+        "Sonic Youth"
+      ],
+      "year": 1988,
+      "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Sonic+Youth"
+    }
+  ]
+}
