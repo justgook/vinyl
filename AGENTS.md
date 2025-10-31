@@ -4,9 +4,34 @@
 Vinyl Cabinet is a static HTML/CSS/JavaScript project featuring a Netflix-style neobrutalism design for browsing vinyl records.
 
 ## Build & Test Commands
-- **No build system**: This is a static website (HTML/CSS/JS)
-- **Local development**: Open `index.html` directly in a browser or use `python3 -m http.server 8000` and visit `http://localhost:8000`
-- **No linting/tests**: Currently no automated testing or linting setup
+
+### Development Server
+```bash
+npm start                  # Start local dev server on http://localhost:8000
+```
+
+### Testing (Playwright E2E)
+```bash
+npm test                   # Run all e2e tests (headless, all browsers)
+npm run test:headed        # Run tests with visible browser
+npm run test:debug         # Debug tests with Playwright Inspector
+npm run test:ui            # Run tests with Playwright UI mode
+npm run test:report        # View HTML test report
+```
+
+### Linting (ESLint)
+```bash
+npm run lint               # Check JavaScript for style/errors
+npm run lint:fix           # Auto-fix linting issues
+```
+
+### Other Commands
+```bash
+npm run generate-filters   # Regenerate filter JSON files from records data
+```
+
+### Manual Testing
+You can also open `index.html` directly in a browser, but using `npm start` is recommended for proper CORS handling and JSON file loading.
 
 ## Code Style Guidelines
 
@@ -39,9 +64,19 @@ Vinyl Cabinet is a static HTML/CSS/JavaScript project featuring a Netflix-style 
 - Provide graceful fallbacks (e.g., placeholder images if image fails to load)
 - Never silently fail; always inform user of issues
 
+### Testing Best Practices
+- **Run tests after implementing features**: Use `npm test` to validate your changes
+- **Write tests for new features**: Add test cases to appropriate spec files in `tests/`
+- **Use headed mode for debugging**: `npm run test:headed` shows what's happening
+- **Test across browsers**: Playwright runs tests on Chromium, Firefox, and WebKit
+- **Check mobile responsiveness**: Tests include mobile viewport scenarios
+- **Review test reports**: Use `npm run test:report` to see detailed results with screenshots
+
 ### General Best Practices
 - Keep the mockups folder separate from main code
-- Test changes in multiple browsers before committing
+- **Run linting before committing**: Use `npm run lint:fix` to clean up code
+- **Run tests before committing**: Ensure `npm test` passes
+- Test changes in multiple browsers (automated via Playwright)
 - Make git commits frequently for logical units of work
 - Commit messages: Use gitmoji-style with emoji prefix + descriptive message
   - Format: `{emoji} Brief description in present tense`
@@ -52,6 +87,7 @@ Vinyl Cabinet is a static HTML/CSS/JavaScript project featuring a Netflix-style 
     - `📝 Add setup instructions for local development`
     - `♻️ Refactor filter generation script`
     - `🔧 Update DecapCMS configuration`
+    - `✅ Add e2e tests for filter functionality`
   - Common emojis:
     - ✨ New feature
     - 🐛 Bug fix
@@ -62,3 +98,29 @@ Vinyl Cabinet is a static HTML/CSS/JavaScript project featuring a Netflix-style 
     - 🚀 Performance
     - ✅ Tests
     - 🎨 Code structure/format
+
+## AI Agent Testing Guidelines
+
+When implementing features as an AI coding agent, follow this workflow:
+
+1. **Implement the feature** - Write/modify code as requested
+2. **Run the tests** - Execute `npm test` to validate functionality
+3. **Check test results** - Review output for failures or errors
+4. **Fix issues** - If tests fail, debug and fix the implementation
+5. **Verify success** - Ensure all tests pass before completing the task
+6. **Report results** - Inform the user of test outcomes
+
+### When Tests Fail
+- Use `npm run test:headed` to see what's happening visually
+- Use `npm run test:debug` to step through tests interactively
+- Check `playwright-report/` for screenshots of failures
+- Review test expectations vs actual implementation
+- Fix code and re-run tests until they pass
+
+### Writing New Tests
+When adding new features, create corresponding tests:
+- Homepage features → `tests/homepage.spec.js`
+- Detail page features → `tests/detail-page.spec.js`
+- Filter features → `tests/filter.spec.js`
+- Follow existing test structure and naming conventions
+- Include tests for happy paths, edge cases, and mobile views

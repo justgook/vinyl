@@ -1,0 +1,38 @@
+{
+  "name": "vinyl-cabinet",
+  "version": "1.0.0",
+  "description": "Netflix-style neobrutalism vinyl record collection browser",
+  "type": "module",
+  "scripts": {
+    "start": "http-server -p 8000 -c-1",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "lint": "eslint *.js tests/**/*.js",
+    "lint:fix": "eslint *.js tests/**/*.js --fix",
+    "generate-filters": "node generate-filters.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justgook/vinyl.git"
+  },
+  "keywords": [
+    "vinyl",
+    "records",
+    "collection",
+    "neobrutalism"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justgook/vinyl/issues"
+  },
+  "homepage": "https://github.com/justgook/vinyl#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "eslint": "^9.39.0",
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vinyl Cabinet - Content Manager</title>
-  
-  <!-- DecapCMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  
+
   <style>
     /* Custom styling for CMS interface */
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
     }
-    
+
     /* Neobrutalism theme for CMS */
     :root {
       --nc-primary: #FF10F0;
@@ -25,18 +23,20 @@
     }
   </style>
 </head>
+
 <body>
   <!-- DecapCMS app will mount here -->
-  
+
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
     // Custom preview styles (optional)
     CMS.registerPreviewStyle('/style.css');
-    
+
     // Custom preview template for records (optional future enhancement)
     // This will show a preview of how the record will look on the site
-    CMS.registerPreviewTemplate('records', ({ entry, widgetFor, widgetsFor }) => {
+    CMS.registerPreviewTemplate('records', ({entry, widgetFor, widgetsFor}) => {
       const data = entry.get('data').toJS();
-      
+
       return `
         <div style="padding: 20px; font-family: sans-serif;">
           <h1>${data.album}</h1>
@@ -50,8 +50,9 @@
         </div>
       `;
     });
-    
+
     console.log('DecapCMS initialized for Vinyl Cabinet');
   </script>
 </body>
+
 </html>
