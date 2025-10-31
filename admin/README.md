@@ -129,15 +129,53 @@ Standard vinyl condition grading:
 
 ## Workflow Tips
 
-### Adding a New Record
+### Adding a New Record with Discogs Widget (RECOMMENDED)
+
+The custom Discogs widget auto-fills all record data from Discogs:
+
+1. **First time setup**:
+   - Get a Discogs API token from https://www.discogs.com/settings/developers
+   - Click "Generate new token" and copy it
+
+2. **Import a record**:
+   - Click "New Vinyl Records"
+   - Find the "🔍 Import from Discogs" field at the top
+   - Enter your API token when prompted (stored in localStorage)
+   - Search by catalog number (e.g., `SHVL804`) OR album/artist name
+   - Select the correct release from search results
+   - **All fields auto-populate!** ✨
+
+3. **Manual adjustments**:
+   - Assign a unique 3-digit Record ID
+   - Verify/adjust Condition (defaults to "Near Mint")
+   - Review tracklist for accuracy
+   - Save!
+
+### Adding a New Record Manually
+
+If you prefer manual entry or can't find a record on Discogs:
 
 1. Click "New Vinyl Records"
-2. Enter basic info: ID, catalog number, artist, album, year
-3. Upload cover image
-4. Add genres and label
-5. Select condition
-6. Add tracklist for each side
-7. Save!
+2. Skip the Discogs widget field
+3. Enter basic info: ID, catalog number, artist, album, year
+4. Upload cover image
+5. Add genres and label
+6. Select condition
+7. Add tracklist for each side
+8. Save!
+
+### What the Discogs Widget Auto-Fills
+
+- ✅ Catalog Number
+- ✅ Record Label
+- ✅ Artists (array)
+- ✅ Album Title
+- ✅ Release Year
+- ✅ Genres (array)
+- ✅ Format
+- ✅ Album Cover Image URL
+- ✅ Complete Tracklist (sides + tracks with durations)
+- ✅ Discogs Release ID (for reference)
 
 ### Bulk Operations
 
@@ -177,13 +215,34 @@ For adding many records at once:
 - Check that `local_backend: true` is in config.yml
 - Try restarting both the server and web server
 
+### Discogs widget issues
+
+**"Invalid API token" error:**
+- Verify your token at https://www.discogs.com/settings/developers
+- Use a Personal Access Token (not OAuth)
+- Clear token in widget and re-enter it
+
+**"No releases found" error:**
+- Try different search terms
+- For catalog numbers, try with/without spaces and hyphens
+- Switch between catalog number and album/artist search
+
+**Widget not loading:**
+- Check browser console for JavaScript errors
+- Ensure accessing via http://localhost:8000 (not file://)
+- Verify discogs-widget.js is loaded after decap-cms.js
+
+**Rate limiting:**
+- Discogs free tier: 60 requests/minute
+- Wait 1 minute if you hit the limit
+
 ---
 
 ## Next Steps
 
 1. ✅ Test local CMS interface
-2. ⏳ Setup GitHub authentication (optional, for production)
-3. ⏳ Create custom Discogs widget (Phase 2.2)
+2. ✅ Custom Discogs widget implemented (Phase 2.2)
+3. ⏳ Setup GitHub authentication (optional, for production)
 4. ⏳ Import existing records from CSV (Phase 3)
 
 ---

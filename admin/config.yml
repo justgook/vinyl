@@ -48,6 +48,13 @@ collections:
     
     # Fields for each record
     fields:
+      # Discogs Import Widget - Use this to auto-fill all fields
+      - label: "🔍 Import from Discogs"
+        name: "discogsImport"
+        widget: "discogs"
+        hint: "Search Discogs by catalog number or album name to auto-fill all fields below"
+        required: false
+        
       - label: "Record ID"
         name: "id"
         widget: "string"

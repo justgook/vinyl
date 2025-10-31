@@ -126,6 +126,44 @@ vinyl-cabinet/
 
 Records are stored as individual JSON files in `data/records/`. See `data/SCHEMA.md` for details.
 
+## Content Management (DecapCMS)
+
+### Using the Discogs Widget
+
+The project includes a custom Discogs widget for easily adding new vinyl records:
+
+1. **Get a Discogs API Token**
+   - Visit https://www.discogs.com/settings/developers
+   - Generate a new personal access token
+   - Copy the token
+
+2. **Access the CMS**
+   - Navigate to `/admin/index.html` in your browser
+   - (Future: Set up authentication for production use)
+
+3. **Add a New Record**
+   - Click "New Record" in the CMS
+   - In the "🔍 Import from Discogs" field:
+     - Paste your API token when prompted (saved to localStorage)
+     - Search by catalog number (e.g., `SHVL804`) or album name
+     - Click on the matching release
+   - All fields will auto-populate with Discogs data
+   - Review and adjust as needed (especially condition, which defaults to "Near Mint")
+   - Assign a unique 3-digit ID
+   - Save the record
+
+4. **Widget Features**
+   - ✅ Search by catalog number or album/artist name
+   - ✅ Auto-fill: artists, album, year, genres, label, format
+   - ✅ Auto-populate tracklist with sides and durations
+   - ✅ Fetch album cover image URL
+   - ✅ Save Discogs release ID for reference
+   - ✅ Token stored locally for convenience
+
+### Manual Entry
+
+You can also create records manually by filling in all fields in the CMS interface.
+
 ## Code Style
 
 - **HTML**: Semantic HTML5, kebab-case classes

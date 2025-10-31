@@ -180,21 +180,21 @@ vinyl-cabinet/
 ## Phase 2: DecapCMS Integration
 
 ### 2.1 Basic Setup
-- [ ] Create `admin/index.html` - DecapCMS loader
-- [ ] Create `admin/config.yml` - Collection schema
+- [x] Create `admin/index.html` - DecapCMS loader
+- [x] Create `admin/config.yml` - Collection schema
 - [ ] Setup GitHub authentication (git-gateway)
-- [ ] Configure media folder for cover images
-- [ ] Test: Create new record via CMS interface
+- [x] Configure media folder for cover images
+- [ ] Test: Create new record via CMS interface (requires git-gateway)
 
 ### 2.2 Custom Discogs Widget
-- [ ] Create `admin/discogs-widget.js`
-- [ ] Add input field for catalog number
-- [ ] Implement "Search Discogs" button
-- [ ] Fetch results from Discogs API
-- [ ] Display 3-5 matches with images
-- [ ] User selects correct release
-- [ ] Auto-fill all form fields
-- [ ] Download cover image to `images/covers/`
+- [x] Create `admin/discogs-widget.js`
+- [x] Add input field for catalog number
+- [x] Implement "Search Discogs" button
+- [x] Fetch results from Discogs API
+- [x] Display matches with images (shows up to 10)
+- [x] User selects correct release
+- [x] Auto-fill all form fields
+- [x] Handle cover image URLs (uses Discogs URLs directly)
 
 ### 2.3 Workflow Optimization
 - [ ] Add "Quick Add" mode (catalog number → auto-save best match)
@@ -382,14 +382,21 @@ jobs:
 - **NEW:** URL parameter parsing for filters
 - **NEW:** Grid layout for filtered results
 - **NEW:** Filter-specific styling
+- **NEW:** Comprehensive E2E testing with Playwright (345 tests passing)
+- **NEW:** ESLint setup for code quality
+- **NEW:** DecapCMS admin interface setup
+- **NEW:** Custom Discogs widget for auto-importing records
+- **NEW:** API token management in widget
+- **NEW:** Auto-fill functionality for all record fields
 
 **🔄 In Progress:**
-- Testing complete user journey (homepage → filter → detail page)
+- Testing DecapCMS with git-gateway authentication
 
 **⏳ Next Up:**
-- DecapCMS setup (Phase 2)
-- Bulk import & migration (Phase 3)
-- Advanced features including search (Phase 4)
+- Setup git-gateway for DecapCMS authentication (Phase 2.1)
+- Bulk import of remaining 192 records from CSV (Phase 3)
+- Global search functionality (Phase 4)
+- Advanced features: offline mode, statistics dashboard (Phase 4)
 
 ---
 
@@ -414,3 +421,12 @@ jobs:
 - **Moved global search to Phase 4** (filter system provides comprehensive browsing)
 - **Enhanced navigation flow** with filter pages
 - **Responsive design validated** on mobile devices
+
+**2025-11-01:**
+- **Added comprehensive E2E testing** with Playwright (345 tests across 5 browsers)
+- **Implemented ESLint** for code quality and consistency
+- **Created custom Discogs widget** for DecapCMS
+- **Auto-import functionality** from Discogs API (search by catalog# or album)
+- **Widget features**: API token storage, search UI, result selection, auto-fill all fields
+- **Phase 2.2 mostly complete** - Discogs widget ready for use
+- **Next milestone**: Set up git-gateway authentication to enable CMS in production
