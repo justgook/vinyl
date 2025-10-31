@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Details - Vinyl Cabinet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #000000;
+            --white: #FFFFFF;
+            --pink: #FF10F0;
+            --yellow: #FFEB3B;
+            --cyan: #00E5FF;
+            --green: #76FF03;
+            --orange: #FF6B35;
+            --purple: #9C27B0;
+            --red: #FF1744;
+        }
+
+        body {
+            font-family: 'Space Grotesk', 'Arial Black', sans-serif;
+            background: var(--white);
+            color: var(--black);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--yellow);
+            border: 5px solid var(--black);
+            font-weight: 900;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 6px 6px 0 var(--black);
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--black);
+            transition: all 0.2s ease;
+            margin-bottom: 2rem;
+        }
+
+        .back-button:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0 var(--black);
+            background: var(--cyan);
+        }
+
+        .detail-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .record-header {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .cover-section {
+            position: relative;
+        }
+
+        .vinyl-display {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .vinyl-record {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            border-radius: 50%;
+            border: 5px solid var(--black);
+            box-shadow: 8px 8px 0 var(--black);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vinyl-grooves {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-radial-gradient(
+                circle at center,
+                transparent 0px,
+                transparent 2px,
+                rgba(255, 255, 255, 0.03) 2px,
+                rgba(255, 255, 255, 0.03) 4px
+            );
+        }
+
+        .vinyl-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            background: var(--white);
+            border-radius: 50%;
+            border: 3px solid var(--black);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .vinyl-label-text {
+            font-size: 0.7rem;
+            font-weight: 900;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .vinyl-label-text.large {
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .album-cover-overlay {
+            position: absolute;
+            top: 10%;
+            right: -10%;
+            width: 320px;
+            height: 320px;
+            border: 5px solid var(--black);
+            box-shadow: 8px 8px 0 var(--black);
+            background-size: cover;
+            background-position: center;
+            z-index: 10;
+        }
+
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .album-title {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .artist-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--pink);
+            margin-bottom: 2rem;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .meta-box {
+            padding: 1.5rem;
+            background: var(--yellow);
+            border: 5px solid var(--black);
+            box-shadow: 6px 6px 0 var(--black);
+        }
+
+        .meta-box:nth-child(2) { background: var(--cyan); }
+        .meta-box:nth-child(3) { background: var(--green); }
+        .meta-box:nth-child(4) { background: var(--orange); }
+
+        .meta-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            opacity: 0.7;
+        }
+
+        .meta-value {
+            font-size: 1.3rem;
+            font-weight: 900;
+        }
+
+        .tracklist-section {
+            margin-top: 3rem;
+        }
+
+        .tracklist-header {
+            font-size: 2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            background: var(--pink);
+            border: 5px solid var(--black);
+            padding: 1rem 2rem;
+            box-shadow: 6px 6px 0 var(--black);
+            display: inline-block;
+        }
+
+        .sides-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .side-box {
+            background: var(--white);
+            border: 5px solid var(--black);
+            box-shadow: 6px 6px 0 var(--black);
+            padding: 2rem;
+        }
+
+        .side-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            background: var(--yellow);
+            border: 4px solid var(--black);
+            padding: 0.8rem 1.5rem;
+            display: inline-block;
+            box-shadow: 4px 4px 0 var(--black);
+        }
+
+        .side-box:nth-child(even) .side-title {
+            background: var(--purple);
+            color: var(--white);
+        }
+
+        .track {
+            display: grid;
+            grid-template-columns: 40px 1fr auto;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 3px solid var(--black);
+            align-items: center;
+        }
+
+        .track:last-child {
+            border-bottom: none;
+        }
+
+        .track:hover {
+            background: var(--cyan);
+        }
+
+        .track-num {
+            font-weight: 900;
+            font-size: 1.1rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        .track-name {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .track-artists {
+            font-size: 0.85rem;
+            color: var(--purple);
+            font-weight: 600;
+            margin-top: 0.3rem;
+        }
+
+        .track-time {
+            font-weight: 900;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 900px) {
+            .record-header {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .vinyl-display {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                aspect-ratio: 1;
+                margin: 0 auto;
+            }
+
+            .album-cover-overlay {
+                position: static;
+                width: 100%;
+                max-width: 320px;
+                height: auto;
+                aspect-ratio: 1;
+                margin: 2rem auto 0;
+            }
+
+            .album-title {
+                font-size: 2rem;
+            }
+
+            .artist-name {
+                font-size: 1.5rem;
+            }
+
+            .meta-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sides-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 4rem;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        .error {
+            text-align: center;
+            padding: 4rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--red);
+        }
+    </style>
+</head>
+<body>
+    <div class="detail-container">
+        <a href="index.html" class="back-button">← Back to Collection</a>
+        
+        <div id="content">
+            <div class="loading">Loading...</div>
+        </div>
+    </div>
+
+    <script>
+        // Get record ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const recordId = urlParams.get('id');
+
+        if (!recordId) {
+            document.getElementById('content').innerHTML = '<div class="error">No record ID provided</div>';
+        } else {
+            loadRecord(recordId);
+        }
+
+        async function loadRecord(id) {
+            try {
+                const response = await fetch(`data/records/${id}.json`);
+                
+                if (!response.ok) {
+                    throw new Error('Record not found');
+                }
+
+                const record = await response.json();
+                renderRecord(record);
+                
+                // Update page title
+                document.title = `${record.album} - ${record.artists.join(', ')} - Vinyl Cabinet`;
+            } catch (error) {
+                console.error('Error loading record:', error);
+                document.getElementById('content').innerHTML = `
+                    <div class="error">
+                        <p>Failed to load record</p>
+                        <p style="font-size: 1rem; margin-top: 1rem;">${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        function renderRecord(record) {
+            const artistsText = record.artists.join(', ');
+            const genreText = record.genre ? record.genre.join(', ') : '';
+
+            const html = `
+                <div class="record-header">
+                    <div class="cover-section">
+                        <div class="vinyl-display">
+                            <div class="vinyl-record">
+                                <div class="vinyl-grooves"></div>
+                                <div class="vinyl-label">
+                                    <div class="vinyl-label-text large">${record.recordLabel}</div>
+                                    <div class="vinyl-label-text">${record.catalogNumber}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="album-cover-overlay" style="background-image: url('${record.imageUrl}');"></div>
+                    </div>
+
+                    <div class="info-section">
+                        <h1 class="album-title">${record.album}</h1>
+                        <div class="artist-name">${artistsText}</div>
+
+                        <div class="meta-grid">
+                            <div class="meta-box">
+                                <div class="meta-label">Year</div>
+                                <div class="meta-value">${record.year}</div>
+                            </div>
+                            <div class="meta-box">
+                                <div class="meta-label">Label</div>
+                                <div class="meta-value">${record.recordLabel}</div>
+                            </div>
+                            <div class="meta-box">
+                                <div class="meta-label">Genre</div>
+                                <div class="meta-value">${genreText}</div>
+                            </div>
+                            <div class="meta-box">
+                                <div class="meta-label">Condition</div>
+                                <div class="meta-value">${record.condition}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tracklist-section">
+                    <h2 class="tracklist-header">Tracklist</h2>
+                    <div class="sides-container">
+                        ${record.sides.map((side, sideIndex) => renderSide(side, sideIndex, record.artists)).join('')}
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('content').innerHTML = html;
+        }
+
+        function renderSide(side, sideIndex, albumArtists) {
+            return `
+                <div class="side-box">
+                    <h3 class="side-title">${side.name}</h3>
+                    ${side.tracks.map((track, trackIndex) => renderTrack(track, trackIndex, sideIndex, albumArtists)).join('')}
+                </div>
+            `;
+        }
+
+        function renderTrack(track, trackIndex, sideIndex, albumArtists) {
+            // Show per-track artists only if different from album artists
+            const hasCustomArtists = track.artists && track.artists.length > 0;
+            const artistsHtml = hasCustomArtists 
+                ? `<div class="track-artists">feat. ${track.artists.join(', ')}</div>`
+                : '';
+
+            const trackNumber = String.fromCharCode(65 + sideIndex) + (trackIndex + 1);
+
+            return `
+                <div class="track">
+                    <span class="track-num">${trackNumber}</span>
+                    <div class="track-info">
+                        <span class="track-name">${track.title}</span>
+                        ${artistsHtml}
+                    </div>
+                    <span class="track-time">${track.duration}</span>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

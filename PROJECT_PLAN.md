@@ -143,13 +143,16 @@ vinyl-cabinet/
 - [ ] Full results view (filter homepage or new page)
 
 ### 1.4 Detail Page
-- [ ] Create `detail.html` - Individual record view
-- [ ] Parse URL param `?id=001`
-- [ ] Load `data/records/001.json`
-- [ ] Display: cover, artists, album, year, label, condition
-- [ ] Render tracklist grouped by side
-- [ ] Show per-track artists only if different from album
-- [ ] Maintain neobrutalism design language
+- [x] Create `detail.html` - Individual record view
+- [x] Parse URL param `?id=001`
+- [x] Load `data/records/001.json`
+- [x] Display: cover, artists, album, year, label, condition
+- [x] Render tracklist grouped by side
+- [x] Show per-track artists only if different from album
+- [x] Maintain neobrutalism design language
+- [x] Vinyl record visual display with label
+- [x] Responsive design for mobile
+- [x] Back button to return to collection
 
 ---
 
@@ -337,14 +340,18 @@ jobs:
 - index.html now loads data dynamically from JSON
 - Homepage renders featured rows from data/records.json
 - Card click navigation to detail page
+- detail.html with full record view and tracklist
+- Vinyl record visual display
+- Per-track artist support (only shown if different from album)
+- Responsive design for both pages
 
 **🔄 In Progress:**
-- (Phase 1.4) Creating detail.html for individual record view
+- Testing the full user journey (homepage → detail page)
 
 **⏳ Next Up:**
-- Complete detail.html with full tracklist display
 - Implement global search functionality (Phase 1.3)
 - Implement "VIEW ALL" button functionality
+- Polish mobile responsiveness
 - DecapCMS setup (Phase 2)
 
 ---
