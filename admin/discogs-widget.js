@@ -1,12 +1,6 @@
 /**
- * DecapCMS Discogs Widget
- * Custom widget for searching Discogs API and auto-filling record metadata
- * 
- * Usage:
- * 1. Get a Discogs API token from https://www.discogs.com/settings/developers
- * 2. Enter your token in the widget settings
- * 3. Search by catalog number or album title
- * 4. Select the correct release to auto-fill all fields
+ * DecapCMS Complete Vinyl Record Widget
+ * All-in-one widget for searching Discogs and editing all record fields
  * 
  * @see https://www.discogs.com/developers
  */
@@ -16,31 +10,118 @@
 
   const DISCOGS_API_BASE = 'https://api.discogs.com';
   const USER_AGENT = 'VinylCabinet/1.0';
+  const CONDITIONS = ['Mint', 'Near Mint', 'Very Good Plus', 'Very Good', 'Good Plus', 'Good', 'Fair', 'Poor'];
 
   /**
-   * Discogs Search Widget Control Component
+   * Complete Vinyl Record Widget
    */
-  const DiscogsControl = window.createClass({
+  const VinylRecordControl = window.createClass({
     getInitialState() {
+      // Try to parse existing value
+      const existingValue = this.props.value;
+      let recordData = null;
+      
+      if (existingValue) {
+        try {
+          recordData = typeof existingValue === 'string' ? JSON.parse(existingValue) : existingValue;
+        } catch (e) {
+          console.error('Failed to parse existing value:', e);
+        }
+      }
+
       return {
+        // Search state
         searchTerm: '',
-        searchType: 'catno', // 'catno' or 'query'
+        searchType: 'catno',
         loading: false,
         results: [],
         error: null,
         apiToken: localStorage.getItem('discogs_api_token') || '',
         showTokenInput: !localStorage.getItem('discogs_api_token'),
-        importedData: null,
-        fillStatus: null, // 'success', 'error', 'filling', or null
-        copyStatus: null,
-        filledFieldsCount: 0,
+        
+        // Record data (editable)
+        record: recordData || {
+          id: '',
+          catalogNumber: '',
+          recordLabel: '',
+          artists: [],
+          album: '',
+          year: new Date().getFullYear(),
+          genre: [],
+          format: 'LP, Album',
+          condition: 'Near Mint',
+          imageUrl: '',
+          sides: [
+            { name: 'Side A', tracks: [] },
+            { name: 'Side B', tracks: [] },
+          ],
+          externalIds: {},
+        },
+        
+        // UI state
+        showSearch: !recordData, // Show search if no existing data
+        editMode: !!recordData, // Edit mode if we have data
       };
+    },
+
+    componentDidUpdate(prevProps, prevState) {
+      // Update parent when record changes
+      if (JSON.stringify(prevState.record) !== JSON.stringify(this.state.record)) {
+        // Pass the object directly to DecapCMS (not JSON string)
+        this.props.onChange(this.state.record);
+      }
+    },
+
+    /**
+     * Update a field in the record
+     */
+    updateField(field, value) {
+      this.setState({
+        record: {
+          ...this.state.record,
+          [field]: value,
+        },
+      });
+    },
+
+    /**
+     * Update an array field (add/remove items)
+     */
+    updateArrayField(field, index, value) {
+      const newArray = [...this.state.record[field]];
+      if (value === null) {
+        // Remove item
+        newArray.splice(index, 1);
+      } else if (index === -1) {
+        // Add new item
+        newArray.push(value);
+      } else {
+        // Update existing item
+        newArray[index] = value;
+      }
+      this.updateField(field, newArray);
+    },
+
+    /**
+     * Update track in a side
+     */
+    updateTrack(sideIndex, trackIndex, field, value) {
+      const newSides = JSON.parse(JSON.stringify(this.state.record.sides));
+      if (trackIndex === -1) {
+        // Add new track
+        newSides[sideIndex].tracks.push({ title: '', duration: '0:00' });
+      } else if (value === null) {
+        // Remove track
+        newSides[sideIndex].tracks.splice(trackIndex, 1);
+      } else {
+        // Update track field
+        newSides[sideIndex].tracks[trackIndex][field] = value;
+      }
+      this.updateField('sides', newSides);
     },
 
     /**
      * Search Discogs API
-     * @param {string} term - Search term (catalog number or album title)
-     * @param {string} type - Search type ('catno' or 'query')
      */
     async searchDiscogs(term, type) {
       if (!this.state.apiToken) {
@@ -69,9 +150,7 @@
         }
 
         const response = await fetch(`${DISCOGS_API_BASE}/database/search?${params}`, {
-          headers: {
-            'User-Agent': USER_AGENT,
-          },
+          headers: { 'User-Agent': USER_AGENT },
         });
 
         if (!response.ok) {
@@ -102,10 +181,9 @@
     },
 
     /**
-     * Fetch detailed release information
-     * @param {string} resourceUrl - Discogs API resource URL
+     * Fetch detailed release and import data
      */
-    async fetchReleaseDetails(resourceUrl) {
+    async importRelease(resourceUrl) {
       this.setState({ loading: true, error: null });
 
       try {
@@ -113,9 +191,7 @@
         url.searchParams.append('token', this.state.apiToken);
 
         const response = await fetch(url.toString(), {
-          headers: {
-            'User-Agent': USER_AGENT,
-          },
+          headers: { 'User-Agent': USER_AGENT },
         });
 
         if (!response.ok) {
@@ -123,8 +199,32 @@
         }
 
         const release = await response.json();
-        this.autoFillFields(release);
-        this.setState({ loading: false, results: [] });
+        
+        // Map Discogs data to our schema
+        const importedRecord = {
+          id: this.state.record.id || '', // Keep existing ID
+          catalogNumber: release.labels?.[0]?.catno || '',
+          recordLabel: release.labels?.[0]?.name || '',
+          artists: release.artists?.map(a => a.name.replace(/\s\(\d+\)$/, '')) || [],
+          album: release.title || '',
+          year: release.year || new Date().getFullYear(),
+          genre: release.genres || [],
+          format: this.formatFormat(release.formats),
+          condition: this.state.record.condition || 'Near Mint', // Keep existing or default
+          imageUrl: release.images?.[0]?.uri || release.thumb || '',
+          sides: this.parseSides(release.tracklist),
+          externalIds: {
+            discogs: release.uri?.replace('https://api.discogs.com/', '') || `release/${release.id}`,
+          },
+        };
+
+        this.setState({
+          record: importedRecord,
+          loading: false,
+          results: [],
+          showSearch: false,
+          editMode: true,
+        });
       } catch (error) {
         console.error('Discogs API Error:', error);
         this.setState({ 
@@ -135,144 +235,7 @@
     },
 
     /**
-     * Auto-fill CMS form fields from Discogs release data
-     * @param {object} release - Discogs release object
-     */
-    autoFillFields(release) {
-      const { onChange } = this.props;
-
-      // Map Discogs data to our schema
-      const recordData = {
-        catalogNumber: release.labels?.[0]?.catno || '',
-        recordLabel: release.labels?.[0]?.name || '',
-        artists: release.artists?.map(a => a.name.replace(/\s\(\d+\)$/, '')) || [],
-        album: release.title || '',
-        year: release.year || new Date().getFullYear(),
-        genre: release.genres || [],
-        format: this.formatFormat(release.formats),
-        imageUrl: release.images?.[0]?.uri || release.thumb || '',
-        sides: this.parseSides(release.tracklist),
-        externalIds: {
-          discogs: release.uri?.replace('https://api.discogs.com/', '') || `release/${release.id}`,
-        },
-      };
-
-      // Store the data in widget value and state
-      this.setState({ 
-        importedData: recordData,
-        loading: false,
-        results: [],
-        fillStatus: null,
-      });
-
-      // Store in widget value so it appears in the form
-      onChange(JSON.stringify(recordData, null, 2));
-    },
-
-    /**
-     * Manually trigger form fill
-     */
-    handleAutoFill() {
-      if (!this.state.importedData) return;
-
-      this.setState({ fillStatus: 'filling' });
-      
-      try {
-        this.fillFormFields(this.state.importedData);
-      } catch (error) {
-        console.error('Error filling form fields:', error);
-        this.setState({ fillStatus: 'error' });
-      }
-    },
-
-    /**
-     * Copy JSON to clipboard
-     */
-    async handleCopyJSON() {
-      if (!this.state.importedData) return;
-
-      try {
-        await navigator.clipboard.writeText(JSON.stringify(this.state.importedData, null, 2));
-        this.setState({ copyStatus: 'success' });
-        setTimeout(() => this.setState({ copyStatus: null }), 3000);
-      } catch (error) {
-        console.error('Copy failed:', error);
-        this.setState({ copyStatus: 'error' });
-      }
-    },
-
-    /**
-     * Try to fill form fields using DOM manipulation
-     * @param {object} data - Record data to fill
-     */
-    fillFormFields(data) {
-      // Enhanced DOM manipulation with better selectors
-      // Wait a bit for React to render
-      setTimeout(() => {
-        const setTextFieldValue = (label, value) => {
-          // Find all labels and inputs
-          const labels = Array.from(document.querySelectorAll('label'));
-          const targetLabel = labels.find(l => l.textContent.trim().includes(label));
-          
-          if (targetLabel) {
-            // Try to find associated input
-            const fieldId = targetLabel.getAttribute('for');
-            let field = fieldId ? document.getElementById(fieldId) : null;
-            
-            // If not found by ID, try finding next input/textarea
-            if (!field) {
-              const container = targetLabel.closest('div[class*="ControlContainer"]') || 
-                              targetLabel.closest('div[class*="Widget"]') ||
-                              targetLabel.parentElement;
-              field = container?.querySelector('input, textarea');
-            }
-            
-            if (field && (field.type === 'text' || field.type === 'number' || field.tagName === 'TEXTAREA')) {
-              field.value = value;
-              field.focus();
-              field.blur();
-              
-              // Trigger multiple events to ensure React picks it up
-              const events = ['input', 'change', 'blur'];
-              events.forEach(eventType => {
-                field.dispatchEvent(new Event(eventType, { bubbles: true }));
-                field.dispatchEvent(new InputEvent(eventType, { bubbles: true, data: value }));
-              });
-              
-              return true;
-            }
-          }
-          return false;
-        };
-
-        // Fill simple text fields
-        const filled = {
-          catalogNumber: setTextFieldValue('Catalog Number', data.catalogNumber),
-          recordLabel: setTextFieldValue('Record Label', data.recordLabel),
-          album: setTextFieldValue('Album Title', data.album),
-          year: setTextFieldValue('Release Year', String(data.year)),
-          format: setTextFieldValue('Format', data.format),
-        };
-
-        console.warn('Auto-fill results:', filled);
-        
-        // Show which fields were filled
-        const filledCount = Object.values(filled).filter(Boolean).length;
-        if (filledCount > 0) {
-          this.setState({ 
-            fillStatus: 'success',
-            filledFieldsCount: filledCount,
-          });
-        } else {
-          this.setState({ fillStatus: 'error' });
-        }
-      }, 300);
-    },
-
-    /**
      * Format the format string
-     * @param {array} formats - Discogs formats array
-     * @returns {string}
      */
     formatFormat(formats) {
       if (!formats || formats.length === 0) return 'LP, Album';
@@ -286,19 +249,19 @@
 
     /**
      * Parse tracklist into sides
-     * @param {array} tracklist - Discogs tracklist array
-     * @returns {array}
      */
     parseSides(tracklist) {
       if (!tracklist || tracklist.length === 0) {
-        return [{ name: 'Side A', tracks: [] }, { name: 'Side B', tracks: [] }];
+        return [
+          { name: 'Side A', tracks: [] },
+          { name: 'Side B', tracks: [] },
+        ];
       }
 
       const sides = [];
       let currentSide = null;
 
       tracklist.forEach(track => {
-        // Check if this is a side heading
         if (track.type_ === 'heading' || /^[A-Z]\d*$/.test(track.position)) {
           if (currentSide && currentSide.tracks.length > 0) {
             sides.push(currentSide);
@@ -314,9 +277,6 @@
           currentSide.tracks.push({
             title: track.title,
             duration: track.duration || '0:00',
-            ...(track.artists && track.artists.length > 0 && {
-              artists: track.artists.map(a => a.name.replace(/\s\(\d+\)$/, '')),
-            }),
           });
         }
       });
@@ -325,14 +285,10 @@
         sides.push(currentSide);
       }
 
-      // If we couldn't parse sides properly, try to split evenly
       if (sides.length === 0) {
         const tracks = tracklist
           .filter(t => t.type_ === 'track')
-          .map(t => ({
-            title: t.title,
-            duration: t.duration || '0:00',
-          }));
+          .map(t => ({ title: t.title, duration: t.duration || '0:00' }));
         
         const midpoint = Math.ceil(tracks.length / 2);
         return [
@@ -345,7 +301,7 @@
     },
 
     /**
-     * Save API token
+     * Save/update API token
      */
     saveToken() {
       if (this.state.apiToken.trim()) {
@@ -363,11 +319,10 @@
     },
 
     /**
-     * Handle search form submit
+     * Toggle between search and edit views
      */
-    handleSearch(e) {
-      e.preventDefault();
-      this.searchDiscogs(this.state.searchTerm, this.state.searchType);
+    toggleView() {
+      this.setState({ showSearch: !this.state.showSearch });
     },
 
     /**
@@ -375,331 +330,477 @@
      */
     render() {
       const { forID, classNameWrapper } = this.props;
-      const { loading, results, error, showTokenInput, apiToken } = this.state;
+      // eslint-disable-next-line no-unused-vars
+      const { loading, results, error, showTokenInput, apiToken, showSearch, record } = this.state;
+
+      const styles = {
+        container: {
+          border: '3px solid #000',
+          padding: '20px',
+          backgroundColor: '#fff',
+          marginBottom: '20px',
+        },
+        header: {
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginBottom: '20px',
+          paddingBottom: '15px',
+          borderBottom: '3px solid #000',
+        },
+        button: {
+          padding: '10px 20px',
+          fontSize: '14px',
+          fontWeight: 'bold',
+          backgroundColor: '#000',
+          color: '#FFFF00',
+          border: '3px solid #000',
+          cursor: 'pointer',
+          marginRight: '8px',
+        },
+        buttonSecondary: {
+          padding: '8px 16px',
+          fontSize: '13px',
+          backgroundColor: '#FF10F0',
+          color: '#FFF',
+          border: '3px solid #000',
+          cursor: 'pointer',
+        },
+        input: {
+          width: '100%',
+          padding: '10px',
+          fontSize: '14px',
+          border: '3px solid #000',
+          marginTop: '5px',
+        },
+        label: {
+          fontWeight: 'bold',
+          marginBottom: '5px',
+          display: 'block',
+        },
+        fieldGroup: {
+          marginBottom: '20px',
+        },
+        arrayItem: {
+          display: 'flex',
+          gap: '8px',
+          marginBottom: '8px',
+          alignItems: 'center',
+        },
+        removeButton: {
+          padding: '5px 10px',
+          backgroundColor: '#dc3545',
+          color: '#fff',
+          border: '2px solid #000',
+          cursor: 'pointer',
+          fontSize: '12px',
+        },
+        addButton: {
+          padding: '8px 16px',
+          backgroundColor: '#28a745',
+          color: '#fff',
+          border: '3px solid #000',
+          cursor: 'pointer',
+          fontSize: '13px',
+          fontWeight: 'bold',
+        },
+        section: {
+          backgroundColor: '#f8f9fa',
+          padding: '15px',
+          marginBottom: '15px',
+          border: '2px solid #000',
+        },
+      };
 
       return window.h(
         'div',
-        { className: `${classNameWrapper} discogs-widget` },
+        { className: `${classNameWrapper} vinyl-record-widget`, id: forID },
         [
-          // API Token Section
-          window.h('div', { className: 'discogs-token-section', key: 'token' }, [
-            showTokenInput
-              ? window.h('div', { className: 'discogs-token-input' }, [
-                window.h('label', {}, 'Discogs API Token:'),
-                window.h('input', {
-                  type: 'password',
-                  value: apiToken,
-                  onChange: e => this.setState({ apiToken: e.target.value }),
-                  placeholder: 'Enter your Discogs API token',
-                  style: { width: '100%', padding: '8px', marginTop: '4px' },
-                }),
-                window.h('div', { style: { marginTop: '8px' } }, [
-                  window.h('button', {
-                    type: 'button',
-                    onClick: () => this.saveToken(),
-                    style: { marginRight: '8px' },
-                  }, 'Save Token'),
-                  window.h('a', {
-                    href: 'https://www.discogs.com/settings/developers',
-                    target: '_blank',
-                    rel: 'noopener noreferrer',
-                  }, 'Get API Token'),
-                ]),
-              ])
-              : window.h('div', { style: { marginBottom: '12px' } }, [
-                window.h('span', { style: { color: '#28a745' } }, '✓ API Token configured'),
-                window.h('button', {
-                  type: 'button',
-                  onClick: () => this.clearToken(),
-                  style: { marginLeft: '12px', fontSize: '12px' },
-                }, 'Clear Token'),
-              ]),
-          ]),
-
-          // Search Form
-          window.h('form', { onSubmit: e => this.handleSearch(e), key: 'search' }, [
-            window.h('div', { className: 'discogs-search-type' }, [
-              window.h('label', {}, [
-                window.h('input', {
-                  type: 'radio',
-                  name: 'searchType',
-                  value: 'catno',
-                  checked: this.state.searchType === 'catno',
-                  onChange: () => this.setState({ searchType: 'catno' }),
-                }),
-                ' Catalog Number',
-              ]),
-              window.h('label', { style: { marginLeft: '16px' } }, [
-                window.h('input', {
-                  type: 'radio',
-                  name: 'searchType',
-                  value: 'query',
-                  checked: this.state.searchType === 'query',
-                  onChange: () => this.setState({ searchType: 'query' }),
-                }),
-                ' Album/Artist',
-              ]),
-            ]),
-            window.h('div', { className: 'discogs-search-input', style: { marginTop: '12px' } }, [
-              window.h('input', {
-                id: forID,
-                type: 'text',
-                value: this.state.searchTerm,
-                onChange: e => this.setState({ searchTerm: e.target.value }),
-                placeholder: this.state.searchType === 'catno' 
-                  ? 'Enter catalog number (e.g., SHVL804)' 
-                  : 'Enter album or artist name',
-                style: { width: '70%', padding: '8px' },
-              }),
-              window.h('button', {
-                type: 'submit',
-                disabled: loading,
-                style: { marginLeft: '8px', padding: '8px 16px' },
-              }, loading ? 'Searching...' : '🔍 Search Discogs'),
-            ]),
-          ]),
-
-          // Error Message
-          error && window.h('div', { 
-            className: 'discogs-error',
-            style: { 
-              color: '#d9534f', 
-              padding: '12px', 
-              marginTop: '12px',
-              backgroundColor: '#f8d7da',
-              border: '1px solid #f5c6cb',
-              borderRadius: '4px',
-            },
-            key: 'error',
-          }, error),
-
-          // Loading Indicator
-          loading && window.h('div', { 
-            className: 'discogs-loading',
-            style: { padding: '12px', marginTop: '12px', textAlign: 'center' },
-            key: 'loading',
-          }, 'Searching Discogs...'),
-
-          // Results
-          results.length > 0 && window.h('div', { 
-            className: 'discogs-results',
-            style: { marginTop: '16px' },
-            key: 'results',
-          }, [
-            window.h('h4', {}, `Found ${results.length} release(s):`),
-            ...results.map((result) =>
-              window.h('div', {
-                key: result.id,
-                className: 'discogs-result-item',
-                style: {
-                  display: 'flex',
-                  padding: '12px',
-                  marginBottom: '8px',
-                  border: '2px solid #000',
-                  backgroundColor: '#fff',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s',
-                },
-                onClick: () => this.fetchReleaseDetails(result.resource_url),
-                onMouseEnter: e => {
-                  e.currentTarget.style.backgroundColor = '#FFFF00';
-                  e.currentTarget.style.transform = 'translateX(4px)';
-                },
-                onMouseLeave: e => {
-                  e.currentTarget.style.backgroundColor = '#fff';
-                  e.currentTarget.style.transform = 'translateX(0)';
-                },
-              }, [
-                result.thumb && window.h('img', {
-                  src: result.thumb,
-                  alt: result.title,
-                  style: { 
-                    width: '80px', 
-                    height: '80px', 
-                    objectFit: 'cover',
-                    marginRight: '16px',
-                    border: '2px solid #000',
-                  },
-                }),
-                window.h('div', { style: { flex: 1 } }, [
-                  window.h('div', { 
-                    style: { fontWeight: 'bold', marginBottom: '4px' } 
-                  }, result.title),
-                  window.h('div', { 
-                    style: { fontSize: '14px', color: '#666' } 
-                  }, [
-                    result.year && `${result.year} · `,
-                    result.label?.join(', '),
-                    result.catno && ` · ${result.catno}`,
-                  ].filter(Boolean).join('')),
-                  result.format && window.h('div', { 
-                    style: { fontSize: '12px', color: '#999', marginTop: '4px' } 
-                  }, result.format.join(', ')),
-                ]),
-              ])
+          // Header with toggle
+          window.h('div', { style: styles.header, key: 'header' }, [
+            window.h('h3', { style: { margin: 0 } }, 
+              showSearch ? '🔍 Search Discogs' : '✏️ Edit Record'
             ),
+            window.h('button', {
+              type: 'button',
+              onClick: () => this.toggleView(),
+              style: styles.buttonSecondary,
+            }, showSearch ? 'Show Editor' : 'Search Discogs'),
           ]),
 
-          // Imported Data Display
-          this.state.importedData && window.h('div', { 
-            className: 'discogs-imported-data',
-            style: { 
-              marginTop: '16px', 
-              padding: '16px', 
-              backgroundColor: '#d4edda',
-              border: '3px solid #000',
-              borderRadius: '0',
-              fontSize: '13px',
-            },
-            key: 'imported',
-          }, [
-            window.h('h4', { style: { marginTop: 0, marginBottom: '12px' } }, '✅ Imported Data - Copy to Form Fields Below'),
-            window.h('div', { style: { marginBottom: '8px' } }, [
-              window.h('strong', {}, 'Album: '),
-              this.state.importedData.album,
-            ]),
-            window.h('div', { style: { marginBottom: '8px' } }, [
-              window.h('strong', {}, 'Artists: '),
-              this.state.importedData.artists.join(', '),
-            ]),
-            window.h('div', { style: { marginBottom: '8px' } }, [
-              window.h('strong', {}, 'Year: '),
-              this.state.importedData.year,
-            ]),
-            window.h('div', { style: { marginBottom: '8px' } }, [
-              window.h('strong', {}, 'Label: '),
-              this.state.importedData.recordLabel,
-            ]),
-            window.h('div', { style: { marginBottom: '8px' } }, [
-              window.h('strong', {}, 'Catalog #: '),
-              this.state.importedData.catalogNumber,
-            ]),
-            window.h('div', { style: { marginBottom: '8px' } }, [
-              window.h('strong', {}, 'Genres: '),
-              this.state.importedData.genre.join(', '),
-            ]),
-            window.h('div', { style: { marginBottom: '8px' } }, [
-              window.h('strong', {}, 'Format: '),
-              this.state.importedData.format,
-            ]),
-            window.h('div', { style: { marginBottom: '12px' } }, [
-              window.h('strong', {}, 'Cover URL: '),
-              window.h('a', { 
-                href: this.state.importedData.imageUrl,
-                target: '_blank',
-                rel: 'noopener noreferrer',
-              }, 'View Image'),
-            ]),
-            
-            // Auto-fill button and status
-            window.h('div', { 
-              style: { 
-                marginTop: '16px', 
-                paddingTop: '16px', 
-                borderTop: '2px solid #c3e6cb',
-              } 
-            }, [
-              window.h('button', {
-                type: 'button',
-                onClick: () => this.handleAutoFill(),
-                style: {
-                  padding: '12px 24px',
-                  fontSize: '16px',
-                  fontWeight: 'bold',
-                  backgroundColor: '#000',
-                  color: '#FFFF00',
-                  border: '3px solid #000',
-                  cursor: 'pointer',
-                  marginRight: '12px',
-                  transition: 'all 0.2s',
-                },
-                onMouseEnter: (e) => {
-                  e.target.style.backgroundColor = '#FFFF00';
-                  e.target.style.color = '#000';
-                  e.target.style.transform = 'translateY(-2px)';
-                },
-                onMouseLeave: (e) => {
-                  e.target.style.backgroundColor = '#000';
-                  e.target.style.color = '#FFFF00';
-                  e.target.style.transform = 'translateY(0)';
-                },
-              }, '⚡ Auto-Fill Form Fields'),
-              
-              window.h('button', {
-                type: 'button',
-                onClick: () => this.handleCopyJSON(),
-                style: {
-                  padding: '12px 24px',
-                  fontSize: '16px',
-                  fontWeight: 'bold',
-                  backgroundColor: '#FF10F0',
-                  color: '#FFF',
-                  border: '3px solid #000',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s',
-                },
-                onMouseEnter: (e) => {
-                  e.target.style.backgroundColor = '#00D9FF';
-                  e.target.style.transform = 'translateY(-2px)';
-                },
-                onMouseLeave: (e) => {
-                  e.target.style.backgroundColor = '#FF10F0';
-                  e.target.style.transform = 'translateY(0)';
-                },
-              }, '📋 Copy Full JSON'),
-              
-              // Status messages
-              window.h('div', { style: { marginTop: '12px' } }, [
-                this.state.fillStatus === 'filling' && window.h('span', { 
-                  style: { color: '#856404', fontWeight: 'bold' } 
-                }, '⏳ Attempting to fill fields...'),
-                
-                this.state.fillStatus === 'success' && window.h('span', { 
-                  style: { color: '#155724', fontWeight: 'bold' } 
-                }, `✓ Filled ${this.state.filledFieldsCount} text fields! Now manually add: artists, genres, tracks, and image.`),
-                
-                this.state.fillStatus === 'error' && window.h('span', { 
-                  style: { color: '#721c24', fontWeight: 'bold' } 
-                }, '⚠ Auto-fill didn\'t work. Use the data above or click "Copy Full JSON".'),
-                
-                this.state.copyStatus === 'success' && window.h('span', { 
-                  style: { color: '#155724', fontWeight: 'bold' } 
-                }, '✓ JSON copied to clipboard!'),
-                
-                this.state.copyStatus === 'error' && window.h('span', { 
-                  style: { color: '#721c24', fontWeight: 'bold' } 
-                }, '⚠ Copy failed. Please select and copy the JSON manually.'),
-              ]),
-            ]),
-            
-            window.h('details', { style: { marginTop: '12px' } }, [
-              window.h('summary', { style: { cursor: 'pointer', fontWeight: 'bold' } }, 'View Full JSON (for advanced users)'),
-              window.h('pre', { 
-                style: { 
-                  marginTop: '8px', 
-                  maxHeight: '300px', 
-                  overflow: 'auto',
-                  fontSize: '11px',
-                  padding: '8px',
-                  backgroundColor: '#fff',
-                  border: '1px solid #ccc',
-                } 
-              }, JSON.stringify(this.state.importedData, null, 2)),
-            ]),
-          ]),
+          // Search View
+          showSearch && this.renderSearchView(styles),
+
+          // Edit View
+          !showSearch && this.renderEditView(styles),
         ]
       );
+    },
+
+    /**
+     * Render search view
+     */
+    renderSearchView(styles) {
+      const { loading, results, error, showTokenInput, apiToken } = this.state;
+
+      return window.h('div', { key: 'search-view' }, [
+        // API Token Section
+        window.h('div', { style: styles.fieldGroup }, [
+          showTokenInput
+            ? window.h('div', {}, [
+              window.h('label', { style: styles.label }, 'Discogs API Token:'),
+              window.h('input', {
+                type: 'password',
+                value: apiToken,
+                onChange: e => this.setState({ apiToken: e.target.value }),
+                placeholder: 'Enter your Discogs API token',
+                style: styles.input,
+              }),
+              window.h('div', { style: { marginTop: '10px' } }, [
+                window.h('button', {
+                  type: 'button',
+                  onClick: () => this.saveToken(),
+                  style: styles.button,
+                }, 'Save Token'),
+                window.h('a', {
+                  href: 'https://www.discogs.com/settings/developers',
+                  target: '_blank',
+                  rel: 'noopener noreferrer',
+                  style: { marginLeft: '12px' },
+                }, 'Get API Token'),
+              ]),
+            ])
+            : window.h('div', {}, [
+              window.h('span', { style: { color: '#28a745', fontWeight: 'bold' } }, '✓ API Token configured'),
+              window.h('button', {
+                type: 'button',
+                onClick: () => this.clearToken(),
+                style: { ...styles.buttonSecondary, marginLeft: '12px' },
+              }, 'Clear Token'),
+            ]),
+        ]),
+
+        // Search Form
+        window.h('div', { style: styles.fieldGroup }, [
+          window.h('div', { style: { marginBottom: '10px' } }, [
+            window.h('label', {}, [
+              window.h('input', {
+                type: 'radio',
+                name: 'searchType',
+                value: 'catno',
+                checked: this.state.searchType === 'catno',
+                onChange: () => this.setState({ searchType: 'catno' }),
+              }),
+              ' Catalog Number',
+            ]),
+            window.h('label', { style: { marginLeft: '20px' } }, [
+              window.h('input', {
+                type: 'radio',
+                name: 'searchType',
+                value: 'query',
+                checked: this.state.searchType === 'query',
+                onChange: () => this.setState({ searchType: 'query' }),
+              }),
+              ' Album/Artist',
+            ]),
+          ]),
+          window.h('input', {
+            type: 'text',
+            value: this.state.searchTerm,
+            onChange: e => this.setState({ searchTerm: e.target.value }),
+            placeholder: this.state.searchType === 'catno' 
+              ? 'Enter catalog number' 
+              : 'Enter album or artist name',
+            style: styles.input,
+            onKeyPress: (e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                this.searchDiscogs(this.state.searchTerm, this.state.searchType);
+              }
+            },
+          }),
+          window.h('button', {
+            type: 'button',
+            disabled: loading,
+            onClick: () => this.searchDiscogs(this.state.searchTerm, this.state.searchType),
+            style: { ...styles.button, marginTop: '10px' },
+          }, loading ? 'Searching...' : '🔍 Search'),
+        ]),
+
+        // Error Message
+        error && window.h('div', { 
+          style: { 
+            color: '#d9534f', 
+            padding: '12px', 
+            marginBottom: '12px',
+            backgroundColor: '#f8d7da',
+            border: '2px solid #000',
+          },
+        }, error),
+
+        // Loading
+        loading && window.h('div', { 
+          style: { textAlign: 'center', padding: '20px' } 
+        }, 'Searching Discogs...'),
+
+        // Results
+        results.length > 0 && window.h('div', { style: styles.section }, [
+          window.h('h4', {}, `Found ${results.length} release(s) - Click to import:`),
+          ...results.map((result) =>
+            window.h('div', {
+              key: result.id,
+              style: {
+                display: 'flex',
+                padding: '12px',
+                marginBottom: '10px',
+                border: '3px solid #000',
+                backgroundColor: '#fff',
+                cursor: 'pointer',
+              },
+              onClick: () => this.importRelease(result.resource_url),
+            }, [
+              result.thumb && window.h('img', {
+                src: result.thumb,
+                alt: result.title,
+                style: { 
+                  width: '80px', 
+                  height: '80px', 
+                  objectFit: 'cover',
+                  marginRight: '15px',
+                  border: '2px solid #000',
+                },
+              }),
+              window.h('div', {}, [
+                window.h('div', { style: { fontWeight: 'bold', marginBottom: '5px' } }, result.title),
+                window.h('div', { style: { fontSize: '13px', color: '#666' } }, [
+                  result.year && `${result.year} · `,
+                  result.label?.join(', '),
+                  result.catno && ` · ${result.catno}`,
+                ].filter(Boolean).join('')),
+              ]),
+            ])
+          ),
+        ]),
+      ]);
+    },
+
+    /**
+     * Render edit view
+     */
+    renderEditView(styles) {
+      const { record } = this.state;
+
+      return window.h('div', { key: 'edit-view' }, [
+        // ID and Condition (Required manual fields)
+        window.h('div', { style: { ...styles.section, backgroundColor: '#fff3cd' } }, [
+          window.h('h4', { style: { marginTop: 0 } }, '📝 Required Fields'),
+          window.h('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' } }, [
+            window.h('div', {}, [
+              window.h('label', { style: styles.label }, 'Record ID *'),
+              window.h('input', {
+                type: 'text',
+                value: record.id,
+                onChange: e => this.updateField('id', e.target.value),
+                placeholder: '001, 002, 021...',
+                style: styles.input,
+                pattern: '\\d{3}',
+              }),
+              window.h('small', {}, 'Unique 3-digit ID'),
+            ]),
+            window.h('div', {}, [
+              window.h('label', { style: styles.label }, 'Condition *'),
+              window.h('select', {
+                value: record.condition,
+                onChange: e => this.updateField('condition', e.target.value),
+                style: styles.input,
+              }, CONDITIONS.map(cond => 
+                window.h('option', { key: cond, value: cond }, cond)
+              )),
+            ]),
+          ]),
+        ]),
+
+        // Basic Info
+        window.h('div', { style: styles.section }, [
+          window.h('h4', { style: { marginTop: 0 } }, '📀 Basic Information'),
+          window.h('div', { style: styles.fieldGroup }, [
+            window.h('label', { style: styles.label }, 'Album Title'),
+            window.h('input', {
+              type: 'text',
+              value: record.album,
+              onChange: e => this.updateField('album', e.target.value),
+              style: styles.input,
+            }),
+          ]),
+          window.h('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' } }, [
+            window.h('div', {}, [
+              window.h('label', { style: styles.label }, 'Catalog Number'),
+              window.h('input', {
+                type: 'text',
+                value: record.catalogNumber,
+                onChange: e => this.updateField('catalogNumber', e.target.value),
+                style: styles.input,
+              }),
+            ]),
+            window.h('div', {}, [
+              window.h('label', { style: styles.label }, 'Record Label'),
+              window.h('input', {
+                type: 'text',
+                value: record.recordLabel,
+                onChange: e => this.updateField('recordLabel', e.target.value),
+                style: styles.input,
+              }),
+            ]),
+          ]),
+          window.h('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '15px' } }, [
+            window.h('div', {}, [
+              window.h('label', { style: styles.label }, 'Year'),
+              window.h('input', {
+                type: 'number',
+                value: record.year,
+                onChange: e => this.updateField('year', parseInt(e.target.value) || ''),
+                style: styles.input,
+              }),
+            ]),
+            window.h('div', {}, [
+              window.h('label', { style: styles.label }, 'Format'),
+              window.h('input', {
+                type: 'text',
+                value: record.format,
+                onChange: e => this.updateField('format', e.target.value),
+                style: styles.input,
+              }),
+            ]),
+          ]),
+          window.h('div', { style: { ...styles.fieldGroup, marginTop: '15px' } }, [
+            window.h('label', { style: styles.label }, 'Cover Image URL'),
+            window.h('input', {
+              type: 'text',
+              value: record.imageUrl,
+              onChange: e => this.updateField('imageUrl', e.target.value),
+              style: styles.input,
+            }),
+            record.imageUrl && window.h('img', {
+              src: record.imageUrl,
+              alt: 'Cover preview',
+              style: { 
+                maxWidth: '200px', 
+                marginTop: '10px', 
+                border: '3px solid #000',
+              },
+            }),
+          ]),
+        ]),
+
+        // Artists
+        window.h('div', { style: styles.section }, [
+          window.h('h4', { style: { marginTop: 0 } }, '🎤 Artists'),
+          ...record.artists.map((artist, i) =>
+            window.h('div', { key: i, style: styles.arrayItem }, [
+              window.h('input', {
+                type: 'text',
+                value: artist,
+                onChange: e => this.updateArrayField('artists', i, e.target.value),
+                style: { ...styles.input, marginTop: 0 },
+              }),
+              window.h('button', {
+                type: 'button',
+                onClick: () => this.updateArrayField('artists', i, null),
+                style: styles.removeButton,
+              }, '✕'),
+            ])
+          ),
+          window.h('button', {
+            type: 'button',
+            onClick: () => this.updateArrayField('artists', -1, ''),
+            style: styles.addButton,
+          }, '+ Add Artist'),
+        ]),
+
+        // Genres
+        window.h('div', { style: styles.section }, [
+          window.h('h4', { style: { marginTop: 0 } }, '🎵 Genres'),
+          ...record.genre.map((genre, i) =>
+            window.h('div', { key: i, style: styles.arrayItem }, [
+              window.h('input', {
+                type: 'text',
+                value: genre,
+                onChange: e => this.updateArrayField('genre', i, e.target.value),
+                style: { ...styles.input, marginTop: 0 },
+              }),
+              window.h('button', {
+                type: 'button',
+                onClick: () => this.updateArrayField('genre', i, null),
+                style: styles.removeButton,
+              }, '✕'),
+            ])
+          ),
+          window.h('button', {
+            type: 'button',
+            onClick: () => this.updateArrayField('genre', -1, ''),
+            style: styles.addButton,
+          }, '+ Add Genre'),
+        ]),
+
+        // Tracklist
+        window.h('div', { style: styles.section }, [
+          window.h('h4', { style: { marginTop: 0 } }, '💿 Tracklist'),
+          ...record.sides.map((side, sideIdx) =>
+            window.h('div', { key: sideIdx, style: { marginBottom: '20px' } }, [
+              window.h('h5', {}, side.name),
+              ...side.tracks.map((track, trackIdx) =>
+                window.h('div', { key: trackIdx, style: styles.arrayItem }, [
+                  window.h('span', { style: { minWidth: '30px' } }, `${trackIdx + 1}.`),
+                  window.h('input', {
+                    type: 'text',
+                    value: track.title,
+                    onChange: e => this.updateTrack(sideIdx, trackIdx, 'title', e.target.value),
+                    placeholder: 'Track title',
+                    style: { ...styles.input, marginTop: 0, flex: 2 },
+                  }),
+                  window.h('input', {
+                    type: 'text',
+                    value: track.duration,
+                    onChange: e => this.updateTrack(sideIdx, trackIdx, 'duration', e.target.value),
+                    placeholder: '0:00',
+                    style: { ...styles.input, marginTop: 0, width: '80px' },
+                  }),
+                  window.h('button', {
+                    type: 'button',
+                    onClick: () => this.updateTrack(sideIdx, trackIdx, null, null),
+                    style: styles.removeButton,
+                  }, '✕'),
+                ])
+              ),
+              window.h('button', {
+                type: 'button',
+                onClick: () => this.updateTrack(sideIdx, -1),
+                style: { ...styles.addButton, fontSize: '12px', padding: '6px 12px' },
+              }, `+ Add Track to ${side.name}`),
+            ])
+          ),
+        ]),
+
+        // Summary
+        window.h('div', { style: { ...styles.section, backgroundColor: '#d4edda' } }, [
+          window.h('h4', { style: { marginTop: 0 } }, '✅ Ready to Save'),
+          window.h('p', {}, `Album: ${record.album || '(not set)'}`),
+          window.h('p', {}, `ID: ${record.id || '⚠ REQUIRED'}`),
+          window.h('p', {}, `Artists: ${record.artists.join(', ') || '(none)'}`),
+          window.h('p', {}, `Tracks: ${record.sides.reduce((sum, s) => sum + s.tracks.length, 0)}`),
+        ]),
+      ]);
     },
   });
 
   /**
-   * Register the widget with DecapCMS
+   * Register the widget
    */
   if (window.CMS) {
-    window.CMS.registerWidget('discogs', DiscogsControl);
+    window.CMS.registerWidget('vinyl-record', VinylRecordControl);
     // eslint-disable-next-line no-console
-    console.log('✓ Discogs widget registered');
+    console.log('✓ Vinyl Record widget registered');
   } else {
-    console.error('DecapCMS not found. Make sure this script loads after decap-cms.js');
+    console.error('DecapCMS not found');
   }
 })();

@@ -47,26 +47,12 @@ collections:
     sortable_fields: ['id', 'year', 'album']
     
     # Fields for each record
-    # All record data is managed by the custom vinyl-record widget
+    # Using custom all-in-one vinyl record widget - outputs entire record JSON
     fields:
-      - label: "🎵 Vinyl Record Editor"
-        name: "vinyl_data"
+      - label: "Record ID"
+        name: "id"
         widget: "vinyl-record"
-        hint: "Search Discogs, import data, and edit all fields in one place"
-      
-      # These fields are auto-populated by the widget and saved to JSON
-      - {label: "ID", name: "id", widget: "hidden"}
-      - {label: "Catalog Number", name: "catalogNumber", widget: "hidden"}
-      - {label: "Record Label", name: "recordLabel", widget: "hidden"}
-      - {label: "Artists", name: "artists", widget: "hidden"}
-      - {label: "Album", name: "album", widget: "hidden"}
-      - {label: "Year", name: "year", widget: "hidden"}
-      - {label: "Genre", name: "genre", widget: "hidden"}
-      - {label: "Format", name: "format", widget: "hidden"}
-      - {label: "Condition", name: "condition", widget: "hidden"}
-      - {label: "Image URL", name: "imageUrl", widget: "hidden"}
-      - {label: "Sides", name: "sides", widget: "hidden"}
-      - {label: "External IDs", name: "externalIds", widget: "hidden"}
+        hint: "Complete vinyl record editor with Discogs search"
 
   # Featured Records Configuration (Homepage)
   - name: "featured"
