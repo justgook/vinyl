@@ -1,255 +1,222 @@
-# DecapCMS Setup Instructions
+# Vinyl Cabinet - Admin Panel
 
-## Quick Start - Local Development
+A local-first admin panel for managing your vinyl record collection using the **File System Access API**.
 
-To test DecapCMS locally without GitHub authentication:
+## Features
 
-1. **Install Decap Server** (one time only):
-   ```bash
-   npm install -g decap-server
-   ```
+✨ **Local File Management**
+- Direct read/write access to your `data/` folder
+- No server required - works entirely in the browser
+- Changes are saved directly to your local file system
 
-2. **Start the local backend** (from project root):
-   ```bash
-   npx decap-server
-   ```
+🎵 **Discogs Integration**
+- Search Discogs by catalog number or album/artist
+- Auto-import complete record data
+- High-quality cover images from Discogs
 
-3. **Start a local web server** (in another terminal):
-   ```bash
-   python3 -m http.server 8000
-   ```
+📝 **Full Record Editor**
+- All record fields editable
+- Track-by-track editing with duration
+- Multiple artists and genres support
+- Image preview
 
-4. **Open the CMS**:
-   - Visit: `http://localhost:8000/admin/`
-   - Click "Login" (no authentication needed in local mode)
+🗂️ **Record Management**
+- List all records with preview cards
+- Create new records
+- Edit existing records
+- Delete records
 
-5. **Test the interface**:
-   - View existing records
-   - Create a new test record
-   - Edit an existing record
-   - Upload an image
+## Browser Support
 
----
+The File System Access API is supported in:
+- ✅ Chrome 86+
+- ✅ Edge 86+
+- ✅ Opera 72+
 
-## Production Setup - GitHub Authentication
+❌ **Not supported:**
+- Firefox (does not support File System Access API)
+- Safari (does not support File System Access API)
 
-For deploying to GitHub Pages with authentication:
+[Check browser compatibility](https://caniuse.com/native-filesystem-api)
 
-### Step 1: Enable Git Gateway
+## How to Use
 
-1. Go to your GitHub repository settings
-2. Enable GitHub Pages (Settings → Pages)
-3. Set source to `main` branch
+### 1. Open the Admin Panel
 
-### Step 2: Setup Netlify Identity (Free)
+```bash
+# Start local server
+npm start
 
-DecapCMS uses Netlify Identity for GitHub authentication:
-
-1. Create a free Netlify account at https://netlify.com
-2. Add your GitHub Pages site to Netlify (just for identity, not hosting)
-3. Enable Identity service (Site Settings → Identity)
-4. Enable Git Gateway (Site Settings → Identity → Services → Git Gateway)
-5. Invite yourself as a user (Identity tab → Invite users)
-
-### Step 3: Add Netlify Identity Widget
-
-Add this to your `admin/index.html` `<head>` section:
-
-```html
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+# Open in browser
+http://localhost:8000/admin/
 ```
 
-And this before the closing `</body>` tag:
+**Note:** You must use Chrome, Edge, or Opera.
 
-```html
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
+### 2. Select Data Folder
+
+On first use, click **"📁 Select Data Folder"** and navigate to your project's `data/` folder.
+
+Your browser will remember this location for future sessions.
+
+### 3. Manage Records
+
+**Create New Record:**
+1. Click **"➕ New Record"**
+2. Search Discogs or manually enter data
+3. Fill in the required ID field (001-999)
+4. Click **"💾 Save Record"**
+
+**Edit Existing Record:**
+1. Click on a record card in the list
+2. Make your changes
+3. Click **"💾 Save Record"**
+
+**Delete Record:**
+1. Edit a record
+2. Click **"🗑️ Delete"**
+3. Confirm deletion
+
+### 4. Discogs API Setup (Optional but Recommended)
+
+To use Discogs search:
+
+1. Get a free API token from [Discogs Developer Settings](https://www.discogs.com/settings/developers)
+2. In the admin panel, click **"Search Discogs"**
+3. Enter your API token
+4. Click **"Save Token"**
+
+Your token is stored in browser localStorage and will be remembered.
+
+## File Structure
+
+```
+admin/
+├── index.html                      # Main admin panel
+├── discogs-widget-standalone.js    # Standalone record editor widget
+└── README.md                       # This file
 ```
 
-### Step 4: Update config.yml
+## What Gets Updated
 
-Update the `site_url` in `config.yml`:
+When you save a record, the admin panel updates:
 
-```yaml
-site_url: https://yourusername.github.io/vinyl-cabinet
+1. **Individual record file:** `data/records/{id}.json`
+2. **All records index:** `data/records-all.json` (automatically)
+
+You'll need to manually regenerate filters if you add new artists/genres/labels/years:
+
+```bash
+npm run generate-filters
 ```
 
-### Step 5: Deploy & Login
+## Git Workflow
 
-1. Commit and push your changes to GitHub
-2. Visit `https://yourusername.github.io/vinyl-cabinet/admin/`
-3. Login with your Netlify Identity credentials
-4. Start managing your collection!
+After making changes in the admin panel:
 
----
+```bash
+# Check what changed
+git status
+git diff
 
-## Configuration Details
+# Commit changes
+git add data/
+git commit -m "✨ Add new records via admin panel"
 
-### File Storage
+# Push to deploy
+git push
+```
 
-- **Records**: `data/records/*.json` - Individual record files
-- **Cover images**: `images/covers/` - Album artwork
-- **Featured collections**: `data/records.json` - Homepage configuration
+## Production Use
 
-### Record ID Format
+For production, you can:
 
-- Must be 3 digits: `001`, `002`, `003`, etc.
-- Used as filename: `001.json`
-- Used for URL parameters: `detail.html?id=001`
+1. **Use Git-based CMS:** Keep using this admin panel locally and push changes via Git (recommended)
+2. **Add backend API:** Replace File System Access API calls with fetch() to a backend API
+3. **Static site generator:** Generate static pages from JSON at build time
 
-### Image Guidelines
+The current approach is perfect for personal collections where you're the only editor.
 
-- **Recommended size**: 400x400px
-- **Format**: JPG or PNG
-- **Max file size**: 500KB recommended
-- Images are stored in `images/covers/` directory
+## Security Notes
 
-### Condition Grades
-
-Standard vinyl condition grading:
-- **Mint (M)**: Perfect, unplayed
-- **Near Mint (NM)**: Almost perfect, minimal signs of handling
-- **Very Good Plus (VG+)**: Shows some signs of wear
-- **Very Good (VG)**: Shows wear but plays well
-- **Good Plus (G+)**: Significant wear, may have some surface noise
-- **Good (G)**: Heavy wear, noticeable surface noise
-- **Fair (F)**: Poor condition but still playable
-- **Poor (P)**: Barely playable
-
----
-
-## Workflow Tips
-
-### Adding a New Record with Discogs Widget (RECOMMENDED)
-
-The custom Discogs widget auto-fills all record data from Discogs:
-
-1. **First time setup**:
-   - Get a Discogs API token from https://www.discogs.com/settings/developers
-   - Click "Generate new token" and copy it
-
-2. **Import a record**:
-   - Click "New Vinyl Records"
-   - Find the "🔍 Import from Discogs" field at the top
-   - Enter your API token when prompted (stored in localStorage)
-   - Search by catalog number (e.g., `SHVL804`) OR album/artist name
-   - Select the correct release from search results
-   - **All fields auto-populate!** ✨
-
-3. **Manual adjustments**:
-   - Assign a unique 3-digit Record ID
-   - Verify/adjust Condition (defaults to "Near Mint")
-   - Review tracklist for accuracy
-   - Save!
-
-### Adding a New Record Manually
-
-If you prefer manual entry or can't find a record on Discogs:
-
-1. Click "New Vinyl Records"
-2. Skip the Discogs widget field
-3. Enter basic info: ID, catalog number, artist, album, year
-4. Upload cover image
-5. Add genres and label
-6. Select condition
-7. Add tracklist for each side
-8. Save!
-
-### What the Discogs Widget Auto-Fills
-
-- ✅ Catalog Number
-- ✅ Record Label
-- ✅ Artists (array)
-- ✅ Album Title
-- ✅ Release Year
-- ✅ Genres (array)
-- ✅ Format
-- ✅ Album Cover Image URL
-- ✅ Complete Tracklist (sides + tracks with durations)
-- ✅ Discogs Release ID (for reference)
-
-### Bulk Operations
-
-For adding many records at once:
-1. Use the CSV import script (Phase 3)
-2. Generate skeleton JSON files
-3. Use DecapCMS to complete missing data
-
-### Updating Homepage Featured Rows
-
-1. Navigate to "Featured Collections"
-2. Edit "Homepage Featured Records"
-3. Add/remove/reorder rows
-4. Specify which record IDs appear in each row
-
----
+- Your data never leaves your computer
+- API tokens are stored in browser localStorage
+- File System Access API requires explicit user permission
+- Browser sandboxing prevents unauthorized file access
 
 ## Troubleshooting
 
-### CMS won't load
+**"Browser Not Supported" error:**
+- Use Chrome, Edge, or Opera browser
+- Update to the latest version
+
+**Permission denied / "requestPermission is not a function":**
+- This is a browser compatibility issue with older Chrome versions
+- Update Chrome to version 86 or later
+- Click the folder icon in browser address bar
+- Grant permission to access files
+- Try selecting the data folder again
+- If issues persist, clear browser cache and IndexedDB:
+  ```javascript
+  // In browser console (F12):
+  indexedDB.deleteDatabase('VinylCabinetAdmin');
+  // Then refresh the page
+  ```
+
+**"Cannot read properties of undefined" errors:**
+- Some record files may be corrupted or have missing fields
+- Check browser console to see which file has issues
+- Manually fix the JSON file or delete it
+- Ensure all records have at least these fields:
+  ```json
+  {
+    "id": "001",
+    "album": "Album Name",
+    "artists": ["Artist Name"],
+    "year": 2020,
+    "recordLabel": "Label"
+  }
+  ```
+
+**Changes not saved:**
 - Check browser console for errors
-- Ensure `config.yml` is valid YAML (indentation matters!)
-- Try clearing browser cache
+- Verify you selected the correct `data/` folder
+- Ensure the folder has write permissions
+- Make sure the `records/` subfolder exists
 
-### Can't upload images
-- Ensure `images/covers/` directory exists
-- Check file permissions
-- Verify image file size is reasonable
+**Records not loading:**
+- Verify you selected the `data/` folder (not the project root)
+- Check that `data/records/` exists and contains JSON files
+- Look for JavaScript errors in browser console
+- Try selecting the folder again
 
-### Changes not appearing on site
-- Check that JSON files are being updated in `data/records/`
-- Refresh browser cache (Cmd+Shift+R or Ctrl+Shift+R)
-- Verify file paths in `config.yml`
+**Discogs search not working:**
+- Verify your API token is correct
+- Check rate limits (Discogs allows 60 requests/minute)
+- Try searching by catalog number instead of album/artist
+- Check browser console for API errors
 
-### Local backend not working
-- Ensure `npx decap-server` is running
-- Check that `local_backend: true` is in config.yml
-- Try restarting both the server and web server
+## Development
 
-### Discogs widget issues
+The admin panel consists of:
 
-**"Invalid API token" error:**
-- Verify your token at https://www.discogs.com/settings/developers
-- Use a Personal Access Token (not OAuth)
-- Clear token in widget and re-enter it
+1. **index.html** - Main UI, file system integration, record list management
+2. **discogs-widget-standalone.js** - Reusable record editor component
 
-**"No releases found" error:**
-- Try different search terms
-- For catalog numbers, try with/without spaces and hyphens
-- Switch between catalog number and album/artist search
+Both use vanilla JavaScript with no build step required.
 
-**Widget not loading:**
-- Check browser console for JavaScript errors
-- Ensure accessing via http://localhost:8000 (not file://)
-- Verify discogs-widget.js is loaded after decap-cms.js
+## Future Enhancements
 
-**Rate limiting:**
-- Discogs free tier: 60 requests/minute
-- Wait 1 minute if you hit the limit
+Potential improvements:
 
----
+- [ ] Bulk import from CSV
+- [ ] Drag-and-drop image upload
+- [ ] Duplicate record detection
+- [ ] Statistics dashboard
+- [ ] Export to different formats
+- [ ] Offline PWA support
+- [ ] Auto-sync with cloud storage
 
-## Next Steps
+## License
 
-1. ✅ Test local CMS interface
-2. ✅ Custom Discogs widget implemented (Phase 2.2)
-3. ⏳ Setup GitHub authentication (optional, for production)
-4. ⏳ Import existing records from CSV (Phase 3)
-
----
-
-## Resources
-
-- [DecapCMS Documentation](https://decapcms.org/docs/)
-- [Configuration Options](https://decapcms.org/docs/configuration-options/)
-- [Widget Reference](https://decapcms.org/docs/widgets/)
-- [Discogs API](https://www.discogs.com/developers)
+Part of the Vinyl Cabinet project.

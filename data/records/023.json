@@ -1,0 +1,91 @@
+{
+  "id": "023",
+  "catalogNumber": "М60 48943 009",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Бег Иноходца",
+  "year": 1989,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Repress, Mono",
+  "condition": "Near Mint",
+  "imageUrl": "https://i.discogs.com/pVcGEqTScMgiajSkVIXz-_IT4lpLXJA7_OZ9jBrf0ZY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MzU0/NTk1LTE2MTg3NjQw/ODAtODQ3NS5qcGVn.jpeg",
+  "sides": [
+    {
+      "name": "Сторона 1 — 20.25",
+      "tracks": [
+        {
+          "title": "Разведка боем",
+          "duration": "0:00"
+        },
+        {
+          "title": "Встреча в ресторане",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Холода, в холода",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сыт я по горло",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песенка метателя молота",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песенка прыгуна в высоту",
+          "duration": "0:00"
+        },
+        {
+          "title": "Баллада о гипсе",
+          "duration": "0:00"
+        },
+        {
+          "title": "Человек за бортом",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Сторона 1 — 22.30",
+      "tracks": [
+        {
+          "title": "Горизонт",
+          "duration": "0:00"
+        },
+        {
+          "title": "О переселении душ",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сон мне снится",
+          "duration": "0:00"
+        },
+        {
+          "title": "Милицейский протокол",
+          "duration": "0:00"
+        },
+        {
+          "title": "Бег иноходца",
+          "duration": "0:00"
+        },
+        {
+          "title": "Честь шахматной короны: Подготовка",
+          "duration": "0:00"
+        },
+        {
+          "title": "Честь шахматной короны: Игра",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/18354595-Владимир-Высоцкий-Бег-Иноходца"
+  }
+}

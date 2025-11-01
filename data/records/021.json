@@ -1,112 +1,56 @@
 {
-  "catalogNumber": "М60 48703 002",
+  "id": "021",
+  "catalogNumber": "С60 22147 000",
   "recordLabel": "Мелодия",
   "artists": [
-    "Владимир Высоцкий"
+    "Ottawan"
   ],
-  "album": "Большой Каретный",
-  "year": 1989,
+  "album": "Оттаван 2 = Ottawan 2",
+  "year": 1987,
   "genre": [
+    "Electronic",
     "Pop"
   ],
-  "format": "Vinyl, LP, Mono",
-  "imageUrl": "https://i.discogs.com/tbfA_kSKZOYbnYArekyi_SU43dhEtt75RMSvI01b9AQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NjIw/NTg3LTE2MjAzNTA1/MDYtOTUwMi5qcGVn.jpeg",
+  "format": "Vinyl, LP, Album, Reissue, Stereo",
+  "condition": "Near Mint",
+  "imageUrl": "https://i.discogs.com/QN609gNxxbaITd9evF_6MOuHoYO5k68OvlwQgKbphAw/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4OTU1/Nzg1LTE3MDAzNDc1/NjctMjMzMC5qcGVn.jpeg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Большой Каретный",
-          "duration": "0:00"
+          "title": "Сдавайся (Подари Мне Сердце) = Hands Up (Give Me Your Heart)",
+          "duration": "4:50"
+        }
+      ]
+    },
+    {
+      "name": "Пой Вместе С Музыкальным Автоматом = Sing Along With The Juke-Box",
+      "tracks": [
+        {
+          "title": "Фантастическая Музыка = Crazy Music",
+          "duration": "5:30"
         },
         {
-          "title": "У Меня Гитара Есть",
-          "duration": "0:00"
+          "title": "Это Страшная Тайна = It's A Top Secret",
+          "duration": "3:16"
         },
         {
-          "title": "Дайте Собакам Мяса",
-          "duration": "0:00"
+          "title": "Любовь = Shubidube Love",
+          "duration": "2:50"
         },
         {
-          "title": "А Люди Все Роптали И Роптали",
-          "duration": "0:00"
+          "title": "Румба = Dondon Rumba",
+          "duration": "3:35"
         },
         {
-          "title": "В Ленинграде-Городе У Пяти Углов",
-          "duration": "0:00"
-        },
-        {
-          "title": "Гололед На Земле, Гололед",
-          "duration": "0:00"
-        },
-        {
-          "title": "Камнем Грусть Висит На Мне",
-          "duration": "0:00"
-        },
-        {
-          "title": "Лежит Камень В Степи",
-          "duration": "0:00"
-        },
-        {
-          "title": "Жил-Был Добрый Дурачина-Простофиля",
-          "duration": "0:00"
-        },
-        {
-          "title": "Так Оно И Есть: Словно Встарь",
-          "duration": "0:00"
-        },
-        {
-          "title": "Я Верю В Друзей",
-          "duration": "0:00"
-        },
-        {
-          "title": "В Тот Вечер Я...",
-          "duration": "0:00"
-        },
-        {
-          "title": "Копи!",
-          "duration": "0:00"
-        },
-        {
-          "title": "Эй, Шофер, Вези В Бутырский Хутор",
-          "duration": "0:00"
-        },
-        {
-          "title": "Я Однажды Гулял По Столице",
-          "duration": "0:00"
-        },
-        {
-          "title": "Сегодня Я С Большой Охотою",
-          "duration": "0:00"
-        },
-        {
-          "title": "В Наш Тесный Круг Не Каждый Попадал",
-          "duration": "0:00"
-        },
-        {
-          "title": "Я Любил И Женщин И Проказы",
-          "duration": "0:00"
-        },
-        {
-          "title": "За Меня Невеста Отрыдает Честно",
-          "duration": "0:00"
-        },
-        {
-          "title": "Ты Уехала На Короткий Срок",
-          "duration": "0:00"
-        },
-        {
-          "title": "Все Срока Уже Закончены",
-          "duration": "0:00"
-        },
-        {
-          "title": "Всего Лишь Час Дают На Артобстрел",
-          "duration": "0:00"
+          "title": "Сдавайся (Инструментальный Вариант) = Hands Up (Instrumental)",
+          "duration": "0:43"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "https://www.discogs.com/release/18620587-Владимир-Высоцкий-Большой-Каретный"
+    "discogs": "https://www.discogs.com/release/28955785-Ottawan-Оттаван-2-Ottawan-2"
   }
 }

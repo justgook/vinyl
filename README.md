@@ -11,13 +11,14 @@ A Netflix-style neobrutalism vinyl record collection browser built with vanilla 
 - Dynamic filtering by artist, genre, year, and label
 - Fully responsive (desktop and mobile)
 - E2E tested with Playwright
+- **Local-first admin panel** with File System Access API
 
 ## Setup
 
 ### Prerequisites
 
 - Node.js 16+ and npm
-- Modern web browser
+- Modern web browser (Chrome/Edge/Opera for admin panel)
 
 ### Installation
 
@@ -118,7 +119,10 @@ vinyl-cabinet/
 │   ├── filter-tags/       # Pre-generated filter files
 │   └── records.json       # Homepage featured records
 ├── tests/                  # Playwright e2e tests
-├── admin/                  # DecapCMS (future)
+├── admin/                  # Local-first admin panel
+│   ├── index.html         # Admin interface
+│   ├── discogs-widget-standalone.js
+│   └── README.md          # Admin panel docs
 └── mockups/               # Design mockups
 ```
 
@@ -126,43 +130,96 @@ vinyl-cabinet/
 
 Records are stored as individual JSON files in `data/records/`. See `data/SCHEMA.md` for details.
 
-## Content Management (DecapCMS)
+## Admin Panel (Content Management)
 
-### Using the Discogs Widget
+The project includes a **local-first admin panel** that uses the File System Access API to manage your vinyl records directly on your file system - no server or CMS required!
 
-The project includes a custom Discogs widget for easily adding new vinyl records:
+### Quick Start
 
-1. **Get a Discogs API Token**
+```bash
+# Start dev server
+npm start
+
+# Open admin panel in Chrome/Edge/Opera
+http://localhost:8000/admin/
+```
+
+### Features
+
+✨ **Local File Management**
+- Direct read/write access to your `data/` folder
+- No server required - works entirely in the browser
+- Changes are saved directly to your local file system
+
+🎵 **Discogs Integration**
+- Search Discogs by catalog number or album/artist
+- Auto-import complete record data
+- High-quality cover images from Discogs
+
+📝 **Full Record Editor**
+- All record fields editable
+- Track-by-track editing with duration
+- Multiple artists and genres support
+- Image preview
+
+🗂️ **Record Management**
+- List all records with preview cards
+- Create new records
+- Edit existing records
+- Delete records
+
+### Browser Support
+
+The File System Access API is supported in:
+- ✅ Chrome 86+
+- ✅ Edge 86+
+- ✅ Opera 72+
+
+❌ **Not supported:**
+- Firefox (does not support File System Access API)
+- Safari (does not support File System Access API)
+
+[Check browser compatibility](https://caniuse.com/native-filesystem-api)
+
+### How to Use
+
+1. **Open the Admin Panel**
+   - Visit `http://localhost:8000/admin/` in Chrome, Edge, or Opera
+
+2. **Select Data Folder**
+   - Click "📁 Select Data Folder"
+   - Navigate to your project's `data/` folder
+   - Your browser will remember this location
+
+3. **Get Discogs API Token** (optional but recommended)
    - Visit https://www.discogs.com/settings/developers
-   - Generate a new personal access token
-   - Copy the token
+   - Generate a personal access token
+   - Enter it in the admin panel (stored in browser localStorage)
 
-2. **Access the CMS**
-   - Navigate to `/admin/index.html` in your browser
-   - (Future: Set up authentication for production use)
+4. **Manage Records**
+   - **Create:** Click "➕ New Record", search Discogs or enter manually
+   - **Edit:** Click on a record card to edit
+   - **Delete:** Open a record and click "🗑️ Delete"
 
-3. **Add a New Record**
-   - Click "New Record" in the CMS
-   - In the "🔍 Import from Discogs" field:
-     - Paste your API token when prompted (saved to localStorage)
-     - Search by catalog number (e.g., `SHVL804`) or album name
-     - Click on the matching release
-   - All fields will auto-populate with Discogs data
-   - Review and adjust as needed (especially condition, which defaults to "Near Mint")
-   - Assign a unique 3-digit ID
-   - Save the record
+5. **Commit Changes**
+   ```bash
+   git add data/
+   git commit -m "✨ Add new records via admin panel"
+   git push
+   ```
 
-4. **Widget Features**
-   - ✅ Search by catalog number or album/artist name
-   - ✅ Auto-fill: artists, album, year, genres, label, format
-   - ✅ Auto-populate tracklist with sides and durations
-   - ✅ Fetch album cover image URL
-   - ✅ Save Discogs release ID for reference
-   - ✅ Token stored locally for convenience
+See `admin/README.md` for detailed documentation.
 
-### Manual Entry
+### Production Workflow
 
-You can also create records manually by filling in all fields in the CMS interface.
+The admin panel is designed for **local-first editing**:
+
+1. Use the admin panel on your local machine
+2. Edit records as needed
+3. Commit and push changes via Git
+4. Your static site deploys automatically
+
+This approach is perfect for personal collections where you're the only editor. For production multi-user scenarios, you can replace the File System Access API calls with backend API endpoints.
 
 ## Code Style
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test</title></head>
+<body>
+<div id="test"></div>
+<script>
+function el(tag, attrs = {}, children = []) {
+  const element = document.createElement(tag);
+  
+  Object.entries(attrs).forEach(([key, value]) => {
+    if (key === 'style' && typeof value === 'object') {
+      Object.assign(element.style, value);
+    } else if (key === 'className') {
+      element.className = value;
+    } else if (key.startsWith('on') && typeof value === 'function') {
+      console.log('Adding event listener:', key, 'as', key.substring(2).toLowerCase());
+      element.addEventListener(key.substring(2).toLowerCase(), value);
+    } else {
+      element.setAttribute(key, value);
+    }
+  });
+
+  children.forEach(child => {
+    if (typeof child === 'string') {
+      element.appendChild(document.createTextNode(child));
+    } else if (child) {
+      element.appendChild(child);
+    }
+  });
+
+  return element;
+}
+
+const button = el('button', {
+  type: 'button',
+  onClick: () => alert('Clicked!'),
+}, ['Click Me']);
+
+document.getElementById('test').appendChild(button);
+</script>
+</body>
+</html>
