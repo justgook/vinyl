@@ -1,0 +1,88 @@
+{
+  "id": "092",
+  "catalogNumber": "С60-07403-04",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Teach-In"
+  ],
+  "album": "Вокально-инструментальный Ансамбль «Teach-In»",
+  "year": 1979,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Reissue, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/HrK2VeOo6I6ZpmQqS38qnzxvdRk1D-1_jqlWMUHgLZg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MzM5/NDcxLTE1ODk5Nzkz/OTctOTQ2My5qcGVn.jpeg",
+  "imageUrl": "data/covers/092.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Цирковое Представление",
+          "duration": "0:00"
+        },
+        {
+          "title": "Летней Ночью",
+          "duration": "0:00"
+        },
+        {
+          "title": "Нет Времени",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Одинок",
+          "duration": "0:00"
+        },
+        {
+          "title": "Позволь Мне Войти",
+          "duration": "0:00"
+        },
+        {
+          "title": "Прекрасный День",
+          "duration": "0:00"
+        },
+        {
+          "title": "Город Теннесси",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Дин-дон",
+          "duration": "0:00"
+        },
+        {
+          "title": "Спой Свою Песню",
+          "duration": "0:00"
+        },
+        {
+          "title": "Цирк Приезжает В Город",
+          "duration": "0:00"
+        },
+        {
+          "title": "До Свиданья, Старый Друг",
+          "duration": "0:00"
+        },
+        {
+          "title": "Кукла",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ты И Я",
+          "duration": "0:00"
+        },
+        {
+          "title": "Улетай",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/15339471-Teach-In-Вокально-инструментальный-Ансамбль-Teach-In"
+  }
+}

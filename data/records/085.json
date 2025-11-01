@@ -1,0 +1,64 @@
+{
+  "id": "085",
+  "catalogNumber": "С60 27211 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Рок-Панорама-87 (3) = Rock Panorama-87 (3)",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/gqgEHQco3wffzUV4kfth-IG0AdFuUS6dSch1fHdTl-E/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODc3/NzUwLTE2MjE5NTYz/NzUtOTg2MC5qcGVn.jpeg",
+  "imageUrl": "data/covers/085.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Спасайте Город = Save The City",
+          "duration": "4:20"
+        },
+        {
+          "title": "От Винницы До Ниццы = From Vinnitsa To Nice",
+          "duration": "6:45"
+        },
+        {
+          "title": "Зомби = Zombi",
+          "duration": "3:10"
+        },
+        {
+          "title": "Зачем Родился Ты? = Why Were You Born?",
+          "duration": "3:45"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Без Тебя = Without You",
+          "duration": "4:08"
+        },
+        {
+          "title": "Мосты = Bridges",
+          "duration": "5:47"
+        },
+        {
+          "title": "Мы Знаем = We Know",
+          "duration": "4:30"
+        },
+        {
+          "title": "Где Ответ? = Where Is The Answer?",
+          "duration": "4:35"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/18877750-Various-Рок-Панорама-87-3-Rock-Panorama-87-3"
+  }
+}

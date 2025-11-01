@@ -1,0 +1,73 @@
+{
+  "id": "109",
+  "catalogNumber": "С60–10861-2",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Alex Silvanni"
+  ],
+  "album": "Электроорган",
+  "year": 1980,
+  "genre": [
+    "Electronic",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/dKJ7zDfrK3vVozrweeCyDy6RwJsnJPxk0vEHpBcaYZk/rs:fit/g:sm/q:90/h:598/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTI2/NzA2LTE1MTc5MTMw/NjgtOTA1MS5qcGVn.jpeg",
+  "imageUrl": "data/covers/109.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Музыкальный Автомат",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вечером В Субботу",
+          "duration": "0:00"
+        },
+        {
+          "title": "Чтобы Ты Знала",
+          "duration": "0:00"
+        },
+        {
+          "title": "Какой Он Спокойный",
+          "duration": "0:00"
+        },
+        {
+          "title": "Танцуй Со Мной",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Большая Любовь",
+          "duration": "0:00"
+        },
+        {
+          "title": "Гондольеро",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Весь В Огне",
+          "duration": "0:00"
+        },
+        {
+          "title": "Грустная Мелодия",
+          "duration": "0:00"
+        },
+        {
+          "title": "Лети, Малиновка, Лети",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/11526706-Алекс-Сильванни-Электроорган"
+  }
+}

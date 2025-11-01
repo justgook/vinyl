@@ -1,0 +1,30 @@
+{
+  "id": "091",
+  "catalogNumber": "С10 03291 001",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Antonio Vivaldi"
+  ],
+  "album": "Четыре Времени Года",
+  "year": 1989,
+  "genre": [
+    "Classical"
+  ],
+  "format": "Vinyl, LP, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/6MarhfqTVuukXGrPctFNMk0bbygvKA0VqvzgnXv0zXQ/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NzEw/MDMtMTM0NjIwMjYz/NS0yMzQ3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/091.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": []
+    },
+    {
+      "name": "Side B",
+      "tracks": []
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2571003-А-Вивальди-Четыре-Времени-Года"
+  }
+}

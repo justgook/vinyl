@@ -1,0 +1,72 @@
+{
+  "id": "111",
+  "catalogNumber": "С60 29333 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Зодчие"
+  ],
+  "album": "Мусор Из Избы",
+  "year": 1990,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/QU7ane9V86slfsIEYeO-S_IXafAMxJjiJHp1r3Up79I/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3ODYx/NDktMTQxNjUwMjcw/Ny0zMzI4LmpwZWc.jpeg",
+  "imageUrl": "data/covers/111.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Демонстрация (1 Мая 1982 Года) = Demonstration (The 1st Of May 1982)",
+          "duration": "3:05"
+        },
+        {
+          "title": "Металлист Петров = Metalist Petrov",
+          "duration": "3:22"
+        },
+        {
+          "title": "Землекоп = Havvy",
+          "duration": "2:50"
+        },
+        {
+          "title": "Девушка В Белом = A. Girl In White",
+          "duration": "2:49"
+        },
+        {
+          "title": "Не Суй Свой Нос = Don't Poke Your Nose",
+          "duration": "4:37"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Дайте Народу Пиво! = Give Beer To People!",
+          "duration": "4:23"
+        },
+        {
+          "title": "Часовой = A Sentry",
+          "duration": "5:18"
+        },
+        {
+          "title": "Посвящение Летчику Русту = Dedication To Pilot Rust",
+          "duration": "3:21"
+        },
+        {
+          "title": "Жевательная Резинка = Chewing Gum",
+          "duration": "2:40"
+        },
+        {
+          "title": "Ниже Ватерлинии... = Below The Water-Line...",
+          "duration": "3:55"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2786149-Зодчие-Мусор-Из-Избы"
+  }
+}

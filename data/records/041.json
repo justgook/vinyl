@@ -1,0 +1,72 @@
+{
+  "id": "041",
+  "catalogNumber": "С90 26851 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Странные Игры"
+  ],
+  "album": "Смотри В Оба",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/sKmRd6szB1C4dwdcIJbs1obQDvK_u3HHWz3krnJWlp0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NTk1/MDY3LTE2MTQzNTA1/ODgtNzc1Ny5qcGVn.jpeg",
+  "imageUrl": "data/covers/041.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Трубопровод Уренгой - Помары - Ужгород",
+          "duration": "4:35"
+        },
+        {
+          "title": "Ага",
+          "duration": "3:13"
+        },
+        {
+          "title": "Телефона Нет",
+          "duration": "2:52"
+        },
+        {
+          "title": "Голубой Танец",
+          "duration": "0:00"
+        },
+        {
+          "title": "Бумажные Цветы",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Память Прошлого",
+          "duration": "3:09"
+        },
+        {
+          "title": "Песенка Да-Да",
+          "duration": "4:52"
+        },
+        {
+          "title": "Погружение",
+          "duration": "3:26"
+        },
+        {
+          "title": "Смотри В Оба",
+          "duration": "3:40"
+        },
+        {
+          "title": "Феличита",
+          "duration": "1:50"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/17595067-Странные-Игры-Смотри-В-Оба"
+  }
+}

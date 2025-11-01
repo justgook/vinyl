@@ -1,0 +1,81 @@
+{
+  "id": "024",
+  "catalogNumber": "С60 27411 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "The Rolling Stones",
+    "The Rolling Stones"
+  ],
+  "album": "Леди Джейн = Lady Jane",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation, Reissue, Unofficial Release",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/BB3iFd6ZXK6NgfloVUkxBU9nwyd3IxbXhkASs_fsxzk/rs:fit/g:sm/q:90/h:299/w:297/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MjA3/NTQtMTQ0OTUxODY0/OS0zNDI2LnBuZw.jpeg",
+  "imageUrl": "data/covers/024.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Каменное Сердце = Heart Of Stone",
+          "duration": "2:46"
+        },
+        {
+          "title": "Слезай С Моего Облака = Get Off My Cloud",
+          "duration": "2:55"
+        },
+        {
+          "title": "Удовлетворение = Satisfaction",
+          "duration": "3:42"
+        },
+        {
+          "title": "19-й Нервный Кризис = 19th Nervous Breakdown",
+          "duration": "3:57"
+        },
+        {
+          "title": "Глупая Девушка = Stupid Girl",
+          "duration": "2:53"
+        },
+        {
+          "title": "Рейс 505 = Flight 505",
+          "duration": "3:26"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Маленький Помощник Мамы = Mother's Little Helper",
+          "duration": "2:43"
+        },
+        {
+          "title": "Отстала От Времени = Out Of Time",
+          "duration": "5:36"
+        },
+        {
+          "title": "Леди Джейн = Lady Jane",
+          "duration": "3:07"
+        },
+        {
+          "title": "Решай Сама = Take It Or Leave It",
+          "duration": "2:46"
+        },
+        {
+          "title": "Окрась Все В Черное = Paint It Black",
+          "duration": "3:26"
+        },
+        {
+          "title": "У Меня В Руках = Under My Thumb",
+          "duration": "3:40"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/7820754-Роллинг-Стоунз-Rolling-Stones-Леди-Джейн-Lady-Jane"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "135",
+  "catalogNumber": "С60 20225 009",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Riccardo Fogli"
+  ],
+  "album": "Collezione = Коллекция",
+  "year": 1986,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation, Reissue, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/5IJOQELWljmWf2n0lzq2H2XamJOoZgoosyYxB3B8pJw/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MTMw/NTI4LTE2MTc0MzIx/NjUtNzk1NS5qcGVn.jpeg",
+  "imageUrl": "data/covers/135.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Storie Di Tutti I Giorni",
+          "duration": "3:51"
+        },
+        {
+          "title": "È L'Amore",
+          "duration": "3:25"
+        },
+        {
+          "title": "Che Ne Sai",
+          "duration": "3:43"
+        },
+        {
+          "title": "Non Mi Lasciare",
+          "duration": "4:26"
+        },
+        {
+          "title": "Alla Fine Di Un Lavoro",
+          "duration": "4:25"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Malinconia",
+          "duration": "4:05"
+        },
+        {
+          "title": "Io No",
+          "duration": "3:46"
+        },
+        {
+          "title": "Scene Da Un Amore",
+          "duration": "4:14"
+        },
+        {
+          "title": "Ti Amo Però",
+          "duration": "3:35"
+        },
+        {
+          "title": "L'Amore Che Verrà",
+          "duration": "4:02"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/18130528-Риккардо-Фольи-Collezione-Коллекция"
+  }
+}

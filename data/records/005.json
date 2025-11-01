@@ -1,59 +1,99 @@
 {
   "id": "005",
-  "catalogNumber": "K50087",
-  "recordLabel": "Warner Bros.",
-  "artists": ["Fleetwood Mac"],
-  "album": "Rumours",
-  "year": 1977,
-  "genre": ["Pop Rock", "Soft Rock"],
-  "format": "LP, Album",
-  "condition": "Very Good Plus",
-  "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Fleetwood+Mac",
+  "catalogNumber": "М60 48023 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Сентиментальный Боксёр",
+  "year": 1988,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ufdNqUDZFylbNYPietBlQOBuH0k5heYklEf6x6fZRnA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg4MDU0/NjQtMTU0NDkwMDQ3/OS01MDIyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/005.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Second Hand News",
-          "duration": "3:14"
+          "title": "На Братских Могилах",
+          "duration": "0:00"
         },
         {
-          "title": "Dreams",
-          "duration": "4:28"
+          "title": "Песня О Госпитале",
+          "duration": "0:00"
         },
         {
-          "title": "Don't Stop",
-          "duration": "3:11"
+          "title": "Звезды",
+          "duration": "0:00"
         },
         {
-          "title": "Go Your Own Way",
-          "duration": "3:38"
-        }
-      ]
-    },
-    {
-      "name": "Side B",
-      "tracks": [
-        {
-          "title": "Songbird",
-          "duration": "3:20"
+          "title": "Марш Физиков",
+          "duration": "0:00"
         },
         {
-          "title": "The Chain",
-          "duration": "6:17"
+          "title": "Песня Студентов-Археологов",
+          "duration": "0:00"
         },
         {
-          "title": "You Make Loving Fun",
-          "duration": "3:07"
+          "title": "Песня Конькобежца",
+          "duration": "0:00"
         },
         {
-          "title": "Gold Dust Woman",
-          "duration": "4:58"
+          "title": "Песенка Сентиментального Боксера",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня О Друге",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вершина",
+          "duration": "0:00"
+        },
+        {
+          "title": "Скалолазка",
+          "duration": "0:00"
+        },
+        {
+          "title": "Прощание С Горами",
+          "duration": "0:00"
+        },
+        {
+          "title": "Марш Космических Негодяев",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня О Старом Доме",
+          "duration": "0:00"
+        },
+        {
+          "title": "Нечисть",
+          "duration": "0:00"
+        },
+        {
+          "title": "Пародия На Плохой Детектив",
+          "duration": "0:00"
+        },
+        {
+          "title": "Бабье Лето",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мой Друг Уехал В Магадан",
+          "duration": "0:00"
+        },
+        {
+          "title": "Парус",
+          "duration": "0:00"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/611160"
+    "discogs": "https://www.discogs.com/release/8805464-Владимир-Высоцкий-Сентиментальный-Боксёр"
   }
 }

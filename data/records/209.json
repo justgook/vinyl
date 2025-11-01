@@ -1,0 +1,41 @@
+{
+  "id": "209",
+  "catalogNumber": "Д35029-30",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Евгения Жуковская",
+    "Мириам Астрахан"
+  ],
+  "album": "Приключения Пифа",
+  "year": 1991,
+  "genre": [
+    "Children's"
+  ],
+  "format": "Vinyl, 10\", 33 ⅓ RPM, Mono, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/pdtgyBIGi_4FOpIkFPAc98ZDtudY77dIFH45cBtZn7k/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5OTgx/MDctMTQwODQyNzE3/OC03ODczLmpwZWc.jpeg",
+  "imageUrl": "data/covers/209.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Приключения Пифа",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Приключения Пифа (Окончание)",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5998107-Е-Жуковская-М-Астрахан-Приключения-Пифа"
+  }
+}

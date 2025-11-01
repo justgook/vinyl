@@ -1,55 +1,119 @@
 {
   "id": "003",
-  "catalogNumber": "A-54391",
-  "recordLabel": "Atlantic",
-  "artists": ["Led Zeppelin"],
-  "album": "Led Zeppelin IV",
-  "year": 1971,
-  "genre": ["Hard Rock", "Heavy Metal"],
-  "format": "LP, Album",
-  "condition": "Very Good",
-  "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Led+Zeppelin",
+  "catalogNumber": "М60 48759 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "На Нейтральной Полосе",
+  "year": 1989,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/xfQYZfvT5ZA_PRkZN7nb7Of8nf4eZu4vnWo355ZmxR0/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NDcx/MzI2LTE3NjEzODk0/NTktNTAyOS5qcGVn.jpeg",
+  "imageUrl": "data/covers/003.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Black Dog",
-          "duration": "4:54"
+          "title": "Один Музыкант Объяснил Мне Пространно",
+          "duration": "0:00"
         },
         {
-          "title": "Rock and Roll",
-          "duration": "3:40"
+          "title": "На Нейтральной Полосе",
+          "duration": "0:00"
         },
         {
-          "title": "The Battle of Evermore",
-          "duration": "5:51"
+          "title": "Сколько Я Ни Старался",
+          "duration": "0:00"
         },
         {
-          "title": "Misty Mountain Hop",
-          "duration": "4:38"
-        }
-      ]
-    },
-    {
-      "name": "Side B",
-      "tracks": [
-        {
-          "title": "Four Sticks",
-          "duration": "4:44"
+          "title": "Перед Выездом В Загранку",
+          "duration": "0:00"
         },
         {
-          "title": "Going to California",
-          "duration": "3:31"
+          "title": "Передо Мной Любой Факир - Ну Просто Карлик",
+          "duration": "0:00"
         },
         {
-          "title": "When the Levee Breaks",
-          "duration": "7:07"
+          "title": "Проложите, Проложите Вы Хоть Тоннель По Дну Реки",
+          "duration": "0:00"
+        },
+        {
+          "title": "Твердил Он Нам: Моя Она",
+          "duration": "0:00"
+        },
+        {
+          "title": "Подумаешь, С Женой Не Очень Ладно",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ну О Чем С Тобою Говорить",
+          "duration": "0:00"
+        },
+        {
+          "title": "У Меня Запой От Одиночества",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Этом Доме Большом",
+          "duration": "0:00"
+        },
+        {
+          "title": "На Реке Ль, На Озере",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сколько Чудес За Туманами Кроется",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сидели, Пили Вразнобой",
+          "duration": "0:00"
+        },
+        {
+          "title": "Пока Вы Здесь В Ванночке С Кафелем",
+          "duration": "0:00"
+        },
+        {
+          "title": "Рядовой Борисов! Я...",
+          "duration": "0:00"
+        },
+        {
+          "title": "И Вкусы И Запросы Мои Странны",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Изучил Все Ноты От И До",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мне Каждый Вечер Зажигает Свечи",
+          "duration": "0:00"
+        },
+        {
+          "title": "Было Так: Я Любил И Страдал",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сыт Я По Горло, До Подбородка",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дела Меня Замучили, Дела",
+          "duration": "0:00"
+        },
+        {
+          "title": "Давно Смолкли Залпы Орудий",
+          "duration": "0:00"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/429498"
+    "discogs": "https://www.discogs.com/release/35471326-Владимир-Высоцкий-На-Нейтральной-Полосе"
   }
 }

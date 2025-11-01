@@ -1,0 +1,89 @@
+{
+  "id": "172",
+  "catalogNumber": "33 С60-05391-92",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Paul Mauriat And His Orchestra"
+  ],
+  "album": "Музыка Из Кинофильмов",
+  "year": 2025,
+  "genre": [
+    "Jazz",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ccw_MoXXAnjORPjyG5J2-NntkXmXH7suiZu4sr2n9UY/rs:fit/g:sm/q:90/h:297/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzgy/MzUzLTE2MTI5MDEy/NzQtNjAyNi5qcGVn.jpeg",
+  "imageUrl": "data/covers/172.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Parles Plus Bas - Говорите Тише",
+          "duration": "0:00"
+        },
+        {
+          "title": "Le Passager De La Pluie - Пассажир Под Дождем",
+          "duration": "0:00"
+        },
+        {
+          "title": "Un Homme Et Une Femme - Мужчина И Женщина",
+          "duration": "0:00"
+        },
+        {
+          "title": "Le Chanson De La Lara - Мелодия (Доктор Живаго)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Les Moulins De Mon Coeur - Мельницы Моего Сердца",
+          "duration": "0:00"
+        },
+        {
+          "title": "Le Dernier Tango A Paris - Встреча",
+          "duration": "0:00"
+        },
+        {
+          "title": "Cent Mille Chansons - Сто Тысяч Песен",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Une Histoire D'Amour - История Любви",
+          "duration": "0:00"
+        },
+        {
+          "title": "Les Parapluies De Cherbourg - Шербурские Зонтики",
+          "duration": "0:00"
+        },
+        {
+          "title": "Toute La Pluie Tombe Sur Moi - Все Капли Дождя Мои",
+          "duration": "0:00"
+        },
+        {
+          "title": "Vivre Pour Vivre - Жить Чтобы Жить",
+          "duration": "0:00"
+        },
+        {
+          "title": "Les Volets Clos - Закрытые Ставни",
+          "duration": "0:00"
+        },
+        {
+          "title": "Venise Va Mourir- Смятение",
+          "duration": "0:00"
+        },
+        {
+          "title": "Theme De Borsalino - Песня Борсалино",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/11382353-Оркестр-Поля-Мориа-Музыка-Из-Кинофильмов"
+  }
+}

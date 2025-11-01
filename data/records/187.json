@@ -1,0 +1,72 @@
+{
+  "id": "187",
+  "catalogNumber": "С60 23481 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Алла Пугачева"
+  ],
+  "album": "В Стокгольме = In Stockholm",
+  "year": 1985,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/hfiI1OMYUqN-u5rWTWLiV85BdwX6b6PxJ39in-kgfMQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MzI1/NjYtMTMwMzA2NzE1/My5qcGVn.jpeg",
+  "imageUrl": "data/covers/187.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Днём И Ночью = Every Night And Every Day",
+          "duration": "3:57"
+        },
+        {
+          "title": "Глазами Ребёнка = Through The Eyes Of A Child",
+          "duration": "4:27"
+        },
+        {
+          "title": "Любовь Причиняет Страдания = Love Can Hurt",
+          "duration": "4:26"
+        },
+        {
+          "title": "Бесчувственная Телефонистка = Cool Operator",
+          "duration": "3:35"
+        },
+        {
+          "title": "Всё Время Ты Был Рядом = All The Time You Were Right Here",
+          "duration": "4:50"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Святая Ложь = Sacred Lie",
+          "duration": "4:55"
+        },
+        {
+          "title": "Певчая Птичка = Songbird",
+          "duration": "4:05"
+        },
+        {
+          "title": "Неудачная Вечеринка = What A Lousy Party",
+          "duration": "3:44"
+        },
+        {
+          "title": "Капитан = Capitan",
+          "duration": "3:40"
+        },
+        {
+          "title": "Такое Чудо = Such A Miracle",
+          "duration": "3:52"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2832566-Алла-Пугачева-В-Стокгольме-In-Stockholm"
+  }
+}

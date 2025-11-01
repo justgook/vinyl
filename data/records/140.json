@@ -1,0 +1,77 @@
+{
+  "id": "140",
+  "catalogNumber": "С60-05915-6",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Paul Mauriat And His Orchestra"
+  ],
+  "album": "Играет Оркестр Поля Мориа",
+  "year": 1979,
+  "genre": [
+    "Jazz",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/56X2Jbf6Zv6l4azww-koQnFYD4b-phA9XM08feF6vcI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjQ2/MzgzLTE2OTY4NDM0/MzktNzA4MS5qcGVn.jpeg",
+  "imageUrl": "data/covers/140.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Любовь Ушла",
+          "duration": "0:00"
+        },
+        {
+          "title": "Снова Дома",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мой Дом И Река",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мог Ли Это Быть Я",
+          "duration": "0:00"
+        },
+        {
+          "title": "Все Капли Дождя Мои",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Должен Снова Полюбить Тебя",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Мост Над Бурными Водами",
+          "duration": "0:00"
+        },
+        {
+          "title": "Она Немного Лучше",
+          "duration": "0:00"
+        },
+        {
+          "title": "Пусть Будет",
+          "duration": "0:00"
+        },
+        {
+          "title": "Классическая Отгадка",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вариации На Темы «Мост Над Бурными Водами» И «Пусть Будет»",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/11646383-Paul-Mauriat-His-Orchestra-Играет-Оркестр-Поля-Мориа"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "087",
+  "catalogNumber": "С60 29477 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Александр Розенбаум"
+  ],
+  "album": "Казачьи Песни",
+  "year": 1990,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/j4FAcFAi6PT_K4QPTKM7qO1yUWIm0NLkwn5JtG8GLZ4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NzQx/OTAtMTQyMjMwMDI4/MC01OTg5LmpwZWc.jpeg",
+  "imageUrl": "data/covers/087.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Песня Красных Конников • Song Of Red Cavalry Men",
+          "duration": "3:16"
+        },
+        {
+          "title": "Кубанская Казачья • Kuban Cossack Song",
+          "duration": "3:20"
+        },
+        {
+          "title": "Тетя Маня • Aunt Manya",
+          "duration": "2:52"
+        },
+        {
+          "title": "Кандальная • Irons Song",
+          "duration": "3:46"
+        },
+        {
+          "title": "Ой, Дудари, Дудари (Сцена На Ярмарке) • Oh, Pipe Players (Scene At The Fair)",
+          "duration": "6:42"
+        },
+        {
+          "title": "Есаул Молоденький • Young Esaul",
+          "duration": "2:43"
+        },
+        {
+          "title": "Жеребенок • Foal",
+          "duration": "3:40"
+        },
+        {
+          "title": "Романс Генерала Чарноты • General Charnota's Romance",
+          "duration": "2:41"
+        },
+        {
+          "title": "Песня Коня Цыганских Кровей • Song Of A Horse Of Gypsy Breed",
+          "duration": "3:27"
+        },
+        {
+          "title": "Романс Най-Турса • Nai-Turce Romance",
+          "duration": "4:32"
+        },
+        {
+          "title": "Казачья • Cossack Song",
+          "duration": "3:01"
+        },
+        {
+          "title": "На Дону, На Доне • On The Don",
+          "duration": "4:25"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6574190-Александр-Розенбаум-Казачьи-Песни"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "113",
+  "catalogNumber": "А10 00135 003",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Georges Bizet",
+    "Родион Щедрин",
+    "Moscow Virtuosi",
+    "Vladimir Spivakov"
+  ],
+  "album": "Carmen-Suite = Кармен-Сюита",
+  "year": 1985,
+  "genre": [
+    "Classical"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/HhTloXZNoYkwDXYnJk0yFcF1mTgyLjH5F1Gh_NqIktc/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTEx/NjQ3LTE2MzEyMjc3/NzYtNDY1OS5qcGVn.jpeg",
+  "imageUrl": "data/covers/113.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": []
+    },
+    {
+      "name": "Side B",
+      "tracks": []
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/20111647-G-Bizet-R-Shchedrin-Moscow-Virtuosi-Chamber-Orchestra-Vladimir-Spivakov-Carmen-Suite-Кармен-С"
+  }
+}

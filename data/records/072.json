@@ -1,0 +1,60 @@
+{
+  "id": "072",
+  "catalogNumber": "С60 22523 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Raimonds Pauls"
+  ],
+  "album": "Estrādes Dziesmas",
+  "year": 1986,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/mUTXQ5Sh5tVlRjXRTtBTNZnH7U-dFQIth47KUdShdsA/rs:fit/g:sm/q:90/h:579/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNDY0/ODAxLTE3MTM3MTQy/NzgtMTAwNS5qcGVn.jpeg",
+  "imageUrl": "data/covers/072.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Iekod Pirkstā",
+          "duration": "3:07"
+        },
+        {
+          "title": "Pēc Simts Gadiem Piebalgā",
+          "duration": "3:27"
+        },
+        {
+          "title": "Pelnrušķīte",
+          "duration": "3:03"
+        },
+        {
+          "title": "Ap Jāņiem Mārtiņos",
+          "duration": "4:47"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Pasaulīte",
+          "duration": "3:30"
+        },
+        {
+          "title": "Vardīte",
+          "duration": "2:56"
+        },
+        {
+          "title": "Popūrijs Par R. Paula Dziesmām",
+          "duration": "10:40"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/30464801-Raimonds-Pauls-Estrādes-Dziesmas"
+  }
+}

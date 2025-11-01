@@ -1,0 +1,64 @@
+{
+  "id": "067",
+  "catalogNumber": "С60 28893 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Пикник"
+  ],
+  "album": "Родом Ниоткуда",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/d4yhhqcsVue9eaHO69_B3m_8-OYzuyYHBO94xSY6U1Y/rs:fit/g:sm/q:90/h:200/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDIz/NjctMTI1MTI1NTQ2/My5qcGVn.jpeg",
+  "imageUrl": "data/covers/067.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Я Невидим",
+          "duration": "6:00"
+        },
+        {
+          "title": "Интересно",
+          "duration": "5:37"
+        },
+        {
+          "title": "Нет Берегов",
+          "duration": "5:03"
+        },
+        {
+          "title": "Романс",
+          "duration": "2:14"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Это Он",
+          "duration": "4:33"
+        },
+        {
+          "title": "Стоя На Этой Лестнице",
+          "duration": "5:04"
+        },
+        {
+          "title": "Дай Себя Сорвать",
+          "duration": "5:02"
+        },
+        {
+          "title": "Все Остальное — Дым",
+          "duration": "3:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/1902367-Пикник-Родом-Ниоткуда"
+  }
+}

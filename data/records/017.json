@@ -1,33 +1,42 @@
 {
   "id": "017",
-  "catalogNumber": "ROUGH73",
-  "recordLabel": "Rough Trade",
-  "artists": ["The Smiths"],
-  "album": "The Queen Is Dead",
-  "year": 1986,
-  "genre": ["Alternative Rock", "Indie Rock"],
-  "format": "LP, Album",
-  "condition": "Good Plus",
-  "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=The+Smiths",
+  "catalogNumber": "С60 27023 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Rainbow"
+  ],
+  "album": "Ансамбль Rainbow",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ODqeynW2qY1FmnhpbGDv-TIM4XE0dteImjPQnfi4ujM/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MTc0/NzAtMTU3MDUzODIx/Mi0yMjgwLmpwZWc.jpeg",
+  "imageUrl": "data/covers/017.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "The Queen Is Dead",
-          "duration": "4:02"
+          "title": "Man On The Silver Mountain = Человек на серебряной горе",
+          "duration": "4:40"
         },
         {
-          "title": "Frankly, Mr. Shankly",
-          "duration": "3:32"
+          "title": "Still I'm Sad = Я все еще грустен",
+          "duration": "3:54"
         },
         {
-          "title": "I Know It's Over",
-          "duration": "5:34"
+          "title": "Long Live Rock'n'Roll = Да здравствует рок-н-ролл",
+          "duration": "4:25"
         },
         {
-          "title": "Never Had No One Ever",
-          "duration": "3:48"
+          "title": "All Night Long = Всю ночь",
+          "duration": "3:49"
+        },
+        {
+          "title": "Stone Cold = Холодный, как камень",
+          "duration": "5:15"
         }
       ]
     },
@@ -35,29 +44,25 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "Cemetery Gates",
-          "duration": "3:32"
+          "title": "If You Don't Like Rock'n'Roll = Если вам не нравится рок-н-ролл",
+          "duration": "2:36"
         },
         {
-          "title": "Bigmouth Strikes Again",
-          "duration": "3:17"
+          "title": "Stargazer = Звездочет",
+          "duration": "8:28"
         },
         {
-          "title": "The Boy with the Thorn in His Side",
-          "duration": "3:20"
+          "title": "Freedom Fighter = Борец за свободу",
+          "duration": "4:20"
         },
         {
-          "title": "Vicar in a Tutu",
-          "duration": "2:40"
-        },
-        {
-          "title": "There Is a Light That Never Goes Out",
-          "duration": "4:25"
+          "title": "I Surrender = Я сдаюсь",
+          "duration": "4:01"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/335425"
+    "discogs": "https://www.discogs.com/release/4617470-Rainbow-Ансамбль-Rainbow"
   }
 }

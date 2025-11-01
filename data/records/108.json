@@ -1,0 +1,61 @@
+{
+  "id": "108",
+  "catalogNumber": "С60 26349 003",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Радиостанция «Юность». 45 Минут В Воскресной Студии. Выпуск 1 = The \"Yunost\" Radio Studio. 45-Minute Sunday Show",
+  "year": 1987,
+  "genre": [
+    "Electronic",
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/0a7GQ7JbP3yzG527uVc0QxeTu1ypTP5jvlIjsrmy22c/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5NTkz/MjktMTQ5OTI2Mzk4/MC05MjUyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/108.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Чарли Чаплин = Charles Chaplin",
+          "duration": "0:00"
+        },
+        {
+          "title": "Магистр = Master",
+          "duration": "0:00"
+        },
+        {
+          "title": "Кот Бегемот = Cat Begemot",
+          "duration": "0:00"
+        },
+        {
+          "title": "Баллада = Ballad",
+          "duration": "0:00"
+        },
+        {
+          "title": "Щит И Меч = Shield And Sword",
+          "duration": "0:00"
+        },
+        {
+          "title": "Актуальная Тема = Actual Theme",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песнь О Вороне = Song Of Raven",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дальний Свет",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/9959329-Various-Радиостанция-Юность-45-Минут-В-Воскресной-Студии-В"
+  }
+}

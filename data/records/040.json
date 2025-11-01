@@ -1,0 +1,60 @@
+{
+  "id": "040",
+  "catalogNumber": "С60 27501 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Led Zeppelin"
+  ],
+  "album": "Stairway To Heaven",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation, Unofficial Release, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/L6hon7ALN5mce6o-7xkmoEoS8m4n7LaHc8HVOGxhtIo/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwODEx/OTItMTM4Mzk4Nzcz/OC0zNTk3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/040.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Immigrant Song = Песня Иммигрантов",
+          "duration": "2:24"
+        },
+        {
+          "title": "Gallows Pole = Виселица",
+          "duration": "4:55"
+        },
+        {
+          "title": "Since I've Been Loving You = С Тех Пор, Как Я Тебя Люблю",
+          "duration": "7:23"
+        },
+        {
+          "title": "Black Dog = Черный Пес",
+          "duration": "4:53"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "When The Levee Breaks = Когда Рухнет Плотина",
+          "duration": "7:08"
+        },
+        {
+          "title": "Rock And Roll = Рок-н-Ролл",
+          "duration": "3:39"
+        },
+        {
+          "title": "Stairway To Heaven = Лестница На Небеса",
+          "duration": "8:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5081192-Led-Zeppelin-Stairway-To-Heaven"
+  }
+}

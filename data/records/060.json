@@ -1,0 +1,70 @@
+{
+  "id": "060",
+  "catalogNumber": "С60 25215 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Михаил Жванецкий",
+    "Роман Карцев",
+    "Виктор Ильченко"
+  ],
+  "album": "Дискотека Смеха",
+  "year": 1988,
+  "genre": [
+    "Non-Music"
+  ],
+  "format": "Vinyl, LP",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/7HBcMB1YK8HscDF1rEV2VwvhSYSR556z4io-5bu_wnc/rs:fit/g:sm/q:90/h:495/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5NDU1/NjktMTM4MDIxMjg3/Ny0yNDI2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/060.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Непереводимая Игра Слов",
+          "duration": "5:17"
+        },
+        {
+          "title": "Паровоз Для Машиниста",
+          "duration": "6:56"
+        },
+        {
+          "title": "Все На Охрану Социалистической Собственности",
+          "duration": "4:28"
+        },
+        {
+          "title": "В Три Строки",
+          "duration": "0:56"
+        },
+        {
+          "title": "Приветствие",
+          "duration": "2:41"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Собрание На Ликеро-Водочном Заводе",
+          "duration": "6:04"
+        },
+        {
+          "title": "На Складе",
+          "duration": "3:07"
+        },
+        {
+          "title": "Звонок",
+          "duration": "4:55"
+        },
+        {
+          "title": "Теория Относительности",
+          "duration": "4:12"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4945569-Михаил-Жванецкий-Роман-Карцев-Виктор-Ильченко-Дискоте"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "061",
+  "catalogNumber": "М60-38761",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Микаэл Таривердиев"
+  ],
+  "album": "Музыка Из Кинофильмов «Ольга Сергеевна», «Ирония Судьбы»",
+  "year": 2025,
+  "genre": [
+    "Pop",
+    "Stage & Screen"
+  ],
+  "format": "Vinyl, LP, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/sfw9M9TRiYZEPy0jIX5_2d3obm7hNQ9IpImU0XgjUJ8/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzI1/MzY5LTE1NTk4MjM4/NTQtNDQxOC5qcGVn.jpeg",
+  "imageUrl": "data/covers/061.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Не Исчезай",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ария",
+          "duration": "0:00"
+        },
+        {
+          "title": "Утро В Горах",
+          "duration": "0:00"
+        },
+        {
+          "title": "Воспоминание",
+          "duration": "0:00"
+        },
+        {
+          "title": "Она Не Придет",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вечерний Город",
+          "duration": "0:00"
+        },
+        {
+          "title": "Память",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вступление",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Мне Нравится",
+          "duration": "0:00"
+        },
+        {
+          "title": "Никого Не Будет В Доме",
+          "duration": "0:00"
+        },
+        {
+          "title": "У Зеркала",
+          "duration": "0:00"
+        },
+        {
+          "title": "Со Мною Вот Что Происходит",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Спросил У Ясеня",
+          "duration": "0:00"
+        },
+        {
+          "title": "По Улице Моей",
+          "duration": "0:00"
+        },
+        {
+          "title": "Возвращение Ипполита",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/13725369-Микаэл-Таривердиев-Музыка-Из-Кинофильмов-Ольга-Сергее"
+  }
+}

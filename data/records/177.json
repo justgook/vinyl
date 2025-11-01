@@ -1,0 +1,73 @@
+{
+  "id": "177",
+  "catalogNumber": "С60-05509-10",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Raimonds Pauls"
+  ],
+  "album": "Nekal Mani Gredzenā",
+  "year": 1977,
+  "genre": [
+    "Jazz",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/v4hsJjmaNl4OMO_hnyPFc-mFrgcjNEjgpHuKoFOWJ-4/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDM0/NTkyLTE1MTYyNzEw/MzMtMzU0MC5qcGVn.jpeg",
+  "imageUrl": "data/covers/177.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Nekal Mani Gredzenā",
+          "duration": "0:00"
+        },
+        {
+          "title": "Rudenī Vēlu, Vēlu",
+          "duration": "0:00"
+        },
+        {
+          "title": "Sapņu Princis",
+          "duration": "0:00"
+        },
+        {
+          "title": "Pa Mēness Tiltu",
+          "duration": "0:00"
+        },
+        {
+          "title": "Pusnakts Balāde",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Sikspārņa Fledermauša Šūpuļdziesma",
+          "duration": "0:00"
+        },
+        {
+          "title": "Caur Manu Sirdi Naivu",
+          "duration": "0:00"
+        },
+        {
+          "title": "Lauku Gurķis Rīgas Tirgū",
+          "duration": "0:00"
+        },
+        {
+          "title": "Pāri Dzelmei",
+          "duration": "0:00"
+        },
+        {
+          "title": "Šajā Pasaulē",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/11434592-Raimonds-Pauls-Nekal-Mani-Gredzenā"
+  }
+}

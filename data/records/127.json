@@ -1,0 +1,77 @@
+{
+  "id": "127",
+  "catalogNumber": "C 60-14657",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Ритм"
+  ],
+  "album": "Дискотека «А» (Из Репертуара Аллы Пугачевой)",
+  "year": 1980,
+  "genre": [
+    "Funk / Soul",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/WEkOmB2FT2BRF5z1cAEGEcPCXGKeynXD--rVAIxmL9o/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NTMx/NTkyLTE1OTMxNDQx/OTItMzg3My5qcGVn.jpeg",
+  "imageUrl": "data/covers/127.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Все Силы Даже Прилагая",
+          "duration": "0:00"
+        },
+        {
+          "title": "Улетай, Туча",
+          "duration": "0:00"
+        },
+        {
+          "title": "Женщина, Которая Поет",
+          "duration": "0:00"
+        },
+        {
+          "title": "Три Желанья",
+          "duration": "0:00"
+        },
+        {
+          "title": "Этот Мир",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вот Так Случилось, Мама",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Что Не Может Сделать Атом",
+          "duration": "0:00"
+        },
+        {
+          "title": "Звездное Лето",
+          "duration": "0:00"
+        },
+        {
+          "title": "Музыкант",
+          "duration": "0:00"
+        },
+        {
+          "title": "Папа Купил Автомобиль",
+          "duration": "0:00"
+        },
+        {
+          "title": "Поднимись Над Суетой",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/15531592-Ритм-Дискотека-А-Из-Репертуара-Аллы-Пугачевой"
+  }
+}

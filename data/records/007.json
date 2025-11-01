@@ -1,43 +1,75 @@
 {
   "id": "007",
-  "catalogNumber": "4700001",
-  "recordLabel": "Philips",
-  "artists": ["Kraftwerk"],
-  "album": "Autobahn",
-  "year": 1974,
-  "genre": ["Electronic", "Krautrock"],
-  "format": "LP, Album",
+  "catalogNumber": "М60 48501 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Мир Вашему Дому",
+  "year": 1988,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Mono",
   "condition": "Near Mint",
-  "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Kraftwerk",
+  "sourceImageUrl": "https://i.discogs.com/R-FRJ6obfZLV-eM1J5G6DWr_mLWlwjb6IgCyElfzxFc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MjM2/MzYtMTM4OTUzOTYw/My0yNDE2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/007.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Autobahn",
-          "duration": "22:42"
-        }
-      ]
-    },
-    {
-      "name": "Side B",
-      "tracks": [
-        {
-          "title": "Kometenmelodie 1",
-          "duration": "6:13"
+          "title": "О Поэтах И Кликушах",
+          "duration": "0:00"
         },
         {
-          "title": "Kometenmelodie 2",
-          "duration": "4:33"
+          "title": "Песня Летчика-Истребителя",
+          "duration": "0:00"
         },
         {
-          "title": "Kristallo",
-          "duration": "7:46"
+          "title": "\"Як\"-Истребитель",
+          "duration": "0:00"
+        },
+        {
+          "title": "Случай В Ресторане",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песенка Про Мангустов",
+          "duration": "0:00"
+        },
+        {
+          "title": "Веселая Покойницкая",
+          "duration": "0:00"
+        },
+        {
+          "title": "Москва - Одесса",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вариации На Цыганские Темы",
+          "duration": "0:00"
+        },
+        {
+          "title": "Лошадей 20 Тысяч",
+          "duration": "0:00"
+        },
+        {
+          "title": "Моим Друзьям",
+          "duration": "0:00"
+        },
+        {
+          "title": "Баллада О Брошенном Корабле",
+          "duration": "0:00"
+        },
+        {
+          "title": "Корабли",
+          "duration": "0:00"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/349319"
+    "discogs": "https://www.discogs.com/release/3923636-Владимир-Высоцкий-Мир-Вашему-Дому"
   }
 }

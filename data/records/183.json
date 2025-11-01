@@ -1,0 +1,84 @@
+{
+  "id": "183",
+  "catalogNumber": "С90 26849 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Телевизор"
+  ],
+  "album": "Шествие Рыб",
+  "year": 1989,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/nBTa-T3Y8lE6-lzULorE9y2kfCDrbEWgkdbukyWubDc/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MDMx/OTk2LTE2MTY4NDk3/ODktNzkxOC5qcGVn.jpeg",
+  "imageUrl": "data/covers/183.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Люди В Ожидании",
+          "duration": "2:46"
+        },
+        {
+          "title": "Муха На Стекле",
+          "duration": "2:09"
+        },
+        {
+          "title": "Город",
+          "duration": "3:02"
+        },
+        {
+          "title": "Я Не Виноват",
+          "duration": "2:14"
+        },
+        {
+          "title": "Вчера",
+          "duration": "2:04"
+        },
+        {
+          "title": "Цветные Сны",
+          "duration": "3:24"
+        },
+        {
+          "title": "Человек Из Ваты",
+          "duration": "2:17"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Дальний Восток",
+          "duration": "2:20"
+        },
+        {
+          "title": "Шествие Рыб",
+          "duration": "3:59"
+        },
+        {
+          "title": "Обо Мне",
+          "duration": "2:12"
+        },
+        {
+          "title": "Мания Величия",
+          "duration": "1:42"
+        },
+        {
+          "title": "Товарищ Сухов",
+          "duration": "3:23"
+        },
+        {
+          "title": "С Вами Говорит Телевизор",
+          "duration": "3:17"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/18031996-Телевизор-Шествие-Рыб"
+  }
+}

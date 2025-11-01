@@ -1,0 +1,72 @@
+{
+  "id": "099",
+  "catalogNumber": "С60 25543 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Весёлые Ребята"
+  ],
+  "album": "Минуточку!!!",
+  "year": 1987,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/FPryDeaQ2r0eRELVchwmEJHdlSurZrd7hxaVnijwm7w/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxODkw/NDUtMTM4NzAxNzY5/MS03MjM3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/099.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Автомобили",
+          "duration": "3:14"
+        },
+        {
+          "title": "Вечер При Свечах",
+          "duration": "5:34"
+        },
+        {
+          "title": "Баня",
+          "duration": "3:31"
+        },
+        {
+          "title": "Гранитный Город",
+          "duration": "4:11"
+        },
+        {
+          "title": "Корабли",
+          "duration": "3:10"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Не Волнуйтесь, Тётя",
+          "duration": "4:22"
+        },
+        {
+          "title": "Скоро",
+          "duration": "3:32"
+        },
+        {
+          "title": "Жил В Африке Слон",
+          "duration": "4:44"
+        },
+        {
+          "title": "Чертаново",
+          "duration": "2:55"
+        },
+        {
+          "title": "Шутовское Королевство",
+          "duration": "3:11"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5189045-Весёлые-Ребята-Минуточку"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "205",
+  "catalogNumber": "М51 21693 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Charles Perrault"
+  ],
+  "album": "Кот В Сапогах",
+  "year": 1987,
+  "genre": [
+    "Non-Music",
+    "Children's"
+  ],
+  "format": "Vinyl, LP, 10\", Repress, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/-_rX7mf6ddYT3gn9YY8dIrk-9Gde_GmEg_OPVS5Av7k/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODg0/NjAzLTE2MTAzOTUz/NDQtMzc1MS5qcGVn.jpeg",
+  "imageUrl": "data/covers/205.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Кот В Сапогах",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Кот В Сапогах (Окончание)",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/16884603-Ш-Перро-Кот-В-Сапогах"
+  }
+}

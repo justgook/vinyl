@@ -1,0 +1,72 @@
+{
+  "id": "197",
+  "catalogNumber": "С60 22697 009",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Ricchi E Poveri"
+  ],
+  "album": "Богатые И Бедные",
+  "year": 1985,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/Y5fUHcrwruaXpEXViQrn7wN6wiDsUb03rK6Y5nyR5lc/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NzA2/NDA2LTE2MDkzNTU0/MDItMjY0OC5qcGVn.jpeg",
+  "imageUrl": "data/covers/197.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Мама Мария = Mamma Maria",
+          "duration": "2:56"
+        },
+        {
+          "title": "Бедные = Poveri",
+          "duration": "3:23"
+        },
+        {
+          "title": "Чудесный Вечер = Magnifica Serata (Original Soundtrack Of The Film \"Scusa Se È Poco\")",
+          "duration": "3:15"
+        },
+        {
+          "title": "Недоразумение = Malinteso",
+          "duration": "3:21"
+        },
+        {
+          "title": "Венеция = Venezia",
+          "duration": "3:23"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Маленькая Любовь = Piccolo Amore",
+          "duration": "3:21"
+        },
+        {
+          "title": "Немного Любить = Amarsi Un Pò",
+          "duration": "3:24"
+        },
+        {
+          "title": "Мне Хорошо = C'è Che Sto Bene",
+          "duration": "3:25"
+        },
+        {
+          "title": "Сильнейшее Чувство = Fortissimo",
+          "duration": "4:07"
+        },
+        {
+          "title": "Потому Что Нужна Любовь = Perché Ci Vuole L'Amore",
+          "duration": "2:56"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/16706406-Ricchi-E-Poveri-Богатые-И-Бедные"
+  }
+}

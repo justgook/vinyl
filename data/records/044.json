@@ -1,0 +1,68 @@
+{
+  "id": "044",
+  "catalogNumber": "С60 27607 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Мастер"
+  ],
+  "album": "Мастер",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/YEmx8fGF6apXue0M-R-ZWS_tR_xWQExvuMYM6SBl65g/rs:fit/g:sm/q:90/h:585/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTI2/NTM3LTE1NjQyMzAw/NjQtNjQyNS5qcGVn.jpeg",
+  "imageUrl": "data/covers/044.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Берегись = Watch Out",
+          "duration": "4:00"
+        },
+        {
+          "title": "Руки Прочь = Hands Off",
+          "duration": "5:12"
+        },
+        {
+          "title": "Щит И Меч = Shield And Sword",
+          "duration": "4:52"
+        },
+        {
+          "title": "Еще Раз Ночь = It's Night Once Again",
+          "duration": "5:32"
+        },
+        {
+          "title": "Воля И Разум = Will And Reason",
+          "duration": "4:15"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Встань, Страх Преодолей = Stand Up, Get Over Fear",
+          "duration": "4:01"
+        },
+        {
+          "title": "Храни Меня = Save Me",
+          "duration": "5:59"
+        },
+        {
+          "title": "Кто Кого? = Who Will Win?",
+          "duration": "2:47"
+        },
+        {
+          "title": "Мастер = Master",
+          "duration": "4:03"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/13926537-Мастер-Мастер"
+  }
+}

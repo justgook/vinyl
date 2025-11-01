@@ -1,0 +1,90 @@
+{
+  "id": "112",
+  "catalogNumber": "СМ 03253-4",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Dean Reed"
+  ],
+  "album": "Дин Рид",
+  "year": 1972,
+  "genre": [
+    "Rock",
+    "Pop",
+    "Folk, World, & Country"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/L88Qfi8gWPlEJibgZV7AN6s-CSqdZNxZbL1W6neH5Q4/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MTUz/OTUtMTM0NTQ5OTk3/OS04ODg3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/112.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Мы - Революционеры",
+          "duration": "0:00"
+        },
+        {
+          "title": "То, Что Я Видел",
+          "duration": "0:00"
+        },
+        {
+          "title": "Пусть Всегда Будет Солнце",
+          "duration": "0:00"
+        },
+        {
+          "title": "Гуантанамера",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мы Победим",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мы Идем И Поем",
+          "duration": "0:00"
+        },
+        {
+          "title": "Алилуйя",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Элоиза",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Всегда Все Делал По-своему",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сопротивление Любви",
+          "duration": "0:00"
+        },
+        {
+          "title": "Нежно И Тихо",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мутная Миссисипи",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вчера, Когда Я Был Молодым",
+          "duration": "0:00"
+        },
+        {
+          "title": "Это Не Дождь",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3815395-Дин-Рид-Дин-Рид"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "066",
+  "catalogNumber": "С60 27775 001",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Галактика"
+  ],
+  "album": "В Атмосфере Гласности",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/uUnGq5Ub9pQjbrwl_IvGb4ei6WwIyYOda-PIip83faM/rs:fit/g:sm/q:90/h:600/w:574/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3Njkz/NjMtMTU1NTY5MDEx/Ny00NTc2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/066.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Лазарет",
+          "duration": "5:10"
+        },
+        {
+          "title": "Глядя На Черную Воду С Моста",
+          "duration": "9:50"
+        },
+        {
+          "title": "Я Метал",
+          "duration": "4:33"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "В Атмосфере Гласности",
+          "duration": "3:58"
+        },
+        {
+          "title": "37-й",
+          "duration": "6:28"
+        },
+        {
+          "title": "От Винницы До Ниццы",
+          "duration": "6:37"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3769363-Галактика-В-Атмосфере-Гласности"
+  }
+}

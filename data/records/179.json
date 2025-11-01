@@ -1,0 +1,72 @@
+{
+  "id": "179",
+  "catalogNumber": "33 С60-05035-36",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "София Ротару"
+  ],
+  "album": "София Ротару",
+  "year": 1974,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/2Fci_uvkGky5BaYcNZHz3r5iwsTItHiAulOAGFG70Yo/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMzc0/MTYtMTY0MDM5MjI2/MS03MzY2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/179.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Баллада О Скрипках",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сказка",
+          "duration": "0:00"
+        },
+        {
+          "title": "Два Перстня",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня Будет С Нами",
+          "duration": "0:00"
+        },
+        {
+          "title": "Только Ты",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Вспоминай Меня",
+          "duration": "0:00"
+        },
+        {
+          "title": "Твоя Вина",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Жду Весну",
+          "duration": "0:00"
+        },
+        {
+          "title": "Расскажи Мне Сказку",
+          "duration": "0:00"
+        },
+        {
+          "title": "Алешенька (Баллада О Матери)",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6237416-София-Ротару-София-Ротару"
+  }
+}

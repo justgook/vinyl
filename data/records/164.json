@@ -1,0 +1,80 @@
+{
+  "id": "164",
+  "catalogNumber": "С60 25573 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Секрет"
+  ],
+  "album": "Бит-Квартет \"Секрет\"",
+  "year": 1987,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/UdEYrlyrvo-OuGbj1itsaIV6iP7j2fwSTqdfjP5OH3U/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NTE0/MjItMTI4NDc5ODU2/OS5qcGVn.jpeg",
+  "imageUrl": "data/covers/164.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Буги-Вуги",
+          "duration": "0:00"
+        },
+        {
+          "title": "Она Не Понимает",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вниз По Течению",
+          "duration": "3:45"
+        },
+        {
+          "title": "Привет",
+          "duration": "2:58"
+        },
+        {
+          "title": "Твой Папа Был Прав",
+          "duration": "3:00"
+        },
+        {
+          "title": "Последний Час Декабря",
+          "duration": "3:50"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Тысяча Пластинок",
+          "duration": "3:00"
+        },
+        {
+          "title": "Сара Бара-Бу",
+          "duration": "2:30"
+        },
+        {
+          "title": "Именины У Кристины",
+          "duration": "2:51"
+        },
+        {
+          "title": "Моя Любовь На Пятом Этаже",
+          "duration": "2:58"
+        },
+        {
+          "title": "Алиса",
+          "duration": "2:24"
+        },
+        {
+          "title": "Мажорный Рок-Н-Ролл",
+          "duration": "2:10"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2451422-Секрет-Бит-Квартет-Секрет"
+  }
+}

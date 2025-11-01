@@ -2,23 +2,23 @@
   "rows": [
     {
       "category": "Recently Added",
-      "records": ["020", "019", "018", "017", "016", "015", "014", "013", "012", "011"]
-    },
-    {
-      "category": "Progressive Rock",
-      "records": ["001", "013", "006"]
-    },
-    {
-      "category": "1970s Classics",
-      "records": ["001", "003", "005", "006", "007", "002"]
-    },
-    {
-      "category": "Electronic Music",
-      "records": ["007", "012", "015", "016", "020"]
+      "records": [
+        "028",
+        "029",
+        "041",
+        "080",
+        "078",
+        "168",
+        "026"
+      ]
     },
     {
       "category": "Jazz & Experimental",
-      "records": ["004", "009", "010", "018"]
+      "records": [
+        "020",
+        "067",
+        "068"
+      ]
     }
   ]
 }

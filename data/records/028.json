@@ -1,0 +1,56 @@
+{
+  "id": "028",
+  "catalogNumber": "С60 27413 000",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Ария"
+  ],
+  "album": "Герой Асфальта",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/MyNwoyQMqmDPPeUPmriGHuCZVpMGI-YrAn4gI6e4f-w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNjc0/NDEtMTM2MzAxOTcx/OS0xMDI2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/028.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "На Службе Силы Зла",
+          "duration": "7:02"
+        },
+        {
+          "title": "Герой Асфальта",
+          "duration": "5:08"
+        },
+        {
+          "title": "Мертвая Зона",
+          "duration": "6:35"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Тысяча Сто",
+          "duration": "4:50"
+        },
+        {
+          "title": "Улица Роз",
+          "duration": "5:52"
+        },
+        {
+          "title": "Баллада О Древнерусском Воине",
+          "duration": "8:23"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4367441-Ария-Герой-Асфальта"
+  }
+}

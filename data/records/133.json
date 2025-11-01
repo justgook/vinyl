@@ -1,0 +1,80 @@
+{
+  "id": "133",
+  "catalogNumber": "С60-10865",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Синяя Птица"
+  ],
+  "album": "От Сердца К Сердцу",
+  "year": 1979,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/0XeqBFzNuRv6UbXdxb78E7qVvNsbp0ZxVYkHPMFO3Qc/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNjUw/MzItMTQ4NzE1MjY2/NC02MTc3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/133.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "От Сердца К Сердцу",
+          "duration": "2:44"
+        },
+        {
+          "title": "Это Ошибка",
+          "duration": "2:18"
+        },
+        {
+          "title": "Не Обещай Меня Любить",
+          "duration": "2:46"
+        },
+        {
+          "title": "Купи Мне Шарик",
+          "duration": "4:46"
+        },
+        {
+          "title": "Желтый Зонтик",
+          "duration": "3:52"
+        },
+        {
+          "title": "Не Забывается, Что Не Сбывается",
+          "duration": "2:12"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Между Мною И Тобою",
+          "duration": "3:22"
+        },
+        {
+          "title": "Неужели",
+          "duration": "3:26"
+        },
+        {
+          "title": "Мы Ведем Дороги",
+          "duration": "2:23"
+        },
+        {
+          "title": "Хочешь, Я Стану Дождиком",
+          "duration": "3:58"
+        },
+        {
+          "title": "Не Узнаешь",
+          "duration": "2:34"
+        },
+        {
+          "title": "Урок Сольфеджио",
+          "duration": "3:06"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/9365032-Синяя-Птица-От-Сердца-К-Сердцу"
+  }
+}

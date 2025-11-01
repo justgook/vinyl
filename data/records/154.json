@@ -1,0 +1,68 @@
+{
+  "id": "154",
+  "catalogNumber": "С60 22695 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Pupo"
+  ],
+  "album": "Пупо",
+  "year": 1985,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/njeQO7gtmcdkUDuWUgJWBGftnucpmel1iYtEMzb5_xg/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NzI0/MTYtMTQ3MjUzNzQx/Mi05NjM1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/154.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Только Благодаря Тебе · Lo Devo Solo A Te",
+          "duration": "3:03"
+        },
+        {
+          "title": "Потому Что Так Случается · Perchè È Così",
+          "duration": "3:29"
+        },
+        {
+          "title": "Кто Знает, Что Будет Завтра · Chissà Se Domani",
+          "duration": "3:02"
+        },
+        {
+          "title": "Нашвилл · Nashville",
+          "duration": "3:25"
+        },
+        {
+          "title": "Полет · Volano",
+          "duration": "3:43"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Я Никогда Не Сдавался · Non Mi Arrendevo Mai",
+          "duration": "3:06"
+        },
+        {
+          "title": "История Нашей Любви · La Storia Di Noi Due",
+          "duration": "3:03"
+        },
+        {
+          "title": "Телеуправляемая Деревянная Кукла · Burattino Telecomandato",
+          "duration": "3:01"
+        },
+        {
+          "title": "Тебе Это Кажется Простым · Ti Sembra Facile",
+          "duration": "3:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/8972416-Pupo-Пупо"
+  }
+}

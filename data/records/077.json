@@ -1,0 +1,85 @@
+{
+  "id": "077",
+  "catalogNumber": "33Д-029035-36",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Raimonds Pauls"
+  ],
+  "album": "Raimonds Pauls",
+  "year": 2025,
+  "genre": [
+    "Jazz",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/rSS4qWQnHh1nw3tY4l7QnRXjCsxAL7etGivDBjAyB3o/rs:fit/g:sm/q:90/h:598/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1OTA3/NjQtMTYxNjAwOTM2/MC05NjY2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/077.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Tik Dzintars Vien",
+          "duration": "0:00"
+        },
+        {
+          "title": "Baltā Saule",
+          "duration": "0:00"
+        },
+        {
+          "title": "Kam Ziedi, Mežābele",
+          "duration": "0:00"
+        },
+        {
+          "title": "Balāde Manam Vectēvam",
+          "duration": "0:00"
+        },
+        {
+          "title": "Vokalīze «Lietus Lāses»",
+          "duration": "0:00"
+        },
+        {
+          "title": "Zib Mūža Rats",
+          "duration": "0:00"
+        },
+        {
+          "title": "Hallo, Rostoka",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Cik Klusa Nakts",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ceļā",
+          "duration": "0:00"
+        },
+        {
+          "title": "Gaujai",
+          "duration": "0:00"
+        },
+        {
+          "title": "Cepļa Saiešanā",
+          "duration": "0:00"
+        },
+        {
+          "title": "Latgalei",
+          "duration": "0:00"
+        },
+        {
+          "title": "Liepājai",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5590764-Raimonds-Pauls-Raimonds-Pauls"
+  }
+}

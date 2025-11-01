@@ -1,0 +1,88 @@
+{
+  "id": "174",
+  "catalogNumber": "33 С60 - 07403",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Teach-In"
+  ],
+  "album": "Festival",
+  "year": 1977,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/lsTGh6PbEpesoE3dGs7J-FfRKdxdK8GnKIaxBl3uxE0/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzE3/NjA4LTE1NDA2NDE1/MDktODg4Mi5qcGVn.jpeg",
+  "imageUrl": "data/covers/174.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Цирковое Представление",
+          "duration": "0:00"
+        },
+        {
+          "title": "Летней Ночью",
+          "duration": "0:00"
+        },
+        {
+          "title": "Нет Времени",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Одинок",
+          "duration": "0:00"
+        },
+        {
+          "title": "Позволь Мне Войти",
+          "duration": "0:00"
+        },
+        {
+          "title": "Прекрасный День",
+          "duration": "0:00"
+        },
+        {
+          "title": "Город Теннесси",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Дин - Дон",
+          "duration": "0:00"
+        },
+        {
+          "title": "Спой Свою Песню",
+          "duration": "0:00"
+        },
+        {
+          "title": "Цирк Приезжает В Город",
+          "duration": "0:00"
+        },
+        {
+          "title": "До Свиданья, Старый Друг",
+          "duration": "0:00"
+        },
+        {
+          "title": "Кукла",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ты и Я",
+          "duration": "0:00"
+        },
+        {
+          "title": "Улетай",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/12717608-Тич-Ин-Festival"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "180",
+  "catalogNumber": "С60-14615-16",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Eolika"
+  ],
+  "album": "Rīgas Sapņi",
+  "year": 1982,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Album, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/6l0zSDhOlaobcSX_euEK5nG0iq3qEagBD-vG33OCCzQ/rs:fit/g:sm/q:90/h:339/w:336/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NzI0/NzYtMTQzMTAxMzY1/Ny00NTg2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/180.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Доброе Утро, Рига",
+          "duration": "0:00"
+        },
+        {
+          "title": "Простые Слова",
+          "duration": "0:00"
+        },
+        {
+          "title": "Где Ты, Любовь?",
+          "duration": "0:00"
+        },
+        {
+          "title": "Антикварные Автомобили",
+          "duration": "0:00"
+        },
+        {
+          "title": "Счастливое Число",
+          "duration": "0:00"
+        },
+        {
+          "title": "Звездопад",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Забыл Твое Лицо",
+          "duration": "0:00"
+        },
+        {
+          "title": "Кому Светит Солнце?",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сны Риги",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6672476-Eolika-Rīgas-Sapņi"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "162",
+  "catalogNumber": "С60 24129 000",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Автограф"
+  ],
+  "album": "Автограф",
+  "year": 1986,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/hVldA9xk66t1YK4JM0lU-OueyUQSeRjfnGCUwENiqPc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxODQx/ODYtMTM1NzkxMDQ0/NS0xNjA5LmpwZWc.jpeg",
+  "imageUrl": "data/covers/162.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "S.O.S.",
+          "duration": "4:25"
+        },
+        {
+          "title": "Реквием (Памяти Джона Леннона)",
+          "duration": "8:32"
+        },
+        {
+          "title": "Истина",
+          "duration": "4:54"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Монолог",
+          "duration": "4:50"
+        },
+        {
+          "title": "Нам Нужен Мир",
+          "duration": "5:06"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4184186-Автограф-Автограф"
+  }
+}

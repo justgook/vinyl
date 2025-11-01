@@ -1,0 +1,68 @@
+{
+  "id": "095",
+  "catalogNumber": "С60-09353-4",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Express"
+  ],
+  "album": "Экспресс",
+  "year": 1979,
+  "genre": [
+    "Jazz",
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/vemoIX3crOQYtFcTtgb6loZ6aAiVFOssRbwbHmMI7YI/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMzA5/NjM5LTE3NDExMjMy/NzQtNzIwMi5qcGVn.jpeg",
+  "imageUrl": "data/covers/095.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Всегда Мало Времени",
+          "duration": "0:00"
+        },
+        {
+          "title": "Наш Вечер",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мы Были Друзьями",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ты Ушла Из Моей Жизни",
+          "duration": "0:00"
+        },
+        {
+          "title": "Слушай Только Меня",
+          "duration": "0:00"
+        },
+        {
+          "title": "Прощай",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мой Секрет",
+          "duration": "0:00"
+        },
+        {
+          "title": "Старый Гармонист",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Жду Тебя",
+          "duration": "0:00"
+        },
+        {
+          "title": "Старая Луна",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/33309639-Экспресс-Экспресс"
+  }
+}

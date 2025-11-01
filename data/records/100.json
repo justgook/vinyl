@@ -1,0 +1,77 @@
+{
+  "id": "100",
+  "catalogNumber": "33 С60-05259-60",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Ray Conniff"
+  ],
+  "album": "Alone Again (Naturally)",
+  "year": 1974,
+  "genre": [
+    "Jazz",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/d4NZjhG6CbOx58ZVMbACzyPdQoJSFOwTjz0ZxnoKADE/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3OTAw/NjAtMTM0NDUxNTU4/OS01NzA5LmpwZWc.jpeg",
+  "imageUrl": "data/covers/100.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Alone Again (Naturally)",
+          "duration": "2:58"
+        },
+        {
+          "title": "Song Sung Blue",
+          "duration": "2:15"
+        },
+        {
+          "title": "Where Is The Love",
+          "duration": "2:40"
+        },
+        {
+          "title": "The Happiest Girl In The Whole U.S.A.",
+          "duration": "2:27"
+        },
+        {
+          "title": "The Candy Man",
+          "duration": "2:17"
+        },
+        {
+          "title": "Because",
+          "duration": "2:15"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Daddy Don't You Walk So Fast",
+          "duration": "2:36"
+        },
+        {
+          "title": "Day By Day",
+          "duration": "2:38"
+        },
+        {
+          "title": "Run To Me",
+          "duration": "2:34"
+        },
+        {
+          "title": "Too Young",
+          "duration": "2:40"
+        },
+        {
+          "title": "Brandy",
+          "duration": "2:52"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3790060-Рэй-Коннифф-Alone-Again-Naturally"
+  }
+}

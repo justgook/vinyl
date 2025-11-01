@@ -1,0 +1,72 @@
+{
+  "id": "057",
+  "catalogNumber": "М 60 48605 001",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Александр Галич"
+  ],
+  "album": "Когда Я Вернусь...",
+  "year": 1989,
+  "genre": [
+    "Blues",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/SOrH8NLKWt7GviR2Fd4V1JY4mDskLYeSq35UCVR-DN0/rs:fit/g:sm/q:90/h:469/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMDg3/MTEtMTM2MTk1OTk2/Ni01NDAxLmpwZWc.jpeg",
+  "imageUrl": "data/covers/057.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Фестиваль Песни В Сопоте В Августе 1969",
+          "duration": "2:10"
+        },
+        {
+          "title": "Петербургский Романс",
+          "duration": "4:35"
+        },
+        {
+          "title": "Баллада О Вечном Огне",
+          "duration": "7:42"
+        },
+        {
+          "title": "Засыпая И Просыпаясь",
+          "duration": "2:50"
+        },
+        {
+          "title": "Новый Год",
+          "duration": "2:35"
+        },
+        {
+          "title": "Ещё Раз О Чёрте",
+          "duration": "3:07"
+        },
+        {
+          "title": "Баллада О Стариках, С Которыми Автор Вместе Находился В Профсоюзном Кардиологическом Санатории",
+          "duration": "3:05"
+        },
+        {
+          "title": "Мальчик С Дудочкой Тростниковой (Посвящается Моей Матери)",
+          "duration": "4:30"
+        },
+        {
+          "title": "Признание В Любви",
+          "duration": "6:15"
+        },
+        {
+          "title": "После Вечеринки",
+          "duration": "3:15"
+        },
+        {
+          "title": "Когда Я Вернусь...",
+          "duration": "2:20"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4308711-Александр-Галич-Когда-Я-Вернусь"
+  }
+}

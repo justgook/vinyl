@@ -1,0 +1,61 @@
+{
+  "id": "125",
+  "catalogNumber": "С90 27943 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Пресняков"
+  ],
+  "album": "Папа, Ты Сам Был Таким",
+  "year": 1989,
+  "genre": [
+    "Electronic",
+    "Pop",
+    "Folk, World, & Country"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/_nXVW8IqB4xtNjdBrMLg27HnopJKpKzYa-us9wUsS2k/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MzQ2/MjEtMTM4NDAwNTc1/Ni02NTgwLmpwZWc.jpeg",
+  "imageUrl": "data/covers/125.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Недотрога",
+          "duration": "4:46"
+        },
+        {
+          "title": "Папа, Ты Сам Был Таким",
+          "duration": "4:53"
+        },
+        {
+          "title": "Белый Снег",
+          "duration": "5:34"
+        },
+        {
+          "title": "Бабушка",
+          "duration": "4:33"
+        },
+        {
+          "title": "Дай Мне Слово",
+          "duration": "4:38"
+        },
+        {
+          "title": "Ночной Звонок",
+          "duration": "5:45"
+        },
+        {
+          "title": "Туман",
+          "duration": "5:07"
+        },
+        {
+          "title": "Роковой Концерт",
+          "duration": "4:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4734621-Владимир-Пресняков-Папа-Ты-Сам-Был-Таким"
+  }
+}

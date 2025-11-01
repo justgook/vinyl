@@ -1,0 +1,78 @@
+{
+  "id": "026",
+  "catalogNumber": "С90 26795 003",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Кино",
+    "Кино"
+  ],
+  "album": "Ночь = Night",
+  "year": 1989,
+  "genre": [
+    "Electronic",
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/IVxYGKYOQDkG_5PwndmoizYBVoUmii7uXH48Yz-_WHo/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNTU5/MzUtMTQ2NjUwMzM1/Ni02MzQwLmpwZWc.jpeg",
+  "imageUrl": "data/covers/026.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Видели Ночь = We Saw The Night",
+          "duration": "3:06"
+        },
+        {
+          "title": "Фильмы = Films",
+          "duration": "4:52"
+        },
+        {
+          "title": "Твой Номер = Your Phone Number",
+          "duration": "3:26"
+        },
+        {
+          "title": "Танец = Dance",
+          "duration": "4:32"
+        },
+        {
+          "title": "Ночь = Night",
+          "duration": "5:26"
+        },
+        {
+          "title": "Последний Герой = The Last Hero",
+          "duration": "2:12"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Жизнь В Стеклах = Just Reflection Of Life",
+          "duration": "3:32"
+        },
+        {
+          "title": "Анархия = Anarchy",
+          "duration": "2:40"
+        },
+        {
+          "title": "Звезды Останутся Здесь = Stars Will Stay Here",
+          "duration": "3:35"
+        },
+        {
+          "title": "Игра = Game",
+          "duration": "5:01"
+        },
+        {
+          "title": "Мы Хотим Танцевать = We Want Dancing",
+          "duration": "4:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2155935-Группа-Кино-Group-Kino-Cinema-Ночь-Night"
+  }
+}

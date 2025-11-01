@@ -1,0 +1,33 @@
+{
+  "id": "064",
+  "catalogNumber": "А10 00095 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Antonio Vivaldi",
+    "Saulius Sondeckis",
+    "Lithuanian Chamber Orchestra",
+    "Сергей Стадлер"
+  ],
+  "album": "Le Quattro Stagioni - Concertos For Violin  And Orchestra, Op. 8 Nos. 1-4",
+  "year": 1985,
+  "genre": [
+    "Classical"
+  ],
+  "format": "Vinyl, LP",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/6ScnxWiE5SYZciNcNx1-aZ2bK6E1uoPtP2Jhpo2veyg/rs:fit/g:sm/q:90/h:600/w:575/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MjI1/NjQtMTMzOTMyMTY4/OS04Mjk1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/064.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": []
+    },
+    {
+      "name": "Side B",
+      "tracks": []
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3522564-A-Vivaldi-Saulius-Sondeckis-Lithuanian-Chamber-Orchestra-Sergei-Stadler-Le-Quattro-Stagioni-Concerto"
+  }
+}

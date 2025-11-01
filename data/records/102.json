@@ -1,0 +1,135 @@
+{
+  "id": "102",
+  "catalogNumber": "33 С60-08235-36",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "James Last"
+  ],
+  "album": "Танцуем Без Перерыва, 1976 = Non Stop Dancing, 1976",
+  "year": 2025,
+  "genre": [
+    "Jazz",
+    "Rock",
+    "Funk / Soul",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/VxVdT83CAEoe2dIMtje48iCYhUNmmNpKSBL8YIie-MA/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODM0/OTgtMTMwODE1OTA1/NS5qcGVn.jpeg",
+  "imageUrl": "data/covers/102.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Я Горю = I'm On Fire",
+          "duration": "1:43"
+        },
+        {
+          "title": "Утреннее Небо = Morning Sky",
+          "duration": "1:41"
+        },
+        {
+          "title": "A.T.E. (MWANA)",
+          "duration": "1:31"
+        },
+        {
+          "title": "Делай Как Хочешь = Do It Anyway You Wanna",
+          "duration": "1:43"
+        },
+        {
+          "title": "Foot Stompin Music",
+          "duration": "1:41"
+        },
+        {
+          "title": "Джули Энн = Julie Anne",
+          "duration": "1:20"
+        },
+        {
+          "title": "Леди Лэй = Lady Lay",
+          "duration": "1:35"
+        },
+        {
+          "title": "Говори Мне «Ты» = Du, Sag' Einfach Du",
+          "duration": "1:28"
+        },
+        {
+          "title": "Морская Прогулка = Sailing",
+          "duration": "1:45"
+        },
+        {
+          "title": "Delannes-Melody",
+          "duration": "1:34"
+        },
+        {
+          "title": "Рис И Фасоль = Rice And Beans",
+          "duration": "1:43"
+        },
+        {
+          "title": "Насвистывая = Blow Your Whistle",
+          "duration": "1:32"
+        },
+        {
+          "title": "Приглашение На Вечеринку = Welcome To The Party",
+          "duration": "1:37"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Мне Это Нравится = That's The Way (I Like It)",
+          "duration": "1:39"
+        },
+        {
+          "title": "Меняйся Вместе Со Временем = Change With The Times",
+          "duration": "1:36"
+        },
+        {
+          "title": "Леди Бамп = Lady Bump",
+          "duration": "1:09"
+        },
+        {
+          "title": "Приходи Сегодня = Get Down Tonight",
+          "duration": "1:20"
+        },
+        {
+          "title": "Что Нового Принесет День = What A Difference A Day Makes",
+          "duration": "1:20"
+        },
+        {
+          "title": "Лети = Fly, Robin, Fly",
+          "duration": "1:19"
+        },
+        {
+          "title": "Один Из Вечеров = One Of These Nights",
+          "duration": "1:38"
+        },
+        {
+          "title": "Суета = The Hustle",
+          "duration": "1:31"
+        },
+        {
+          "title": "Я Ничего Не Могу Тебе Дать = Can't Give You Anything",
+          "duration": "1:33"
+        },
+        {
+          "title": "Бразилия = Brazil",
+          "duration": "1:33"
+        },
+        {
+          "title": "Белая Голубка = Paloma Blanca",
+          "duration": "1:35"
+        },
+        {
+          "title": "Постоялый Двор = Funky Inn",
+          "duration": "1:39"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2883498-Джеймс-Ласт-Танцуем-Без-Перерыва-1976-Non-Stop-Dancing-1976"
+  }
+}

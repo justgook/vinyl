@@ -16,9 +16,11 @@
    * Standalone Vinyl Record Widget
    */
   class VinylRecordWidget {
-    constructor(container, initialRecord, onChange, nextId = null) {
+    constructor(container, initialRecord, onChange, nextId = null, appInstance = null) {
       this.container = container;
       this.onChange = onChange;
+      this.appInstance = appInstance; // Reference to admin app for file system access
+      this.loadedCoverImage = null; // Store the loaded cover image element for canvas conversion
 
       // Initialize state
       this.state = {
@@ -42,7 +44,8 @@
           genre: [],
           format: 'LP, Album',
           condition: 'Near Mint',
-          imageUrl: '',
+          sourceImageUrl: '', // Original URL from Discogs/external source
+          imageUrl: '', // Local path to downloaded image
           sides: [
             { name: 'Side A', tracks: [] },
             { name: 'Side B', tracks: [] },
@@ -209,8 +212,10 @@
 
     /**
      * Fetch detailed release and import data
+     * @param {string} resourceUrl - Discogs API resource URL
+     * @param {HTMLImageElement} thumbImg - Pre-loaded thumbnail image element (to avoid CORS)
      */
-    async importRelease(resourceUrl) {
+    async importRelease(resourceUrl, thumbImg = null) {
       this.setState({ loading: true, error: null });
 
       try {
@@ -227,7 +232,14 @@
 
         const release = await response.json();
 
+        // Store the loaded thumbnail image for later canvas conversion
+        // This avoids CORS issues when trying to download the image
+        if (thumbImg && thumbImg.complete && thumbImg.naturalWidth > 0) {
+          this.loadedCoverImage = thumbImg;
+        }
+
         // Map Discogs data to our schema (preserve existing ID)
+        const sourceImage = release.images?.[0]?.uri || release.thumb || '';
         const importedRecord = {
           id: this.state.record.id || '', // Keep the auto-generated ID
           catalogNumber: release.labels?.[0]?.catno || '',
@@ -238,7 +250,8 @@
           genre: release.genres || [],
           format: this.formatFormat(release.formats),
           condition: this.state.record.condition || 'Near Mint',
-          imageUrl: release.images?.[0]?.uri || release.thumb || '',
+          sourceImageUrl: sourceImage, // Original Discogs URL
+          imageUrl: this.state.record.imageUrl || '', // Keep existing local path or empty
           sides: this.parseSides(release.tracklist),
           externalIds: {
             discogs: release.uri?.replace('https://api.discogs.com/', '') || `release/${release.id}`,
@@ -351,6 +364,176 @@
      */
     toggleView() {
       this.setState({ showSearch: !this.state.showSearch });
+    }
+
+    /**
+     * Render comparison preview (original vs local)
+     */
+    renderComparisonPreview(sourceImageUrl, localImagePath) {
+      const container = this.el('div', {
+        style: {
+          marginTop: '15px',
+          padding: '10px',
+          backgroundColor: '#d4edda',
+          border: '2px solid #000',
+        },
+      });
+      
+      const flexContainer = this.el('div', { style: { display: 'flex', gap: '20px', alignItems: 'flex-start' } });
+      
+      // Original image column
+      const originalCol = this.el('div', { style: { flex: 1 } }, [
+        this.el('div', { style: { fontWeight: 'bold', fontSize: '12px', marginBottom: '5px' } }, ['Original']),
+        this.el('img', {
+          src: sourceImageUrl,
+          alt: 'Original',
+          style: { maxWidth: '100%', border: '2px solid #666' },
+          onerror: (e) => { e.target.style.display = 'none'; },
+        }),
+      ]);
+      
+      // Local copy column
+      const localCol = this.el('div', { style: { flex: 1 } });
+      localCol.appendChild(this.el('div', { style: { fontWeight: 'bold', fontSize: '12px', marginBottom: '5px' } }, ['Local Copy']));
+      
+      // Load local image asynchronously
+      if (this.appInstance && this.appInstance.getCoverImageUrl) {
+        this.appInstance.getCoverImageUrl(localImagePath).then(imageUrl => {
+          const img = this.el('img', {
+            src: imageUrl,
+            alt: 'Local',
+            style: { maxWidth: '100%', border: '2px solid #76FF03' },
+            onerror: (e) => { e.target.style.display = 'none'; },
+          });
+          localCol.appendChild(img);
+        }).catch(err => {
+          console.error('Error loading local comparison image:', err);
+        });
+      }
+      
+      flexContainer.appendChild(originalCol);
+      flexContainer.appendChild(localCol);
+      container.appendChild(flexContainer);
+      
+      return container;
+    }
+
+    /**
+     * Render local image preview - loads from file system if appInstance available
+     */
+    renderLocalImagePreview(imagePath) {
+      const container = this.el('div', { style: { marginTop: '10px' } });
+      
+      // Load image asynchronously
+      if (this.appInstance && this.appInstance.getCoverImageUrl) {
+        this.appInstance.getCoverImageUrl(imagePath).then(imageUrl => {
+          const img = this.el('img', {
+            src: imageUrl,
+            alt: 'Local cover',
+            style: {
+              maxWidth: '150px',
+              border: '2px solid #76FF03',
+            },
+            onerror: (e) => {
+              e.target.style.display = 'none';
+              const errorDiv = container.querySelector('.error-message');
+              if (errorDiv) errorDiv.style.display = 'block';
+            },
+          });
+          container.appendChild(img);
+        }).catch(err => {
+          console.error('Error loading local image:', err);
+          const errorDiv = container.querySelector('.error-message');
+          if (errorDiv) errorDiv.style.display = 'block';
+        });
+      }
+      
+      // Error message placeholder
+      const errorDiv = this.el('div', {
+        className: 'error-message',
+        style: {
+          display: 'none',
+          padding: '10px',
+          backgroundColor: '#fff3cd',
+          border: '2px solid #000',
+          marginTop: '5px',
+          fontSize: '12px',
+        },
+      }, ['⚠️ Local image not found. It will be downloaded when you save.']);
+      container.appendChild(errorDiv);
+      
+      return container;
+    }
+
+    /**
+     * Upload cover image manually using file picker
+     * Stores the image as base64 data URL temporarily
+     */
+    async uploadCoverManually() {
+      // Create a hidden file input
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'image/*';
+      
+      input.onchange = async (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+
+        try {
+          // Create an image element to load and potentially resize
+          const img = new Image();
+          const reader = new FileReader();
+
+          reader.onload = (e) => {
+            img.src = e.target.result;
+          };
+
+          img.onload = () => {
+            // Create canvas to potentially resize image
+            const canvas = document.createElement('canvas');
+            let width = img.width;
+            let height = img.height;
+
+            // Resize if too large (max 800px on longest side)
+            const maxSize = 800;
+            if (width > maxSize || height > maxSize) {
+              if (width > height) {
+                height = (height / width) * maxSize;
+                width = maxSize;
+              } else {
+                width = (width / height) * maxSize;
+                height = maxSize;
+              }
+            }
+
+            canvas.width = width;
+            canvas.height = height;
+
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, width, height);
+
+            // Store the loaded image for download
+            this.loadedCoverImage = img;
+
+            // Also update sourceImageUrl with a descriptive note
+            const newRecord = {
+              ...this.state.record,
+              sourceImageUrl: `manually-uploaded:${file.name}`,
+            };
+            this.setState({ record: newRecord });
+            this.onChange(newRecord);
+
+            alert('✅ Image uploaded! Click "Save Record" to save it to data/covers/');
+          };
+
+          reader.readAsDataURL(file);
+        } catch (err) {
+          console.error('Error uploading image:', err);
+          alert('❌ Error uploading image: ' + err.message);
+        }
+      };
+
+      input.click();
     }
 
     /**
@@ -598,6 +781,8 @@
         ]);
 
         this.state.results.forEach(result => {
+          let thumbImg = null;
+          
           const resultCard = this.el('div', {
             style: {
               display: 'flex',
@@ -607,11 +792,11 @@
               backgroundColor: '#fff',
               cursor: 'pointer',
             },
-            onClick: () => this.importRelease(result.resource_url),
+            onClick: () => this.importRelease(result.resource_url, thumbImg),
           }, []);
 
           if (result.thumb) {
-            resultCard.appendChild(this.el('img', {
+            thumbImg = this.el('img', {
               src: result.thumb,
               alt: result.title,
               style: {
@@ -621,7 +806,8 @@
                 marginRight: '15px',
                 border: '2px solid #000',
               },
-            }));
+            });
+            resultCard.appendChild(thumbImg);
           }
 
           const info = this.el('div', {}, [
@@ -740,23 +926,81 @@
           ]),
         ]),
         this.el('div', { style: { ...styles.fieldGroup, marginTop: '15px' } }, [
-          this.el('label', { style: styles.label }, ['Cover Image URL']),
-          this.el('input', {
-            id: 'widget-field-imageUrl',
-            type: 'text',
-            value: record.imageUrl,
-            style: styles.input,
-            onInput: (e) => this.updateField('imageUrl', e.target.value),
-          }),
-          record.imageUrl ? this.el('img', {
-            src: record.imageUrl,
-            alt: 'Cover preview',
-            style: {
-              maxWidth: '200px',
-              marginTop: '10px',
-              border: '3px solid #000',
-            },
-          }) : null,
+          this.el('label', { style: styles.label }, ['Cover Images']),
+          
+          // Source Image URL (original from Discogs)
+          this.el('div', { style: { marginBottom: '15px' } }, [
+            this.el('label', { style: { ...styles.label, fontSize: '12px', color: '#666' } }, ['Original URL (from Discogs):']),
+            this.el('input', {
+              id: 'widget-field-sourceImageUrl',
+              type: 'text',
+              value: record.sourceImageUrl || '',
+              placeholder: 'https://...',
+              style: styles.input,
+              onInput: (e) => this.updateField('sourceImageUrl', e.target.value),
+            }),
+            record.sourceImageUrl ? this.el('div', { style: { marginTop: '10px' } }, [
+              this.el('img', {
+                src: record.sourceImageUrl,
+                alt: 'Original cover',
+                style: {
+                  maxWidth: '150px',
+                  border: '2px solid #666',
+                },
+                onerror: (e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'block';
+                },
+              }),
+              this.el('div', {
+                style: {
+                  display: 'none',
+                  padding: '10px',
+                  backgroundColor: '#f8d7da',
+                  border: '2px solid #000',
+                  marginTop: '5px',
+                  fontSize: '12px',
+                },
+              }, ['⚠️ Could not load original image']),
+            ]) : null,
+          ].filter(Boolean)),
+          
+          // Local Image Path (downloaded)
+          this.el('div', { style: { marginBottom: '15px' } }, [
+            this.el('div', { style: { display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '5px' } }, [
+              this.el('label', { style: { ...styles.label, fontSize: '12px', color: '#666', margin: 0 } }, ['Local Path (auto-saved on save):']),
+              this.el('button', {
+                type: 'button',
+                onClick: () => this.uploadCoverManually(),
+                style: {
+                  padding: '4px 8px',
+                  fontSize: '11px',
+                  backgroundColor: '#00D9FF',
+                  color: '#fff',
+                  border: '2px solid #000',
+                  cursor: 'pointer',
+                  fontWeight: 'bold',
+                },
+              }, ['📁 Upload Image Manually']),
+            ]),
+            this.el('input', {
+              id: 'widget-field-imageUrl',
+              type: 'text',
+              value: record.imageUrl || '',
+              placeholder: 'data/covers/001.jpg',
+              style: { ...styles.input, backgroundColor: '#f0f0f0' },
+              onInput: (e) => this.updateField('imageUrl', e.target.value),
+            }),
+            this.el('small', { style: { fontSize: '11px', color: '#666' } }, [
+              record.imageUrl 
+                ? '✅ Image will be loaded from local storage' 
+                : '⏳ Image will be downloaded automatically when you save this record'
+            ]),
+            record.imageUrl ? this.renderLocalImagePreview(record.imageUrl) : null,
+          ].filter(Boolean)),
+          
+          // Preview comparison if both exist
+          (record.sourceImageUrl && record.imageUrl) ? this.renderComparisonPreview(record.sourceImageUrl, record.imageUrl) : null,
         ].filter(Boolean)),
       ]);
       container.appendChild(basicSection);

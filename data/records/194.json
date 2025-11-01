@@ -1,0 +1,85 @@
+{
+  "id": "194",
+  "catalogNumber": "М60 38587-8",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Laule Suurest Isamaasõjast",
+  "year": 1976,
+  "genre": [
+    "Pop",
+    "Brass & Military"
+  ],
+  "format": "Vinyl, LP, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/XTnn6w0pqFNb_gdJJjXHOpBQkvH3AoTVU76-8Rc9pek/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDA1/NzM3LTE0OTAwMTgz/NDctNDU0Mi5qcGVn.jpeg",
+  "imageUrl": "data/covers/194.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Meie Võitmatu Armee",
+          "duration": "0:00"
+        },
+        {
+          "title": "Õhtu Reidil",
+          "duration": "0:00"
+        },
+        {
+          "title": "Kord Seal, Kus Algas Metsapiir",
+          "duration": "0:00"
+        },
+        {
+          "title": "Punaarmeelaste Marss",
+          "duration": "0:00"
+        },
+        {
+          "title": "Hall Sõdurisinel",
+          "duration": "0:00"
+        },
+        {
+          "title": "Eidekene Hella",
+          "duration": "0:00"
+        },
+        {
+          "title": "Tervitus Eestile",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Korpuse Marss",
+          "duration": "0:00"
+        },
+        {
+          "title": "Kodulinn Tallinn",
+          "duration": "0:00"
+        },
+        {
+          "title": "Muldonnis",
+          "duration": "0:00"
+        },
+        {
+          "title": "Teeme Suitsu, Poisid",
+          "duration": "0:00"
+        },
+        {
+          "title": "Kas Mäletad?",
+          "duration": "0:00"
+        },
+        {
+          "title": "Popurrii Sõdurilauludest",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/10005737-Various-Laule-Suurest-Isamaasõjast"
+  }
+}

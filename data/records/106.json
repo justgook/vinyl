@@ -1,0 +1,64 @@
+{
+  "id": "106",
+  "catalogNumber": "33 С 60—13515-16",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Dalida"
+  ],
+  "album": "Поет Далида",
+  "year": 1982,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/f5TLsysZZ9EWt1aesGpBeIJRFzLDz2HFGmaKc3QzYFo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY3NzA3/MDYtMTQ4MDA5NTE0/Mi0xNTg1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/106.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Salma Ya Salma",
+          "duration": "3:02"
+        },
+        {
+          "title": "Как Мы Живем = Notre Facon De Vivre",
+          "duration": "3:22"
+        },
+        {
+          "title": "Ты Признался Мне В Любви = Tu M'as Declaire L'Amour",
+          "duration": "2:50"
+        },
+        {
+          "title": "Мой Брат Солнце = Mon Frere Le Soleil",
+          "duration": "3:18"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Когда Умолкнут Скрипки = Quand S'arretent Les Violons",
+          "duration": "3:48"
+        },
+        {
+          "title": "Каждый Раз Я Верю В Это = A Chaque Fois J'y Crois",
+          "duration": "2:08"
+        },
+        {
+          "title": "Помни... (Это Было Давно) = Remember... (C'etait Loin)",
+          "duration": "4:15"
+        },
+        {
+          "title": "Я Подожду = J'attendrai",
+          "duration": "4:13"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6770706-Далида-Поет-Далида"
+  }
+}

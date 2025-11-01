@@ -1,74 +1,64 @@
 {
   "id": "022",
-  "catalogNumber": "М60 48979 001",
+  "catalogNumber": "С60 28961 008",
   "recordLabel": "Мелодия",
   "artists": [
-    "Владимир Высоцкий"
+    "Алиса"
   ],
-  "album": "Кони Привередливые",
+  "album": "Шестой Лесничий",
   "year": 1990,
   "genre": [
-    "Pop"
+    "Rock"
   ],
-  "format": "Vinyl, LP, Mono, Repress",
+  "format": "Vinyl, LP, Album, Repress",
   "condition": "Near Mint",
-  "imageUrl": "https://i.discogs.com/GHIwVzYR_6OPtTIWicFEjcTIDC4JnQBY0CuPG4vWT3g/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxMTE3/MzUtMTUzNTU2NzAx/Ny04NzAyLmpwZWc.jpeg",
+  "sourceImageUrl": "https://i.discogs.com/RJImUIXs8JszOWCYB6o5vX6rEUJbdPl4c6EOB56QYS0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNzI5/MzMtMTMxOTA0MjE2/NC5qcGVn.jpeg",
+  "imageUrl": "data/covers/022.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Товарищи Ученые",
-          "duration": "0:00"
+          "title": "Новый Метод",
+          "duration": "2:52"
         },
         {
-          "title": "Мы Вращаем Землю",
-          "duration": "0:00"
+          "title": "Тыр-тыр-тыр (Тоталитарный Рэп)",
+          "duration": "6:15"
         },
         {
-          "title": "Тот, Который Не Стрелял",
-          "duration": "0:00"
+          "title": "Шестой Лесничий",
+          "duration": "5:57"
         },
         {
-          "title": "Песенка Прыгуна В Длину",
-          "duration": "0:00"
+          "title": "Театр Теней",
+          "duration": "5:28"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Аэробика",
+          "duration": "3:35"
         },
         {
-          "title": "Марафон",
-          "duration": "0:00"
+          "title": "Только Этот День",
+          "duration": "7:27"
         },
         {
-          "title": "После Чемпионата Мира По Футболу",
-          "duration": "0:00"
+          "title": "Солнце За Нас",
+          "duration": "3:57"
         },
         {
-          "title": "Целуя Знамя",
-          "duration": "0:00"
-        },
-        {
-          "title": "Нет Меня",
-          "duration": "0:00"
-        },
-        {
-          "title": "Мишка Шифман",
-          "duration": "0:00"
-        },
-        {
-          "title": "Милицейский Протокол",
-          "duration": "0:00"
-        },
-        {
-          "title": "Песня Микрофона",
-          "duration": "0:00"
-        },
-        {
-          "title": "Кони Привередливые",
-          "duration": "0:00"
+          "title": "Стерх",
+          "duration": "6:54"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "https://www.discogs.com/release/5111735-Владимир-Высоцкий-Кони-Привередливые"
+    "discogs": "https://www.discogs.com/release/3172933-Алиса-Шестой-Лесничий"
   }
 }

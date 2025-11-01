@@ -22,7 +22,8 @@ All vinyl records are stored as JSON files. This document describes the complete
   "genre": ["Progressive Rock", "Art Rock"],
   "format": "LP, Album",
   "condition": "Near Mint",
-  "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Pink+Floyd",
+  "sourceImageUrl": "https://i.discogs.com/example/image.jpg",
+  "imageUrl": "data/covers/001.jpg",
   "sides": [
     {
       "name": "Side A",
@@ -66,7 +67,8 @@ All vinyl records are stored as JSON files. This document describes the complete
 | `genre` | Array[String] | Yes | Musical genres (e.g., ["Rock", "Progressive Rock"]) |
 | `format` | String | Yes | Physical format (e.g., "LP, Album" or "EP" or "12\" Single") |
 | `condition` | String | Yes | Record condition: "Mint", "Near Mint", "Very Good Plus", "Very Good", "Good Plus", "Good" |
-| `imageUrl` | String | Yes | Cover art image URL |
+| `sourceImageUrl` | String | No | Original cover art URL from external source (e.g., Discogs) |
+| `imageUrl` | String | Yes | Local path to downloaded cover art (e.g., "data/covers/001.jpg") |
 | `sides` | Array[Side] | Yes | Array of record sides (typically 2 for LPs) |
 | `externalIds` | Object | No | Links to external databases |
 
@@ -234,30 +236,41 @@ Minimal metadata for all records (used for "VIEW ALL", search, and filtering):
 
 ## Image URL Strategy
 
-### Current (MVP) - Placeholder Images
-Uses placeholdit.com with custom colors:
+### Current - Local Downloaded Images
+When creating/editing records via the admin panel:
+1. Import record from Discogs (includes `sourceImageUrl`)
+2. On save, the image is automatically downloaded from `sourceImageUrl`
+3. Image is saved to `data/covers/{id}.{ext}` (where ext is jpg, png, webp, etc.)
+4. `imageUrl` field is updated to the local path: `data/covers/001.jpg`
+5. Both URLs are preserved:
+   - `sourceImageUrl`: Original URL from Discogs (for reference/re-download)
+   - `imageUrl`: Local path for display in the app
 
-```
-https://placeholdit.com/{width}/{bg_color}/{text_color}?text={Artist+Name}
-```
+**Admin Panel Workflow:**
+1. Search Discogs and import a release
+2. Admin panel stores the original Discogs image URL in `sourceImageUrl`
+3. When you click "Save Record", the image is automatically downloaded
+4. The local path is saved in `imageUrl`
+5. In edit mode, you can preview both the original and local copy
 
-**Format:**
-- Width: 400px (fits standard album art)
-- Colors: Use CSS custom properties from design (FF10F0, 00E5FF, etc.)
-- Text: Artist name or album name
+**Image Formats Supported:**
+- JPG/JPEG (most common)
+- PNG
+- WebP
+- GIF
 
-**Examples:**
+**Fallback Strategy:**
+If image download fails, the record is still saved but `imageUrl` remains empty. You can:
+1. Manually download and add the image to `data/covers/`
+2. Update `imageUrl` field manually
+3. Or re-save the record to retry the download
+
+### Legacy (MVP) - Placeholder Images
+Old records may use placeholdit.com placeholders:
 ```
 https://placeholdit.com/400/FF10F0/FFFFFF?text=Pink+Floyd
-https://placeholdit.com/400/00E5FF/000000?text=The+Beatles
-https://placeholdit.com/400/76FF03/000000?text=Led+Zeppelin
 ```
-
-### Future (Phase 3) - Local Images
-When integrating Discogs API:
-1. Download cover image
-2. Store in `images/covers/{id}.jpg`
-3. Update imageUrl to: `/images/covers/001.jpg`
+These should be replaced with local images when editing.
 
 ---
 

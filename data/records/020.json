@@ -1,33 +1,38 @@
 {
   "id": "020",
-  "catalogNumber": "IDEALP5",
-  "recordLabel": "Idealogical Organ",
-  "artists": ["Portishead"],
-  "album": "Dummy",
-  "year": 1994,
-  "genre": ["Trip Hop", "Electronic"],
-  "format": "LP, Album",
-  "condition": "Very Good Plus",
-  "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Portishead",
+  "catalogNumber": "С60 25987 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Пикник"
+  ],
+  "album": "Иероглиф",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/Td-Iis4j_lK0SF_u6L8rWtj1pptrLuO5bo0RswnnLUk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxOTE0/NjYtMTM4NzAzMTY3/My00NzYyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/020.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Mysterons",
-          "duration": "5:02"
+          "title": "Остров",
+          "duration": "4:50"
         },
         {
-          "title": "Wandering Star",
-          "duration": "4:55"
+          "title": "Иероглиф",
+          "duration": "5:42"
         },
         {
-          "title": "It Could Be Sweet",
-          "duration": "3:35"
+          "title": "Праздник",
+          "duration": "4:30"
         },
         {
-          "title": "Glory Box",
-          "duration": "5:10"
+          "title": "Ты Вся Из Огня",
+          "duration": "4:20"
         }
       ]
     },
@@ -35,29 +40,25 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "Roads",
-          "duration": "4:36"
+          "title": "Ночь",
+          "duration": "5:45"
         },
         {
-          "title": "Nylon Smile",
-          "duration": "2:44"
+          "title": "Телефон",
+          "duration": "5:00"
         },
         {
-          "title": "Pedestal",
-          "duration": "4:19"
+          "title": "Пикник",
+          "duration": "4:12"
         },
         {
-          "title": "Biscuit",
-          "duration": "4:40"
-        },
-        {
-          "title": "Give Me a Reason",
-          "duration": "3:35"
+          "title": "Великан",
+          "duration": "3:06"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/368963"
+    "discogs": "https://www.discogs.com/release/5191466-Пикник-Иероглиф"
   }
 }

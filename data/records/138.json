@@ -1,0 +1,83 @@
+{
+  "id": "138",
+  "catalogNumber": "С60 25541 001",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Александр Розенбаум"
+  ],
+  "album": "Эпитафия",
+  "year": 1988,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/2ykzxwh6HZSapjHZXJMPNSPof8gybVE9htTlkGzgRZs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxODIy/MTItMTQ3NjIxMjcx/MC0zMTAwLmpwZWc.jpeg",
+  "imageUrl": "data/covers/138.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "А Может, Не Было Войны",
+          "duration": "3:51"
+        },
+        {
+          "title": "Красная Стена",
+          "duration": "4:53"
+        },
+        {
+          "title": "Я Корабль Конвоя",
+          "duration": "2:21"
+        },
+        {
+          "title": "На Войне Как На Войне",
+          "duration": "3:04"
+        },
+        {
+          "title": "Вальс На Плоскости",
+          "duration": "3:01"
+        },
+        {
+          "title": "Проводы",
+          "duration": "2:08"
+        },
+        {
+          "title": "На Дороге Жизни",
+          "duration": "2:31"
+        },
+        {
+          "title": "Послепобедный Вальс",
+          "duration": "3:06"
+        },
+        {
+          "title": "Дай Мне Минуту",
+          "duration": "3:06"
+        },
+        {
+          "title": "Бабий Яр",
+          "duration": "4:05"
+        },
+        {
+          "title": "Ох, Проводи-ка Меня, Батя, Да На Войну",
+          "duration": "3:06"
+        },
+        {
+          "title": "Флагманский Марш",
+          "duration": "2:57"
+        },
+        {
+          "title": "Звездопад",
+          "duration": "3:02"
+        },
+        {
+          "title": "Я Часто Просыпаюсь В Тишине",
+          "duration": "1:46"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/9182212-Александр-Розенбаум-Эпитафия"
+  }
+}

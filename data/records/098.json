@@ -1,0 +1,79 @@
+{
+  "id": "098",
+  "catalogNumber": "С60 24325 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Евгений Бачурин"
+  ],
+  "album": "Я Предлагаю Спеть О Том...",
+  "year": 1986,
+  "genre": [
+    "Folk, World, & Country"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/wcR8NDYqyYonnTedfH-Q2nUMfbUyNnEzl6OBm2o7ZuA/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyMzEz/NTEtMTQ1NzYxMjg1/NS04NDM5LmpwZWc.jpeg",
+  "imageUrl": "data/covers/098.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Я Предлагаю Спеть О Том...",
+          "duration": "2:32"
+        },
+        {
+          "title": "В Ожидании Вишен",
+          "duration": "3:43"
+        },
+        {
+          "title": "Весенние Мотивы",
+          "duration": "2:43"
+        },
+        {
+          "title": "Между Нами",
+          "duration": "2:18"
+        },
+        {
+          "title": "Дороженька",
+          "duration": "3:55"
+        },
+        {
+          "title": "Поэт",
+          "duration": "2:58"
+        },
+        {
+          "title": "Над Головой",
+          "duration": "2:22"
+        },
+        {
+          "title": "Выслугой Лет",
+          "duration": "3:01"
+        },
+        {
+          "title": "Хрупкая Планета",
+          "duration": "2:37"
+        },
+        {
+          "title": "Полынь",
+          "duration": "2:25"
+        },
+        {
+          "title": "Первый Гром",
+          "duration": "1:57"
+        },
+        {
+          "title": "Прогулка",
+          "duration": "3:00"
+        },
+        {
+          "title": "Посвящение Беранже",
+          "duration": "1:35"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/8231351-Евгений-Бачурин-Я-Предлагаю-Спеть-О-Том"
+  }
+}

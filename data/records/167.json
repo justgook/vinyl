@@ -1,0 +1,72 @@
+{
+  "id": "167",
+  "catalogNumber": "С60 24651 009",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Secret Service"
+  ],
+  "album": "When The Night Closes In · Когда Наступает Ночь",
+  "year": 1988,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/yZdE3zCLTpRGh7GQrBWK6XLQaH78ekCUlzWSUL_6ZRg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxNTE1/MTQtMTQ2NDYzNTcy/NS05NzkyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/167.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Ночной Город",
+          "duration": "3:38"
+        },
+        {
+          "title": "Давайте Еще Потанцуем",
+          "duration": "4:27"
+        },
+        {
+          "title": "Наша Песня",
+          "duration": "3:32"
+        },
+        {
+          "title": "Ты Помнишь",
+          "duration": "3:26"
+        },
+        {
+          "title": "Пешком",
+          "duration": "4:03"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Когда Наступает Ночь",
+          "duration": "4:07"
+        },
+        {
+          "title": "Как Ты Мне Нужна",
+          "duration": "3:47"
+        },
+        {
+          "title": "С Каждым Днем",
+          "duration": "3:10"
+        },
+        {
+          "title": "Ты Рядом",
+          "duration": "3:04"
+        },
+        {
+          "title": "Друг",
+          "duration": "3:14"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/8151514-Secret-Service-When-The-Night-Closes-In-Когда-Наступает-Ночь"
+  }
+}

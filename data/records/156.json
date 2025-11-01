@@ -1,0 +1,73 @@
+{
+  "id": "156",
+  "catalogNumber": "С60-08793-4",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Margarita Vilcāne"
+  ],
+  "album": "Cher Ami",
+  "year": 1978,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/SXSmHZpHFKd08gYcMPBFI7nsUAlnG6TrRPhiC8rBluA/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MDI5/NjItMTUxNDEwNjA4/MC0xMzE1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/156.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Cher Ami",
+          "duration": "0:00"
+        },
+        {
+          "title": "Sit Mani Prustā!",
+          "duration": "0:00"
+        },
+        {
+          "title": "Pēperkoks",
+          "duration": "0:00"
+        },
+        {
+          "title": "Karalienes Dziesma",
+          "duration": "0:00"
+        },
+        {
+          "title": "Balāde Par Mīlestību",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Rudens",
+          "duration": "0:00"
+        },
+        {
+          "title": "Melodija",
+          "duration": "0:00"
+        },
+        {
+          "title": "Pavasara Dziesma",
+          "duration": "0:00"
+        },
+        {
+          "title": "Zvaigžņu Laiks",
+          "duration": "0:00"
+        },
+        {
+          "title": "Kad Gulbji Kliedz",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4402962-Margarita-Vilcāne-Cher-Ami"
+  }
+}

@@ -1,91 +1,93 @@
 {
   "id": "023",
-  "catalogNumber": "М60 48943 009",
+  "catalogNumber": "М60 48371 000",
   "recordLabel": "Мелодия",
   "artists": [
-    "Владимир Высоцкий"
+    "The Rolling Stones",
+    "The Rolling Stones"
   ],
-  "album": "Бег Иноходца",
-  "year": 1989,
+  "album": "Игра С Огнем = Play With Fire",
+  "year": 1988,
   "genre": [
-    "Pop"
+    "Rock"
   ],
-  "format": "Vinyl, LP, Repress, Mono",
+  "format": "Vinyl, LP, Compilation, Repress, Mono",
   "condition": "Near Mint",
-  "imageUrl": "https://i.discogs.com/pVcGEqTScMgiajSkVIXz-_IT4lpLXJA7_OZ9jBrf0ZY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MzU0/NTk1LTE2MTg3NjQw/ODAtODQ3NS5qcGVn.jpeg",
+  "sourceImageUrl": "https://i.discogs.com/otK_Su-SmKe9U1gfWXZKncLo2AvZkIF2TOy6PvoUGAA/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1ODA5/MzI4LTE1OTgxOTcw/NzEtMzc4MC5qcGVn.jpeg",
+  "imageUrl": "data/covers/023.jpg",
   "sides": [
     {
-      "name": "Сторона 1 — 20.25",
+      "name": "Side A",
       "tracks": [
         {
-          "title": "Разведка боем",
-          "duration": "0:00"
+          "title": "Я - Король Пчел = I'm A King Bee",
+          "duration": "2:34"
         },
         {
-          "title": "Встреча в ресторане",
-          "duration": "0:00"
+          "title": "Это Правда = Honest I Do",
+          "duration": "2:07"
         },
         {
-          "title": "В Холода, в холода",
-          "duration": "0:00"
+          "title": "Кэрол = Carol",
+          "duration": "2:31"
         },
         {
-          "title": "Сыт я по горло",
-          "duration": "0:00"
+          "title": "Дорога 66 = Route 66",
+          "duration": "2:19"
         },
         {
-          "title": "Песенка метателя молота",
-          "duration": "0:00"
+          "title": "У Тебя Получится, Если Постараешься = You Can Make It If You Try",
+          "duration": "2:00"
         },
         {
-          "title": "Песенка прыгуна в высоту",
-          "duration": "0:00"
+          "title": "Поздравления = Congratulations",
+          "duration": "2:26"
         },
         {
-          "title": "Баллада о гипсе",
-          "duration": "0:00"
+          "title": "Если Я Тебе Нужен = If You Need Me",
+          "duration": "2:02"
         },
         {
-          "title": "Человек за бортом",
-          "duration": "0:00"
+          "title": "Уже Все Кончено = It's All Over Now",
+          "duration": "3:25"
         }
       ]
     },
     {
-      "name": "Сторона 1 — 22.30",
+      "name": "Side B",
       "tracks": [
         {
-          "title": "Горизонт",
-          "duration": "0:00"
+          "title": "Время Работает На Меня = Time Is On My Side",
+          "duration": "2:57"
         },
         {
-          "title": "О переселении душ",
-          "duration": "0:00"
+          "title": "Исповедуя Блюз = Confessin' The Blues",
+          "duration": "2:47"
         },
         {
-          "title": "Сон мне снится",
-          "duration": "0:00"
+          "title": "На Берегу Под Навесом = Under The Boardwalk",
+          "duration": "2:44"
         },
         {
-          "title": "Милицейский протокол",
-          "duration": "0:00"
+          "title": "Еще И Еще Раз = Around And Around",
+          "duration": "3:03"
         },
         {
-          "title": "Бег иноходца",
-          "duration": "0:00"
+          "title": "А Слезы Катятся = As Tears Go By",
+          "duration": "2:42"
         },
         {
-          "title": "Честь шахматной короны: Подготовка",
-          "duration": "0:00"
+          "title": "Игра С Огнем = Play With Fire",
+          "duration": "2:11"
         },
         {
-          "title": "Честь шахматной короны: Игра",
-          "duration": "0:00"
+          "title": "Последний Раз = The Last Time",
+          "duration": "3:39"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "https://www.discogs.com/release/18354595-Владимир-Высоцкий-Бег-Иноходца"
+    "discogs": "https://www.discogs.com/release/15809328-Роллинг-Стоунз-Rolling-Stones-Игра-С-Огнем-Play-With-Fire"
   }
 }

@@ -1,0 +1,70 @@
+{
+  "id": "210",
+  "catalogNumber": "STUMM64",
+  "recordLabel": "Mute",
+  "artists": [
+    "Depeche Mode"
+  ],
+  "album": "Violator",
+  "year": 2023,
+  "genre": [
+    "Electronic",
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Reissue, Remastered",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/XgtFaX9DvPY63o_N32t3osHBExsDiVo9s5i0Jj_pbmQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NTUw/Mzc3LTE3NDIwNDk5/MjktNjM3My5qcGVn.jpeg",
+  "imageUrl": "data/covers/210.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "World In My Eyes",
+          "duration": "0:00"
+        },
+        {
+          "title": "Sweetest Perfection",
+          "duration": "0:00"
+        },
+        {
+          "title": "Personal Jesus",
+          "duration": "0:00"
+        },
+        {
+          "title": "Halo",
+          "duration": "0:00"
+        },
+        {
+          "title": "Waiting For The Night",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Enjoy The Silence",
+          "duration": "0:00"
+        },
+        {
+          "title": "Policy Of Truth",
+          "duration": "0:00"
+        },
+        {
+          "title": "Blue Dress",
+          "duration": "0:00"
+        },
+        {
+          "title": "Clean",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/26550377-Depeche-Mode-Violator"
+  }
+}

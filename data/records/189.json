@@ -1,0 +1,65 @@
+{
+  "id": "189",
+  "catalogNumber": "С60-17663-4",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Алла Пугачева",
+    "Рецитал"
+  ],
+  "album": "Как тревожен этот путь (1)",
+  "year": 1982,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ROFxSfGehbPYNQyWi0f5HhsQsWEnWSYAR_bLbcZ2XbY/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0MjU2/Mzg2LTE3NDk4MTk0/NjEtNDcwNi5qcGVn.jpeg",
+  "imageUrl": "data/covers/189.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Люди, Люди = People, People",
+          "duration": "4:34"
+        },
+        {
+          "title": "Усталость = Tiredness",
+          "duration": "4:30"
+        },
+        {
+          "title": "Я Больше Не Ревную = I'm Not Jealous Anymore",
+          "duration": "5:15"
+        },
+        {
+          "title": "Дежурный Ангел = The Angel On Duty",
+          "duration": "4:33"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Беда = Trouble",
+          "duration": "5:07"
+        },
+        {
+          "title": "Лестница = A Staircase",
+          "duration": "3:50"
+        },
+        {
+          "title": "Как Тревожен Этот Путь = How Disturbing Is This Way",
+          "duration": "4:57"
+        },
+        {
+          "title": "Держи Меня, Соломинка = Catching At A Straw",
+          "duration": "4:20"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/34256386-Алла-Пугачева-И-Рецитал-Как-тревожен-этот-путь-1"
+  }
+}

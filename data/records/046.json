@@ -1,0 +1,61 @@
+{
+  "id": "046",
+  "catalogNumber": "С60 27207 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Рок-Панорама-87 (1) = Rock-Panorama-87 (1)",
+  "year": 1988,
+  "genre": [
+    "Rock",
+    "Reggae"
+  ],
+  "format": "Vinyl, LP, Compilation, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/K-FZmpSrv0Gfawi5VadDhaqQvnoRqNrdgAYU4BU_FT4/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MTg3/MTgtMTMwMjQ0NDEz/Mi5qcGVn.jpeg",
+  "imageUrl": "data/covers/046.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Найти И Потерять = Find And Lose",
+          "duration": "4:57"
+        },
+        {
+          "title": "Выше Голову = Raise Your Head Higher",
+          "duration": "3:31"
+        },
+        {
+          "title": "Юла = Whirligig",
+          "duration": "4:00"
+        },
+        {
+          "title": "Максималист = Maximalist",
+          "duration": "3:10"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Круговая Порука = Mutual Guarantee",
+          "duration": "4:12"
+        },
+        {
+          "title": "Остров Борнео = Borneo Island",
+          "duration": "6:15"
+        },
+        {
+          "title": "Весенняя Массовая = In Spring",
+          "duration": "4:45"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2818718-Various-Рок-Панорама-87-1-Rock-Panorama-87-1"
+  }
+}

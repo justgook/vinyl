@@ -1,0 +1,64 @@
+{
+  "id": "169",
+  "catalogNumber": "С60 25375 009",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Кузьмин"
+  ],
+  "album": "Моя Любовь",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/OZtwtvesLiRIfUxETfvJQbq1_M8TdYJcJ5UM8zCW2Dk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4Nzkz/OTc1LTE2MjE0NTEz/MjAtNjA1NC5qcGVn.jpeg",
+  "imageUrl": "data/covers/169.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Только Ты И Я",
+          "duration": "4:41"
+        },
+        {
+          "title": "Влюбленный В Музыку",
+          "duration": "5:12"
+        },
+        {
+          "title": "Ты, Ты, Ты",
+          "duration": "3:54"
+        },
+        {
+          "title": "Моя Любовь",
+          "duration": "3:22"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Еще Вчера",
+          "duration": "3:33"
+        },
+        {
+          "title": "Я Возвращался Домой",
+          "duration": "4:05"
+        },
+        {
+          "title": "Пристань Твоей Надежды",
+          "duration": "4:40"
+        },
+        {
+          "title": "Автоответчик",
+          "duration": "5:51"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/18793975-Владимир-Кузьмин-Моя-Любовь"
+  }
+}

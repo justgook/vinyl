@@ -1,0 +1,87 @@
+{
+  "id": "043",
+  "catalogNumber": "С60 26583 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Место Встречи Дискотека. Выпуск 4",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/byfIQ4qdbgI0WX5Cr5APWSYKCls9asIRC8is7i5WUrw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNTUz/NDctMTI2NzAwMTgx/Mi5qcGVn.jpeg",
+  "imageUrl": "data/covers/043.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Заставка \"Место Встречи\"",
+          "duration": "0:00"
+        },
+        {
+          "title": "Для Тех, Кто Любит Рок",
+          "duration": "0:00"
+        },
+        {
+          "title": "Меня Не Провести",
+          "duration": "0:00"
+        },
+        {
+          "title": "Удовлетворние",
+          "duration": "0:00"
+        },
+        {
+          "title": "Хей, Джо",
+          "duration": "0:00"
+        },
+        {
+          "title": "Тёмная Ночь",
+          "duration": "0:00"
+        },
+        {
+          "title": "Зубы На Полку",
+          "duration": "0:00"
+        },
+        {
+          "title": "Заставка \"Место Встречи\"",
+          "duration": "0:00"
+        },
+        {
+          "title": "Заставка \"Место Встречи\"",
+          "duration": "0:00"
+        },
+        {
+          "title": "Скоморох",
+          "duration": "0:00"
+        },
+        {
+          "title": "Рок Навсегда",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сверх Плана",
+          "duration": "0:00"
+        },
+        {
+          "title": "Рок-Лаборатория",
+          "duration": "0:00"
+        },
+        {
+          "title": "Балтика",
+          "duration": "0:00"
+        },
+        {
+          "title": "Заставка \"Место Встречи\"",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2155347-Various-Место-Встречи-Дискотека-Выпуск-4"
+  }
+}

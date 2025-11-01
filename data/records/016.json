@@ -1,33 +1,42 @@
 {
   "id": "016",
-  "catalogNumber": "WARPCD50",
-  "recordLabel": "Warp Records",
-  "artists": ["Björk"],
-  "album": "Homogenic",
-  "year": 1997,
-  "genre": ["Electronic", "Avant-Garde", "Trip Hop"],
-  "format": "LP, Album",
-  "condition": "Very Good Plus",
-  "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Björk",
+  "catalogNumber": "С60 26903 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Аквариум"
+  ],
+  "album": "Равноденствие",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/sGqOpOEhO6gknDBsPzRldEYZ9LV188toBtGTWN4vSHc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzY4/NjYzLTE1MzA5Mzc5/MjktNjQ1Ni5qcGVn.jpeg",
+  "imageUrl": "data/covers/016.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Hunter",
-          "duration": "4:08"
+          "title": "Иван-Чай",
+          "duration": "3:30"
         },
         {
-          "title": "Pluto",
-          "duration": "4:08"
+          "title": "Великий Дворник",
+          "duration": "3:20"
         },
         {
-          "title": "All Is Full of Love",
-          "duration": "4:44"
+          "title": "Наблюдатель",
+          "duration": "2:55"
         },
         {
-          "title": "Immature",
-          "duration": "4:56"
+          "title": "Партизаны Полной Луны",
+          "duration": "3:20"
+        },
+        {
+          "title": "Лебединая Сталь",
+          "duration": "4:45"
         }
       ]
     },
@@ -35,29 +44,29 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "Alarm Call",
-          "duration": "5:34"
+          "title": "Аделаида",
+          "duration": "3:00"
         },
         {
-          "title": "5 Years",
-          "duration": "4:28"
+          "title": "Золото На Голубом",
+          "duration": "2:50"
         },
         {
-          "title": "Ripcord",
-          "duration": "3:52"
+          "title": "Дерево",
+          "duration": "3:00"
         },
         {
-          "title": "Isobel",
-          "duration": "4:45"
+          "title": "Очарованный Тобой",
+          "duration": "3:05"
         },
         {
-          "title": "Jóga",
-          "duration": "4:21"
+          "title": "Поколение Дворников",
+          "duration": "5:20"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/160872"
+    "discogs": "https://www.discogs.com/release/11768663-Åквариум-Равноденствие"
   }
 }

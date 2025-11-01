@@ -1,0 +1,64 @@
+{
+  "id": "182",
+  "catalogNumber": "С60 27087 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Тяжелый День"
+  ],
+  "album": "В Полёт",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/K2y2gPrKlyNqOtXOClBAr0habgFbtvVdugSK3_qWSpM/rs:fit/g:sm/q:90/h:600/w:582/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDI2/MjE4LTE0OTcxOTE3/MzMtNzk1Ni5qcGVn.jpeg",
+  "imageUrl": "data/covers/182.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Дай Мне Знать = Let Me Know",
+          "duration": "3:33"
+        },
+        {
+          "title": "Берегись Жала = Beware Of Sting",
+          "duration": "4:51"
+        },
+        {
+          "title": "Зеркала = Mirrors",
+          "duration": "3:14"
+        },
+        {
+          "title": "Я Здесь = I'm Here",
+          "duration": "4:37"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Стресс = Stress",
+          "duration": "6:08"
+        },
+        {
+          "title": "В Полёт = Flight",
+          "duration": "3:16"
+        },
+        {
+          "title": "Песенный Суздаль = Songful Suzdal",
+          "duration": "4:41"
+        },
+        {
+          "title": "Я Родился Под Знаком \"Рок\" = I Was Born Under The Sign Of \"Rock\"",
+          "duration": "4:44"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/10426218-Тяжелый-День-В-Полёт"
+  }
+}

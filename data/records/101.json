@@ -1,0 +1,73 @@
+{
+  "id": "101",
+  "catalogNumber": "С60-06823",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Express"
+  ],
+  "album": "Экспресс",
+  "year": 1976,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/jAs_uEXj_YV4Z9SETu42BMTYgvZEdS8v6MMuXv7KPUg/rs:fit/g:sm/q:90/h:564/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTc5/NDk0LTE0OTQxODY5/MjMtNDgzMi5qcGVn.jpeg",
+  "imageUrl": "data/covers/101.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Если Бы Ты Меня Любил",
+          "duration": "0:00"
+        },
+        {
+          "title": "Иди Ко Мне",
+          "duration": "0:00"
+        },
+        {
+          "title": "Прошло 10 Лет",
+          "duration": "0:00"
+        },
+        {
+          "title": "Чудесный Вечер",
+          "duration": "0:00"
+        },
+        {
+          "title": "Береги Меня",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Мама, Танцуй Со Мной",
+          "duration": "0:00"
+        },
+        {
+          "title": "Если Бы Ты Знала",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ветер, Унеси",
+          "duration": "0:00"
+        },
+        {
+          "title": "Случайная Встреча",
+          "duration": "0:00"
+        },
+        {
+          "title": "Где Же Та Девушка",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/10179494-Экспресс-Экспресс"
+  }
+}

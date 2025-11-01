@@ -1,0 +1,69 @@
+{
+  "id": "147",
+  "catalogNumber": "1 15 2417",
+  "recordLabel": "Supraphon",
+  "artists": [
+    "Tony Scott",
+    "Traditional Jazz Studio"
+  ],
+  "album": "Boomerang",
+  "year": 1979,
+  "genre": [
+    "Jazz"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/hxSbfWK5qM_4jiew7W-0LIBpl5xFA-5fRHWhO3O8iRU/rs:fit/g:sm/q:90/h:597/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzMx/NDItMTM1NDMyNjM4/NC05MTQ4LmpwZWc.jpeg",
+  "imageUrl": "data/covers/147.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Sweet Sue",
+          "duration": "3:55"
+        },
+        {
+          "title": "Boomerang",
+          "duration": "3:25"
+        },
+        {
+          "title": "I'm Crazy 'Bout My Baby",
+          "duration": "5:00"
+        },
+        {
+          "title": "The Golden Frame",
+          "duration": "5:20"
+        },
+        {
+          "title": "Royal Garden Blues",
+          "duration": "3:50"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Love In Davos",
+          "duration": "4:20"
+        },
+        {
+          "title": "Life Is A Matter Of Chance",
+          "duration": "4:20"
+        },
+        {
+          "title": "Scott Scat",
+          "duration": "5:10"
+        },
+        {
+          "title": "Blues For Charlie Parker",
+          "duration": "5:05"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4073142-Tony-Scott-2Traditional-Jazz-Studio-Boomerang"
+  }
+}

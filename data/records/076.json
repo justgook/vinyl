@@ -1,0 +1,74 @@
+{
+  "id": "076",
+  "catalogNumber": "С60-15601-2",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Mikrofons 80",
+  "year": 1981,
+  "genre": [
+    "Electronic",
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/rOiVBHnQQGLxC_QbbYq8-YhFOeHT5iov2mejDVasy-0/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5MDA2/MDgtMTQwODkwODc2/Mi0xNDM1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/076.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Muļķe Sirds",
+          "duration": "3:43"
+        },
+        {
+          "title": "Kad Mēs Iemīlēsim",
+          "duration": "3:58"
+        },
+        {
+          "title": "Kamola Tinēja",
+          "duration": "3:45"
+        },
+        {
+          "title": "Pajaco",
+          "duration": "3:18"
+        },
+        {
+          "title": "Kas Esi Tu?",
+          "duration": "2:47"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Ziņģe Par Bailēm",
+          "duration": "3:08"
+        },
+        {
+          "title": "Krēslas Stundā",
+          "duration": "2:57"
+        },
+        {
+          "title": "Neko Nevar Skaidri Zināt",
+          "duration": "2:24"
+        },
+        {
+          "title": "Par Nesatikšanos",
+          "duration": "3:42"
+        },
+        {
+          "title": "Puķu Nakts",
+          "duration": "3:42"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5900608-Various-Mikrofons-80"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "090",
+  "catalogNumber": "С60 22285 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Юрий Антонов"
+  ],
+  "album": "Поверь В Мечту",
+  "year": 1985,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/TnAkfEnhzwjyGvKStQrCjtujks93XLgsL1PmBSLqLmU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjcz/MjYtMTI5OTA3NTU5/Ni5qcGVn.jpeg",
+  "imageUrl": "data/covers/090.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Поверь В Мечту • Believe In The Dream",
+          "duration": "4:31"
+        },
+        {
+          "title": "Уходит Молодость Моя • My Youth Is Passing Away",
+          "duration": "5:42"
+        },
+        {
+          "title": "Я Не Жалею Ни О Чем • I'm Sorry For Nothing",
+          "duration": "3:58"
+        },
+        {
+          "title": "Мой Путь Прост • My Sinple Way",
+          "duration": "3:56"
+        },
+        {
+          "title": "На Улице Каштановой • In Kashtanovaya Street",
+          "duration": "3:53"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Не До Смеха • We Are Past Laughter",
+          "duration": "3:14"
+        },
+        {
+          "title": "Если Пойдем Вдвоем • If We Go Together",
+          "duration": "3:08"
+        },
+        {
+          "title": "Снегири • Bullfinches",
+          "duration": "2:35"
+        },
+        {
+          "title": "Дай Мне Руку • Give Me Your Hand",
+          "duration": "4:50"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2067326-Юрий-Антонов-Поверь-В-Мечту"
+  }
+}

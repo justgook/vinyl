@@ -1,33 +1,42 @@
 {
   "id": "015",
-  "catalogNumber": "FKT001",
-  "recordLabel": "Daft Life Limited",
-  "artists": ["Daft Punk"],
-  "album": "Discovery",
-  "year": 2001,
-  "genre": ["Electronic", "House", "Funk"],
-  "format": "LP, Album",
+  "catalogNumber": "С60 25129 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Аквариум"
+  ],
+  "album": "Åквариум",
+  "year": 1987,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation",
   "condition": "Near Mint",
-  "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Daft+Punk",
+  "sourceImageUrl": "https://i.discogs.com/Sry8hRL83cqS7neruPJZJeZcQlQhs3Z07KEfhmLSO-s/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMDg3/NjItMTM2MTk2MDA3/Ny04MDQ2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/015.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "One More Time",
-          "duration": "5:20"
+          "title": "Сидя На Красивом Холме",
+          "duration": "1:41"
         },
         {
-          "title": "Aerodynamic",
-          "duration": "3:48"
+          "title": "Иван Бодхидхарма",
+          "duration": "2:55"
         },
         {
-          "title": "Digital Love",
-          "duration": "4:59"
+          "title": "Небо Становится Ближе",
+          "duration": "6:19"
         },
         {
-          "title": "Homework",
-          "duration": "5:09"
+          "title": "Электричество",
+          "duration": "4:16"
+        },
+        {
+          "title": "Глаз",
+          "duration": "3:28"
         }
       ]
     },
@@ -35,29 +44,25 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "Face to Face",
-          "duration": "4:08"
+          "title": "Сны О Чем-То Большем",
+          "duration": "4:38"
         },
         {
-          "title": "Too Long",
-          "duration": "5:33"
+          "title": "Кад Годдо",
+          "duration": "4:52"
         },
         {
-          "title": "Something About Us",
-          "duration": "4:08"
+          "title": "Дети Декабря",
+          "duration": "2:12"
         },
         {
-          "title": "Within",
-          "duration": "3:23"
-        },
-        {
-          "title": "Nightvision",
-          "duration": "3:13"
+          "title": "Деревня",
+          "duration": "4:41"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/161798"
+    "discogs": "https://www.discogs.com/release/4308762-Аквариум-Åквариум"
   }
 }

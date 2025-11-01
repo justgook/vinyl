@@ -1,0 +1,72 @@
+{
+  "id": "204",
+  "catalogNumber": "33Д-23003",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Музыкальный Калейдоскоп (9-я Серия)",
+  "year": 1968,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, 10\", Compilation, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/aYXlOpWazxMpHhUqagxNU3FXlXfoOJUbj330vKryK8w/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwNDY2/MzEtMTQ1OTcwNjI5/NC0xMzYzLmpwZWc.jpeg",
+  "imageUrl": "data/covers/204.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Алло, Долли",
+          "duration": "0:00"
+        },
+        {
+          "title": "Луи",
+          "duration": "0:00"
+        },
+        {
+          "title": "Воскресенье",
+          "duration": "0:00"
+        },
+        {
+          "title": "Детство Ушло",
+          "duration": "0:00"
+        },
+        {
+          "title": "На Балу",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Всегда Вдвоем",
+          "duration": "0:00"
+        },
+        {
+          "title": "Смешная История",
+          "duration": "0:00"
+        },
+        {
+          "title": "Моя Звезда",
+          "duration": "0:00"
+        },
+        {
+          "title": "Печальная Лу",
+          "duration": "0:00"
+        },
+        {
+          "title": "Любимый Учитель",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6046631-Various-Музыкальный-Калейдоскоп-9-я-Серия"
+  }
+}

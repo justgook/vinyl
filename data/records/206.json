@@ -1,0 +1,44 @@
+{
+  "id": "206",
+  "catalogNumber": "33 Д 26027-8",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Сергей Козлов"
+  ],
+  "album": "Сказки Про Африку",
+  "year": 1986,
+  "genre": [
+    "Children's"
+  ],
+  "format": "Vinyl, LP, 10\", Repress, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/lgoc-29Fr9rHwiGl5eqX2r1tWdhlw5U5A7RCqrqW_VA/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3Nzky/OTQxLTE2MTU0Nzc3/ODMtODU5Ny5qcGVn.jpeg",
+  "imageUrl": "data/covers/206.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Кролик Ки-Ку",
+          "duration": "0:00"
+        },
+        {
+          "title": "Страшный Зверь",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Как Львенок И Черепаха Пели Песню",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/17792941-С-Козлов-Сказки-Про-Африку"
+  }
+}

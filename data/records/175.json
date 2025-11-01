@@ -1,0 +1,76 @@
+{
+  "id": "175",
+  "catalogNumber": "С60-06053-4",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Vanja Stojković"
+  ],
+  "album": "Vanja Stojković",
+  "year": 2025,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/4UZkh8y3nUt-HlFmyr0ugiwSgUbPvW4DiexVSZjDqB8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NzI2/NjY3LTE2MjEwMTM5/NDctNjMxOC5qcGVn.jpeg",
+  "imageUrl": "data/covers/175.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Есть Время Для Любви",
+          "duration": "0:00"
+        },
+        {
+          "title": "За Рекой Пливой",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня Из К/Ф \"Генералы Песчаных Карьеров\"",
+          "duration": "0:00"
+        },
+        {
+          "title": "Джамбалая",
+          "duration": "0:00"
+        },
+        {
+          "title": "Приключение",
+          "duration": "0:00"
+        },
+        {
+          "title": "Кто Любит Тебя Сильнее",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Веселый Пастух",
+          "duration": "0:00"
+        },
+        {
+          "title": "Каждому Человеку - Любовь",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Этом Мире",
+          "duration": "0:00"
+        },
+        {
+          "title": "Прощай, Любовь Моя",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ватерлоо",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/18726667-Vanja-Stojković-Vanja-Stojković"
+  }
+}

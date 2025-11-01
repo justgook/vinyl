@@ -1,0 +1,33 @@
+{
+  "id": "047",
+  "catalogNumber": "33 Д 025609-10",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Wolfgang Amadeus Mozart",
+    "Государственный Академический Русский Хор Им. А. В. Свешникова",
+    "Moscow Philharmonic Orchestra",
+    "Александр Свешников"
+  ],
+  "album": "Реквием, К. 626",
+  "year": 1988,
+  "genre": [
+    "Classical"
+  ],
+  "format": "Vinyl, LP, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/yt0sjcWeG0OKKxcDKLEcLBYu9nI0oAB2cYv-gVlnAKQ/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjk5/MjgwLTE3NDA5ODI3/MDEtNjQwMi5qcGVn.jpeg",
+  "imageUrl": "data/covers/047.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": []
+    },
+    {
+      "name": "Side B",
+      "tracks": []
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/33299280-Вольфганг-Амадей-Моцарт-Академический-русский-хор-ССС"
+  }
+}

@@ -1,33 +1,54 @@
 {
   "id": "006",
-  "catalogNumber": "RCA-PL-12623",
-  "recordLabel": "RCA",
-  "artists": ["David Bowie"],
-  "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
-  "year": 1972,
-  "genre": ["Glam Rock", "Rock"],
-  "format": "LP, Album",
-  "condition": "Very Good",
-  "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=David+Bowie",
+  "catalogNumber": "М60 48503 001",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Чужая Колея",
+  "year": 1991,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Repress, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/0AwefYNV4VuxwTGTaAlJV5FJtYYq01g-rMvSM4azC18/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzYw/OTkzLTE1MDM4NDE0/NjYtOTg2Ni5qcGVn.jpeg",
+  "imageUrl": "data/covers/006.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Five Years",
-          "duration": "4:44"
+          "title": "Утренняя Гимнастика",
+          "duration": "0:00"
         },
         {
-          "title": "Soul Love",
-          "duration": "3:34"
+          "title": "Жертва Телевидения",
+          "duration": "0:00"
         },
         {
-          "title": "Moonage Daydream",
-          "duration": "4:36"
+          "title": "Про Козла Отпущения",
+          "duration": "0:00"
         },
         {
-          "title": "Starman",
-          "duration": "4:16"
+          "title": "Любовь В Каменном Веке",
+          "duration": "0:00"
+        },
+        {
+          "title": "О Двух Автомобилях",
+          "duration": "0:00"
+        },
+        {
+          "title": "То Ли В Избу И Запеть",
+          "duration": "0:00"
+        },
+        {
+          "title": "Чужая Колея",
+          "duration": "0:00"
+        },
+        {
+          "title": "Марафон",
+          "duration": "0:00"
         }
       ]
     },
@@ -35,33 +56,41 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "It Ain't Easy",
-          "duration": "3:02"
+          "title": "Штангист",
+          "duration": "0:00"
         },
         {
-          "title": "Lady Stardust",
-          "duration": "3:20"
+          "title": "Высота",
+          "duration": "0:00"
         },
         {
-          "title": "Star",
-          "duration": "3:00"
+          "title": "Сыновья Уходят В Бой",
+          "duration": "0:00"
         },
         {
-          "title": "Hang On to Yourself",
-          "duration": "2:37"
+          "title": "Про Магадан",
+          "duration": "0:00"
         },
         {
-          "title": "Ziggy Stardust",
-          "duration": "3:12"
+          "title": "Несостоявшийся Роман",
+          "duration": "0:00"
         },
         {
-          "title": "Suffragette City",
-          "duration": "3:48"
+          "title": "Невидимка",
+          "duration": "0:00"
+        },
+        {
+          "title": "На Стол Колоду",
+          "duration": "0:00"
+        },
+        {
+          "title": "Про Первые Ряды",
+          "duration": "0:00"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/374856"
+    "discogs": "https://www.discogs.com/release/10760993-Владимир-Высоцкий-Чужая-Колея"
   }
 }

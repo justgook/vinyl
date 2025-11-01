@@ -1,63 +1,91 @@
 {
   "id": "009",
-  "catalogNumber": "44-0823",
-  "recordLabel": "Verve Records",
-  "artists": ["The Velvet Underground", "Nico"],
-  "album": "The Velvet Underground & Nico",
-  "year": 1967,
-  "genre": ["Rock", "Art Rock"],
-  "format": "LP, Album",
-  "condition": "Good",
-  "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Velvet+Underground",
+  "catalogNumber": "М60 48257 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Москва - Одесса",
+  "year": 1988,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ubroqVE-hbY3-YpeKfQ9wi5nivbScVFtbHqbqvBEtgw/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1MzY4/NTQtMTUzNzg5OTk5/Ni00Njk5LmpwZWc.jpeg",
+  "imageUrl": "data/covers/009.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Sunday Morning",
-          "duration": "2:50"
+          "title": "На Братских Могилах",
+          "duration": "0:00"
         },
         {
-          "title": "I'm Waiting for the Man",
-          "duration": "4:33"
+          "title": "Звезды",
+          "duration": "0:00"
         },
         {
-          "title": "Femme Fatale",
-          "duration": "2:54"
+          "title": "Мерцал Закат",
+          "duration": "0:00"
         },
         {
-          "title": "Venus in Furs",
-          "duration": "5:25"
-        }
-      ]
-    },
-    {
-      "name": "Side B",
-      "tracks": [
-        {
-          "title": "Run Run Run",
-          "duration": "4:14"
+          "title": "Она Была В Париже",
+          "duration": "0:00"
         },
         {
-          "title": "All Tomorrow's Parties",
-          "duration": "5:48"
+          "title": "Татуировка",
+          "duration": "0:00"
         },
         {
-          "title": "I'll Be Your Mirror",
-          "duration": "2:08"
+          "title": "Москва - Одесса",
+          "duration": "0:00"
         },
         {
-          "title": "Black Angel's Death Song",
-          "duration": "4:32"
+          "title": "Письмо На Выставку",
+          "duration": "0:00"
         },
         {
-          "title": "European Son",
-          "duration": "7:06"
+          "title": "Ответ На Письмо",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Далеком Созвездии Тау Кита",
+          "duration": "0:00"
+        },
+        {
+          "title": "Пришельцы",
+          "duration": "0:00"
+        },
+        {
+          "title": "Бал-Маскарад",
+          "duration": "0:00"
+        },
+        {
+          "title": "Солдаты Группы \"Центр\"",
+          "duration": "0:00"
+        },
+        {
+          "title": "Йоги",
+          "duration": "0:00"
+        },
+        {
+          "title": "От Скучных Шабашей",
+          "duration": "0:00"
+        },
+        {
+          "title": "Странная Сказка",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вариации На Цыганские Темы",
+          "duration": "0:00"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/3277346"
+    "discogs": "https://www.discogs.com/release/8536854-Владимир-Высоцкий-Москва-Одесса"
   }
 }

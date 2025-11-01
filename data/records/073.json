@@ -1,0 +1,68 @@
+{
+  "id": "073",
+  "catalogNumber": "С60 29139 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Маркиза"
+  ],
+  "album": "Маркиза",
+  "year": 1990,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/I5nhRcQmlKVkjrfw_3X5LBGTp89zrf8N-cy4yniz2QU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NjU1/NDg5LTE2MjA2NTcw/NzctNDMwMC5qcGVn.jpeg",
+  "imageUrl": "data/covers/073.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "220 Вольт",
+          "duration": "3:36"
+        },
+        {
+          "title": "Спи, Дитя",
+          "duration": "4:37"
+        },
+        {
+          "title": "Зря Ты Пришел",
+          "duration": "2:46"
+        },
+        {
+          "title": "Все Мы Верим",
+          "duration": "4:33"
+        },
+        {
+          "title": "Гости",
+          "duration": "3:20"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Эй, Давай, Приятель",
+          "duration": "3:32"
+        },
+        {
+          "title": "Рифы",
+          "duration": "5:01"
+        },
+        {
+          "title": "Ты Был Мой Герой",
+          "duration": "5:10"
+        },
+        {
+          "title": "Пою Я Рок",
+          "duration": "4:25"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/18655489-Маркиза-Маркиза"
+  }
+}

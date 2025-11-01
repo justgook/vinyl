@@ -1,0 +1,88 @@
+{
+  "id": "078",
+  "catalogNumber": "А60 00543 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Pink Floyd"
+  ],
+  "album": "Delicate Sound Of Thunder",
+  "year": 1990,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/uWotcjjhezFvd7zsXNR0tuW52sNstcdBo2skqG-nzK4/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwODkx/NDQzLTE2MzY0MDgw/NTctOTExOS5qcGVn.jpeg",
+  "imageUrl": "data/covers/078.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Shine On You Crazy Diamond",
+          "duration": "11:54"
+        },
+        {
+          "title": "Learning To Fly",
+          "duration": "5:27"
+        },
+        {
+          "title": "Yet Another Movie",
+          "duration": "6:21"
+        },
+        {
+          "title": "Round And Around",
+          "duration": "0:33"
+        },
+        {
+          "title": "Sorrow",
+          "duration": "9:28"
+        },
+        {
+          "title": "The Dogs Of War",
+          "duration": "7:19"
+        },
+        {
+          "title": "On The Turning Away",
+          "duration": "7:57"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "One Of These Days",
+          "duration": "6:16"
+        },
+        {
+          "title": "Time",
+          "duration": "5:16"
+        },
+        {
+          "title": "Money",
+          "duration": "9:52"
+        },
+        {
+          "title": "Another Brick In The Wall Part II",
+          "duration": "5:29"
+        },
+        {
+          "title": "Wish You Were Here",
+          "duration": "4:49"
+        },
+        {
+          "title": "Comfortably Numb",
+          "duration": "8:56"
+        },
+        {
+          "title": "Run Like Hell",
+          "duration": "7:12"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/20891443-Pink-Floyd-Delicate-Sound-Of-Thunder"
+  }
+}

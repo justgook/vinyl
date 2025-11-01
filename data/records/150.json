@@ -1,0 +1,32 @@
+{
+  "id": "150",
+  "catalogNumber": "С60 20173 000",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Italo Hits = Лучшие Итальянские Песни 1982 Года",
+  "year": 1982,
+  "genre": [
+    "Electronic",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/3Kd3IrY9vmJO_tzcykis83bVr6EQ3pv6PvkQ9PsnVXA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0NDc2/MTIxLTE3NTE5MTI5/NzQtNDEwNy5qcGVn.jpeg",
+  "imageUrl": "data/covers/150.jpg",
+  "sides": [
+    {
+      "name": "Обыкновенные Истории = Storie Di Tutti I Giorni",
+      "tracks": [
+        {
+          "title": "Больше Такого Не Будет = Non Succederà Più",
+          "duration": "4:10"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/34476121-Various-Italo-Hits-Лучшие-Итальянские-Песни-1982-Года"
+  }
+}

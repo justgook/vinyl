@@ -1,0 +1,68 @@
+{
+  "id": "075",
+  "catalogNumber": "С60 26573 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Ленинградский Рок-Клуб",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/m8A9U477OMEHpe8avWwZsPGFOOBf0mRCHRCvRCtQ_YI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NTk0/MjgxLTE2MTQzNDU3/OTYtOTMxOS5qcGVn.jpeg",
+  "imageUrl": "data/covers/075.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Освобождение (I Want To Be Free)",
+          "duration": "4:40"
+        },
+        {
+          "title": "Моё Поколение (My Generation)",
+          "duration": "3:55"
+        },
+        {
+          "title": "Выйди Вон (Get Out)",
+          "duration": "4:45"
+        },
+        {
+          "title": "Шла Машина Грузовая (The Passing Lorry) ",
+          "duration": "5:10"
+        },
+        {
+          "title": "Сидя На Белой Полосе (Sitting On The Dividing Line)",
+          "duration": "2:50"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Волчица (She-wolf)",
+          "duration": "4:25"
+        },
+        {
+          "title": "С Вами Говорит Телевизор (TV Is Talking To You)",
+          "duration": "3:15"
+        },
+        {
+          "title": "Пляска (Dance)",
+          "duration": "5:00"
+        },
+        {
+          "title": "Я Не Знаю (I Don't Know) ",
+          "duration": "2:55"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/17594281-Various-Ленинградский-Рок-Клуб"
+  }
+}

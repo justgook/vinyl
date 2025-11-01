@@ -1,0 +1,59 @@
+{
+  "id": "096",
+  "catalogNumber": "М60 49395 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Лекция",
+  "year": 1990,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/kzkfDNZB8ucA2YpUeurb9BZG7KqTs-SOaoch6Szprjo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MDE4/MjIxLTE2OTI0NTkz/NjMtODI2OC5qcGVn.jpeg",
+  "imageUrl": "data/covers/096.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "День Святого Никогда",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня Акына",
+          "duration": "0:00"
+        },
+        {
+          "title": "Солдаты Группы «Центр»",
+          "duration": "0:00"
+        },
+        {
+          "title": "Гимнастика",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вратарь (Посвящается Л. Яшину)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Попурри На Темы Песен К Кинофильмам",
+          "duration": "0:00"
+        },
+        {
+          "title": "Баллада Про Двух Лебедей",
+          "duration": "0:00"
+        },
+        {
+          "title": "Джеймс Бонд",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/28018221-Владимир-Высоцкий-Лекция"
+  }
+}

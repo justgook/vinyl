@@ -1,0 +1,69 @@
+{
+  "id": "062",
+  "catalogNumber": "С60 27991 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Кузьмин",
+    "Владимир Кузьмин"
+  ],
+  "album": "Ромео И Джульетта = Romeo And Juliet",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/pjxcc5Ja8SL9nGei-shYc6TRz_jfIvGPtSheNdD7DUw/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNTM5/MDQtMTI2NjkyODU1/NC5qcGVn.jpeg",
+  "imageUrl": "data/covers/062.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Ромео И Джульетта",
+          "duration": "4:12"
+        },
+        {
+          "title": "Долгая Ночь",
+          "duration": "4:17"
+        },
+        {
+          "title": "Блеск В Ее Глазах",
+          "duration": "3:49"
+        },
+        {
+          "title": "Когда Меня Ты Позовешь",
+          "duration": "5:27"
+        },
+        {
+          "title": "Музыка В Моей Душе",
+          "duration": "4:02"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Похожа На Мечту",
+          "duration": "5:14"
+        },
+        {
+          "title": "Я Не Звоню",
+          "duration": "4:00"
+        },
+        {
+          "title": "Вы Так Невинны",
+          "duration": "3:34"
+        },
+        {
+          "title": "Некогда",
+          "duration": "3:42"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2153904-Владимир-Кузьмин-Vladimir-Kuzmin-Ромео-И-Джульетта-Romeo-And-Juliet"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "136",
+  "catalogNumber": "C60-08171-2",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Miguel Ramos"
+  ],
+  "album": "Органная Музыка",
+  "year": 1984,
+  "genre": [
+    "Jazz",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/e3c7kFopr3r06Uhu_vC5KT8xSAMh5243ly7HCL2Rbkc/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1Mzg4/MzEtMTM5NjQ1MjA4/OC0zNTkxLmpwZWc.jpeg",
+  "imageUrl": "data/covers/136.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Песня Под Дождем",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сан-Франциско",
+          "duration": "0:00"
+        },
+        {
+          "title": "Лаура",
+          "duration": "0:00"
+        },
+        {
+          "title": "Танцуем Бегин",
+          "duration": "0:00"
+        },
+        {
+          "title": "Рамона",
+          "duration": "0:00"
+        },
+        {
+          "title": "Tiger Rag",
+          "duration": "0:00"
+        },
+        {
+          "title": "Пой, Пой, Пой",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Пикколино",
+          "duration": "0:00"
+        },
+        {
+          "title": "Всегда",
+          "duration": "0:00"
+        },
+        {
+          "title": "Голубая Луна",
+          "duration": "0:00"
+        },
+        {
+          "title": "Щека К Щеке",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Одиночестве",
+          "duration": "0:00"
+        },
+        {
+          "title": "Пенсильвания 6-5000",
+          "duration": "0:00"
+        },
+        {
+          "title": "Poinciana",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5538831-Мигель-Рамос-Органная-Музыка"
+  }
+}

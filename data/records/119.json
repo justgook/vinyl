@@ -1,0 +1,42 @@
+{
+  "id": "119",
+  "catalogNumber": "С60 29255 009",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Джунгли"
+  ],
+  "album": "Весна  В Шанхае",
+  "year": 1990,
+  "genre": [
+    "Electronic",
+    "Jazz",
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/N1pZEMiKsauvSCfHKAyD8EkR6OOGd48cC06yMCCVtHQ/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMTE0/MDMtMTU1NjI3Mzc5/MC0zNzEwLmpwZWc.jpeg",
+  "imageUrl": "data/covers/119.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Измерения",
+          "duration": "15:32"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Весна В Шанхае",
+          "duration": "18:10"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4111403-Джунгли-Весна-В-Шанхае"
+  }
+}

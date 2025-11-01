@@ -1,0 +1,100 @@
+{
+  "id": "144",
+  "catalogNumber": "33 С 60-07077-8, 33 C 60 08473-4",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Oleg Lundstrem Orchestra"
+  ],
+  "album": "Памяти Мастеров Джаза. Глен Миллер. Дюк Эллингтон ",
+  "year": 1976,
+  "genre": [
+    "Jazz"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/G9oA0dOh7b_OAzNaCg0SobY3q02qjwwlsJVs6H2LU8I/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzNDI4/MTAtMTM2MjMxMDU1/OS04MTc5LmpwZWc.jpeg",
+  "imageUrl": "data/covers/144.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "В Хорошем Настроении",
+          "duration": "3:30"
+        },
+        {
+          "title": "Лунная Серенада",
+          "duration": "2:42"
+        },
+        {
+          "title": "Дорога На Чаттанугу",
+          "duration": "2:43"
+        },
+        {
+          "title": "Я Знаю, Почему",
+          "duration": "2:00"
+        },
+        {
+          "title": "Мы Снова Здесь",
+          "duration": "3:37"
+        },
+        {
+          "title": "Коричневый Кувшинчик",
+          "duration": "3:05"
+        },
+        {
+          "title": "Это Что-То Зыбкое",
+          "duration": "3:35"
+        },
+        {
+          "title": "Утренняя Серенада",
+          "duration": "3:17"
+        },
+        {
+          "title": "В Кругу Друзей",
+          "duration": "4:10"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Нитка Жемчуга",
+          "duration": "3:08"
+        },
+        {
+          "title": "Я Очарован",
+          "duration": "3:16"
+        },
+        {
+          "title": "Садись В Поезд \"А\"",
+          "duration": "3:28"
+        },
+        {
+          "title": "В Сентиментальном Настроении",
+          "duration": "5:27"
+        },
+        {
+          "title": "Счастливое Воссоединение",
+          "duration": "4:19"
+        },
+        {
+          "title": "В Мягких Тонах",
+          "duration": "6:03"
+        },
+        {
+          "title": "Караван",
+          "duration": "7:47"
+        },
+        {
+          "title": "Нет Джаза Без Свинга",
+          "duration": "11:43"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4342810-Оркестр-Олега-Лундстрема-Памяти-Мастеров-Джаза-Глен-М"
+  }
+}

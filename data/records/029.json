@@ -1,0 +1,72 @@
+{
+  "id": "029",
+  "catalogNumber": "С60 28805 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Секрет"
+  ],
+  "album": "Ленинградское Время",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/l8aT_NRdyql3NDpFWRZrBbBrRgvUcUOYAzOCltW7Fso/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MTA1/MjgtMTMyNDgyNzU3/NC5qcGVn.jpeg",
+  "imageUrl": "data/covers/029.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Домой",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ленинградское Время",
+          "duration": "0:00"
+        },
+        {
+          "title": "Лиза",
+          "duration": "0:00"
+        },
+        {
+          "title": "Блюз Бродячих Собак",
+          "duration": "0:00"
+        },
+        {
+          "title": "Одна В Трехкомнатной Квартире",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Беспечный Ездок",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мама",
+          "duration": "0:00"
+        },
+        {
+          "title": "Отказали Тормоза",
+          "duration": "0:00"
+        },
+        {
+          "title": "Прощай, Ночь, Прости",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ветер Новых Дней",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2810528-Секрет-Ленинградское-Время"
+  }
+}

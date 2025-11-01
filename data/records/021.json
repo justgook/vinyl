@@ -1,56 +1,65 @@
 {
   "id": "021",
-  "catalogNumber": "С60 22147 000",
+  "catalogNumber": "С60 27363 007",
   "recordLabel": "Мелодия",
   "artists": [
-    "Ottawan"
+    "Sandra"
   ],
-  "album": "Оттаван 2 = Ottawan 2",
-  "year": 1987,
+  "album": "The Long Play",
+  "year": 1989,
   "genre": [
     "Electronic",
     "Pop"
   ],
-  "format": "Vinyl, LP, Album, Reissue, Stereo",
+  "format": "Vinyl, LP, Album, Repress, Stereo",
   "condition": "Near Mint",
-  "imageUrl": "https://i.discogs.com/QN609gNxxbaITd9evF_6MOuHoYO5k68OvlwQgKbphAw/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4OTU1/Nzg1LTE3MDAzNDc1/NjctMjMzMC5qcGVn.jpeg",
+  "sourceImageUrl": "https://i.discogs.com/tbe3rUDJfNUiVmZDM4aTJiMB8lUhmp9lgREXFssllx0/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5ODM4/NTEtMTYyMjIyNDY2/MC02OTMzLmpwZWc.jpeg",
+  "imageUrl": "data/covers/021.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Сдавайся (Подари Мне Сердце) = Hands Up (Give Me Your Heart)",
-          "duration": "4:50"
+          "title": "В Ночной Духоте = In The Heat Of The Night",
+          "duration": "5:20"
+        },
+        {
+          "title": "На Блюдечке... (Семь Лет) = On The Tray (Seven Years)",
+          "duration": "3:45"
+        },
+        {
+          "title": "Малышка = Little Girl",
+          "duration": "3:11"
+        },
+        {
+          "title": "Ты И Я = You And I",
+          "duration": "6:44"
         }
       ]
     },
     {
-      "name": "Пой Вместе С Музыкальным Автоматом = Sing Along With The Juke-Box",
+      "name": "Side B",
       "tracks": [
         {
-          "title": "Фантастическая Музыка = Crazy Music",
-          "duration": "5:30"
+          "title": "(Я Никогда Не Буду). Мария Магдалена = (I'll Never Be) Maria Magdalena",
+          "duration": "5:55"
         },
         {
-          "title": "Это Страшная Тайна = It's A Top Secret",
-          "duration": "3:16"
+          "title": "Сердцебиение = Heartbeat",
+          "duration": "4:53"
         },
         {
-          "title": "Любовь = Shubidube Love",
-          "duration": "2:50"
+          "title": "Сёстры и Братья = Sisters And Brothers",
+          "duration": "3:23"
         },
         {
-          "title": "Румба = Dondon Rumba",
-          "duration": "3:35"
-        },
-        {
-          "title": "Сдавайся (Инструментальный Вариант) = Hands Up (Instrumental)",
-          "duration": "0:43"
+          "title": "Передумай = Change Your Mind",
+          "duration": "4:04"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "https://www.discogs.com/release/28955785-Ottawan-Оттаван-2-Ottawan-2"
+    "discogs": "https://www.discogs.com/release/6983851-Сандра-The-Long-Play"
   }
 }

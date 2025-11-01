@@ -1,0 +1,61 @@
+{
+  "id": "166",
+  "catalogNumber": "С60 29467 000",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Лотос"
+  ],
+  "album": "Группа Лотос",
+  "year": 1990,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/XCGsrBC8iNPmriLqBtCVOulSw6jy2qpdPQjRva5RFCM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDY5/ODgtMTY1Nzc4MDYx/MS05OTEzLmpwZWc.jpeg",
+  "imageUrl": "data/covers/166.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Белый День",
+          "duration": "4:32"
+        },
+        {
+          "title": "Немного Счастья На Двоих",
+          "duration": "5:10"
+        },
+        {
+          "title": "Евпатория",
+          "duration": "3:28"
+        },
+        {
+          "title": "Звон",
+          "duration": "5:48"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Свежий Ветер",
+          "duration": "6:00"
+        },
+        {
+          "title": "Кот Бегемот",
+          "duration": "5:26"
+        },
+        {
+          "title": "Ветер С Острова Борнео",
+          "duration": "7:06"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2106988-Лотос-Группа-Лотос"
+  }
+}

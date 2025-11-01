@@ -1,0 +1,77 @@
+{
+  "id": "039",
+  "catalogNumber": "С60 19689 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Mikrofons-82",
+  "year": 1983,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/h1mGV_RvJMtoD_edRzGPfxEdl0qMyzad53ODklRjzOg/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTI5/MTEtMTM3MDM4MTgw/NS0zNTgxLmpwZWc.jpeg",
+  "imageUrl": "data/covers/039.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Cielaviņa",
+          "duration": "3:26"
+        },
+        {
+          "title": "Kad Nekas Nav Palicis Tevī",
+          "duration": "2:39"
+        },
+        {
+          "title": "Zīlīte",
+          "duration": "3:13"
+        },
+        {
+          "title": "«Smaidas»",
+          "duration": "3:47"
+        },
+        {
+          "title": "Mīļā Magonīt!",
+          "duration": "3:49"
+        },
+        {
+          "title": "Ceļojums",
+          "duration": "3:09"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Solījums",
+          "duration": "3:14"
+        },
+        {
+          "title": "Dziesma Par Spēli",
+          "duration": "3:53"
+        },
+        {
+          "title": "Nav Mīla Jāmeklē",
+          "duration": "3:25"
+        },
+        {
+          "title": "Ilgošanās",
+          "duration": "3:48"
+        },
+        {
+          "title": "Akas",
+          "duration": "3:32"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3052911-Various-Mikrofons-82"
+  }
+}

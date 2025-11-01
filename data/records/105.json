@@ -1,0 +1,61 @@
+{
+  "id": "105",
+  "catalogNumber": "С60 27923 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Александр Башлачёв"
+  ],
+  "album": "Время Колокольчиков",
+  "year": 1991,
+  "genre": [
+    "Rock",
+    "Folk, World, & Country"
+  ],
+  "format": "Vinyl, LP, Album, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/Jb6m-ilShJ0Uq_e6Ce4kUgYgt9uNbk91rEgnU9Z_onU/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyNTc4/MjUtMTU1NjI3NDc5/OS04NzUzLmpwZWc.jpeg",
+  "imageUrl": "data/covers/105.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Время Колокольчиков",
+          "duration": "3:44"
+        },
+        {
+          "title": "Посошок",
+          "duration": "5:11"
+        },
+        {
+          "title": "От Винта!",
+          "duration": "4:22"
+        },
+        {
+          "title": "На Жизнь Поэтов",
+          "duration": "6:24"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Ванюша",
+          "duration": "12:11"
+        },
+        {
+          "title": "Некому Березу Заломати",
+          "duration": "3:05"
+        },
+        {
+          "title": "Как Ветра Осенние",
+          "duration": "4:13"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4257825-Александр-Башлачев-Время-Колокольчиков"
+  }
+}

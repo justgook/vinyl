@@ -1,0 +1,64 @@
+{
+  "id": "165",
+  "catalogNumber": "С60—12953-4",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Весёлые Ребята"
+  ],
+  "album": "Музыкальный Глобус",
+  "year": 1980,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ot0VAV2Gc1VllMGUrM4xg75cwevYpbm7-P05Ao2Durs/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzcz/ODI1LTE1NjA4MTA5/NzAtMzcxMy5qcGVn.jpeg",
+  "imageUrl": "data/covers/165.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Никогда Не Поверю",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мона Лиза",
+          "duration": "0:00"
+        },
+        {
+          "title": "Уходило Лето",
+          "duration": "0:00"
+        },
+        {
+          "title": "Люба-Любовь",
+          "duration": "0:00"
+        },
+        {
+          "title": "Школьная Пора",
+          "duration": "0:00"
+        },
+        {
+          "title": "Нет, Я Не Жду",
+          "duration": "0:00"
+        },
+        {
+          "title": "Что Ты Хочешь Мне Сказать",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Последний Раз",
+          "duration": "0:00"
+        },
+        {
+          "title": "Доброте Предела Нет",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/13773825-Веселые-Ребята-Музыкальный-Глобус"
+  }
+}

@@ -1,33 +1,46 @@
 {
   "id": "019",
-  "catalogNumber": "CRED062LP",
-  "recordLabel": "Creation",
-  "artists": ["My Bloody Valentine"],
-  "album": "Loveless",
-  "year": 1991,
-  "genre": ["Dream Pop", "Noise Pop"],
-  "format": "LP, Album",
+  "catalogNumber": "С60 27505 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Meat Loaf"
+  ],
+  "album": "Blind Before I Stop",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Reissue",
   "condition": "Near Mint",
-  "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=My+Bloody+Valentine",
+  "sourceImageUrl": "https://i.discogs.com/ME1XaBthppy5YlpytTVp8gRVPMX01X1dgUFIRxPX8z8/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NjI5/MDAzLTE2MDg5Mjgw/NjEtOTkzNC5qcGVn.jpeg",
+  "imageUrl": "data/covers/019.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Sometimes",
-          "duration": "4:02"
+          "title": "День Казни = Execution Day",
+          "duration": "6:32"
         },
         {
-          "title": "Loveless",
-          "duration": "4:10"
+          "title": "Торговцы Рок-н-роллом = Rock'n'Roll Mercenaries",
+          "duration": "5:01"
         },
         {
-          "title": "To Here Knows When",
-          "duration": "4:33"
+          "title": "Убить И Сбежать = Getting Away With Murder",
+          "duration": "3:49"
         },
         {
-          "title": "When the Sun Hits",
-          "duration": "4:30"
+          "title": "Еще Один Поцелуй (Ночь Тихого Марша) = One More Kiss (Night Of The Soft Parade)",
+          "duration": "5:38"
+        },
+        {
+          "title": "Я Сойду С Ума = Blind Before I Stop",
+          "duration": "3:32"
+        },
+        {
+          "title": "Я Сгораю = Burning Down",
+          "duration": "4:58"
         }
       ]
     },
@@ -35,29 +48,29 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "I Only Said",
-          "duration": "3:19"
+          "title": "Стоя Снаружи = Standing On The Outside",
+          "duration": "3:57"
         },
         {
-          "title": "Come in Out of the Rain",
-          "duration": "4:14"
+          "title": "По-мужски = Masculine",
+          "duration": "4:32"
         },
         {
-          "title": "Soon",
-          "duration": "4:19"
+          "title": "Мужчина И Женщина = Man And A Woman",
+          "duration": "4:11"
         },
         {
-          "title": "Blown a Wish",
-          "duration": "4:56"
+          "title": "Особенная Девушка = Special Girl",
+          "duration": "3:56"
         },
         {
-          "title": "What You Want",
-          "duration": "2:58"
+          "title": "Герой Рок-н-ролла = Rock'n'Roll Hero",
+          "duration": "4:29"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/310704"
+    "discogs": "https://www.discogs.com/release/16629003-Meat-Loaf-Blind-Before-I-Stop"
   }
 }

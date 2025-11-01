@@ -1,0 +1,85 @@
+{
+  "id": "159",
+  "catalogNumber": "С60-13007-8",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Leo Sayer",
+    "Leo Sayer"
+  ],
+  "album": "Поет Лео Сейер",
+  "year": 1982,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/hGfD-WcJlGhU-oMPumaqx3FQXP-lMllNpijGtutqIKs/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjIx/Mjk2LTE1MTk1NjI4/NDctNzk4MS5qcGVn.jpeg",
+  "imageUrl": "data/covers/159.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Когда Ты Нужна Мне - When I Need You",
+          "duration": "4:08"
+        },
+        {
+          "title": "Я Чувствую, Что Не Могу С Тобой Не Танцевать - You Make Me Feel Like Dancing ",
+          "duration": "3:40"
+        },
+        {
+          "title": "Дождь В Моем Сердце - Raining In My Heart",
+          "duration": "3:16"
+        },
+        {
+          "title": "Огромная Любовь - How Much Love",
+          "duration": "3:35"
+        },
+        {
+          "title": "Танцы Всю Ночь Напролет - Dancing The Night",
+          "duration": "4:05"
+        },
+        {
+          "title": "Буря В Моем Сердце - Thunder In My Heart",
+          "duration": "3:35"
+        },
+        {
+          "title": "Я Не Могу Тебя Разлюбить - I Can't Stop Loving You",
+          "duration": "3:29"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Верь Моей Любви - Hold On To My Love",
+          "duration": "3:08"
+        },
+        {
+          "title": "Легко Любить - Easy To Love",
+          "duration": "3:44"
+        },
+        {
+          "title": "Поезд - Train",
+          "duration": "3:44"
+        },
+        {
+          "title": "Пусть Так И Будет - Let It Be",
+          "duration": "3:37"
+        },
+        {
+          "title": "Узкие Высокие Стаканы - Long Tall Glasses",
+          "duration": "3:19"
+        },
+        {
+          "title": "Ничего Нет - There Isn't Anything",
+          "duration": "3:12"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/11621296-Лео-Сейер-Leo-Sayer-Поет-Лео-Сейер"
+  }
+}

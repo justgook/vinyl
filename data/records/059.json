@@ -1,0 +1,81 @@
+{
+  "id": "059",
+  "catalogNumber": "С60-15809-10",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Fausto Papetti"
+  ],
+  "album": "Фаусто Папетти И Его Оркестр",
+  "year": 1984,
+  "genre": [
+    "Jazz",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Reissue, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/96QTYb7pypQgsrycUd7G625H5s2y05eohdQBqRSYzMk/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDE0/NjQ3LTE1NTM3NjU4/NjEtMjIxNy5qcGVn.jpeg",
+  "imageUrl": "data/covers/059.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Александра = Alexandra",
+          "duration": "3:06"
+        },
+        {
+          "title": "Песня Для Гая = Song For Guy",
+          "duration": "3:45"
+        },
+        {
+          "title": "Воспоминания = Souvenirs",
+          "duration": "4:07"
+        },
+        {
+          "title": "Большая Любовь = Too Much Heaven",
+          "duration": "3:22"
+        },
+        {
+          "title": "Ты Думаешь?.. = Do Ya Think?..",
+          "duration": "3:39"
+        },
+        {
+          "title": "Честность = Honesty",
+          "duration": "3:36"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Премьера = Prima Visione",
+          "duration": "3:06"
+        },
+        {
+          "title": "Очарование = Fascination",
+          "duration": "2:52"
+        },
+        {
+          "title": "Воскресная Вечеринка = Sunday Party",
+          "duration": "4:09"
+        },
+        {
+          "title": "Обними Меня = Abrazame",
+          "duration": "3:40"
+        },
+        {
+          "title": "Еще Один Мужчина = Anche Un Uomo",
+          "duration": "3:23"
+        },
+        {
+          "title": "Трагедия = Tragedy",
+          "duration": "4:17"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/13414647-Фаусто-Папетти-Фаусто-Папетти-И-Его-Оркестр"
+  }
+}

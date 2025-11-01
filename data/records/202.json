@@ -1,0 +1,73 @@
+{
+  "id": "202",
+  "catalogNumber": "С 60—16579-80",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "The New Seekers",
+    "The New Seekers"
+  ],
+  "album": "The New Seekers In Moscow = Вокально-инструментальный Ансамбль „Нью Сикерс“ В Москве",
+  "year": 1982,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/FZwfWQGlaPyVfn-n1PVCDc4NxIExClEeIwpZ3FsIxk0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNTU1/MTk4LTE3NDMzMjg5/NzUtNDQzMS5qcGVn.jpeg",
+  "imageUrl": "data/covers/202.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Хорошее Настроение = Good Feelings",
+          "duration": "2:33"
+        },
+        {
+          "title": "Бесконечная Любовь = Never Ending Love",
+          "duration": "2:50"
+        },
+        {
+          "title": "Не Могу Без Тебя = Can't Let Go",
+          "duration": "2:15"
+        },
+        {
+          "title": "Памяти Джона Леннона (Представь Себе / Дайте Миру Шанс) = Tribute To John Lennon (Imagine / Give Peace A Chance)",
+          "duration": "5:27"
+        },
+        {
+          "title": "Искатель = Seeker",
+          "duration": "3:31"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Я Хочу Научить Мир Петь = Teach The World...",
+          "duration": "2:28"
+        },
+        {
+          "title": "В Тебе Есть Что-то Такое... = Something About You",
+          "duration": "2:53"
+        },
+        {
+          "title": "Чародей Игральных Автоматов / Смотрите На Меня = I Would Like To Jump / Look At Me",
+          "duration": "3:05"
+        },
+        {
+          "title": "Попурри = Music Medley",
+          "duration": "6:00"
+        },
+        {
+          "title": "Букет Популярных Песен / Прощай! = Close Medley / Farewell",
+          "duration": "5:40"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/33555198-The-New-Seekers-Вокально-инструментальный-Ансамбль-Нью-Сикер"
+  }
+}

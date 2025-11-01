@@ -1,0 +1,68 @@
+{
+  "id": "168",
+  "catalogNumber": "С60 29491 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Чёрный Кофе"
+  ],
+  "album": "Вольному — Воля... = Life Never Waits",
+  "year": 1990,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/TWpLFYw4m0VOsiEzJv4evkGnUfdcW1QhLYTTeBA_fFg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5MzUx/MTMtMTM3OTg5MjAx/My03NjUyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/168.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Брожу По Городу Один ",
+          "duration": "4:19"
+        },
+        {
+          "title": "Вольному — Воля...",
+          "duration": "4:41"
+        },
+        {
+          "title": "Ночь",
+          "duration": "4:00"
+        },
+        {
+          "title": "На Последний Поезд",
+          "duration": "4:20"
+        },
+        {
+          "title": "Светлый Образ",
+          "duration": "4:18"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "И Только Мы... ",
+          "duration": "4:44"
+        },
+        {
+          "title": "После Тебя",
+          "duration": "3:16"
+        },
+        {
+          "title": "Ностальгия",
+          "duration": "3:37"
+        },
+        {
+          "title": "Это — Рок!",
+          "duration": "4:05"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4935113-Черный-Кофе-The-Black-Coffee-Вольному-Воля-Life-Never-Waits"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "037",
+  "catalogNumber": "С60 25773 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Александр Розенбаум"
+  ],
+  "album": "Мои Дворы",
+  "year": 1990,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/I4MQFhhlTPxGdidCUzjc66NfHLVt0oI4sMM4Q7A9ouU/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMDg2/NjMtMTM2MTk2MDE0/Ny01NjM0LmpwZWc.jpeg",
+  "imageUrl": "data/covers/037.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Вальс-Бостон · Waltz-Boston",
+          "duration": "3:35"
+        },
+        {
+          "title": "Посвящение Роману Казакову · Dedication To Roman Kozakov",
+          "duration": "3:43"
+        },
+        {
+          "title": "Декабристский Сон · Decembrists' Dream",
+          "duration": "3:11"
+        },
+        {
+          "title": "Отслужи По Мне, Отслужи · Serve The Mass For Me",
+          "duration": "2:30"
+        },
+        {
+          "title": "Извозчик · Cabman",
+          "duration": "1:42"
+        },
+        {
+          "title": "18 Лет Спустя · 18 Years Later",
+          "duration": "1:57"
+        },
+        {
+          "title": "Вещая Судьба · Prophetic Fate",
+          "duration": "3:47"
+        },
+        {
+          "title": "Возвращение В Город · Coming Back To Town",
+          "duration": "2:26"
+        },
+        {
+          "title": "Коллаж · Collage",
+          "duration": "6:17"
+        },
+        {
+          "title": "Размышление На Прогулке · Meditation During A Walk",
+          "duration": "4:39"
+        },
+        {
+          "title": "Санька Котов · Sanka Kotov",
+          "duration": "2:18"
+        },
+        {
+          "title": "Налетела Грусть · Melancholy Seized Me",
+          "duration": "2:31"
+        },
+        {
+          "title": "Предрассветный Вальс · Watz At Down",
+          "duration": "3:29"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4308663-Александр-Розенбаум-Мои-Дворы"
+  }
+}

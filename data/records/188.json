@@ -1,0 +1,68 @@
+{
+  "id": "188",
+  "catalogNumber": "С60-09801-2",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Алла Пугачева"
+  ],
+  "album": "Поет Алла Пугачева",
+  "year": 1978,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/rB562DiiayJlHMQCrxjcKaApBh_abQQUjnus9-aZaWw/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2NDky/NzYtMTM3MTA0NDc0/Ni00MTIzLmpwZWc.jpeg",
+  "imageUrl": "data/covers/188.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Все Могут Короли",
+          "duration": "0:00"
+        },
+        {
+          "title": "Куда Уходит Детство",
+          "duration": "0:00"
+        },
+        {
+          "title": "Волшебник-Недоучка",
+          "duration": "0:00"
+        },
+        {
+          "title": "Полно Вокруг Мудрецов",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мы Не Любим Друг Друга",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Если Долго Мучиться",
+          "duration": "0:00"
+        },
+        {
+          "title": "До Свиданья, Лето",
+          "duration": "0:00"
+        },
+        {
+          "title": "Любовь Одна Виновата",
+          "duration": "0:00"
+        },
+        {
+          "title": "Найди Себе Друга",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4649276-Алла-Пугачева-Поет-Алла-Пугачева"
+  }
+}

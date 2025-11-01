@@ -1,0 +1,71 @@
+{
+  "id": "068",
+  "catalogNumber": "С60 27415 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Nautilus Pompilius",
+    "Nautilus Pompilius",
+    "Бригада С",
+    "Бригада С"
+  ],
+  "album": "Наутилус Помпилиус. Бригада С",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/6tEEtQf02yksrX3fNQr_w2GulqhZA6b49fvHXscF0po/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NjIy/ODg2LTE2MTQ1MDgz/NjYtNzI1NC5qcGVn.jpeg",
+  "imageUrl": "data/covers/068.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Эта Музыка Будет Вечной = Eternal Music",
+          "duration": "4:04"
+        },
+        {
+          "title": "Взгляд С Экрана = Love From A Screen",
+          "duration": "4:21"
+        },
+        {
+          "title": "Я Хочу Быть С Тобой = I Want To Be With You",
+          "duration": "4:10"
+        },
+        {
+          "title": "Шар Цвета Хаки = The Khaki Globe",
+          "duration": "2:45"
+        },
+        {
+          "title": "Круговая Порука = Mutual Guarantee",
+          "duration": "3:40"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Я — Фантомас = I'm Fantomas",
+          "duration": "4:33"
+        },
+        {
+          "title": "Наследник Эпохи = Epoch Heir",
+          "duration": "3:50"
+        },
+        {
+          "title": "Человек В Шляпе = A Man In A Hat",
+          "duration": "4:10"
+        },
+        {
+          "title": "Бродяга = Hobo",
+          "duration": "3:48"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/17622886-Наутилус-Помпилиус-Nautilus-Pompilius-Бригада-С-Brigade-S-Наутилус-"
+  }
+}

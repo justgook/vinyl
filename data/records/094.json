@@ -1,0 +1,68 @@
+{
+  "id": "094",
+  "catalogNumber": "С60 27605 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "АВИА"
+  ],
+  "album": "Всемъъ",
+  "year": 1988,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/VvIg4em9DLAAje2sCy3XRVFbOEu4H6T06P7SS6FrY20/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3Njgy/NzMtMTU3OTM0NDQ3/NS05NDA3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/094.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Авиавиа!",
+          "duration": "3:54"
+        },
+        {
+          "title": "Ночью В Карауле",
+          "duration": "6:20"
+        },
+        {
+          "title": "Семафор",
+          "duration": "5:16"
+        },
+        {
+          "title": "Я Не Люблю Тебя!",
+          "duration": "2:41"
+        },
+        {
+          "title": "Проснись И Пой!",
+          "duration": "4:20"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Урок Русского Языка, Часть II (Дом)",
+          "duration": "3:35"
+        },
+        {
+          "title": "Весенняя Массовая",
+          "duration": "4:23"
+        },
+        {
+          "title": "Праздник",
+          "duration": "3:38"
+        },
+        {
+          "title": "Урок Русского Языка, Часть I (До Свидания)",
+          "duration": "4:16"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3768273-АВИА-Всемъъ"
+  }
+}

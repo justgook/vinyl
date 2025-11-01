@@ -1,67 +1,75 @@
 {
   "id": "001",
-  "catalogNumber": "SHVL804",
-  "recordLabel": "Harvest",
-  "artists": ["Pink Floyd"],
-  "album": "The Dark Side of the Moon",
-  "year": 1973,
-  "genre": ["Progressive Rock", "Art Rock"],
-  "format": "LP, Album",
+  "catalogNumber": "М60 48979 001",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Кони Привередливые",
+  "year": 1989,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Mono",
   "condition": "Near Mint",
-  "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Pink+Floyd",
+  "sourceImageUrl": "https://i.discogs.com/7oQn9f95T--0dHPE13tssiAtcnU8jNYn9TbfLtO4DAs/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5ODIy/MDMyLTE3MDgxMDc2/OTEtNDIxMy5qcGVn.jpeg",
+  "imageUrl": "data/covers/001.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Speak to Me",
-          "duration": "1:30"
+          "title": "Товарищи Ученые",
+          "duration": "0:00"
         },
         {
-          "title": "Breathe",
-          "duration": "2:43"
+          "title": "Мы Вращаем Землю",
+          "duration": "0:00"
         },
         {
-          "title": "On the Run",
-          "duration": "3:36"
+          "title": "Тот, Который Не Стрелял",
+          "duration": "0:00"
         },
         {
-          "title": "Time",
-          "duration": "7:06"
-        }
-      ]
-    },
-    {
-      "name": "Side B",
-      "tracks": [
-        {
-          "title": "The Great Gig in the Sky",
-          "duration": "4:36"
+          "title": "Песенка Прыгуна В Длину",
+          "duration": "0:00"
         },
         {
-          "title": "Money",
-          "duration": "6:22"
+          "title": "Марафон",
+          "duration": "0:00"
         },
         {
-          "title": "Us and Them",
-          "duration": "7:45"
+          "title": "После Чемпионата Мира По Футболу",
+          "duration": "0:00"
         },
         {
-          "title": "Any Colour You Like",
-          "duration": "3:24"
+          "title": "Целуя Знамя",
+          "duration": "0:00"
         },
         {
-          "title": "Brain Damage",
-          "duration": "3:49"
+          "title": "Нет Меня",
+          "duration": "0:00"
         },
         {
-          "title": "Eclipse",
-          "duration": "2:06"
+          "title": "Мишка Шифман",
+          "duration": "0:00"
+        },
+        {
+          "title": "Милицейский Протокол",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня Микрофона",
+          "duration": "0:00"
+        },
+        {
+          "title": "Кони Привередливые",
+          "duration": "0:00"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/4167881"
+    "discogs": "https://www.discogs.com/release/29822032-Владимир-Высоцкий-Кони-Привередливые"
   }
 }

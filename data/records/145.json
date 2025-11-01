@@ -1,0 +1,76 @@
+{
+  "id": "145",
+  "catalogNumber": "С60-06683-84",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "The Dooleys"
+  ],
+  "album": "Доули Фэмили В Москве",
+  "year": 1978,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/64vewS8tHrtbCY91inOpMge0THbXgGgksFWvXss8wLg/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzOTc0/NzQtMTQ3OTg0MjY2/Ny0zODM1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/145.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Джамбалая",
+          "duration": "0:00"
+        },
+        {
+          "title": "Капетмэн",
+          "duration": "0:00"
+        },
+        {
+          "title": "Понедельник",
+          "duration": "0:00"
+        },
+        {
+          "title": "Восхитительная Грация",
+          "duration": "0:00"
+        },
+        {
+          "title": "Попурри На Темы Песен «Битлз»",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дорога На Чаттанугу",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Любовь И Дружба",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мама",
+          "duration": "0:00"
+        },
+        {
+          "title": "Попурри На Темы Песен «Сиккерс»",
+          "duration": "0:00"
+        },
+        {
+          "title": "Синий Платочек",
+          "duration": "0:00"
+        },
+        {
+          "title": "Спасибо",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/9397474-Доули-Фэмили-Доули-Фэмили-В-Москве"
+  }
+}

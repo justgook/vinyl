@@ -1,0 +1,79 @@
+{
+  "id": "199",
+  "catalogNumber": "С60-17019-20",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Gunnar Graps",
+    "Magnetic Band"
+  ],
+  "album": "Roosid Papale",
+  "year": 1982,
+  "genre": [
+    "Rock",
+    "Reggae",
+    "Funk / Soul"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/WTXHEzH93AnDaSq14f7-a1C4MNwWeZ-P3MKJdZdDBAU/rs:fit/g:sm/q:90/h:400/w:392/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjAz/NjQtMTI2MjQ0NjUz/MC5qcGVn.jpeg",
+  "imageUrl": "data/covers/199.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Rahatuvi",
+          "duration": "3:22"
+        },
+        {
+          "title": "Meie Teisikud",
+          "duration": "4:58"
+        },
+        {
+          "title": "Odüsseuse Eksirännakud",
+          "duration": "4:22"
+        },
+        {
+          "title": "Lady Blues",
+          "duration": "4:45"
+        },
+        {
+          "title": "Leidmine",
+          "duration": "3:16"
+        },
+        {
+          "title": "Varsti",
+          "duration": "2:50"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Sügisõhtu Blues",
+          "duration": "3:50"
+        },
+        {
+          "title": "Roosid Papale",
+          "duration": "4:05"
+        },
+        {
+          "title": "Lillekimp Imet Teeb ehk vanaemad on unustanud muinasjutud",
+          "duration": "3:28"
+        },
+        {
+          "title": "Doktor Noormann",
+          "duration": "3:25"
+        },
+        {
+          "title": "Kohtumine",
+          "duration": "2:16"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/1220364-Gunnar-Graps-Ja-Magnetic-Band-Roosid-Papale"
+  }
+}

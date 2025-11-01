@@ -1,0 +1,68 @@
+{
+  "id": "173",
+  "catalogNumber": "С60-15297-8",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Nerija"
+  ],
+  "album": "Ir Mažiems, Ir Dideliems",
+  "year": 1983,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/3UnULBs-IbY1U8gUEgptKeRnotlw6rbHWVY3sCs87zk/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4OTIx/OTEtMTM5OTQxNDYx/MC04MTg2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/173.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Raganėlių Puota",
+          "duration": "3:22"
+        },
+        {
+          "title": "Keliai Savi",
+          "duration": "3:29"
+        },
+        {
+          "title": "Ar Išsaugosi Mano Meilę",
+          "duration": "3:35"
+        },
+        {
+          "title": "Aš Nelaukiau",
+          "duration": "3:32"
+        },
+        {
+          "title": "Du Gaideliai",
+          "duration": "3:30"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Ar Nebuvai Miške?",
+          "duration": "3:38"
+        },
+        {
+          "title": "Ateis Tokia Diena",
+          "duration": "5:10"
+        },
+        {
+          "title": "Sveiki, Namai!",
+          "duration": "3:18"
+        },
+        {
+          "title": "Kodėl, Kodėl...",
+          "duration": "4:05"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3892191-Nerija-Ir-Mažiems-Ir-Dideliems"
+  }
+}

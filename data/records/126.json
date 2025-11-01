@@ -1,0 +1,65 @@
+{
+  "id": "126",
+  "catalogNumber": "С60 19873 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Валерий Леонтьев"
+  ],
+  "album": "Муза",
+  "year": 1984,
+  "genre": [
+    "Funk / Soul",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/7eux4b3WBJYBY22tJdg0am60SzYMatN2hrIEBKnSHg0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNjg5/MDktMTMwNzQ0NzI0/MS5qcGVn.jpeg",
+  "imageUrl": "data/covers/126.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Полет На Дельтаплане",
+          "duration": "3:46"
+        },
+        {
+          "title": "Ненаглядная Сторона",
+          "duration": "5:07"
+        },
+        {
+          "title": "Сердце Человека",
+          "duration": "3:59"
+        },
+        {
+          "title": "Там, В Сентябре",
+          "duration": "6:45"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Разноцветные Ярмарки",
+          "duration": "5:08"
+        },
+        {
+          "title": "Рeка Детства",
+          "duration": "5:51"
+        },
+        {
+          "title": "Если Ты Уйдешь",
+          "duration": "5:04"
+        },
+        {
+          "title": "Муза",
+          "duration": "3:40"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2368909-Валерий-Леонтьев-Муза"
+  }
+}

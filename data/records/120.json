@@ -1,0 +1,72 @@
+{
+  "id": "120",
+  "catalogNumber": "С60 24865 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Машина Времени"
+  ],
+  "album": "В Добрый Час",
+  "year": 1987,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/Bfecm_ORUJBNEVPrZXjriB5093BdS_muNSTJUTa4ADw/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzI1/MTQ4LTE1MDMxNDY1/MzctMzE1OS5qcGVn.jpeg",
+  "imageUrl": "data/covers/120.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Путь",
+          "duration": "3:19"
+        },
+        {
+          "title": "За Тех, Кто В Море",
+          "duration": "3:42"
+        },
+        {
+          "title": "Музыка Под Снегом",
+          "duration": "4:29"
+        },
+        {
+          "title": "Пока Горит Свеча",
+          "duration": "4:10"
+        },
+        {
+          "title": "В Добрый Час",
+          "duration": "3:31"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Хрустальный Город",
+          "duration": "6:06"
+        },
+        {
+          "title": "Снег",
+          "duration": "2:58"
+        },
+        {
+          "title": "Скворец",
+          "duration": "3:50"
+        },
+        {
+          "title": "Рыбка В Банке",
+          "duration": "2:55"
+        },
+        {
+          "title": "Старый Рок-н-ролл",
+          "duration": "3:10"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/10725148-Машина-Времени-В-Добрый-Час"
+  }
+}

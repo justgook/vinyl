@@ -1,0 +1,60 @@
+{
+  "id": "191",
+  "catalogNumber": "С60-09799-800",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Алла Пугачева"
+  ],
+  "album": "Зеркало Души",
+  "year": 1981,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/0M4ULC_AxYsxKHU1E0oKE3FQ61n45byvMHtfqFqWuLM/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMzg5/MTktMTczNjA4ODYy/NC00Njg0LmpwZWc.jpeg",
+  "imageUrl": "data/covers/191.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Бубен Шамана",
+          "duration": "0:00"
+        },
+        {
+          "title": "Верю В Тебя",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сонет",
+          "duration": "0:00"
+        },
+        {
+          "title": "Приезжай",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Не Отрекаются Любя",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песенка Про Меня",
+          "duration": "0:00"
+        },
+        {
+          "title": "Женщина, Которая Поет",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2038919-Алла-Пугачева-Зеркало-Души"
+  }
+}

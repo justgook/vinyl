@@ -1,0 +1,60 @@
+{
+  "id": "193",
+  "catalogNumber": "С60-13771-2",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Zodiac"
+  ],
+  "album": "Disco Alliance",
+  "year": 2025,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/HczWRIKqHfvELObwuCpxzvLziwu9cDjPQrFFBlcaVLc/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMTM5/NjU0LTE2NTkyNjI5/MDAtMTg5Mi5qcGVn.jpeg",
+  "imageUrl": "data/covers/193.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Zodiac",
+          "duration": "5:12"
+        },
+        {
+          "title": "Pacific",
+          "duration": "3:52"
+        },
+        {
+          "title": "Provincial Disco",
+          "duration": "4:18"
+        },
+        {
+          "title": "Polo",
+          "duration": "3:17"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Mirage",
+          "duration": "4:02"
+        },
+        {
+          "title": "Rock On The Ice",
+          "duration": "2:42"
+        },
+        {
+          "title": "Alliance",
+          "duration": "3:41"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/21139654-Zodiac-3-Disco-Alliance"
+  }
+}

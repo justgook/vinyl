@@ -1,0 +1,76 @@
+{
+  "id": "038",
+  "catalogNumber": "С60-10675-6",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Raimonds Pauls"
+  ],
+  "album": "Эстрадные Песни",
+  "year": 1979,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Reissue",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/YOM1E-Nm8UM9RgGKhIoiHnHVaNP-1gny5qI_TdGnq_o/rs:fit/g:sm/q:90/h:287/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5Nzg4/NzUtMTI1NjM3NzEw/Ni5qcGVn.jpeg",
+  "imageUrl": "data/covers/038.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "В Том Городе",
+          "duration": "0:00"
+        },
+        {
+          "title": "Звезда Моря",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Еловых Колоколах",
+          "duration": "0:00"
+        },
+        {
+          "title": "Горит Свеча",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Тени Дня",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ночные Птицы",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Мужчина В Расцвете Лет",
+          "duration": "0:00"
+        },
+        {
+          "title": "Твой Зов",
+          "duration": "0:00"
+        },
+        {
+          "title": "Как Сквозь Пепел",
+          "duration": "0:00"
+        },
+        {
+          "title": "Игры",
+          "duration": "0:00"
+        },
+        {
+          "title": "Модо",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/1978875-Раймондс-Паулс-Эстрадные-Песни"
+  }
+}

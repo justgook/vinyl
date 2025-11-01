@@ -1,0 +1,96 @@
+{
+  "id": "212",
+  "catalogNumber": "5797704",
+  "recordLabel": "Island Records",
+  "artists": [
+    "U2"
+  ],
+  "album": "Songs Of Experience",
+  "year": 2017,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/5bWxTiJEOtmrC2yy9wdhgqWV9x7a5snfDFXkGNFTHEY/rs:fit/g:sm/q:90/h:600/w:582/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjEy/MDcxLTE1MTE5NjU4/NzItMjU3MS5qcGVn.jpeg",
+  "imageUrl": "data/covers/212.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Love Is All We Have Left",
+          "duration": "2:40"
+        },
+        {
+          "title": "Lights Of Home",
+          "duration": "4:15"
+        },
+        {
+          "title": "You're The Best Thing About Me",
+          "duration": "3:42"
+        },
+        {
+          "title": "Get Out Of Your Own Way",
+          "duration": "3:34"
+        },
+        {
+          "title": "American Soul",
+          "duration": "4:40"
+        },
+        {
+          "title": "Summer Of Love",
+          "duration": "3:22"
+        },
+        {
+          "title": "Red Flag Day",
+          "duration": "3:16"
+        },
+        {
+          "title": "The Showman (Little More Better)",
+          "duration": "3:22"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "The Little Things That Give You Away",
+          "duration": "4:52"
+        },
+        {
+          "title": "Landlady",
+          "duration": "3:57"
+        },
+        {
+          "title": "The Blackout",
+          "duration": "4:43"
+        },
+        {
+          "title": "Love Is Bigger Than Anything In Its Way",
+          "duration": "3:52"
+        },
+        {
+          "title": "13 (There Is A Light)",
+          "duration": "4:16"
+        },
+        {
+          "title": "Ordinary Love (Extraordinary Mix)",
+          "duration": "3:42"
+        },
+        {
+          "title": "Book Of Your Heart",
+          "duration": "3:52"
+        },
+        {
+          "title": "Lights Of Home (St Peter's String Version)",
+          "duration": "4:30"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/11212071-U2-Songs-Of-Experience"
+  }
+}

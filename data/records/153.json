@@ -1,0 +1,81 @@
+{
+  "id": "153",
+  "catalogNumber": "С90 26701 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Аквариум"
+  ],
+  "album": "Радио Африка",
+  "year": 1988,
+  "genre": [
+    "Jazz",
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/HXOXjNvt_0l7pCQAkgR-q2Ajzj6ZKwSBE1-56bo-YEM/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MjA0/NjgtMTcwNDU2NDY3/Ny05NjYwLmpwZWc.jpeg",
+  "imageUrl": "data/covers/153.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Музыка Серебряных Спиц",
+          "duration": "0:00"
+        },
+        {
+          "title": "Капитан Африка",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песни Вычерпывающих Людей",
+          "duration": "0:00"
+        },
+        {
+          "title": "Змея",
+          "duration": "0:00"
+        },
+        {
+          "title": "Рок-н-ролл Мертв",
+          "duration": "0:00"
+        },
+        {
+          "title": "Радио Шао Линь",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Искусство Быть Смирным",
+          "duration": "0:00"
+        },
+        {
+          "title": "Тибетское Танго",
+          "duration": "0:00"
+        },
+        {
+          "title": "Время Луны",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мальчик Евграф",
+          "duration": "0:00"
+        },
+        {
+          "title": "С Утра Шел Снег",
+          "duration": "0:00"
+        },
+        {
+          "title": "Еще Один Упавший Вниз",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2420468-Аквариум-Радио-Африка"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "185",
+  "catalogNumber": "С60 30603 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Юрий Лоза"
+  ],
+  "album": "Вся Жизнь - Дорога",
+  "year": 1991,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/JYWlkI4LGytRhXEL60Y32IQ3GFPZsS5_HmHyqT9wOQA/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MzQ3/MDItMTM0MjI1ODcx/My02MjExLmpwZWc.jpeg",
+  "imageUrl": "data/covers/185.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Пой, Моя Гитара · Sing My Guitar",
+          "duration": "4:41"
+        },
+        {
+          "title": "Итог · Summing Up",
+          "duration": "4:05"
+        },
+        {
+          "title": "Я Не Хуже, Чем Все · I'm Not Worse Than Others",
+          "duration": "4:16"
+        },
+        {
+          "title": "О, Новый День · Oh, A New Day",
+          "duration": "7:00"
+        },
+        {
+          "title": "Цыганская Душа · Gipsy Soul",
+          "duration": "4:01"
+        },
+        {
+          "title": "Память · Memory",
+          "duration": "4:29"
+        },
+        {
+          "title": "Мой Трамвай Последний · My Last Tram",
+          "duration": "4:35"
+        },
+        {
+          "title": "Вокзальные Буфеты · Station Buffets",
+          "duration": "4:25"
+        },
+        {
+          "title": "Дорога · All Life Is A Journey",
+          "duration": "4:37"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3734702-Юрий-Лоза-Вся-Жизнь-Дорога"
+  }
+}

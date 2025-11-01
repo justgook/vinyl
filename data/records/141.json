@@ -1,0 +1,40 @@
+{
+  "id": "141",
+  "catalogNumber": "С50-06707-8",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Эдуард Успенский"
+  ],
+  "album": "Чебурашка",
+  "year": 1989,
+  "genre": [
+    "Children's"
+  ],
+  "format": "Vinyl, LP, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ZayNYHCvsoBUjqWnUmbB1FB7zNo2s7TmYEPROw1BbUM/rs:fit/g:sm/q:90/h:600/w:575/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1OTM1/MDYtMTQ4MzM0OTkx/NC0zNTEwLmpwZWc.jpeg",
+  "imageUrl": "data/covers/141.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Чебурашка",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Чебурашка (Окончание)",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/9593506-Э-Успенский-Чебурашка"
+  }
+}

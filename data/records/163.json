@@ -1,0 +1,73 @@
+{
+  "id": "163",
+  "catalogNumber": "33С 90—05447-48",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Александр Градский"
+  ],
+  "album": "Романс О Влюбленных",
+  "year": 1974,
+  "genre": [
+    "Rock",
+    "Stage & Screen"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/Vo_P5YwHaWqWqx3z5lIvV4LSNgcQ2123MKL01GFuqg0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5ODY5/MTAtMTM0MzU1MDcx/OS01MDU2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/163.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Любовь",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня О Дружбе",
+          "duration": "0:00"
+        },
+        {
+          "title": "Маневры",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня О Птицах",
+          "duration": "0:00"
+        },
+        {
+          "title": "Финал",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Поиск",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня О Матери",
+          "duration": "0:00"
+        },
+        {
+          "title": "Возвращение",
+          "duration": "0:00"
+        },
+        {
+          "title": "Смерть Героя",
+          "duration": "0:00"
+        },
+        {
+          "title": "Колыбельная",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/1986910-А-Градский-Романс-О-Влюбленных"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "103",
+  "catalogNumber": "С60 30471 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Виктор Третьяков",
+    "Виктор Третьяков"
+  ],
+  "album": "Колокола. Песни В Исполнении Автора = The Bells. Songs Performed By Author",
+  "year": 1990,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/JuVm2jw9W4sFTulDIvfw4Bhe_nqamgCsg7a6IiG-z6c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NTY4/MTUtMTQxOTcxMjU5/OS01MjQyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/103.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Песня О Песне",
+          "duration": "0:00"
+        },
+        {
+          "title": "Набат",
+          "duration": "0:00"
+        },
+        {
+          "title": "Депутат",
+          "duration": "0:00"
+        },
+        {
+          "title": "Как Живется В Жарких Странах",
+          "duration": "0:00"
+        },
+        {
+          "title": "Поэты",
+          "duration": "0:00"
+        },
+        {
+          "title": "Кухонька",
+          "duration": "0:00"
+        },
+        {
+          "title": "Молитва",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Разговор С Афганцем",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сон",
+          "duration": "0:00"
+        },
+        {
+          "title": "Уличный Вальс",
+          "duration": "0:00"
+        },
+        {
+          "title": "Широка Страна",
+          "duration": "0:00"
+        },
+        {
+          "title": "Духота",
+          "duration": "0:00"
+        },
+        {
+          "title": "Колокола",
+          "duration": "0:00"
+        },
+        {
+          "title": "Некролог",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6456815-Виктор-Третьяков-2-Victor-Tretyakov-Колокола-Песни-В-Исполнени"
+  }
+}

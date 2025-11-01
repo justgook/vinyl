@@ -1,0 +1,69 @@
+{
+  "id": "129",
+  "catalogNumber": "C60 27355 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Yngwie Malmsteen",
+    "Yngwie Malmsteen"
+  ],
+  "album": "Трилогия = Trilogy",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Reissue",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/50doRZ1oAvcO5HO5pZnP_YGKHkfHB-D3Xkz2j6jJWDk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyOTM4/MjUtMTY0Nzk2NTk5/NS04MzEyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/129.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Ты Не Помнишь, Я Никогда Не Забуду = You Don't Remember, I'll Never Forget",
+          "duration": "4:27"
+        },
+        {
+          "title": "Лжец = Liar",
+          "duration": "4:07"
+        },
+        {
+          "title": "Влюбленная Королева = Queen In Love",
+          "duration": "4:04"
+        },
+        {
+          "title": "Плач = Crying",
+          "duration": "5:00"
+        },
+        {
+          "title": "Ярость = Fury",
+          "duration": "3:56"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Огонь = Fire",
+          "duration": "4:12"
+        },
+        {
+          "title": "Волшебное Зеркало = Magic Mirror",
+          "duration": "3:49"
+        },
+        {
+          "title": "Мрачные Времена = Dark Ages",
+          "duration": "3:56"
+        },
+        {
+          "title": "Трилогия, Сюита, Соч. 5 = Trilogy Suite Op. 5",
+          "duration": "7:14"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5293825-Ингви-Малмстин-Yngwie-J-Malmsteen-Трилогия-Trilogy"
+  }
+}

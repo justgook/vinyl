@@ -277,12 +277,201 @@
     }
 
     @keyframes pulse {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: scale(1);
       }
+
       50% {
         transform: scale(1.05);
       }
+    }
+
+    /* Homepage Rows Editor */
+    .row-item {
+      background: white;
+      border: 2px solid #000;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .row-item-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .row-item input {
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+      border: 2px solid #000;
+      font-weight: bold;
+    }
+
+    .row-item-header button {
+      padding: 10px 15px;
+      font-size: 14px;
+      font-weight: bold;
+      border: 2px solid #000;
+      cursor: pointer;
+    }
+
+    .row-item-header .btn-select-records {
+      background: var(--nc-secondary);
+      color: white;
+    }
+
+    .row-item-header .btn-remove {
+      background: #FF0000;
+      color: white;
+    }
+
+    .row-item-header button:hover {
+      opacity: 0.8;
+    }
+
+    .row-item .drag-handle {
+      cursor: move;
+      padding: 5px;
+      font-size: 20px;
+    }
+
+    .row-records {
+      padding: 10px;
+      background: #f9f9f9;
+      border: 2px solid #e0e0e0;
+      min-height: 40px;
+      font-size: 13px;
+    }
+
+    .row-records-empty {
+      color: #999;
+      font-style: italic;
+    }
+
+    .record-badge {
+      display: inline-block;
+      background: var(--nc-accent);
+      color: #000;
+      padding: 4px 8px;
+      margin: 2px;
+      border: 2px solid #000;
+      font-weight: bold;
+      font-size: 11px;
+    }
+
+    .add-row-btn {
+      margin-top: 15px;
+    }
+
+    /* Record Selector Modal */
+    .record-selector-modal .modal-content {
+      max-width: 900px;
+      max-height: 80vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .record-selector-modal .modal-header {
+      border-bottom: var(--nc-border);
+      padding-bottom: 15px;
+      text-align: left;
+    }
+
+    .record-selector-modal .modal-header h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .record-selector-modal .modal-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 0;
+    }
+
+    .record-selector-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .record-selector-item {
+      border: 2px solid #000;
+      background: white;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .record-selector-item:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 3px 3px 0 #000;
+    }
+
+    .record-selector-item.selected {
+      background: var(--nc-green);
+      border-color: #000;
+      box-shadow: 3px 3px 0 #000;
+    }
+
+    .record-selector-item img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-bottom: 2px solid #000;
+      display: block;
+    }
+
+    .record-selector-item-info {
+      padding: 10px;
+    }
+
+    .record-selector-item-info h4 {
+      margin: 0 0 5px 0;
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .record-selector-item-info p {
+      margin: 0;
+      font-size: 10px;
+      color: #666;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .record-selector-item .selection-indicator {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: #000;
+      color: #fff;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .record-selector-item {
+      position: relative;
+    }
+
+    .record-selector-search {
+      margin-bottom: 15px;
+      padding: 10px;
+      width: 100%;
+      font-size: 14px;
+      border: 2px solid #000;
     }
   </style>
 </head>
@@ -295,7 +484,8 @@
       <div>
         <button class="btn btn-primary" onclick="app.showListView()">📋 All Records</button>
         <button class="btn btn-success" onclick="app.createNewRecord()">➕ New Record</button>
-        <button class="btn btn-secondary" id="regenerate-filters-btn" onclick="app.regenerateFilters()" style="display: none;">🔄 Regenerate Filters</button>
+        <button class="btn btn-secondary" id="regenerate-filters-btn" onclick="app.regenerateFilters()"
+          style="display: none;">🔄 Regenerate Filters</button>
       </div>
     </div>
 
@@ -318,6 +508,16 @@
 
     <!-- List View -->
     <div id="list-view" class="hidden">
+      <!-- Homepage Rows Configuration -->
+      <div class="card">
+        <h2>🏠 Homepage Rows Configuration</h2>
+        <p>Configure which categories appear on your homepage. Changes are saved when you click "Regenerate Filters".
+        </p>
+        <div id="homepage-rows-editor">
+          <div class="loading">Loading homepage rows...</div>
+        </div>
+      </div>
+
       <div class="card">
         <h2>📀 Your Collection</h2>
         <div id="records-list" class="records-grid">
@@ -360,6 +560,28 @@
     </div>
   </div>
 
+  <!-- Record Selector Modal -->
+  <div id="record-selector-modal" class="modal-overlay record-selector-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>📀 Select Records</h2>
+        <p>Click records to add/remove them from "<span id="selector-category-name"></span>"</p>
+        <input type="text" id="record-search" class="record-selector-search"
+          placeholder="🔍 Search by album, artist, or year..." onkeyup="app.filterRecordSelector(this.value)">
+      </div>
+      <div class="modal-body">
+        <div id="record-selector-grid" class="record-selector-grid">
+          <!-- Records will be rendered here -->
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" onclick="app.closeRecordSelector()">Cancel</button>
+        <button class="btn btn-success" onclick="app.saveRecordSelection()">✅ Save Selection (<span
+            id="selected-count">0</span>)</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Load Discogs Widget -->
   <script src="./discogs-widget-standalone.js"></script>
 
@@ -373,10 +595,15 @@
       directoryHandle: null,
       recordsHandle: null,
       filtersHandle: null,
+      coversHandle: null,
       currentRecord: null,
       currentRecordId: null,
       allRecords: [],
       widgetInstance: null,
+      homepageRows: [],
+      currentEditingRowIndex: null,
+      tempSelectedRecords: [],
+      imageCache: new Map(), // Cache for cover image object URLs
 
       /**
        * Initialize the app
@@ -458,6 +685,8 @@
           this.recordsHandle = await dirHandle.getDirectoryHandle('records');
           // Get filters folder reference
           this.filtersHandle = await dirHandle.getDirectoryHandle('filters');
+          // Get covers folder reference (create if doesn't exist)
+          this.coversHandle = await dirHandle.getDirectoryHandle('covers', {create: true});
           return true;
         } catch (err) {
           return false;
@@ -524,8 +753,332 @@
         document.getElementById('editor-view').classList.remove('active');
         document.getElementById('list-view').classList.remove('hidden');
 
+        await this.loadHomepageRows();
         await this.loadAllRecords();
         await this.checkFilterStatus();
+      },
+
+      /**
+       * Load homepage rows configuration
+       */
+      async loadHomepageRows() {
+        const container = document.getElementById('homepage-rows-editor');
+        container.innerHTML = '<div class="loading">Loading homepage rows...</div>';
+
+        try {
+          const fileHandle = await this.directoryHandle.getFileHandle('records.json');
+          const file = await fileHandle.getFile();
+          const content = await file.text();
+          const data = JSON.parse(content);
+
+          this.homepageRows = data.rows || [];
+          this.renderHomepageRowsEditor();
+        } catch (err) {
+          console.error('Error loading homepage rows:', err);
+          this.homepageRows = [];
+          this.renderHomepageRowsEditor();
+        }
+      },
+
+      /**
+       * Render homepage rows editor
+       */
+      renderHomepageRowsEditor() {
+        const container = document.getElementById('homepage-rows-editor');
+
+        if (this.homepageRows.length === 0) {
+          container.innerHTML = `
+            <div class="alert alert-info">
+              <strong>No homepage rows configured yet!</strong><br>
+              Add rows to display on your homepage. Each row shows a category of records.
+            </div>
+            <button class="btn btn-success add-row-btn" onclick="app.addHomepageRow()">➕ Add Row</button>
+          `;
+          return;
+        }
+
+        let html = '<div>';
+        this.homepageRows.forEach((row, index) => {
+          const recordCount = (row.records && row.records.length) || 0;
+          const recordsDisplay = this.getRecordsDisplayHTML(row.records || []);
+
+          html += `
+            <div class="row-item" draggable="true" data-index="${index}">
+              <div class="row-item-header">
+                <span class="drag-handle">☰</span>
+                <input type="text" 
+                       value="${row.category || ''}" 
+                       onchange="app.updateRowCategory(${index}, this.value)"
+                       placeholder="Category Name (e.g., Recently Added)">
+                <button class="btn-select-records" onclick="app.openRecordSelector(${index})">
+                  📀 Select Records (${recordCount})
+                </button>
+                <button class="btn-remove" onclick="app.removeHomepageRow(${index})">🗑️</button>
+              </div>
+              <div class="row-records" id="row-records-${index}">
+                ${recordsDisplay}
+              </div>
+            </div>
+          `;
+        });
+        html += '</div>';
+        html += '<button class="btn btn-success add-row-btn" onclick="app.addHomepageRow()">➕ Add Row</button>';
+
+        container.innerHTML = html;
+
+        // Add drag and drop functionality
+        this.initDragDrop();
+      },
+
+      /**
+       * Get HTML for displaying selected records
+       */
+      getRecordsDisplayHTML(recordIds) {
+        if (!recordIds || recordIds.length === 0) {
+          return '<span class="row-records-empty">No records selected</span>';
+        }
+
+        const recordsMap = {};
+        this.allRecords.forEach(r => {
+          recordsMap[r.id] = r;
+        });
+
+        return recordIds.map(id => {
+          const record = recordsMap[id];
+          if (!record) return `<span class="record-badge" style="background: #ff0000; color: white;">${id} (not found)</span>`;
+          return `<span class="record-badge" title="${record.album}">${id}</span>`;
+        }).join('');
+      },
+
+      /**
+       * Add new homepage row
+       */
+      addHomepageRow() {
+        this.homepageRows.push({
+          category: 'New Category',
+          records: []
+        });
+        this.renderHomepageRowsEditor();
+      },
+
+      /**
+       * Remove homepage row
+       */
+      removeHomepageRow(index) {
+        if (confirm(`Remove the row "${this.homepageRows[index].category}"?`)) {
+          this.homepageRows.splice(index, 1);
+          this.renderHomepageRowsEditor();
+        }
+      },
+
+      /**
+       * Update row category name
+       */
+      updateRowCategory(index, newCategory) {
+        this.homepageRows[index].category = newCategory;
+      },
+
+      /**
+       * Open record selector modal
+       */
+      openRecordSelector(rowIndex) {
+        this.currentEditingRowIndex = rowIndex;
+        const row = this.homepageRows[rowIndex];
+
+        // Set modal title
+        document.getElementById('selector-category-name').textContent = row.category;
+
+        // Store current selection
+        this.tempSelectedRecords = [...(row.records || [])];
+
+        // Render records grid
+        this.renderRecordSelectorGrid();
+
+        // Show modal
+        document.getElementById('record-selector-modal').classList.add('active');
+      },
+
+      /**
+       * Close record selector modal
+       */
+      closeRecordSelector() {
+        document.getElementById('record-selector-modal').classList.remove('active');
+        this.currentEditingRowIndex = null;
+        this.tempSelectedRecords = [];
+      },
+
+      /**
+       * Save record selection
+       */
+      saveRecordSelection() {
+        if (this.currentEditingRowIndex !== null) {
+          this.homepageRows[this.currentEditingRowIndex].records = [...this.tempSelectedRecords];
+          this.renderHomepageRowsEditor();
+        }
+        this.closeRecordSelector();
+      },
+
+      /**
+       * Render record selector grid
+       */
+      async renderRecordSelectorGrid(filterText = '') {
+        const container = document.getElementById('record-selector-grid');
+
+        // Filter records based on search
+        let filteredRecords = this.allRecords;
+        if (filterText) {
+          const search = filterText.toLowerCase();
+          filteredRecords = this.allRecords.filter(record => {
+            const album = (record.album || '').toLowerCase();
+            const artists = (record.artists || []).join(' ').toLowerCase();
+            const year = (record.year || '').toString();
+            const id = (record.id || '').toLowerCase();
+
+            return album.includes(search) ||
+              artists.includes(search) ||
+              year.includes(search) ||
+              id.includes(search);
+          });
+        }
+
+        if (filteredRecords.length === 0) {
+          container.innerHTML = '<div class="alert alert-info">No records found</div>';
+          return;
+        }
+
+        // Show loading
+        container.innerHTML = '<div class="loading">Loading images...</div>';
+
+        // Create elements with loaded images
+        const elements = await Promise.all(filteredRecords.map(async (record) => {
+          const isSelected = this.tempSelectedRecords.includes(record.id);
+          const selectedClass = isSelected ? 'selected' : '';
+          const selectionOrder = isSelected ? this.tempSelectedRecords.indexOf(record.id) + 1 : '';
+
+          const imageUrl = await this.getCoverImageUrl(record.imageUrl);
+
+          const div = document.createElement('div');
+          div.className = `record-selector-item ${selectedClass}`;
+          div.onclick = () => this.toggleRecordSelection(record.id);
+
+          if (isSelected) {
+            const indicator = document.createElement('div');
+            indicator.className = 'selection-indicator';
+            indicator.textContent = selectionOrder;
+            div.appendChild(indicator);
+          }
+
+          const img = document.createElement('img');
+          img.src = imageUrl;
+          img.alt = record.album;
+          img.onerror = () => {img.src = 'no-image.svg';};
+          div.appendChild(img);
+
+          const info = document.createElement('div');
+          info.className = 'record-selector-item-info';
+          info.innerHTML = `
+            <h4>${record.album || 'Unknown'}</h4>
+            <p>${Array.isArray(record.artists) ? record.artists.join(', ') : 'Unknown'}</p>
+            <p>${record.year || '?'} • ID: ${record.id}</p>
+          `;
+          div.appendChild(info);
+
+          return div;
+        }));
+
+        // Clear and append
+        container.innerHTML = '';
+        elements.forEach(el => container.appendChild(el));
+
+        // Update count
+        document.getElementById('selected-count').textContent = this.tempSelectedRecords.length;
+      },
+
+      /**
+       * Toggle record selection
+       */
+      toggleRecordSelection(recordId) {
+        const index = this.tempSelectedRecords.indexOf(recordId);
+
+        if (index >= 0) {
+          // Remove from selection
+          this.tempSelectedRecords.splice(index, 1);
+        } else {
+          // Add to selection
+          this.tempSelectedRecords.push(recordId);
+        }
+
+        // Re-render grid
+        const searchInput = document.getElementById('record-search');
+        this.renderRecordSelectorGrid(searchInput.value);
+      },
+
+      /**
+       * Filter record selector by search text
+       */
+      filterRecordSelector(searchText) {
+        this.renderRecordSelectorGrid(searchText);
+      },
+
+      /**
+       * Initialize drag and drop for rows
+       */
+      initDragDrop() {
+        const rowItems = document.querySelectorAll('.row-item');
+        let draggedItem = null;
+
+        rowItems.forEach(item => {
+          item.addEventListener('dragstart', (e) => {
+            draggedItem = item;
+            e.dataTransfer.effectAllowed = 'move';
+            item.style.opacity = '0.4';
+          });
+
+          item.addEventListener('dragend', (e) => {
+            item.style.opacity = '1';
+          });
+
+          item.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+
+            if (draggedItem !== item) {
+              const rect = item.getBoundingClientRect();
+              const midpoint = rect.top + rect.height / 2;
+
+              if (e.clientY < midpoint) {
+                item.style.borderTop = '3px solid #FF10F0';
+                item.style.borderBottom = '';
+              } else {
+                item.style.borderTop = '';
+                item.style.borderBottom = '3px solid #FF10F0';
+              }
+            }
+          });
+
+          item.addEventListener('dragleave', (e) => {
+            item.style.borderTop = '';
+            item.style.borderBottom = '';
+          });
+
+          item.addEventListener('drop', (e) => {
+            e.preventDefault();
+            item.style.borderTop = '';
+            item.style.borderBottom = '';
+
+            if (draggedItem !== item) {
+              const fromIndex = parseInt(draggedItem.dataset.index);
+              const toIndex = parseInt(item.dataset.index);
+
+              // Reorder array
+              const [movedItem] = this.homepageRows.splice(fromIndex, 1);
+              this.homepageRows.splice(toIndex, 0, movedItem);
+
+              // Re-render
+              this.renderHomepageRowsEditor();
+            }
+          });
+        });
       },
 
       /**
@@ -574,7 +1127,7 @@
       /**
        * Render records list
        */
-      renderRecordsList(records) {
+      async renderRecordsList(records) {
         const container = document.getElementById('records-list');
 
         if (records.length === 0) {
@@ -587,22 +1140,49 @@
           return;
         }
 
-        container.innerHTML = records.map(record => `
-          <div class="record-card">
-            <img src="${record.imageUrl || 'admin/no-image.svg'}" 
-                 alt="${record.album || 'Unknown'}" 
-                 onerror="this.src='admin/no-image.svg'">
-            <div class="record-card-info">
-              <h3>${record.album || 'Unknown Album'}</h3>
-              <p>${Array.isArray(record.artists) ? record.artists.join(', ') : 'Unknown Artist'}</p>
-              <p>${record.year || 'Unknown'} • ${record.recordLabel || 'Unknown'}</p>
-              <p><strong>ID:</strong> ${record.id || '???'}</p>
-            </div>
-            <div class="record-card-actions">
-              <button class="btn btn-secondary" onclick="app.editRecord('${record.id || ''}')">✏️ Edit</button>
-            </div>
-          </div>
-        `).join('');
+        // Clear container and show loading
+        container.innerHTML = '<div class="loading">Loading cover images...</div>';
+
+        // Load all images and create cards
+        const cardElements = await Promise.all(records.map(async (record) => {
+          // Get image URL from file system
+          const imageUrl = await this.getCoverImageUrl(record.imageUrl);
+
+          const card = document.createElement('div');
+          card.className = 'record-card';
+
+          const img = document.createElement('img');
+          img.src = imageUrl;
+          img.alt = record.album || 'Unknown';
+          img.onerror = () => {img.src = 'no-image.svg';};
+
+          const info = document.createElement('div');
+          info.className = 'record-card-info';
+          info.innerHTML = `
+            <h3>${record.album || 'Unknown Album'}</h3>
+            <p>${Array.isArray(record.artists) ? record.artists.join(', ') : 'Unknown Artist'}</p>
+            <p>${record.year || 'Unknown'} • ${record.recordLabel || 'Unknown'}</p>
+            <p><strong>ID:</strong> ${record.id || '???'}</p>
+          `;
+
+          const actions = document.createElement('div');
+          actions.className = 'record-card-actions';
+          const editBtn = document.createElement('button');
+          editBtn.className = 'btn btn-secondary';
+          editBtn.textContent = '✏️ Edit';
+          editBtn.onclick = () => this.editRecord(record.id || '');
+          actions.appendChild(editBtn);
+
+          card.appendChild(img);
+          card.appendChild(info);
+          card.appendChild(actions);
+
+          return card;
+        }));
+
+        // Clear and append all cards
+        container.innerHTML = '';
+        cardElements.forEach(card => container.appendChild(card));
       },
 
       /**
@@ -689,7 +1269,7 @@
       async getNextRecordId() {
         try {
           let maxId = 0;
-          
+
           // Read all JSON files from records folder
           for await (const entry of this.recordsHandle.values()) {
             if (entry.kind === 'file' && entry.name.endsWith('.json')) {
@@ -703,7 +1283,7 @@
               }
             }
           }
-          
+
           // Return next ID as zero-padded 3-digit string
           const nextId = maxId + 1;
           return String(nextId).padStart(3, '0');
@@ -720,10 +1300,10 @@
         const container = document.getElementById('editor-content');
         container.innerHTML = '';
 
-        // Create widget instance
+        // Create widget instance - pass app instance for image loading
         this.widgetInstance = new VinylRecordWidget(container, recordData, (updatedRecord) => {
           this.currentRecord = updatedRecord;
-        }, nextId);
+        }, nextId, this);
         window.Testing_Delme_When_Done = this.widgetInstance
       },
 
@@ -751,12 +1331,33 @@
           const newId = this.currentRecord.id;
           const newFileName = `${newId}.json`;
 
+          // Download cover image if sourceImageUrl is provided
+          if (this.currentRecord.sourceImageUrl && !this.currentRecord.imageUrl) {
+            try {
+              // Try to get the pre-loaded image from the widget
+              const preloadedImg = this.widgetInstance?.loadedCoverImage;
+              await this.downloadCoverImage(newId, this.currentRecord.sourceImageUrl, preloadedImg);
+            } catch (err) {
+              console.error('Error downloading cover image:', err);
+              // Continue saving even if image download fails
+            }
+          }
+
           // If ID changed, we need to delete the old file
           if (this.currentRecordId && this.currentRecordId !== newId) {
             try {
               // Try to delete old file
               await this.recordsHandle.removeEntry(`${this.currentRecordId}.json`);
               console.log(`Deleted old file: ${this.currentRecordId}.json`);
+
+              // Also try to delete old cover image
+              try {
+                const coversHandle = await this.directoryHandle.getDirectoryHandle('covers');
+                await coversHandle.removeEntry(`${this.currentRecordId}.jpg`);
+                console.log(`Deleted old cover image: ${this.currentRecordId}.jpg`);
+              } catch (imgErr) {
+                console.warn(`Could not delete old cover image ${this.currentRecordId}.jpg:`, imgErr);
+              }
             } catch (err) {
               console.warn(`Could not delete old file ${this.currentRecordId}.json:`, err);
               // Continue anyway, might be a new record or file already doesn't exist
@@ -783,6 +1384,158 @@
           console.error('Error saving record:', err);
           alert('❌ Error saving record: ' + err.message);
         }
+      },
+
+      /**
+       * Download cover image and save to covers folder
+       * @param {string} recordId - Record ID for filename
+       * @param {string} imageUrl - Source image URL
+       * @param {HTMLImageElement} preloadedImg - Pre-loaded/manually uploaded image
+       */
+      async downloadCoverImage(recordId, imageUrl, preloadedImg = null) {
+        try {
+          console.log(`Downloading cover image for ${recordId}`);
+
+          let blob = null;
+
+          // Check if we have a manually uploaded image
+          if (preloadedImg && preloadedImg.complete && preloadedImg.src.startsWith('data:')) {
+            console.log('Using manually uploaded image (base64)');
+
+            // Convert data URL to blob
+            const response = await fetch(preloadedImg.src);
+            blob = await response.blob();
+            console.log(`✅ Manually uploaded image ready (${blob.size} bytes)`);
+          } else {
+            // Try multiple CORS proxy services for Discogs images
+            console.log(`Attempting to download from: ${imageUrl}`);
+
+            const proxyUrls = [
+              `https://corsproxy.io/?${encodeURIComponent(imageUrl)}`,
+              `https://api.allorigins.win/raw?url=${encodeURIComponent(imageUrl)}`,
+              `https://cors-anywhere.herokuapp.com/${imageUrl}`,
+            ];
+
+            let lastError = null;
+
+            // Try each proxy until one works
+            for (const proxyUrl of proxyUrls) {
+              try {
+                console.log(`Trying proxy: ${proxyUrl.split('?')[0]}`);
+
+                const response = await fetch(proxyUrl, {
+                  headers: {
+                    'Accept': 'image/*',
+                  },
+                });
+
+                if (!response.ok) {
+                  throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                blob = await response.blob();
+
+                // Verify it's actually an image
+                if (!blob.type.startsWith('image/')) {
+                  throw new Error(`Invalid content type: ${blob.type}`);
+                }
+
+                console.log(`✅ Successfully fetched via proxy (${blob.size} bytes)`);
+                break; // Success! Exit the loop
+              } catch (err) {
+                console.warn(`Proxy failed:`, err.message);
+                lastError = err;
+                blob = null;
+                continue; // Try next proxy
+              }
+            }
+
+            // If all proxies failed, throw error
+            if (!blob) {
+              throw new Error(`All CORS proxies failed. Last error: ${lastError?.message || 'Unknown error'}`);
+            }
+          }
+
+          // Get or create covers directory
+          const coversHandle = await this.directoryHandle.getDirectoryHandle('covers', {create: true});
+
+          // Use jpg extension
+          const fileName = `${recordId}.jpg`;
+          const fileHandle = await coversHandle.getFileHandle(fileName, {create: true});
+
+          // Write blob to file
+          const writable = await fileHandle.createWritable();
+          await writable.write(blob);
+          await writable.close();
+
+          // Update imageUrl in record
+          this.currentRecord.imageUrl = `data/covers/${fileName}`;
+          console.log(`✅ Cover image saved as ${fileName}`);
+        } catch (err) {
+          console.error('Failed to download cover image:', err);
+
+          // Show user-friendly error with manual download option
+          const shouldContinue = confirm(
+            `⚠️ Unable to automatically download cover image:\n${err.message}\n\n` +
+            `Would you like to continue saving the record without the image?\n\n` +
+            `You can manually download the image later and add it to data/covers/${recordId}.jpg`
+          );
+
+          if (!shouldContinue) {
+            throw new Error('User cancelled save due to image download failure');
+          }
+
+          console.log('User chose to continue without image');
+        }
+      },
+
+      /**
+       * Load cover image from file system and return object URL
+       * @param {string} imagePath - Path like "data/covers/001.jpg"
+       * @returns {string} Object URL or fallback image
+       */
+      async getCoverImageUrl(imagePath) {
+        if (!imagePath) {
+          return 'no-image.svg';
+        }
+
+        // Check cache first
+        if (this.imageCache.has(imagePath)) {
+          return this.imageCache.get(imagePath);
+        }
+
+        try {
+          // Extract filename from path (e.g., "data/covers/001.jpg" -> "001.jpg")
+          const fileName = imagePath.split('/').pop();
+
+          // Get file from covers directory
+          const fileHandle = await this.coversHandle.getFileHandle(fileName);
+          const file = await fileHandle.getFile();
+
+          // Create object URL
+          const objectUrl = URL.createObjectURL(file);
+
+          // Cache it
+          this.imageCache.set(imagePath, objectUrl);
+
+          return objectUrl;
+        } catch (err) {
+          console.warn(`Could not load cover image ${imagePath}:`, err);
+          return 'no-image.svg';
+        }
+      },
+
+      /**
+       * Clear image cache (call when needed to free memory)
+       */
+      clearImageCache() {
+        // Revoke all object URLs to free memory
+        for (const url of this.imageCache.values()) {
+          if (url.startsWith('blob:')) {
+            URL.revokeObjectURL(url);
+          }
+        }
+        this.imageCache.clear();
       },
 
       /**
@@ -932,7 +1685,7 @@
           // Get the oldest filter file timestamp
           let oldestFilterTime = Infinity;
           const filterFiles = ['artists.json', 'genres.json', 'labels.json', 'years.json'];
-          
+
           for (const fileName of filterFiles) {
             try {
               const fileHandle = await this.filtersHandle.getFileHandle(fileName);
@@ -950,7 +1703,7 @@
           // Show alert if filters are outdated
           const alert = document.getElementById('filter-status-alert');
           const btn = document.getElementById('regenerate-filters-btn');
-          
+
           if (newestRecordTime > oldestFilterTime) {
             alert.classList.remove('hidden');
             btn.style.backgroundColor = '#FFFF00';
@@ -966,12 +1719,12 @@
       },
 
       /**
-       * Regenerate filter index files
+       * Regenerate filter index files and data files
        */
       async regenerateFilters() {
         const btn = document.getElementById('regenerate-filters-btn');
         const originalText = btn.textContent;
-        
+
         try {
           btn.textContent = '⏳ Regenerating...';
           btn.disabled = true;
@@ -987,6 +1740,15 @@
             }
           }
 
+          // Sort records by ID for consistent ordering
+          records.sort((a, b) => (a.id || '').localeCompare(b.id || ''));
+
+          // 1. Regenerate records-all.json
+          await this.regenerateRecordsAll(records);
+
+          // 2. Regenerate records.json with homepage rows
+          await this.regenerateRecordsJson(records);
+
           // Load records-all.json for minimal data
           const recordsAllHandle = await this.directoryHandle.getFileHandle('records-all.json');
           const recordsAllFile = await recordsAllHandle.getFile();
@@ -996,27 +1758,75 @@
             recordsAllMap[record.id] = record;
           }
 
-          // Generate filters
+          // 3. Generate filter indexes
           await this.generateArtistsIndex(records, recordsAllMap);
           await this.generateGenresIndex(records, recordsAllMap);
           await this.generateYearsIndex(records, recordsAllMap);
           await this.generateLabelsIndex(records, recordsAllMap);
 
           // Update UI
-          btn.textContent = '✅ Filters Updated!';
+          btn.textContent = '✅ All Data Updated!';
           setTimeout(() => {
             btn.textContent = originalText;
             btn.disabled = false;
             this.checkFilterStatus();
           }, 2000);
 
-          alert('✅ Filter indexes regenerated successfully!');
+          alert('✅ Filter indexes and data files regenerated successfully!');
         } catch (err) {
           console.error('Error regenerating filters:', err);
           alert('❌ Error regenerating filters: ' + err.message);
           btn.textContent = originalText;
           btn.disabled = false;
         }
+      },
+
+      /**
+       * Regenerate records-all.json from individual record files
+       */
+      async regenerateRecordsAll(records) {
+        const recordsAll = {
+          records: records.map(record => ({
+            id: record.id,
+            artists: record.artists,
+            album: record.album,
+            year: record.year,
+            imageUrl: record.imageUrl
+          }))
+        };
+
+        const fileHandle = await this.directoryHandle.getFileHandle('records-all.json', {create: true});
+        const writable = await fileHandle.createWritable();
+        await writable.write(JSON.stringify(recordsAll, null, 2));
+        await writable.close();
+
+        console.log('✓ Regenerated records-all.json');
+      },
+
+      /**
+       * Regenerate records.json with homepage rows configuration
+       */
+      async regenerateRecordsJson(records) {
+        // Update record IDs in homepage rows based on actual records
+        const recordIds = new Set(records.map(r => r.id));
+
+        // Filter out invalid record IDs from each row
+        for (const row of this.homepageRows) {
+          if (row.records && Array.isArray(row.records)) {
+            row.records = row.records.filter(id => recordIds.has(id));
+          }
+        }
+
+        const recordsJson = {
+          rows: this.homepageRows
+        };
+
+        const fileHandle = await this.directoryHandle.getFileHandle('records.json', {create: true});
+        const writable = await fileHandle.createWritable();
+        await writable.write(JSON.stringify(recordsJson, null, 2));
+        await writable.close();
+
+        console.log('✓ Regenerated records.json');
       },
 
       /**
@@ -1034,7 +1844,7 @@
                 records: []
               };
             }
-            
+
             artistsMap[artist].count++;
             artistsMap[artist].records.push({
               id: record.id,
@@ -1075,7 +1885,7 @@
                   records: []
                 };
               }
-              
+
               genresMap[genre].count++;
               genresMap[genre].records.push({
                 id: record.id,
@@ -1109,7 +1919,7 @@
 
         for (const record of records) {
           const year = record.year.toString();
-          
+
           if (!yearsMap[year]) {
             yearsMap[year] = {
               year: record.year,
@@ -1117,7 +1927,7 @@
               records: []
             };
           }
-          
+
           yearsMap[year].count++;
           yearsMap[year].records.push({
             id: record.id,
@@ -1149,7 +1959,7 @@
 
         for (const record of records) {
           const label = record.recordLabel;
-          
+
           if (!labelsMap[label]) {
             labelsMap[label] = {
               name: label,
@@ -1157,7 +1967,7 @@
               records: []
             };
           }
-          
+
           labelsMap[label].count++;
           labelsMap[label].records.push({
             id: record.id,

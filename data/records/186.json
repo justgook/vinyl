@@ -1,0 +1,72 @@
+{
+  "id": "186",
+  "catalogNumber": "С60 27097 009",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Юрий Лоза"
+  ],
+  "album": "Что Сказано, То Сказано",
+  "year": 1991,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/o86VjNMr9Anr8JnHj4A0y4VE0qaJUk1ZuR6yPWGVSJw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxNDQ2/NTQtMTQ3NTU0Mzc2/NS03MjI4LmpwZWc.jpeg",
+  "imageUrl": "data/covers/186.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Что Сказано, То Сказано",
+          "duration": "3:13"
+        },
+        {
+          "title": "Не Принимай",
+          "duration": "4:11"
+        },
+        {
+          "title": "Сто Часов",
+          "duration": "3:34"
+        },
+        {
+          "title": "Зима",
+          "duration": "4:00"
+        },
+        {
+          "title": "Я Умею Мечтать",
+          "duration": "3:51"
+        },
+        {
+          "title": "Мать Пишет",
+          "duration": "2:26"
+        },
+        {
+          "title": "Неотразимый",
+          "duration": "2:51"
+        },
+        {
+          "title": "Резиновые Дни",
+          "duration": "3:42"
+        },
+        {
+          "title": "Пиво",
+          "duration": "4:27"
+        },
+        {
+          "title": "Одиночество",
+          "duration": "3:31"
+        },
+        {
+          "title": "Плот",
+          "duration": "5:16"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/9144654-Юрий-Лоза-Что-Сказано-То-Сказано"
+  }
+}

@@ -1,63 +1,80 @@
 {
   "id": "010",
-  "catalogNumber": "SIRE6076",
-  "recordLabel": "Sire",
-  "artists": ["Talking Heads"],
-  "album": "Remain in Light",
-  "year": 1980,
-  "genre": ["Post-Punk", "New Wave"],
-  "format": "LP, Album",
-  "condition": "Very Good Plus",
-  "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Talking+Heads",
+  "catalogNumber": "М60 48025 001",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Спасите Наши Души",
+  "year": 1989,
+  "genre": [
+    "Pop",
+    "Folk, World, & Country"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/7Tp8gRpMJCwEwDVC0pcQiyobiZTZ-zKeOqZk_lBM9Vs/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwOTYz/NDc5LTE2NDI3Nzgy/NjUtODA4My5qcGVn.jpeg",
+  "imageUrl": "data/covers/010.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Crosseyed and Painless",
-          "duration": "3:50"
+          "title": "Песня О Новом Времени",
+          "duration": "0:00"
         },
         {
-          "title": "The Great Curve",
-          "duration": "3:23"
+          "title": "Аисты",
+          "duration": "0:00"
         },
         {
-          "title": "Once in a Lifetime",
-          "duration": "4:20"
+          "title": "Деревянные Костюмы",
+          "duration": "0:00"
         },
         {
-          "title": "Houses in Motion",
-          "duration": "3:39"
-        }
-      ]
-    },
-    {
-      "name": "Side B",
-      "tracks": [
-        {
-          "title": "Seen and Not Seen",
-          "duration": "1:53"
+          "title": "Про Несчастных Лесных Жителей",
+          "duration": "0:00"
         },
         {
-          "title": "The Listening Pool",
-          "duration": "2:16"
+          "title": "Песенка Про Джинна",
+          "duration": "0:00"
         },
         {
-          "title": "The Overload",
-          "duration": "5:08"
+          "title": "Песня О Вещем Олеге",
+          "duration": "0:00"
         },
         {
-          "title": "I Zimbra",
-          "duration": "3:28"
+          "title": "Песня О Вещей Кассандре",
+          "duration": "0:00"
         },
         {
-          "title": "Totally Fuzzy Feeling",
-          "duration": "3:36"
+          "title": "Песня Про Дикого Вепря",
+          "duration": "0:00"
+        },
+        {
+          "title": "Лукоморья Больше Нет",
+          "duration": "0:00"
+        },
+        {
+          "title": "Корабли",
+          "duration": "0:00"
+        },
+        {
+          "title": "Спасите Наши Души",
+          "duration": "0:00"
+        },
+        {
+          "title": "О Хоккеистах",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дом Хрустальный",
+          "duration": "0:00"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/587449"
+    "discogs": "https://www.discogs.com/release/20963479-Владимир-Высоцкий-Спасите-Наши-Души"
   }
 }

@@ -1,0 +1,58 @@
+{
+  "id": "139",
+  "catalogNumber": "С60 28791 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Вежливый Отказ"
+  ],
+  "album": "Вежливый Отказ",
+  "year": 1990,
+  "genre": [
+    "Jazz",
+    "Rock",
+    "Blues"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/cZ0v7KuzCdXUZtDpehGErL45XlzjuNdxcT-8Jg02vUA/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDI0/ODY0LTE0OTA3MDQ4/NzQtODU2Mi5qcGVn.jpeg",
+  "imageUrl": "data/covers/139.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Я Учусь",
+          "duration": "2:38"
+        },
+        {
+          "title": "Летаргический Сон",
+          "duration": "7:38"
+        },
+        {
+          "title": "Помощник",
+          "duration": "5:16"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "В Чужих Озерах Сна...",
+          "duration": "5:06"
+        },
+        {
+          "title": "Эй!",
+          "duration": "5:04"
+        },
+        {
+          "title": "Прощание",
+          "duration": "6:39"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/10024864-Группа-Вежливый-Отказ-Вежливый-Отказ"
+  }
+}

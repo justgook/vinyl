@@ -1,0 +1,71 @@
+{
+  "id": "097",
+  "catalogNumber": "М60 49415 001",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Баллада О Детстве",
+  "year": 1991,
+  "genre": [
+    "Folk, World, & Country"
+  ],
+  "format": "Vinyl, LP, Mono, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/9qFAXZnoNn7HFwzDBl2IaHWHixTiVwm_hTu_iOmhKTg/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyOTMz/ODQtMTM5MDAzMzY0/Ny0zNDM1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/097.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Бег Иноходца",
+          "duration": "0:00"
+        },
+        {
+          "title": "Товарищи Ученые",
+          "duration": "0:00"
+        },
+        {
+          "title": "Диагноз",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Ресторане",
+          "duration": "0:00"
+        },
+        {
+          "title": "Автозавистник",
+          "duration": "0:00"
+        },
+        {
+          "title": "Песня Автомобилиста",
+          "duration": "0:00"
+        },
+        {
+          "title": "Плагиатор",
+          "duration": "0:00"
+        },
+        {
+          "title": "Баллада О Детстве",
+          "duration": "0:00"
+        },
+        {
+          "title": "Инструкция Перед Поездкой",
+          "duration": "0:00"
+        },
+        {
+          "title": "На Таможне",
+          "duration": "0:00"
+        },
+        {
+          "title": "Монолог Хлопуши",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5293384-Владимир-Высоцкий-Баллада-О-Детстве"
+  }
+}

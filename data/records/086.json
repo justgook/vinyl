@@ -1,0 +1,64 @@
+{
+  "id": "086",
+  "catalogNumber": "С60 22701 003",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Al Bano & Romina Power"
+  ],
+  "album": "Аль Бано И Ромина Пауэр",
+  "year": 2025,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/Kc9gH_unIKBN1bPSIlsp_PTmXt1PR7vbgHwgipV_5hU/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzMDIx/MzgtMTQ4NDE0MTAx/NS00NzM3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/086.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Чистый Воздух = Aria Pura",
+          "duration": "3:12"
+        },
+        {
+          "title": "Счастье = Felicità",
+          "duration": "3:13"
+        },
+        {
+          "title": "Идиллия = Sharasan",
+          "duration": "4:45"
+        },
+        {
+          "title": "Танец Ква-Ква = Il Ballo Del Qua Qua",
+          "duration": "2:52"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Ангелы = Angeli",
+          "duration": "3:25"
+        },
+        {
+          "title": "Рождение Любви = E Fu Subito Amore",
+          "duration": "3:59"
+        },
+        {
+          "title": "Песнь Свободы = Canto Di Libertà",
+          "duration": "2:45"
+        },
+        {
+          "title": "До Встречи В Бахии = Arrivederci A Bahia",
+          "duration": "3:02"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6302138-Al-Bano-Romina-Power-Аль-Бано-И-Ромина-Пауэр"
+  }
+}

@@ -1,67 +1,24 @@
 {
   "id": "013",
-  "catalogNumber": "OK2",
-  "recordLabel": "Parlophone",
-  "artists": ["Radiohead"],
-  "album": "OK Computer",
-  "year": 1997,
-  "genre": ["Alternative Rock", "Experimental Rock"],
+  "catalogNumber": "C6028425006",
+  "recordLabel": "Мелодия",
+  "artists": [],
+  "album": "UNKNOWN",
+  "year": 2025,
+  "genre": [],
   "format": "LP, Album",
-  "condition": "Very Good Plus",
-  "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Radiohead",
+  "condition": "Near Mint",
+  "sourceImageUrl": "",
+  "imageUrl": "",
   "sides": [
     {
       "name": "Side A",
-      "tracks": [
-        {
-          "title": "Airbag",
-          "duration": "4:45"
-        },
-        {
-          "title": "Paranoid Android",
-          "duration": "6:55"
-        },
-        {
-          "title": "Subterranean Homesick Alien",
-          "duration": "4:27"
-        },
-        {
-          "title": "Exit Music (For a Film)",
-          "duration": "4:24"
-        }
-      ]
+      "tracks": []
     },
     {
       "name": "Side B",
-      "tracks": [
-        {
-          "title": "Let Down",
-          "duration": "4:59"
-        },
-        {
-          "title": "Karma Police",
-          "duration": "4:39"
-        },
-        {
-          "title": "Fitter Happier",
-          "duration": "3:50"
-        },
-        {
-          "title": "Electioneering",
-          "duration": "3:47"
-        },
-        {
-          "title": "Climbing Up the Walls",
-          "duration": "4:44"
-        },
-        {
-          "title": "No Surprises",
-          "duration": "3:48"
-        }
-      ]
+      "tracks": []
     }
   ],
-  "externalIds": {
-    "discogs": "release/14248"
-  }
+  "externalIds": {}
 }

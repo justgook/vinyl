@@ -1,0 +1,69 @@
+{
+  "id": "132",
+  "catalogNumber": "С60 25179 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Женский Портрет",
+  "year": 1987,
+  "genre": [
+    "Electronic",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/R9p3jGtGY11TSL7JY7rLUONmG-Tneav729LovL8QcX0/rs:fit/g:sm/q:90/h:560/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNTA5/MjMtMTM1MzYwMjcw/NS03ODA5LmpwZWc.jpeg",
+  "imageUrl": "data/covers/132.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Женский Портрет",
+          "duration": "3:45"
+        },
+        {
+          "title": "Я Приглашаю Вас На Праздник",
+          "duration": "3:04"
+        },
+        {
+          "title": "Когда Мы Влюблены",
+          "duration": "4:14"
+        },
+        {
+          "title": "Ты Приехал",
+          "duration": "3:37"
+        },
+        {
+          "title": "Мария",
+          "duration": "3:40"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Ночной Костер",
+          "duration": "4:42"
+        },
+        {
+          "title": "Знаю Только Я",
+          "duration": "4:04"
+        },
+        {
+          "title": "Подруги Замужем Давно",
+          "duration": "4:42"
+        },
+        {
+          "title": "Женщины",
+          "duration": "5:30"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4050923-Various-Женский-Портрет"
+  }
+}

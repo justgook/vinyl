@@ -1,0 +1,74 @@
+{
+  "id": "171",
+  "catalogNumber": "С60-08467-8",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Raimonds Pauls"
+  ],
+  "album": "Priekšnojauta",
+  "year": 1982,
+  "genre": [
+    "Rock",
+    "Latin",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/hUJ4nkPlrxgei6JdeO7-PWPYqVVA8mazBfNtbnpMuuo/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMzU4/MTg0LTE3NDE2NDA4/MzEtNjU4MC5qcGVn.jpeg",
+  "imageUrl": "data/covers/171.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Par Pēdējo Lapu = Of The Last Leaf",
+          "duration": "0:00"
+        },
+        {
+          "title": "Rudensogle = Autumn Ember",
+          "duration": "0:00"
+        },
+        {
+          "title": "Zied Ievas Siguldā = Bird-Cherries In Blossom At Sigulda",
+          "duration": "0:00"
+        },
+        {
+          "title": "Zeltamute = Goldmouth Sage",
+          "duration": "0:00"
+        },
+        {
+          "title": "Vējlukturu Nakts = A Night Of Hurricane Lamps",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Nīcā = At Nica",
+          "duration": "0:00"
+        },
+        {
+          "title": "O, Lamara = Oh, Lamara",
+          "duration": "0:00"
+        },
+        {
+          "title": "Priekšnojauta = Premonition",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ardievas Vasarai = Farewell To Summer",
+          "duration": "0:00"
+        },
+        {
+          "title": "Tā Diena = That Day",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/33358184-Raimonds-Pauls-Priekšnojauta"
+  }
+}

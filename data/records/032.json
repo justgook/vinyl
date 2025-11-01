@@ -1,0 +1,69 @@
+{
+  "id": "032",
+  "catalogNumber": "С60-18277-8",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Mikrofons-81 (2.)",
+  "year": 1983,
+  "genre": [
+    "Pop",
+    "Folk, World, & Country"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/2_YRtAu-e6cPMynOpkwo4IR-nV_3mw7AB0wR2AwlNbA/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTE0/MzgtMTM3MTA3MTM3/Ni0zMTMyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/032.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Puiši, Puiši",
+          "duration": "2:16"
+        },
+        {
+          "title": "Ugunsputns",
+          "duration": "5:10"
+        },
+        {
+          "title": "Zelta Dziesma",
+          "duration": "3:28"
+        },
+        {
+          "title": "Es Mīlu Tevi Tā...",
+          "duration": "3:25"
+        },
+        {
+          "title": "Tik Un Tā",
+          "duration": "2:57"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Tu Smejies Sapnī",
+          "duration": "3:38"
+        },
+        {
+          "title": "Tāds Mūžs",
+          "duration": "3:58"
+        },
+        {
+          "title": "Atgriešanās",
+          "duration": "3:47"
+        },
+        {
+          "title": "Atziedi, Dvēsele",
+          "duration": "4:27"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3051438-Various-Mikrofons-81-2"
+  }
+}

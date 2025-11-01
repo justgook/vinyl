@@ -1,0 +1,92 @@
+{
+  "id": "058",
+  "catalogNumber": "М40 47601 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Михаил Жванецкий"
+  ],
+  "album": "Монологи",
+  "year": 1988,
+  "genre": [
+    "Non-Music"
+  ],
+  "format": "Vinyl, LP, Repress, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/5Qhwzu-1My-sxGI1STY1Aw-qsTi6StIR2fNCxqcUWmM/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjE1/Mjg1LTE2MDU0NjA3/MTEtNzgzMC5qcGVn.jpeg",
+  "imageUrl": "data/covers/058.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Двадцатый Век",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вся Наша Жизнь — Спорт",
+          "duration": "0:00"
+        },
+        {
+          "title": "Успехи Медицины",
+          "duration": "0:00"
+        },
+        {
+          "title": "Тишина",
+          "duration": "0:00"
+        },
+        {
+          "title": "Наши Письма",
+          "duration": "0:00"
+        },
+        {
+          "title": "Броня Крепка",
+          "duration": "0:00"
+        },
+        {
+          "title": "Поздравим Себя",
+          "duration": "0:00"
+        },
+        {
+          "title": "Говорят, Что Карта Мира Не Имеет Белых Пятен",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Стиль Спора",
+          "duration": "0:00"
+        },
+        {
+          "title": "Тщательнее",
+          "duration": "0:00"
+        },
+        {
+          "title": "Их День",
+          "duration": "0:00"
+        },
+        {
+          "title": "Трудности Кино",
+          "duration": "0:00"
+        },
+        {
+          "title": "Как Шутили В Одессе",
+          "duration": "0:00"
+        },
+        {
+          "title": "Интервью",
+          "duration": "0:00"
+        },
+        {
+          "title": "Райкину",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/16215285-Михаил-Жванецкий-Монологи"
+  }
+}

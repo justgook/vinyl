@@ -1,0 +1,65 @@
+{
+  "id": "030",
+  "catalogNumber": "1115 4399",
+  "recordLabel": "CBS",
+  "artists": [
+    "Various"
+  ],
+  "album": "Jazzrock",
+  "year": 1988,
+  "genre": [
+    "Jazz",
+    "Funk / Soul"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/1pTJDwkCA8mM6pOeNgeETRCz-hP9FC9wApwIFgs3uB8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4Mjk1/NzktMTM3NjgyNzM3/Ny02NTI1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/030.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Gonna Fly Now = Vzlétnu",
+          "duration": "4:18"
+        },
+        {
+          "title": "Hip Skip = Hopsa Hejsa",
+          "duration": "8:03"
+        },
+        {
+          "title": "La Danse Du Bonheur = Tanec Štěstí",
+          "duration": "4:48"
+        },
+        {
+          "title": "Watermelon Man = Prodavač Melounů",
+          "duration": "6:34"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Race With Devil On Spanish Highway = Závod S Ďáblem Na Španělské Dálnici",
+          "duration": "6:16"
+        },
+        {
+          "title": "So Long Mickey Mouse = Sbohem Mickey Mouse",
+          "duration": "6:08"
+        },
+        {
+          "title": "You Bet Your Love = Vsadíš Svou Lásku",
+          "duration": "7:37"
+        },
+        {
+          "title": "Jean Pierre",
+          "duration": "4:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4829579-Various-Jazzrock"
+  }
+}

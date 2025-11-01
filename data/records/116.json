@@ -1,0 +1,72 @@
+{
+  "id": "116",
+  "catalogNumber": "С60 29553 000",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Фэн-О-Мэн"
+  ],
+  "album": "Caviar Malossol",
+  "year": 1990,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/TmpZZlc7HfVxfkubIUT5DQxn5RKI4imtVjWCm53Ozc4/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTY5/NjMzLTE2MzI1NDgz/ODAtMTA2Ny5qcGVn.jpeg",
+  "imageUrl": "data/covers/116.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Анонс = Announcement",
+          "duration": "0:23"
+        },
+        {
+          "title": "Рэкет \"Робин Гуд\" = Racket \"Robin Hood\"",
+          "duration": "3:34"
+        },
+        {
+          "title": "Я Этот Вирус = I Am The Virus",
+          "duration": "4:13"
+        },
+        {
+          "title": "Заводная Игрушечка = Clockwork Baby Doll",
+          "duration": "2:28"
+        },
+        {
+          "title": "Отелло = Othello",
+          "duration": "2:29"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Тайна = Mystery",
+          "duration": "3:20"
+        },
+        {
+          "title": "Тропикана = Tropicana",
+          "duration": "3:44"
+        },
+        {
+          "title": "Шоколад = Chocolate",
+          "duration": "2:52"
+        },
+        {
+          "title": "Конкурс Красоты = Beauty Pageant",
+          "duration": "3:42"
+        },
+        {
+          "title": "Ветер Разносит Слух = Wind Carries The Word",
+          "duration": "4:34"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/13569633-Фэн-О-Мэн-Caviar-Malossol"
+  }
+}

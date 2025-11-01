@@ -1,33 +1,42 @@
 {
   "id": "014",
-  "catalogNumber": "WBRX161",
-  "recordLabel": "Wild Bunch Recordings",
-  "artists": ["Massive Attack"],
-  "album": "Blue Lines",
-  "year": 1991,
-  "genre": ["Trip Hop", "Electronic"],
-  "format": "LP, Album",
-  "condition": "Very Good",
-  "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Massive+Attack",
+  "catalogNumber": "С90 26733 000",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Алиса"
+  ],
+  "album": "Энергия",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ySTRal_o4y5kTcrNX9n3n68cb3Qvx-2baWRt0jxxP2o/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MzIw/MjktMTQxNTQ0NzEw/My0zMDg1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/014.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Safe from Harm",
-          "duration": "5:01"
+          "title": "Мы Вместе • We Are Together",
+          "duration": "2:38"
         },
         {
-          "title": "Overseas",
-          "duration": "3:39"
+          "title": "Волна • Wave",
+          "duration": "3:38"
         },
         {
-          "title": "Falling",
-          "duration": "5:14"
+          "title": "Меломан • Music Lover",
+          "duration": "3:55"
         },
         {
-          "title": "Any Minute Now",
-          "duration": "4:13"
+          "title": "Доктор Буги • Doctor Boogie",
+          "duration": "3:42"
+        },
+        {
+          "title": "Плохой Рок-Н-Ролл • Bad Rock'n'Roll",
+          "duration": "3:11"
         }
       ]
     },
@@ -35,25 +44,29 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "Daydreaming",
-          "duration": "4:01"
+          "title": "Моё Поколение • My Generation",
+          "duration": "3:51"
         },
         {
-          "title": "Blue Lines",
-          "duration": "5:02"
+          "title": "Экспериментатор • Experimenter",
+          "duration": "5:03"
         },
         {
-          "title": "Be Sweet",
-          "duration": "4:28"
+          "title": "Ко Мне • To Me",
+          "duration": "6:20"
         },
         {
-          "title": "Five Man Army",
-          "duration": "4:51"
+          "title": "Соковыжиматель • Juice Squeezer",
+          "duration": "4:03"
+        },
+        {
+          "title": "Энергия • Energy",
+          "duration": "5:16"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/385632"
+    "discogs": "https://www.discogs.com/release/2932029-Алиса-Энергия"
   }
 }

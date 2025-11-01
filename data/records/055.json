@@ -1,0 +1,93 @@
+{
+  "id": "055",
+  "catalogNumber": "8 45 158",
+  "recordLabel": "Amiga",
+  "artists": [
+    "Various"
+  ],
+  "album": "Musical-Parade 1",
+  "year": 1979,
+  "genre": [
+    "Pop",
+    "Stage & Screen"
+  ],
+  "format": "Vinyl, LP, Compilation, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/e__kChQ92OSlOe5M0CS-llaJYnNW_d_Vvtwg6ksxLp4/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMzE2/MDItMTM5MDc1ODMz/NC04NTYwLmpwZWc.jpeg",
+  "imageUrl": "data/covers/055.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Wenn Die Musik Erklingt",
+          "duration": "3:10"
+        },
+        {
+          "title": "Mr. Edison...",
+          "duration": "3:15"
+        },
+        {
+          "title": "Hochstapler-Tango",
+          "duration": "2:25"
+        },
+        {
+          "title": "Alt Wie Methusalem",
+          "duration": "3:10"
+        },
+        {
+          "title": "Musikbox-Dixie",
+          "duration": "1:45"
+        },
+        {
+          "title": "Die Erotik In Der Gotik",
+          "duration": "3:05"
+        },
+        {
+          "title": "Studentenmelodie",
+          "duration": "1:30"
+        },
+        {
+          "title": "Das Wär Zu Schön, Um Wahr Zu Sein",
+          "duration": "3:25"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Ragtime Ist Trumpf",
+          "duration": "3:20"
+        },
+        {
+          "title": "Lied Von Der Blauen Rose",
+          "duration": "2:00"
+        },
+        {
+          "title": "Heute Abend Gehn Wir Zwei Auf 'nem Bummel Durch Die Stadt",
+          "duration": "3:50"
+        },
+        {
+          "title": "Intermezzo Aus „Das Fräulen Wird Minister“",
+          "duration": "3:05"
+        },
+        {
+          "title": "Fretillon-Lied",
+          "duration": "1:25"
+        },
+        {
+          "title": "Zum Ersten Mal Verliebt",
+          "duration": "1:40"
+        },
+        {
+          "title": "Les Tailleurs",
+          "duration": "3:30"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5331602-Various-Musical-Parade-1"
+  }
+}

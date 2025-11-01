@@ -1,0 +1,41 @@
+{
+  "id": "207",
+  "catalogNumber": "Д35003-4",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Василий Ливанов",
+    "Юрий Энтин"
+  ],
+  "album": "По Следам Бременских Музыкантов",
+  "year": 2025,
+  "genre": [
+    "Children's"
+  ],
+  "format": "Vinyl, LP, 10\", Repress, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/Pymt_temto8r9RIYfCDYQM0puxuOtaGOkeg2g8nX1uk/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MDU5/NDIxLTE2NjgwNzQ4/NzQtODYxNS5qcGVn.jpeg",
+  "imageUrl": "data/covers/207.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "По Следам Бременских Музыкантов",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "По Следам Бременских Музыкантов (Окончание)",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/25059421-В-Ливанов-Ю-Энтин-По-Следам-Бременских-Музыкантов"
+  }
+}

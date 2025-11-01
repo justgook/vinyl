@@ -1,47 +1,115 @@
 {
   "id": "004",
-  "catalogNumber": "CL1355",
-  "recordLabel": "Columbia",
-  "artists": ["Miles Davis"],
-  "album": "Kind of Blue",
-  "year": 1959,
-  "genre": ["Jazz", "Modal Jazz"],
-  "format": "LP, Album",
-  "condition": "Good Plus",
-  "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Miles+Davis",
+  "catalogNumber": "М60 48703 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Большой Каретный",
+  "year": 1991,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Repress, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/nmHc1nXQlKEu_skvUMwcTMDTwljxGjktzCI9u_lZZ0o/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwNDkw/MjMtMTQwOTc1MzU3/MC0xMTg4LmpwZWc.jpeg",
+  "imageUrl": "data/covers/004.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "So What",
-          "duration": "9:33"
+          "title": "Большой Каретный",
+          "duration": "0:00"
         },
         {
-          "title": "Freddie Freeloader",
-          "duration": "9:49"
+          "title": "У Меня Гитара Есть",
+          "duration": "0:00"
         },
         {
-          "title": "Blue in Green",
-          "duration": "5:37"
-        }
-      ]
-    },
-    {
-      "name": "Side B",
-      "tracks": [
-        {
-          "title": "All Blues",
-          "duration": "11:26"
+          "title": "Дайте Собакам Мяса",
+          "duration": "0:00"
         },
         {
-          "title": "Flamenco Sketches",
-          "duration": "9:25"
+          "title": "А Люди Все Роптали И Роптали",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Ленинграде-Городе У Пяти Углов",
+          "duration": "0:00"
+        },
+        {
+          "title": "Гололед На Земле, Гололед",
+          "duration": "0:00"
+        },
+        {
+          "title": "Камнем Грусть Висит На Мне",
+          "duration": "0:00"
+        },
+        {
+          "title": "Лежит Камень В Степи",
+          "duration": "0:00"
+        },
+        {
+          "title": "Жил-Был Добрый Дурачина-Простофиля",
+          "duration": "0:00"
+        },
+        {
+          "title": "Так Оно И Есть: Словно Встарь",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Верю В Друзей",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Тот Вечер Я...",
+          "duration": "0:00"
+        },
+        {
+          "title": "Копи!",
+          "duration": "0:00"
+        },
+        {
+          "title": "Эй, Шофер, Вези В Бутырский Хутор",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Однажды Гулял По Столице",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сегодня Я С Большой Охотою",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Наш Тесный Круг Не Каждый Попадал",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Любил И Женщин И Проказы",
+          "duration": "0:00"
+        },
+        {
+          "title": "За Меня Невеста Отрыдает Честно",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ты Уехала На Короткий Срок",
+          "duration": "0:00"
+        },
+        {
+          "title": "Все Срока Уже Закончены",
+          "duration": "0:00"
+        },
+        {
+          "title": "Всего Лишь Час Дают На Артобстрел",
+          "duration": "0:00"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/1773349"
+    "discogs": "https://www.discogs.com/release/6049023-Владимир-Высоцкий-Большой-Каретный"
   }
 }

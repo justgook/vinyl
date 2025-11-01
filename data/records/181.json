@@ -1,0 +1,123 @@
+{
+  "id": "181",
+  "catalogNumber": "33 С60-05623-24",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Мелодии И Ритмы (III)",
+  "year": 1975,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/oJVfYSFGktZjMpkr9Uf8HKP2u8EBaqfX42EZwlrn6aI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NzAy/NjgtMTQyMjIxMjI4/NS02MjU0LmpwZWc.jpeg",
+  "imageUrl": "data/covers/181.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Чтобы Весь Мир Пел",
+          "duration": "0:00"
+        },
+        {
+          "title": "Как Угодно",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дай Мне Руку",
+          "duration": "0:00"
+        },
+        {
+          "title": "Леди Сью",
+          "duration": "0:00"
+        },
+        {
+          "title": "Хлопковые Поля",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Удовлетворение",
+      "tracks": [
+        {
+          "title": "День Как День",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дождь",
+          "duration": "0:00"
+        },
+        {
+          "title": "Твое Имя",
+          "duration": "0:00"
+        },
+        {
+          "title": "Не Исчезай",
+          "duration": "0:00"
+        },
+        {
+          "title": "Блюз Улыбки",
+          "duration": "0:00"
+        },
+        {
+          "title": "16 Тонн",
+          "duration": "0:00"
+        },
+        {
+          "title": "Не Для Меня",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ночь И День",
+          "duration": "0:00"
+        },
+        {
+          "title": "В Настроении",
+          "duration": "0:00"
+        },
+        {
+          "title": "Как Высоко Луна",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Как Дела?",
+      "tracks": [
+        {
+          "title": "Солей",
+          "duration": "0:00"
+        },
+        {
+          "title": "Амарильо",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Всецело В Моих Руках",
+      "tracks": [
+        {
+          "title": "Сакраменто",
+          "duration": "0:00"
+        },
+        {
+          "title": "Телеграфист",
+          "duration": "0:00"
+        },
+        {
+          "title": "Сын Своего Отца",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6570268-Various-Мелодии-И-Ритмы-III"
+  }
+}

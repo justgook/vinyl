@@ -1,0 +1,84 @@
+{
+  "id": "081",
+  "catalogNumber": "А60 00415 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Paul McCartney"
+  ],
+  "album": "Снова В СССР",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/295JVwHgL0tz35qzXE3E9DnDJbmDqJJfMdjz-KeLK6I/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3ODU1/OTItMTY1ODQxNTYw/OC0xOTUxLmpwZWc.jpeg",
+  "imageUrl": "data/covers/081.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Kansas City",
+          "duration": "0:00"
+        },
+        {
+          "title": "Twenty Flight Rock",
+          "duration": "0:00"
+        },
+        {
+          "title": "Lawdy, Miss Clawdy",
+          "duration": "0:00"
+        },
+        {
+          "title": "Bring It On Home To Me",
+          "duration": "0:00"
+        },
+        {
+          "title": "Lucille",
+          "duration": "0:00"
+        },
+        {
+          "title": "Don't Get Around Much Anymore",
+          "duration": "0:00"
+        },
+        {
+          "title": "I'm Gonna Be A Wheel Someday",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "That's All Right (Mama)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Summertime",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ain't That A Shame",
+          "duration": "0:00"
+        },
+        {
+          "title": "Crackin' Up",
+          "duration": "0:00"
+        },
+        {
+          "title": "Just Because",
+          "duration": "0:00"
+        },
+        {
+          "title": "Midnight Special",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/7785592-Пол-Маккартни-Снова-В-СССР"
+  }
+}

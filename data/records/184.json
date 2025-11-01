@@ -1,0 +1,69 @@
+{
+  "id": "184",
+  "catalogNumber": "С60 24869 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Диалог"
+  ],
+  "album": "Ночной Дождь",
+  "year": 1987,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/OVRMkjMIRfZLlwFC4JRkXFsGf7vwJSYdeXo9_1Cd04Y/rs:fit/g:sm/q:90/h:600/w:584/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NTc1/ODItMTQyMTk0ODY3/MS0yMzM1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/184.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Гринландия",
+          "duration": "3:28"
+        },
+        {
+          "title": "Рыбак",
+          "duration": "2:43"
+        },
+        {
+          "title": "Флейта",
+          "duration": "3:16"
+        },
+        {
+          "title": "Ночной Дождь",
+          "duration": "5:04"
+        },
+        {
+          "title": "Мышонок И Гармонь",
+          "duration": "3:08"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Никударики",
+          "duration": "4:35"
+        },
+        {
+          "title": "Дитя-злодей",
+          "duration": "4:26"
+        },
+        {
+          "title": "Профессор",
+          "duration": "3:28"
+        },
+        {
+          "title": "О Предке",
+          "duration": "3:21"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6557582-Диалог-Ночной-Дождь"
+  }
+}

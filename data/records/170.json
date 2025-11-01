@@ -1,0 +1,74 @@
+{
+  "id": "170",
+  "catalogNumber": "33 С60-14211-12",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Raimonds Pauls"
+  ],
+  "album": "Мой Путь",
+  "year": 1982,
+  "genre": [
+    "Jazz",
+    "Funk / Soul",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/uIrOhdFk4oZeOfw5UentH2A_WkcBCQutmpcnvOrHkD0/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjY3/MDQzLTE1OTU1NDY2/MjgtMzUzNy5qcGVn.jpeg",
+  "imageUrl": "data/covers/170.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Увеселитель",
+          "duration": "0:00"
+        },
+        {
+          "title": "Как Велика Твоя Любовь",
+          "duration": "0:00"
+        },
+        {
+          "title": "Здравствуй!",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мой Путь",
+          "duration": "0:00"
+        },
+        {
+          "title": "Босса Нова США",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Буги",
+          "duration": "0:00"
+        },
+        {
+          "title": "И Если Бы Тебя Не Было",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я Согласен",
+          "duration": "0:00"
+        },
+        {
+          "title": "Чувство",
+          "duration": "0:00"
+        },
+        {
+          "title": "Жить, Чтобы Выжить",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/15667043-Раймондс-Паулс-Мой-Путь"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "065",
+  "catalogNumber": "С60-18275-6",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Mikrofons–81 1.",
+  "year": 1983,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/hb2L3ygYTDjH-P04oii02wsJJCpErQsmYKMHdmO5pzY/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTQx/MzcyLTE1NTYxNzk3/NzAtMzY3Ni5qcGVn.jpeg",
+  "imageUrl": "data/covers/065.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Dziesma Par Rozīti",
+          "duration": "3:04"
+        },
+        {
+          "title": "Pērkonu Vasara",
+          "duration": "3:15"
+        },
+        {
+          "title": "Princesīte",
+          "duration": "3:33"
+        },
+        {
+          "title": "Meitene Ar Kallu Ziediem",
+          "duration": "3:37"
+        },
+        {
+          "title": "Dzeltenie Aizkari",
+          "duration": "4:25"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Rozīt Manu Nātru Dārzā",
+          "duration": "4:18"
+        },
+        {
+          "title": "Paliec Un Neaizej",
+          "duration": "4:17"
+        },
+        {
+          "title": "Ar Mīlestības Pinekļiem",
+          "duration": "3:41"
+        },
+        {
+          "title": "Dāvāja Māriņa Meitenei Mūžiņu",
+          "duration": "4:54"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/13541372-Various-Mikrofons81-1"
+  }
+}

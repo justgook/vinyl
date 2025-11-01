@@ -1,0 +1,72 @@
+{
+  "id": "161",
+  "catalogNumber": "С60 20109 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Лев Лещенко"
+  ],
+  "album": "В Кругу Друзей",
+  "year": 1983,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/vE1GD0f7nSLlDe4xhKqORUW1swQaTyf7q-L611dsD5Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyODM4/MzctMTMyNDcyNzk4/OC5qcGVn.jpeg",
+  "imageUrl": "data/covers/161.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Давай Поговорим",
+          "duration": "3:18"
+        },
+        {
+          "title": "Запоздалая Осень",
+          "duration": "3:18"
+        },
+        {
+          "title": "Старые Качели",
+          "duration": "4:28"
+        },
+        {
+          "title": "Белый Аист",
+          "duration": "2:32"
+        },
+        {
+          "title": "Где Мой Дом Родной",
+          "duration": "4:08"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Городские Цветы",
+          "duration": "4:01"
+        },
+        {
+          "title": "Старый Альбом",
+          "duration": "2:53"
+        },
+        {
+          "title": "Вот Какая Любовь",
+          "duration": "3:38"
+        },
+        {
+          "title": "Куда Летите, Чайки",
+          "duration": "3:12"
+        },
+        {
+          "title": "Вишневый Сад",
+          "duration": "3:38"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3283837-Лев-Лещенко-В-Кругу-Друзей"
+  }
+}

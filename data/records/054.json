@@ -1,0 +1,88 @@
+{
+  "id": "054",
+  "catalogNumber": "С60-13005-6",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Joe Dassin"
+  ],
+  "album": "Поет Джо Дассен",
+  "year": 1980,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation, Repress, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/41xblCct76KuGeOXON_p_4E14tSGdfvW8iw5Y6fIZRE/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4Mjc2/MTYtMTMwMjgzNjgx/OS5qcGVn.jpeg",
+  "imageUrl": "data/covers/054.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Если Бы Тебя Не Было · Et Si Tu N'Existais Pas",
+          "duration": "3:25"
+        },
+        {
+          "title": "Альбатрос · L' Albatros",
+          "duration": "3:05"
+        },
+        {
+          "title": "Моя Музыка · Ma Musique",
+          "duration": "2:50"
+        },
+        {
+          "title": "Это Не Изменит Мир · Ca Va Pas Changer Le Monde",
+          "duration": "3:00"
+        },
+        {
+          "title": "Привет · Salut",
+          "duration": "3:20"
+        },
+        {
+          "title": "Елисейские Поля · Les Champs-Elysées",
+          "duration": "2:40"
+        },
+        {
+          "title": "Если Тебе Грустно · Si Tu T' Appelles Mélancolie",
+          "duration": "3:17"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Бабье Лето · L'Ete Indien",
+          "duration": "4:30"
+        },
+        {
+          "title": "Насвистывая На Холме · Siffler Sur La Colline",
+          "duration": "2:30"
+        },
+        {
+          "title": "Дорогой Отца · Le Chemin De Papa",
+          "duration": "2:22"
+        },
+        {
+          "title": "Моя Прекрасная Звезда · Ma Bonne Etoile",
+          "duration": "2:37"
+        },
+        {
+          "title": "Булочка С Шоколадом · Le Petit Pain Au Chocolat",
+          "duration": "3:30"
+        },
+        {
+          "title": "Америка · L'Amerique",
+          "duration": "2:27"
+        },
+        {
+          "title": "Нуазетт И Кассиди · Noisette Et Cassidy",
+          "duration": "2:50"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2827616-Джо-Дассен-Поет-Джо-Дассен"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "084",
+  "catalogNumber": "С60 23579 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "The Beatles",
+    "The Beatles"
+  ],
+  "album": "A Hard Day's Night = Вечер Трудного Дня",
+  "year": 1986,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Reissue, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/uNnS_V8d4tDCKl5O1D9jg9LO8FGxyoKEXEpUF_U3MHA/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0Mjk4/MzgtMTc0NDU1NTgz/Ny00MjY0LmpwZWc.jpeg",
+  "imageUrl": "data/covers/084.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Вечер Трудного Дня = A Hard Day's Night",
+          "duration": "2:31"
+        },
+        {
+          "title": "Мне Стоило Знать = I Should Have Known Better",
+          "duration": "2:42"
+        },
+        {
+          "title": "Если Я Полюблю = If I Fell",
+          "duration": "2:17"
+        },
+        {
+          "title": "Как Счастлив Я Танцевать С Тобой = I'm Happy Just To Dance With You",
+          "duration": "1:54"
+        },
+        {
+          "title": "Я Люблю Ее = And I Love Her",
+          "duration": "2:27"
+        },
+        {
+          "title": "Скажи Мне, Почему = Tell Me Why",
+          "duration": "2:07"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Любовь Не Купишь = Can't Buy Me Love",
+          "duration": "2:10"
+        },
+        {
+          "title": "Когда Угодно = Any Time At All",
+          "duration": "2:09"
+        },
+        {
+          "title": "Я Буду Рыдать = I'll Cry Instead",
+          "duration": "1:43"
+        },
+        {
+          "title": "Слова, Что Сказаны Сегодня = Things We Said Today",
+          "duration": "2:34"
+        },
+        {
+          "title": "Не Смей! = You Can't Do That",
+          "duration": "2:33"
+        },
+        {
+          "title": "Я Вернусь = I'll Be Back",
+          "duration": "2:21"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4429838-The-Beatles-Битлз-A-Hard-Days-Night-Вечер-Трудного-Дня"
+  }
+}

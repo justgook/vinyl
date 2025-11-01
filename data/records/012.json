@@ -1,33 +1,38 @@
 {
   "id": "012",
-  "catalogNumber": "STUMM63",
-  "recordLabel": "Mute",
-  "artists": ["Depeche Mode"],
-  "album": "Violator",
+  "catalogNumber": "С60 28463 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "ДДТ"
+  ],
+  "album": "Я Получил Эту Роль",
   "year": 1990,
-  "genre": ["Electronic", "Synth-Pop"],
-  "format": "LP, Album",
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
   "condition": "Near Mint",
-  "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Depeche+Mode",
+  "sourceImageUrl": "https://i.discogs.com/YWVJstUGBs7CRh_DEKyUqiYZaYrVXKHPXi1rApda_A4/rs:fit/g:sm/q:90/h:600/w:585/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzQ2/NTEyLTE0OTU3MzE5/NDktODY1Ny5qcGVn.jpeg",
+  "imageUrl": "data/covers/012.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "World in My Eyes",
-          "duration": "4:55"
+          "title": "Поэт",
+          "duration": "4:22"
         },
         {
-          "title": "Sweetest Perfection",
-          "duration": "4:32"
+          "title": "Мальчики-мажоры",
+          "duration": "4:30"
         },
         {
-          "title": "Personal Jesus",
-          "duration": "4:50"
+          "title": "Конвейер",
+          "duration": "3:03"
         },
         {
-          "title": "Enjoy the Silence",
-          "duration": "5:31"
+          "title": "Не Стреляй!",
+          "duration": "4:23"
         }
       ]
     },
@@ -35,25 +40,25 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "Policy of Truth",
-          "duration": "4:35"
+          "title": "Церковь",
+          "duration": "5:17"
         },
         {
-          "title": "World in My Eyes (Reprise)",
-          "duration": "1:06"
+          "title": "Террорист",
+          "duration": "4:00"
         },
         {
-          "title": "Waiting for the Night",
-          "duration": "4:25"
+          "title": "Революция",
+          "duration": "4:33"
         },
         {
-          "title": "Violator",
-          "duration": "5:07"
+          "title": "Я Получил Эту Роль",
+          "duration": "5:39"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/588263"
+    "discogs": "https://www.discogs.com/release/10346512-ДДТ-Я-Получил-Эту-Роль"
   }
 }

@@ -1,63 +1,17 @@
 {
   "years": {
-    "1959": {
-      "year": 1959,
+    "1968": {
+      "year": 1968,
       "count": 1,
       "records": [
         {
-          "id": "004",
-          "album": "Kind of Blue",
+          "id": "204",
+          "album": "Музыкальный Калейдоскоп (9-я Серия)",
           "artists": [
-            "Miles Davis"
+            "Various"
           ],
-          "year": 1959,
-          "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Miles+Davis"
-        }
-      ]
-    },
-    "1967": {
-      "year": 1967,
-      "count": 1,
-      "records": [
-        {
-          "id": "009",
-          "album": "The Velvet Underground & Nico",
-          "artists": [
-            "The Velvet Underground",
-            "Nico"
-          ],
-          "year": 1967,
-          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Velvet+Underground"
-        }
-      ]
-    },
-    "1969": {
-      "year": 1969,
-      "count": 1,
-      "records": [
-        {
-          "id": "002",
-          "album": "Abbey Road",
-          "artists": [
-            "The Beatles"
-          ],
-          "year": 1969,
-          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=The+Beatles"
-        }
-      ]
-    },
-    "1971": {
-      "year": 1971,
-      "count": 1,
-      "records": [
-        {
-          "id": "003",
-          "album": "Led Zeppelin IV",
-          "artists": [
-            "Led Zeppelin"
-          ],
-          "year": 1971,
-          "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Led+Zeppelin"
+          "year": 1968,
+          "imageUrl": "data/covers/204.jpg"
         }
       ]
     },
@@ -66,13 +20,13 @@
       "count": 1,
       "records": [
         {
-          "id": "006",
-          "album": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+          "id": "112",
+          "album": "Дин Рид",
           "artists": [
-            "David Bowie"
+            "Dean Reed"
           ],
           "year": 1972,
-          "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=David+Bowie"
+          "imageUrl": "data/covers/112.jpg"
         }
       ]
     },
@@ -81,157 +35,1791 @@
       "count": 1,
       "records": [
         {
-          "id": "001",
-          "album": "The Dark Side of the Moon",
+          "id": "124",
+          "album": "Танцуем Без Перерыва",
           "artists": [
-            "Pink Floyd"
+            "Various"
           ],
           "year": 1973,
-          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Pink+Floyd"
+          "imageUrl": "data/covers/124.jpg"
         }
       ]
     },
     "1974": {
       "year": 1974,
-      "count": 1,
+      "count": 3,
       "records": [
         {
-          "id": "007",
-          "album": "Autobahn",
+          "id": "100",
+          "album": "Alone Again (Naturally)",
           "artists": [
-            "Kraftwerk"
+            "Ray Conniff"
           ],
           "year": 1974,
-          "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Kraftwerk"
+          "imageUrl": "data/covers/100.jpg"
+        },
+        {
+          "id": "163",
+          "album": "Романс О Влюбленных",
+          "artists": [
+            "Александр Градский"
+          ],
+          "year": 1974,
+          "imageUrl": "data/covers/163.jpg"
+        },
+        {
+          "id": "179",
+          "album": "София Ротару",
+          "artists": [
+            "София Ротару"
+          ],
+          "year": 1974,
+          "imageUrl": "data/covers/179.jpg"
+        }
+      ]
+    },
+    "1975": {
+      "year": 1975,
+      "count": 2,
+      "records": [
+        {
+          "id": "181",
+          "album": "Мелодии И Ритмы (III)",
+          "artists": [
+            "Various"
+          ],
+          "year": 1975,
+          "imageUrl": "data/covers/181.jpg"
+        },
+        {
+          "id": "110",
+          "album": "Мелодии И Ритмы 2",
+          "artists": [
+            "Various"
+          ],
+          "year": 1975,
+          "imageUrl": "data/covers/110.jpg"
         }
       ]
     },
     "1976": {
       "year": 1976,
-      "count": 1,
+      "count": 3,
       "records": [
         {
-          "id": "008",
-          "album": "Arrival",
+          "id": "194",
+          "album": "Laule Suurest Isamaasõjast",
           "artists": [
-            "ABBA"
+            "Various"
           ],
           "year": 1976,
-          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=ABBA"
+          "imageUrl": "data/covers/194.jpg"
+        },
+        {
+          "id": "144",
+          "album": "Памяти Мастеров Джаза. Глен Миллер. Дюк Эллингтон ",
+          "artists": [
+            "Oleg Lundstrem Orchestra"
+          ],
+          "year": 1976,
+          "imageUrl": "data/covers/144.jpg"
+        },
+        {
+          "id": "101",
+          "album": "Экспресс",
+          "artists": [
+            "Express"
+          ],
+          "year": 1976,
+          "imageUrl": "data/covers/101.jpg"
         }
       ]
     },
     "1977": {
       "year": 1977,
-      "count": 1,
+      "count": 6,
       "records": [
         {
-          "id": "005",
-          "album": "Rumours",
+          "id": "176",
+          "album": "Ansambl Saše Subote",
           "artists": [
-            "Fleetwood Mac"
+            "Ansambl Aleksandra Subote"
           ],
           "year": 1977,
-          "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Fleetwood+Mac"
+          "imageUrl": "data/covers/176.jpg"
+        },
+        {
+          "id": "198",
+          "album": "Buty, Buty...",
+          "artists": [
+            "Andrzej I Eliza"
+          ],
+          "year": 1977,
+          "imageUrl": "data/covers/198.jpg"
+        },
+        {
+          "id": "174",
+          "album": "Festival",
+          "artists": [
+            "Teach-In"
+          ],
+          "year": 1977,
+          "imageUrl": "data/covers/174.jpg"
+        },
+        {
+          "id": "177",
+          "album": "Nekal Mani Gredzenā",
+          "artists": [
+            "Raimonds Pauls"
+          ],
+          "year": 1977,
+          "imageUrl": "data/covers/177.jpg"
+        },
+        {
+          "id": "146",
+          "album": "Stabat Mater",
+          "artists": [
+            "Giovanni Battista Pergolesi",
+            "Galina Pisarenko",
+            "Ирина Архипова",
+            "Moscow Chamber Orchestra",
+            "Rudolf Barshai"
+          ],
+          "year": 1977,
+          "imageUrl": "data/covers/146.jpg"
+        },
+        {
+          "id": "118",
+          "album": "Любовь - Огромная Страна",
+          "artists": [
+            "Весёлые Ребята"
+          ],
+          "year": 1977,
+          "imageUrl": "data/covers/118.jpg"
+        }
+      ]
+    },
+    "1978": {
+      "year": 1978,
+      "count": 9,
+      "records": [
+        {
+          "id": "155",
+          "album": "Cher Ami",
+          "artists": [
+            "Margarita Vilcāne"
+          ],
+          "year": 1978,
+          "imageUrl": "data/covers/155.jpg"
+        },
+        {
+          "id": "156",
+          "album": "Cher Ami",
+          "artists": [
+            "Margarita Vilcāne"
+          ],
+          "year": 1978,
+          "imageUrl": "data/covers/156.jpg"
+        },
+        {
+          "id": "157",
+          "album": "Cher Ami",
+          "artists": [
+            "Margarita Vilcāne"
+          ],
+          "year": 1978,
+          "imageUrl": "data/covers/157.jpg"
+        },
+        {
+          "id": "158",
+          "album": "Cher Ami",
+          "artists": [
+            "Margarita Vilcāne"
+          ],
+          "year": 1978,
+          "imageUrl": "data/covers/158.jpg"
+        },
+        {
+          "id": "115",
+          "album": "Для Вас, Женщины!",
+          "artists": [
+            "Various"
+          ],
+          "year": 1978,
+          "imageUrl": "data/covers/115.jpg"
+        },
+        {
+          "id": "145",
+          "album": "Доули Фэмили В Москве",
+          "artists": [
+            "The Dooleys"
+          ],
+          "year": 1978,
+          "imageUrl": "data/covers/145.jpg"
+        },
+        {
+          "id": "130",
+          "album": "Дружить Нам Надо",
+          "artists": [
+            "Весёлые Ребята"
+          ],
+          "year": 1978,
+          "imageUrl": "data/covers/130.jpg"
+        },
+        {
+          "id": "188",
+          "album": "Поет Алла Пугачева",
+          "artists": [
+            "Алла Пугачева"
+          ],
+          "year": 1978,
+          "imageUrl": "data/covers/188.jpg"
+        },
+        {
+          "id": "203",
+          "album": "Поет Алла Пугачева",
+          "artists": [
+            "Алла Пугачева"
+          ],
+          "year": 1978,
+          "imageUrl": "data/covers/203.jpg"
         }
       ]
     },
     "1979": {
       "year": 1979,
-      "count": 1,
+      "count": 10,
       "records": [
         {
-          "id": "011",
-          "album": "Unknown Pleasures",
+          "id": "147",
+          "album": "Boomerang",
           "artists": [
-            "Joy Division"
+            "Tony Scott",
+            "Traditional Jazz Studio"
           ],
           "year": 1979,
-          "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=Joy+Division"
+          "imageUrl": "data/covers/147.jpg"
+        },
+        {
+          "id": "055",
+          "album": "Musical-Parade 1",
+          "artists": [
+            "Various"
+          ],
+          "year": 1979,
+          "imageUrl": "data/covers/055.jpg"
+        },
+        {
+          "id": "178",
+          "album": "Naktsputni",
+          "artists": [
+            "Raimonds Pauls"
+          ],
+          "year": 1979,
+          "imageUrl": "data/covers/178.jpg"
+        },
+        {
+          "id": "149",
+          "album": "Overhead",
+          "artists": [
+            "Olympic"
+          ],
+          "year": 1979,
+          "imageUrl": "data/covers/149.jpg"
+        },
+        {
+          "id": "148",
+          "album": "Värviline Maailm",
+          "artists": [
+            "Fix"
+          ],
+          "year": 1979,
+          "imageUrl": "data/covers/148.jpg"
+        },
+        {
+          "id": "092",
+          "album": "Вокально-инструментальный Ансамбль «Teach-In»",
+          "artists": [
+            "Teach-In"
+          ],
+          "year": 1979,
+          "imageUrl": "data/covers/092.jpg"
+        },
+        {
+          "id": "140",
+          "album": "Играет Оркестр Поля Мориа",
+          "artists": [
+            "Paul Mauriat And His Orchestra"
+          ],
+          "year": 1979,
+          "imageUrl": "data/covers/140.jpg"
+        },
+        {
+          "id": "133",
+          "album": "От Сердца К Сердцу",
+          "artists": [
+            "Синяя Птица"
+          ],
+          "year": 1979,
+          "imageUrl": "data/covers/133.jpg"
+        },
+        {
+          "id": "095",
+          "album": "Экспресс",
+          "artists": [
+            "Express"
+          ],
+          "year": 1979,
+          "imageUrl": "data/covers/095.jpg"
+        },
+        {
+          "id": "038",
+          "album": "Эстрадные Песни",
+          "artists": [
+            "Raimonds Pauls"
+          ],
+          "year": 1979,
+          "imageUrl": "data/covers/038.jpg"
         }
       ]
     },
     "1980": {
       "year": 1980,
-      "count": 1,
+      "count": 7,
       "records": [
         {
-          "id": "010",
-          "album": "Remain in Light",
+          "id": "034",
+          "album": "Symphony No. 5",
           "artists": [
-            "Talking Heads"
+            "Ludwig van Beethoven",
+            "Большой Симфонический Оркестр Всесоюзного Радио",
+            "Konstantin Ivanov"
           ],
           "year": 1980,
-          "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=Talking+Heads"
+          "imageUrl": "data/covers/034.jpg"
+        },
+        {
+          "id": "208",
+          "album": "Бременские Музыканты",
+          "artists": [
+            "Василий Ливанов",
+            "Юрий Энтин"
+          ],
+          "year": 1980,
+          "imageUrl": "data/covers/208.jpg"
+        },
+        {
+          "id": "033",
+          "album": "Гимн Солнцу",
+          "artists": [
+            "Группа Стаса Намина"
+          ],
+          "year": 1980,
+          "imageUrl": "data/covers/033.jpg"
+        },
+        {
+          "id": "127",
+          "album": "Дискотека «А» (Из Репертуара Аллы Пугачевой)",
+          "artists": [
+            "Ритм"
+          ],
+          "year": 1980,
+          "imageUrl": "data/covers/127.jpg"
+        },
+        {
+          "id": "165",
+          "album": "Музыкальный Глобус",
+          "artists": [
+            "Весёлые Ребята"
+          ],
+          "year": 1980,
+          "imageUrl": "data/covers/165.jpg"
+        },
+        {
+          "id": "054",
+          "album": "Поет Джо Дассен",
+          "artists": [
+            "Joe Dassin"
+          ],
+          "year": 1980,
+          "imageUrl": "data/covers/054.jpg"
+        },
+        {
+          "id": "109",
+          "album": "Электроорган",
+          "artists": [
+            "Alex Silvanni"
+          ],
+          "year": 1980,
+          "imageUrl": "data/covers/109.jpg"
+        }
+      ]
+    },
+    "1981": {
+      "year": 1981,
+      "count": 4,
+      "records": [
+        {
+          "id": "076",
+          "album": "Mikrofons 80",
+          "artists": [
+            "Various"
+          ],
+          "year": 1981,
+          "imageUrl": "data/covers/076.jpg"
+        },
+        {
+          "id": "190",
+          "album": "Зеркало Души",
+          "artists": [
+            "Алла Пугачева"
+          ],
+          "year": 1981,
+          "imageUrl": "data/covers/190.jpg"
+        },
+        {
+          "id": "191",
+          "album": "Зеркало Души",
+          "artists": [
+            "Алла Пугачева"
+          ],
+          "year": 1981,
+          "imageUrl": "data/covers/191.jpg"
+        },
+        {
+          "id": "011",
+          "album": "Песни",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1981,
+          "imageUrl": "data/covers/011.jpg"
+        }
+      ]
+    },
+    "1982": {
+      "year": 1982,
+      "count": 10,
+      "records": [
+        {
+          "id": "150",
+          "album": "Italo Hits = Лучшие Итальянские Песни 1982 Года",
+          "artists": [
+            "Various"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/150.jpg"
+        },
+        {
+          "id": "171",
+          "album": "Priekšnojauta",
+          "artists": [
+            "Raimonds Pauls"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/171.jpg"
+        },
+        {
+          "id": "180",
+          "album": "Rīgas Sapņi",
+          "artists": [
+            "Eolika"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/180.jpg"
+        },
+        {
+          "id": "199",
+          "album": "Roosid Papale",
+          "artists": [
+            "Gunnar Graps",
+            "Magnetic Band"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/199.jpg"
+        },
+        {
+          "id": "202",
+          "album": "The New Seekers In Moscow = Вокально-инструментальный Ансамбль „Нью Сикерс“ В Москве",
+          "artists": [
+            "The New Seekers",
+            "The New Seekers"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/202.jpg"
+        },
+        {
+          "id": "052",
+          "album": "Для Вас, Женщины!",
+          "artists": [
+            "Various"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/052.jpg"
+        },
+        {
+          "id": "189",
+          "album": "Как тревожен этот путь (1)",
+          "artists": [
+            "Алла Пугачева",
+            "Рецитал"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/189.jpg"
+        },
+        {
+          "id": "170",
+          "album": "Мой Путь",
+          "artists": [
+            "Raimonds Pauls"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/170.jpg"
+        },
+        {
+          "id": "106",
+          "album": "Поет Далида",
+          "artists": [
+            "Dalida"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/106.jpg"
+        },
+        {
+          "id": "159",
+          "album": "Поет Лео Сейер",
+          "artists": [
+            "Leo Sayer",
+            "Leo Sayer"
+          ],
+          "year": 1982,
+          "imageUrl": "data/covers/159.jpg"
+        }
+      ]
+    },
+    "1983": {
+      "year": 1983,
+      "count": 6,
+      "records": [
+        {
+          "id": "173",
+          "album": "Ir Mažiems, Ir Dideliems",
+          "artists": [
+            "Nerija"
+          ],
+          "year": 1983,
+          "imageUrl": "data/covers/173.jpg"
+        },
+        {
+          "id": "089",
+          "album": "Magic Fly = Волшебный Полет",
+          "artists": [
+            "Space"
+          ],
+          "year": 1983,
+          "imageUrl": "data/covers/089.jpg"
+        },
+        {
+          "id": "032",
+          "album": "Mikrofons-81 (2.)",
+          "artists": [
+            "Various"
+          ],
+          "year": 1983,
+          "imageUrl": "data/covers/032.jpg"
+        },
+        {
+          "id": "039",
+          "album": "Mikrofons-82",
+          "artists": [
+            "Various"
+          ],
+          "year": 1983,
+          "imageUrl": "data/covers/039.jpg"
+        },
+        {
+          "id": "065",
+          "album": "Mikrofons–81 1.",
+          "artists": [
+            "Various"
+          ],
+          "year": 1983,
+          "imageUrl": "data/covers/065.jpg"
+        },
+        {
+          "id": "161",
+          "album": "В Кругу Друзей",
+          "artists": [
+            "Лев Лещенко"
+          ],
+          "year": 1983,
+          "imageUrl": "data/covers/161.jpg"
+        }
+      ]
+    },
+    "1984": {
+      "year": 1984,
+      "count": 5,
+      "records": [
+        {
+          "id": "074",
+          "album": "Ансамбль Арабеска",
+          "artists": [
+            "Arabesque"
+          ],
+          "year": 1984,
+          "imageUrl": "data/covers/074.jpg"
+        },
+        {
+          "id": "200",
+          "album": "Ансамбль Арабеска",
+          "artists": [
+            "Arabesque"
+          ],
+          "year": 1984,
+          "imageUrl": "data/covers/200.jpg"
+        },
+        {
+          "id": "126",
+          "album": "Муза",
+          "artists": [
+            "Валерий Леонтьев"
+          ],
+          "year": 1984,
+          "imageUrl": "data/covers/126.jpg"
+        },
+        {
+          "id": "136",
+          "album": "Органная Музыка",
+          "artists": [
+            "Miguel Ramos"
+          ],
+          "year": 1984,
+          "imageUrl": "data/covers/136.jpg"
+        },
+        {
+          "id": "059",
+          "album": "Фаусто Папетти И Его Оркестр",
+          "artists": [
+            "Fausto Papetti"
+          ],
+          "year": 1984,
+          "imageUrl": "data/covers/059.jpg"
+        }
+      ]
+    },
+    "1985": {
+      "year": 1985,
+      "count": 10,
+      "records": [
+        {
+          "id": "113",
+          "album": "Carmen-Suite = Кармен-Сюита",
+          "artists": [
+            "Georges Bizet",
+            "Родион Щедрин",
+            "Moscow Virtuosi",
+            "Vladimir Spivakov"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/113.jpg"
+        },
+        {
+          "id": "064",
+          "album": "Le Quattro Stagioni - Concertos For Violin  And Orchestra, Op. 8 Nos. 1-4",
+          "artists": [
+            "Antonio Vivaldi",
+            "Saulius Sondeckis",
+            "Lithuanian Chamber Orchestra",
+            "Сергей Стадлер"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/064.jpg"
+        },
+        {
+          "id": "195",
+          "album": "Ottawan 2",
+          "artists": [
+            "Ottawan"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/195.jpg"
+        },
+        {
+          "id": "053",
+          "album": "Аль Бано И Ромина Пауэр",
+          "artists": [
+            "Al Bano & Romina Power"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/053.jpg"
+        },
+        {
+          "id": "197",
+          "album": "Богатые И Бедные",
+          "artists": [
+            "Ricchi E Poveri"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/197.jpg"
+        },
+        {
+          "id": "187",
+          "album": "В Стокгольме = In Stockholm",
+          "artists": [
+            "Алла Пугачева"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/187.jpg"
+        },
+        {
+          "id": "143",
+          "album": "Двое",
+          "artists": [
+            "Михаил Танич"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/143.jpg"
+        },
+        {
+          "id": "090",
+          "album": "Поверь В Мечту",
+          "artists": [
+            "Юрий Антонов"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/090.jpg"
+        },
+        {
+          "id": "154",
+          "album": "Пупо",
+          "artists": [
+            "Pupo"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/154.jpg"
+        },
+        {
+          "id": "123",
+          "album": "Романтика",
+          "artists": [
+            "Various"
+          ],
+          "year": 1985,
+          "imageUrl": "data/covers/123.jpg"
         }
       ]
     },
     "1986": {
       "year": 1986,
-      "count": 1,
+      "count": 10,
       "records": [
         {
-          "id": "017",
-          "album": "The Queen Is Dead",
+          "id": "084",
+          "album": "A Hard Day's Night = Вечер Трудного Дня",
           "artists": [
-            "The Smiths"
+            "The Beatles",
+            "The Beatles"
           ],
           "year": 1986,
-          "imageUrl": "https://placeholdit.com/400/76FF03/000000?text=The+Smiths"
+          "imageUrl": "data/covers/084.jpg"
+        },
+        {
+          "id": "049",
+          "album": "A Taste Of Honey",
+          "artists": [
+            "The Beatles"
+          ],
+          "year": 1986,
+          "imageUrl": "data/covers/049.jpg"
+        },
+        {
+          "id": "093",
+          "album": "A Taste Of Honey",
+          "artists": [
+            "The Beatles"
+          ],
+          "year": 1986,
+          "imageUrl": "data/covers/093.jpg"
+        },
+        {
+          "id": "135",
+          "album": "Collezione = Коллекция",
+          "artists": [
+            "Riccardo Fogli"
+          ],
+          "year": 1986,
+          "imageUrl": "data/covers/135.jpg"
+        },
+        {
+          "id": "072",
+          "album": "Estrādes Dziesmas",
+          "artists": [
+            "Raimonds Pauls"
+          ],
+          "year": 1986,
+          "imageUrl": "data/covers/072.jpg"
+        },
+        {
+          "id": "162",
+          "album": "Автограф",
+          "artists": [
+            "Автограф"
+          ],
+          "year": 1986,
+          "imageUrl": "data/covers/162.jpg"
+        },
+        {
+          "id": "117",
+          "album": "Боббисокс",
+          "artists": [
+            "Bobbysocks"
+          ],
+          "year": 1986,
+          "imageUrl": "data/covers/117.jpg"
+        },
+        {
+          "id": "152",
+          "album": "Полуночное Солнце",
+          "artists": [
+            "Kikki Danielsson"
+          ],
+          "year": 1986,
+          "imageUrl": "data/covers/152.jpg"
+        },
+        {
+          "id": "206",
+          "album": "Сказки Про Африку",
+          "artists": [
+            "Сергей Козлов"
+          ],
+          "year": 1986,
+          "imageUrl": "data/covers/206.jpg"
+        },
+        {
+          "id": "098",
+          "album": "Я Предлагаю Спеть О Том...",
+          "artists": [
+            "Евгений Бачурин"
+          ],
+          "year": 1986,
+          "imageUrl": "data/covers/098.jpg"
+        }
+      ]
+    },
+    "1987": {
+      "year": 1987,
+      "count": 9,
+      "records": [
+        {
+          "id": "015",
+          "album": "Åквариум",
+          "artists": [
+            "Аквариум"
+          ],
+          "year": 1987,
+          "imageUrl": "data/covers/015.jpg"
+        },
+        {
+          "id": "164",
+          "album": "Бит-Квартет \"Секрет\"",
+          "artists": [
+            "Секрет"
+          ],
+          "year": 1987,
+          "imageUrl": "data/covers/164.jpg"
+        },
+        {
+          "id": "120",
+          "album": "В Добрый Час",
+          "artists": [
+            "Машина Времени"
+          ],
+          "year": 1987,
+          "imageUrl": "data/covers/120.jpg"
+        },
+        {
+          "id": "071",
+          "album": "Демон",
+          "artists": [
+            "Август"
+          ],
+          "year": 1987,
+          "imageUrl": "data/covers/071.jpg"
+        },
+        {
+          "id": "132",
+          "album": "Женский Портрет",
+          "artists": [
+            "Various"
+          ],
+          "year": 1987,
+          "imageUrl": "data/covers/132.jpg"
+        },
+        {
+          "id": "205",
+          "album": "Кот В Сапогах",
+          "artists": [
+            "Charles Perrault"
+          ],
+          "year": 1987,
+          "imageUrl": "data/covers/205.jpg"
+        },
+        {
+          "id": "099",
+          "album": "Минуточку!!!",
+          "artists": [
+            "Весёлые Ребята"
+          ],
+          "year": 1987,
+          "imageUrl": "data/covers/099.jpg"
+        },
+        {
+          "id": "184",
+          "album": "Ночной Дождь",
+          "artists": [
+            "Диалог"
+          ],
+          "year": 1987,
+          "imageUrl": "data/covers/184.jpg"
+        },
+        {
+          "id": "108",
+          "album": "Радиостанция «Юность». 45 Минут В Воскресной Студии. Выпуск 1 = The \"Yunost\" Radio Studio. 45-Minute Sunday Show",
+          "artists": [
+            "Various"
+          ],
+          "year": 1987,
+          "imageUrl": "data/covers/108.jpg"
         }
       ]
     },
     "1988": {
       "year": 1988,
-      "count": 1,
+      "count": 29,
       "records": [
         {
-          "id": "018",
-          "album": "Daydream Nation",
+          "id": "030",
+          "album": "Jazzrock",
           "artists": [
-            "Sonic Youth"
+            "Various"
           ],
           "year": 1988,
-          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Sonic+Youth"
+          "imageUrl": "data/covers/030.jpg"
+        },
+        {
+          "id": "040",
+          "album": "Stairway To Heaven",
+          "artists": [
+            "Led Zeppelin"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/040.jpg"
+        },
+        {
+          "id": "167",
+          "album": "When The Night Closes In · Когда Наступает Ночь",
+          "artists": [
+            "Secret Service"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/167.jpg"
+        },
+        {
+          "id": "017",
+          "album": "Ансамбль Rainbow",
+          "artists": [
+            "Rainbow"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/017.jpg"
+        },
+        {
+          "id": "121",
+          "album": "Белая Полоса",
+          "artists": [
+            "Зоопарк"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/121.jpg"
+        },
+        {
+          "id": "182",
+          "album": "В Полёт",
+          "artists": [
+            "Тяжелый День"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/182.jpg"
+        },
+        {
+          "id": "094",
+          "album": "Всемъъ",
+          "artists": [
+            "АВИА"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/094.jpg"
+        },
+        {
+          "id": "060",
+          "album": "Дискотека Смеха",
+          "artists": [
+            "Михаил Жванецкий",
+            "Роман Карцев",
+            "Виктор Ильченко"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/060.jpg"
+        },
+        {
+          "id": "023",
+          "album": "Игра С Огнем = Play With Fire",
+          "artists": [
+            "The Rolling Stones",
+            "The Rolling Stones"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/023.jpg"
+        },
+        {
+          "id": "020",
+          "album": "Иероглиф",
+          "artists": [
+            "Пикник"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/020.jpg"
+        },
+        {
+          "id": "070",
+          "album": "Круиз-1",
+          "artists": [
+            "Круиз"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/070.jpg"
+        },
+        {
+          "id": "075",
+          "album": "Ленинградский Рок-Клуб",
+          "artists": [
+            "Various"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/075.jpg"
+        },
+        {
+          "id": "044",
+          "album": "Мастер",
+          "artists": [
+            "Мастер"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/044.jpg"
+        },
+        {
+          "id": "043",
+          "album": "Место Встречи Дискотека. Выпуск 4",
+          "artists": [
+            "Various"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/043.jpg"
+        },
+        {
+          "id": "007",
+          "album": "Мир Вашему Дому",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/007.jpg"
+        },
+        {
+          "id": "058",
+          "album": "Монологи",
+          "artists": [
+            "Михаил Жванецкий"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/058.jpg"
+        },
+        {
+          "id": "009",
+          "album": "Москва - Одесса",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/009.jpg"
+        },
+        {
+          "id": "169",
+          "album": "Моя Любовь",
+          "artists": [
+            "Владимир Кузьмин"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/169.jpg"
+        },
+        {
+          "id": "088",
+          "album": "Нарисуйте Мне Дом...",
+          "artists": [
+            "Александр Розенбаум"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/088.jpg"
+        },
+        {
+          "id": "068",
+          "album": "Наутилус Помпилиус. Бригада С",
+          "artists": [
+            "Nautilus Pompilius",
+            "Nautilus Pompilius",
+            "Бригада С",
+            "Бригада С"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/068.jpg"
+        },
+        {
+          "id": "008",
+          "album": "Песня О Друге",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/008.jpg"
+        },
+        {
+          "id": "016",
+          "album": "Равноденствие",
+          "artists": [
+            "Аквариум"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/016.jpg"
+        },
+        {
+          "id": "153",
+          "album": "Радио Африка",
+          "artists": [
+            "Аквариум"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/153.jpg"
+        },
+        {
+          "id": "047",
+          "album": "Реквием, К. 626",
+          "artists": [
+            "Wolfgang Amadeus Mozart",
+            "Государственный Академический Русский Хор Им. А. В. Свешникова",
+            "Moscow Philharmonic Orchestra",
+            "Александр Свешников"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/047.jpg"
+        },
+        {
+          "id": "046",
+          "album": "Рок-Панорама-87 (1) = Rock-Panorama-87 (1)",
+          "artists": [
+            "Various"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/046.jpg"
+        },
+        {
+          "id": "069",
+          "album": "Рок-Панорама-87 (2) = Rock Panorama-87 (2)",
+          "artists": [
+            "Various"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/069.jpg"
+        },
+        {
+          "id": "005",
+          "album": "Сентиментальный Боксёр",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/005.jpg"
+        },
+        {
+          "id": "041",
+          "album": "Смотри В Оба",
+          "artists": [
+            "Странные Игры"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/041.jpg"
+        },
+        {
+          "id": "138",
+          "album": "Эпитафия",
+          "artists": [
+            "Александр Розенбаум"
+          ],
+          "year": 1988,
+          "imageUrl": "data/covers/138.jpg"
+        }
+      ]
+    },
+    "1989": {
+      "year": 1989,
+      "count": 29,
+      "records": [
+        {
+          "id": "019",
+          "album": "Blind Before I Stop",
+          "artists": [
+            "Meat Loaf"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/019.jpg"
+        },
+        {
+          "id": "018",
+          "album": "Greenpeace Breakthrough",
+          "artists": [
+            "Various"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/018.jpg"
+        },
+        {
+          "id": "021",
+          "album": "The Long Play",
+          "artists": [
+            "Sandra"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/021.jpg"
+        },
+        {
+          "id": "002",
+          "album": "Бег Иноходца",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/002.jpg"
+        },
+        {
+          "id": "066",
+          "album": "В Атмосфере Гласности",
+          "artists": [
+            "Галактика"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/066.jpg"
+        },
+        {
+          "id": "028",
+          "album": "Герой Асфальта",
+          "artists": [
+            "Ария"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/028.jpg"
+        },
+        {
+          "id": "107",
+          "album": "Группа \"Биоконструктор\" / Дуэт \"Прощай, Молодость!\"",
+          "artists": [
+            "Биоконструктор",
+            "Прощай, Молодость!"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/107.jpg"
+        },
+        {
+          "id": "048",
+          "album": "День Гнева",
+          "artists": [
+            "Магнит"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/048.jpg"
+        },
+        {
+          "id": "196",
+          "album": "Дисплей",
+          "artists": [
+            "Дисплей"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/196.jpg"
+        },
+        {
+          "id": "057",
+          "album": "Когда Я Вернусь...",
+          "artists": [
+            "Александр Галич"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/057.jpg"
+        },
+        {
+          "id": "001",
+          "album": "Кони Привередливые",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/001.jpg"
+        },
+        {
+          "id": "031",
+          "album": "Концертная Симфония Для Скрипки И Альта С Оркестром / Маленькая Ночная Серенада",
+          "artists": [
+            "Wolfgang Amadeus Mozart",
+            "Viktor Pikaizen",
+            "Igor Oistrach",
+            "Soloists Ensemble Of The Moscow Philharmonic Academic Symphony Orchestra",
+            "Igor Oistrach"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/031.jpg"
+        },
+        {
+          "id": "024",
+          "album": "Леди Джейн = Lady Jane",
+          "artists": [
+            "The Rolling Stones",
+            "The Rolling Stones"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/024.jpg"
+        },
+        {
+          "id": "029",
+          "album": "Ленинградское Время",
+          "artists": [
+            "Секрет"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/029.jpg"
+        },
+        {
+          "id": "003",
+          "album": "На Нейтральной Полосе",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/003.jpg"
+        },
+        {
+          "id": "026",
+          "album": "Ночь = Night",
+          "artists": [
+            "Кино",
+            "Кино"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/026.jpg"
+        },
+        {
+          "id": "045",
+          "album": "Ответный Удар",
+          "artists": [
+            "Август"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/045.jpg"
+        },
+        {
+          "id": "125",
+          "album": "Папа, Ты Сам Был Таким",
+          "artists": [
+            "Владимир Пресняков"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/125.jpg"
+        },
+        {
+          "id": "128",
+          "album": "Провинция",
+          "artists": [
+            "Владимир Пресняков (Старший)",
+            "Группа «Провинция»"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/128.jpg"
+        },
+        {
+          "id": "067",
+          "album": "Родом Ниоткуда",
+          "artists": [
+            "Пикник"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/067.jpg"
+        },
+        {
+          "id": "085",
+          "album": "Рок-Панорама-87 (3) = Rock Panorama-87 (3)",
+          "artists": [
+            "Various"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/085.jpg"
+        },
+        {
+          "id": "062",
+          "album": "Ромео И Джульетта = Romeo And Juliet",
+          "artists": [
+            "Владимир Кузьмин",
+            "Владимир Кузьмин"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/062.jpg"
+        },
+        {
+          "id": "081",
+          "album": "Снова В СССР",
+          "artists": [
+            "Paul McCartney"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/081.jpg"
+        },
+        {
+          "id": "010",
+          "album": "Спасите Наши Души",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/010.jpg"
+        },
+        {
+          "id": "129",
+          "album": "Трилогия = Trilogy",
+          "artists": [
+            "Yngwie Malmsteen",
+            "Yngwie Malmsteen"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/129.jpg"
+        },
+        {
+          "id": "141",
+          "album": "Чебурашка",
+          "artists": [
+            "Эдуард Успенский"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/141.jpg"
+        },
+        {
+          "id": "091",
+          "album": "Четыре Времени Года",
+          "artists": [
+            "Antonio Vivaldi"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/091.jpg"
+        },
+        {
+          "id": "183",
+          "album": "Шествие Рыб",
+          "artists": [
+            "Телевизор"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/183.jpg"
+        },
+        {
+          "id": "014",
+          "album": "Энергия",
+          "artists": [
+            "Алиса"
+          ],
+          "year": 1989,
+          "imageUrl": "data/covers/014.jpg"
         }
       ]
     },
     "1990": {
       "year": 1990,
-      "count": 1,
+      "count": 22,
       "records": [
         {
-          "id": "012",
-          "album": "Violator",
+          "id": "116",
+          "album": "Caviar Malossol",
           "artists": [
-            "Depeche Mode"
+            "Фэн-О-Мэн"
           ],
           "year": 1990,
-          "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Depeche+Mode"
+          "imageUrl": "data/covers/116.jpg"
+        },
+        {
+          "id": "078",
+          "album": "Delicate Sound Of Thunder",
+          "artists": [
+            "Pink Floyd"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/078.jpg"
+        },
+        {
+          "id": "083",
+          "album": "Like A Virgin = Като Дева",
+          "artists": [
+            "Madonna",
+            "Madonna"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/083.jpg"
+        },
+        {
+          "id": "025",
+          "album": "New Jersey",
+          "artists": [
+            "Bon Jovi"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/025.jpg"
+        },
+        {
+          "id": "122",
+          "album": "Браво",
+          "artists": [
+            "Браво"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/122.jpg"
+        },
+        {
+          "id": "139",
+          "album": "Вежливый Отказ",
+          "artists": [
+            "Вежливый Отказ"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/139.jpg"
+        },
+        {
+          "id": "119",
+          "album": "Весна  В Шанхае",
+          "artists": [
+            "Джунгли"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/119.jpg"
+        },
+        {
+          "id": "168",
+          "album": "Вольному — Воля... = Life Never Waits",
+          "artists": [
+            "Чёрный Кофе"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/168.jpg"
+        },
+        {
+          "id": "166",
+          "album": "Группа Лотос",
+          "artists": [
+            "Лотос"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/166.jpg"
+        },
+        {
+          "id": "087",
+          "album": "Казачьи Песни",
+          "artists": [
+            "Александр Розенбаум"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/087.jpg"
+        },
+        {
+          "id": "103",
+          "album": "Колокола. Песни В Исполнении Автора = The Bells. Songs Performed By Author",
+          "artists": [
+            "Виктор Третьяков",
+            "Виктор Третьяков"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/103.jpg"
+        },
+        {
+          "id": "142",
+          "album": "Край Наших Надежд",
+          "artists": [
+            "Новая Коллекция"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/142.jpg"
+        },
+        {
+          "id": "096",
+          "album": "Лекция",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/096.jpg"
+        },
+        {
+          "id": "073",
+          "album": "Маркиза",
+          "artists": [
+            "Маркиза"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/073.jpg"
+        },
+        {
+          "id": "037",
+          "album": "Мои Дворы",
+          "artists": [
+            "Александр Розенбаум"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/037.jpg"
+        },
+        {
+          "id": "111",
+          "album": "Мусор Из Избы",
+          "artists": [
+            "Зодчие"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/111.jpg"
+        },
+        {
+          "id": "114",
+          "album": "Мы Знаем",
+          "artists": [
+            "Рок-Ателье"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/114.jpg"
+        },
+        {
+          "id": "080",
+          "album": "Переступи Порог",
+          "artists": [
+            "Чёрный Кофе"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/080.jpg"
+        },
+        {
+          "id": "104",
+          "album": "Последний Шанс",
+          "artists": [
+            "Последний Шанс"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/104.jpg"
+        },
+        {
+          "id": "131",
+          "album": "Сделано В Париже",
+          "artists": [
+            "Центр"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/131.jpg"
+        },
+        {
+          "id": "022",
+          "album": "Шестой Лесничий",
+          "artists": [
+            "Алиса"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/022.jpg"
+        },
+        {
+          "id": "012",
+          "album": "Я Получил Эту Роль",
+          "artists": [
+            "ДДТ"
+          ],
+          "year": 1990,
+          "imageUrl": "data/covers/012.jpg"
         }
       ]
     },
     "1991": {
       "year": 1991,
-      "count": 2,
+      "count": 7,
       "records": [
         {
-          "id": "014",
-          "album": "Blue Lines",
+          "id": "097",
+          "album": "Баллада О Детстве",
           "artists": [
-            "Massive Attack"
+            "Владимир Высоцкий"
           ],
           "year": 1991,
-          "imageUrl": "https://placeholdit.com/400/FF6B35/FFFFFF?text=Massive+Attack"
+          "imageUrl": "data/covers/097.jpg"
         },
         {
-          "id": "019",
-          "album": "Loveless",
+          "id": "004",
+          "album": "Большой Каретный",
           "artists": [
-            "My Bloody Valentine"
+            "Владимир Высоцкий"
           ],
           "year": 1991,
-          "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=My+Bloody+Valentine"
+          "imageUrl": "data/covers/004.jpg"
+        },
+        {
+          "id": "105",
+          "album": "Время Колокольчиков",
+          "artists": [
+            "Александр Башлачёв"
+          ],
+          "year": 1991,
+          "imageUrl": "data/covers/105.jpg"
+        },
+        {
+          "id": "185",
+          "album": "Вся Жизнь - Дорога",
+          "artists": [
+            "Юрий Лоза"
+          ],
+          "year": 1991,
+          "imageUrl": "data/covers/185.jpg"
+        },
+        {
+          "id": "209",
+          "album": "Приключения Пифа",
+          "artists": [
+            "Евгения Жуковская",
+            "Мириам Астрахан"
+          ],
+          "year": 1991,
+          "imageUrl": "data/covers/209.jpg"
+        },
+        {
+          "id": "186",
+          "album": "Что Сказано, То Сказано",
+          "artists": [
+            "Юрий Лоза"
+          ],
+          "year": 1991,
+          "imageUrl": "data/covers/186.jpg"
+        },
+        {
+          "id": "006",
+          "album": "Чужая Колея",
+          "artists": [
+            "Владимир Высоцкий"
+          ],
+          "year": 1991,
+          "imageUrl": "data/covers/006.jpg"
         }
       ]
     },
@@ -240,55 +1828,248 @@
       "count": 1,
       "records": [
         {
-          "id": "020",
-          "album": "Dummy",
+          "id": "201",
+          "album": "Delicate Sound Of Thunder. № 1",
           "artists": [
-            "Portishead"
+            "Pink Floyd"
           ],
           "year": 1994,
-          "imageUrl": "https://placeholdit.com/400/9C27B0/FFFFFF?text=Portishead"
+          "imageUrl": "data/covers/201.jpg"
         }
       ]
     },
-    "1997": {
-      "year": 1997,
-      "count": 2,
-      "records": [
-        {
-          "id": "016",
-          "album": "Homogenic",
-          "artists": [
-            "Björk"
-          ],
-          "year": 1997,
-          "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=Björk"
-        },
-        {
-          "id": "013",
-          "album": "OK Computer",
-          "artists": [
-            "Radiohead"
-          ],
-          "year": 1997,
-          "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Radiohead"
-        }
-      ]
-    },
-    "2001": {
-      "year": 2001,
+    "2017": {
+      "year": 2017,
       "count": 1,
       "records": [
         {
-          "id": "015",
-          "album": "Discovery",
+          "id": "212",
+          "album": "Songs Of Experience",
           "artists": [
-            "Daft Punk"
+            "U2"
           ],
-          "year": 2001,
-          "imageUrl": "https://placeholdit.com/400/FFEB3B/000000?text=Daft+Punk"
+          "year": 2017,
+          "imageUrl": "data/covers/212.jpg"
+        }
+      ]
+    },
+    "2023": {
+      "year": 2023,
+      "count": 1,
+      "records": [
+        {
+          "id": "210",
+          "album": "Violator",
+          "artists": [
+            "Depeche Mode"
+          ],
+          "year": 2023,
+          "imageUrl": "data/covers/210.jpg"
+        }
+      ]
+    },
+    "2025": {
+      "year": 2025,
+      "count": 25,
+      "records": [
+        {
+          "id": "192",
+          "album": "Disco Alliance",
+          "artists": [
+            "Zodiac"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/192.jpg"
+        },
+        {
+          "id": "193",
+          "album": "Disco Alliance",
+          "artists": [
+            "Zodiac"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/193.jpg"
+        },
+        {
+          "id": "077",
+          "album": "Raimonds Pauls",
+          "artists": [
+            "Raimonds Pauls"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/077.jpg"
+        },
+        {
+          "id": "013",
+          "album": "UNKNOWN",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "082",
+          "album": "UNKNOWN - 729012",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "063",
+          "album": "UNKNOWN - 729024",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "036",
+          "album": "UNKNOWN - 729120",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "035",
+          "album": "UNKNOWN - 729212",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "211",
+          "album": "UNKNOWN - 94399822210",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "160",
+          "album": "UNKNOWN - BTA10279",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "027",
+          "album": "UNKNOWN - BTA11920",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "151",
+          "album": "UNKNOWN - BTA2156",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "050",
+          "album": "UNKNOWN - С60-17637-8",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "134",
+          "album": "UNKNOWN - С6012048",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "079",
+          "album": "UNKNOWN - С60273557004",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "042",
+          "album": "UNKNOWN -729062063",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "051",
+          "album": "UNKNOWN 33СМ-029997-8",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "056",
+          "album": "UNKNOWN С60-18711-12",
+          "artists": [],
+          "year": 2025,
+          "imageUrl": ""
+        },
+        {
+          "id": "175",
+          "album": "Vanja Stojković",
+          "artists": [
+            "Vanja Stojković"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/175.jpg"
+        },
+        {
+          "id": "086",
+          "album": "Аль Бано И Ромина Пауэр",
+          "artists": [
+            "Al Bano & Romina Power"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/086.jpg"
+        },
+        {
+          "id": "137",
+          "album": "Мелодии И Ритмы",
+          "artists": [
+            "Various"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/137.jpg"
+        },
+        {
+          "id": "172",
+          "album": "Музыка Из Кинофильмов",
+          "artists": [
+            "Paul Mauriat And His Orchestra"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/172.jpg"
+        },
+        {
+          "id": "061",
+          "album": "Музыка Из Кинофильмов «Ольга Сергеевна», «Ирония Судьбы»",
+          "artists": [
+            "Микаэл Таривердиев"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/061.jpg"
+        },
+        {
+          "id": "207",
+          "album": "По Следам Бременских Музыкантов",
+          "artists": [
+            "Василий Ливанов",
+            "Юрий Энтин"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/207.jpg"
+        },
+        {
+          "id": "102",
+          "album": "Танцуем Без Перерыва, 1976 = Non Stop Dancing, 1976",
+          "artists": [
+            "James Last"
+          ],
+          "year": 2025,
+          "imageUrl": "data/covers/102.jpg"
         }
       ]
     }
   },
-  "total": 18
+  "total": 25
 }

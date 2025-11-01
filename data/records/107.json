@@ -1,0 +1,74 @@
+{
+  "id": "107",
+  "catalogNumber": "С60 28891 003",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Биоконструктор",
+    "Прощай, Молодость!"
+  ],
+  "album": "Группа \"Биоконструктор\" / Дуэт \"Прощай, Молодость!\"",
+  "year": 1989,
+  "genre": [
+    "Electronic",
+    "Pop"
+  ],
+  "format": "Vinyl, LP",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/IB50cOmCHKqzbhNQ-ZSFItRWgdkVTlNE8zFeTptvFzU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3OTIy/MTYtMTMwMTIzNjky/Mi5qcGVn.jpeg",
+  "imageUrl": "data/covers/107.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Гравитатор",
+          "duration": "4:27"
+        },
+        {
+          "title": "Бюрократ",
+          "duration": "4:22"
+        },
+        {
+          "title": "Вечерний Блюз",
+          "duration": "4:57"
+        },
+        {
+          "title": "Биоконструктор",
+          "duration": "6:10"
+        },
+        {
+          "title": "Сюрреализм",
+          "duration": "3:25"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Кабаре Энтузиастов",
+          "duration": "2:05"
+        },
+        {
+          "title": "Мечтатель",
+          "duration": "3:33"
+        },
+        {
+          "title": "Моя Дорогая",
+          "duration": "2:05"
+        },
+        {
+          "title": "Прощай, Молодость!",
+          "duration": "1:53"
+        },
+        {
+          "title": "Алмазный Фронт",
+          "duration": "4:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2792216-Биоконструктор-Прощай-Молодость-Группа-Биоконструкто"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "203",
+  "catalogNumber": "С60-09801-2",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Алла Пугачева"
+  ],
+  "album": "Поет Алла Пугачева",
+  "year": 1978,
+  "genre": [
+    "Rock",
+    "Funk / Soul",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ScN-HE37LTuU2o_rNMip27AwzYgH-G9JNmblupVU0lA/rs:fit/g:sm/q:90/h:498/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2NTEx/NjAtMTM3MTEwMzEy/Ny00NDcwLmpwZWc.jpeg",
+  "imageUrl": "data/covers/203.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Все Могут Короли",
+          "duration": "0:00"
+        },
+        {
+          "title": "Куда Уходит Детство (Из К/ф «Фантазии Веснухина»)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Волшебник-недоучка (Из К/ф «Отважный Ширак»)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Полно Вокруг Мудрецов (Из К/ф «Отважный Ширак»)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Мы Не Любим Друг Друга (Из К/ф «Повар И Певица»)",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Если Долго Мучиться (Из К/ф «Повар И Певица»)",
+          "duration": "0:00"
+        },
+        {
+          "title": "До Свиданья, Лето (Из К/ф «Центровой Из Поднебесья»)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Любовь Одна Виновата (Из К/ф «Центровой Из Поднебесья»)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Найди Себе Друга (Из К/ф «Фантазии Веснухина»)",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4651160-Алла-Пугачева-Поет-Алла-Пугачева"
+  }
+}

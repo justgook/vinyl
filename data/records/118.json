@@ -1,0 +1,77 @@
+{
+  "id": "118",
+  "catalogNumber": "33 С60-05459-60",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Весёлые Ребята"
+  ],
+  "album": "Любовь - Огромная Страна",
+  "year": 1977,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/BTcFXauwtRnqetZuVEhHqb1xKE4F-05wup2FO3ddoyU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4MTg0/ODEtMTM3NjQ3NzYz/Ni02NDc1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/118.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Любовь - Огромная Страна",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я К Тебе Не Подойду",
+          "duration": "0:00"
+        },
+        {
+          "title": "Отчего",
+          "duration": "0:00"
+        },
+        {
+          "title": "Вечная Весна",
+          "duration": "0:00"
+        },
+        {
+          "title": "Что Такого",
+          "duration": "0:00"
+        },
+        {
+          "title": "Это Москва",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Наша Песня",
+          "duration": "0:00"
+        },
+        {
+          "title": "Качели",
+          "duration": "0:00"
+        },
+        {
+          "title": "А Мне-то Зачем",
+          "duration": "0:00"
+        },
+        {
+          "title": "Скорый Поезд",
+          "duration": "0:00"
+        },
+        {
+          "title": "Всегда Вдали",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4818481-Веселые-Ребята-Любовь-Огромная-Страна"
+  }
+}

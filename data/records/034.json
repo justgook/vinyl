@@ -1,0 +1,50 @@
+{
+  "id": "034",
+  "catalogNumber": "33 СМ 04287-88(a)",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Ludwig van Beethoven",
+    "Большой Симфонический Оркестр Всесоюзного Радио",
+    "Konstantin Ivanov"
+  ],
+  "album": "Symphony No. 5",
+  "year": 1980,
+  "genre": [
+    "Classical"
+  ],
+  "format": "Vinyl, LP, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/GWWFbNcDjf1PWwSvoXq2cyTWbsuUJonaPi-ThR0mzfk/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTAw/NzkzLTE0OTg3MzYz/NjMtNzUwMy5qcGVn.jpeg",
+  "imageUrl": "data/covers/034.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "1. Allegro Con Brio",
+          "duration": "0:00"
+        },
+        {
+          "title": "2. Andante Con Moto",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "3. Allegro",
+          "duration": "0:00"
+        },
+        {
+          "title": "4. Allegro",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/10500793-L-Beethoven-Moscow-Radio-Great-Symphony-Orchestra-Conductor-K-Ivanov-Symphony-No-5"
+  }
+}

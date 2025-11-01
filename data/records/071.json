@@ -1,0 +1,64 @@
+{
+  "id": "071",
+  "catalogNumber": "С60 26039 000",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Август"
+  ],
+  "album": "Демон",
+  "year": 1987,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/zqCLElqAhZhnBs35z95-rAUUP0mmWRQO8N2leGyVLQs/rs:fit/g:sm/q:90/h:300/w:284/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTA0/Mjk4LTE0OTg4MTM0/MDgtODY3OC5qcGVn.jpeg",
+  "imageUrl": "data/covers/071.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Demon",
+          "duration": "0:00"
+        },
+        {
+          "title": "As A Headache",
+          "duration": "0:00"
+        },
+        {
+          "title": "Autumn",
+          "duration": "0:00"
+        },
+        {
+          "title": "Night",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Judge For Yourself",
+          "duration": "0:00"
+        },
+        {
+          "title": "Danger",
+          "duration": "0:00"
+        },
+        {
+          "title": "Bell",
+          "duration": "0:00"
+        },
+        {
+          "title": "Royal And The Sea",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/10504298-Август-Демон"
+  }
+}

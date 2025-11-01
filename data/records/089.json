@@ -1,0 +1,60 @@
+{
+  "id": "089",
+  "catalogNumber": "С60 19791 009",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Space"
+  ],
+  "album": "Magic Fly = Волшебный Полет",
+  "year": 1983,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Album, Reissue",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/JF6V-WBcIDknatXx0SSiO1VhqCHK-8zm72NB-qd1jOk/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNjU0/MjctMTI3OTc4NDMz/OC5qcGVn.jpeg",
+  "imageUrl": "data/covers/089.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Пристегните Ремни",
+          "duration": "5:59"
+        },
+        {
+          "title": "Баллада",
+          "duration": "2:17"
+        },
+        {
+          "title": "Танго В Космосе",
+          "duration": "4:28"
+        },
+        {
+          "title": "Наваждение",
+          "duration": "3:32"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Волшебный Полет",
+          "duration": "4:20"
+        },
+        {
+          "title": "Вежливое Похищение",
+          "duration": "4:28"
+        },
+        {
+          "title": "Синева",
+          "duration": "4:31"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2365427-Space-Magic-Fly-Волшебный-Полет"
+  }
+}

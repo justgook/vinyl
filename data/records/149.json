@@ -1,0 +1,69 @@
+{
+  "id": "149",
+  "catalogNumber": "1 13 2380",
+  "recordLabel": "Supraphon",
+  "artists": [
+    "Olympic"
+  ],
+  "album": "Overhead",
+  "year": 1979,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/jyspdz4pZlPY4gYORlqzzDJHVkX1f8AIi6jQGX2COsQ/rs:fit/g:sm/q:90/h:595/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzI3/ODktMTM1NDMxMzI4/MC0yODM4LmpwZWc.jpeg",
+  "imageUrl": "data/covers/149.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Heaven Overhead /Nebe Nad Hlavou/",
+          "duration": "2:25"
+        },
+        {
+          "title": "It's High Time /Už Je Čas/",
+          "duration": "3:15"
+        },
+        {
+          "title": "Slaying Stars /Nehoda/",
+          "duration": "4:20"
+        },
+        {
+          "title": "Your Mother's Tears /Slzy Tvý Mámy/",
+          "duration": "4:20"
+        },
+        {
+          "title": "My World /To Znáš/",
+          "duration": "4:30"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Highway /Harém/",
+          "duration": "4:35"
+        },
+        {
+          "title": "Hijacker /Únos/",
+          "duration": "5:30"
+        },
+        {
+          "title": "I've Been There /Já Tam Byl/",
+          "duration": "4:20"
+        },
+        {
+          "title": "Marathon",
+          "duration": "6:35"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4072789-Olympic-2-Overhead"
+  }
+}

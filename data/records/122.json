@@ -1,0 +1,72 @@
+{
+  "id": "122",
+  "catalogNumber": "С60 26201 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Браво"
+  ],
+  "album": "Браво",
+  "year": 1990,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/007nyai6D_o-F7n0jD-wGFFKugJCzBySvEGZqXdtRK8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNDU2/NTMtMTMyNjc0MTM4/MC5qcGVn.jpeg",
+  "imageUrl": "data/covers/122.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Открытие • Revelation",
+          "duration": "1:50"
+        },
+        {
+          "title": "Желтые Ботинки • Yellow Boots",
+          "duration": "3:27"
+        },
+        {
+          "title": "Звездный Каталог • Catalogue Of Stars",
+          "duration": "4:32"
+        },
+        {
+          "title": "Розы • Roses",
+          "duration": "3:01"
+        },
+        {
+          "title": "Верю Я • I Believe",
+          "duration": "3:03"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Синеглазый Мальчик • Blue-Eyed Boy",
+          "duration": "2:43"
+        },
+        {
+          "title": "Медицинский Институт • Medical Institute",
+          "duration": "2:33"
+        },
+        {
+          "title": "Старый Отель • Old Hotel",
+          "duration": "3:55"
+        },
+        {
+          "title": "Кошки • Cats",
+          "duration": "2:49"
+        },
+        {
+          "title": "Ленинградский Рок-Н-Ролл • Leningrad Rock-N-Roll",
+          "duration": "2:19"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/3345653-Браво-Браво"
+  }
+}

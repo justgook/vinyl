@@ -1,33 +1,74 @@
 {
   "id": "018",
-  "catalogNumber": "SSTLP1",
-  "recordLabel": "SST",
-  "artists": ["Sonic Youth"],
-  "album": "Daydream Nation",
-  "year": 1988,
-  "genre": ["Alternative Rock", "Noise Rock"],
-  "format": "LP, Album",
-  "condition": "Very Good",
-  "imageUrl": "https://placeholdit.com/400/00E5FF/000000?text=Sonic+Youth",
+  "catalogNumber": "А 6000439 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Greenpeace Breakthrough",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/lR5WY8agSTB07Tcgn27gJKZYmak_LJl56IVMcsIW9xc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NTI2/ODEtMTQyMTkxNjMz/MS01OTUyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/018.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Teenage Riot",
+          "title": "Гордость (Во Имя Любви) (Концертная Запись)",
+          "duration": "4:32"
+        },
+        {
+          "title": "Землю Осушить До Слез",
+          "duration": "4:04"
+        },
+        {
+          "title": "Любовь - Это Седьмая Волна",
+          "duration": "3:29"
+        },
+        {
+          "title": "Освободите Их",
+          "duration": "3:58"
+        },
+        {
+          "title": "Корабль Глупцов",
+          "duration": "4:14"
+        },
+        {
+          "title": "Не Стой, Танцуй Со Мной",
+          "duration": "4:19"
+        },
+        {
+          "title": "Когда Настанет Завтра",
+          "duration": "4:27"
+        },
+        {
+          "title": "Середина Пути",
           "duration": "4:12"
         },
         {
-          "title": "Silver Rocket",
-          "duration": "3:51"
+          "title": "Бросая Камни",
+          "duration": "4:23"
         },
         {
-          "title": "The Sprawl",
-          "duration": "4:37"
+          "title": "На Этот Раз",
+          "duration": "3:07"
         },
         {
-          "title": "Cross the Breeze",
-          "duration": "5:37"
+          "title": "Положи Мне Руку На Плечо",
+          "duration": "4:21"
+        },
+        {
+          "title": "Город Мечты",
+          "duration": "5:06"
+        },
+        {
+          "title": "В Порту (Концертная Запись)",
+          "duration": "5:06"
         }
       ]
     },
@@ -35,29 +76,57 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "Eric's Trip",
-          "duration": "3:35"
+          "title": "Луна Целиком",
+          "duration": "4:57"
         },
         {
-          "title": "Total Trash",
-          "duration": "3:30"
+          "title": "Конец Света (А Мне Хорошо)",
+          "duration": "2:59"
         },
         {
-          "title": "Hey Joni",
-          "duration": "3:47"
+          "title": "Ты - Тот Голос",
+          "duration": "5:05"
         },
         {
-          "title": "Providence",
-          "duration": "5:15"
+          "title": "Кто-то",
+          "duration": "4:42"
         },
         {
-          "title": "Candle",
-          "duration": "4:33"
+          "title": "Далеко - Далеко",
+          "duration": "4:10"
+        },
+        {
+          "title": "Красный Дождь",
+          "duration": "5:34"
+        },
+        {
+          "title": "Посмотри Из Любого Окна",
+          "duration": "5:27"
+        },
+        {
+          "title": "Вперед",
+          "duration": "5:17"
+        },
+        {
+          "title": "Совершенно Смиренное Сердце",
+          "duration": "5:44"
+        },
+        {
+          "title": "Я Буду Твоим Другом",
+          "duration": "4:42"
+        },
+        {
+          "title": "Мы - Народ",
+          "duration": "4:16"
+        },
+        {
+          "title": "Зачем Волноваться",
+          "duration": "5:18"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/335406"
+    "discogs": "https://www.discogs.com/release/6552681-Various-Greenpeace-Breakthrough"
   }
 }

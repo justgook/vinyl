@@ -1,0 +1,73 @@
+{
+  "id": "123",
+  "catalogNumber": "С60 22151 002",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Романтика",
+  "year": 1985,
+  "genre": [
+    "Electronic",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/04twnPONggPqKh5eD2bsLB8zMW_TTyXj8iR_HalZ_3o/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwODg0/ODQzLTE2MzYyODM3/MzEtMjk3OC5qcGVn.jpeg",
+  "imageUrl": "data/covers/123.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Осенняя Мелодия",
+          "duration": "3:39"
+        },
+        {
+          "title": "Снегири",
+          "duration": "2:36"
+        },
+        {
+          "title": "Все Было Так Давно",
+          "duration": "3:55"
+        },
+        {
+          "title": "Молитва Франсуа Вийона",
+          "duration": "3:50"
+        },
+        {
+          "title": "Романтика",
+          "duration": "5:16"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Зеленая Ветка",
+          "duration": "4:20"
+        },
+        {
+          "title": "Старая Лестница",
+          "duration": "4:12"
+        },
+        {
+          "title": "Заговорные Слова",
+          "duration": "2:42"
+        },
+        {
+          "title": "Кукушка",
+          "duration": "4:16"
+        },
+        {
+          "title": "Земля Моя",
+          "duration": "3:20"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/20884843-Various-Романтика"
+  }
+}

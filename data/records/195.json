@@ -1,0 +1,69 @@
+{
+  "id": "195",
+  "catalogNumber": "С60 22147 000",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Ottawan"
+  ],
+  "album": "Ottawan 2",
+  "year": 1985,
+  "genre": [
+    "Electronic",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Reissue, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/Gst1PqZm50PHK15LLTewPaCLVx1z5HZuhqpWBzehMxM/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjYy/NjA1LTE1NTg1Mjgx/MzktNTIxMC5qcGVn.jpeg",
+  "imageUrl": "data/covers/195.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Hands Up (Give Me Your Heart)",
+          "duration": "4:50"
+        },
+        {
+          "title": "Siesta For Two",
+          "duration": "3:58"
+        },
+        {
+          "title": "A.I.E. Is My Song",
+          "duration": "3:28"
+        },
+        {
+          "title": "Sing Along With The Juke-box",
+          "duration": "4:00"
+        },
+        {
+          "title": "Crazy Music",
+          "duration": "5:30"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "It's A Top Secret",
+          "duration": "3:16"
+        },
+        {
+          "title": "Shubidube Love",
+          "duration": "2:50"
+        },
+        {
+          "title": "Dondon Rumba",
+          "duration": "3:35"
+        },
+        {
+          "title": "Hands Up",
+          "duration": "0:43"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/13662605-Ottawan-Ottawan-2"
+  }
+}

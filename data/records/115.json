@@ -1,0 +1,80 @@
+{
+  "id": "115",
+  "catalogNumber": "С60-11585-86",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Для Вас, Женщины!",
+  "year": 1978,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Compilation, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/HV6sqb6OIB6gl0bHr_bdl2f_D5X9vX90vzVb86FulG4/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2ODUz/MTgtMTQyNDYwMTA1/NS0yODY2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/115.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Ты Всех Нужней",
+          "duration": "3:03"
+        },
+        {
+          "title": "Дежурный По Апрелю",
+          "duration": "1:40"
+        },
+        {
+          "title": "Любовь Заждалась",
+          "duration": "3:43"
+        },
+        {
+          "title": "Качели",
+          "duration": "3:05"
+        },
+        {
+          "title": "Навсегда",
+          "duration": "2:40"
+        },
+        {
+          "title": "Не Обещай Меня Любить",
+          "duration": "2:46"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Очень Хорошо",
+          "duration": "2:48"
+        },
+        {
+          "title": "Созвездие Любви",
+          "duration": "3:16"
+        },
+        {
+          "title": "Песня Первоклассника",
+          "duration": "2:30"
+        },
+        {
+          "title": "Очи Черные",
+          "duration": "2:24"
+        },
+        {
+          "title": "Днем И Ночью",
+          "duration": "3:11"
+        },
+        {
+          "title": "Чудо Любви",
+          "duration": "3:20"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6685318-Various-Для-Вас-Женщины"
+  }
+}

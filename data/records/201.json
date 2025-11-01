@@ -1,0 +1,60 @@
+{
+  "id": "201",
+  "catalogNumber": "А60 00543 007",
+  "recordLabel": "RiTonis",
+  "artists": [
+    "Pink Floyd"
+  ],
+  "album": "Delicate Sound Of Thunder. № 1",
+  "year": 1994,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/bMxxqToo0NeI78NPrjKzR3U8YlY5qG6NI4HRN2rdSFU/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3OTMy/ODUtMTQwMjgzMzEx/MC01Njc0LmpwZWc.jpeg",
+  "imageUrl": "data/covers/201.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Shine On You Crazy Diamond",
+          "duration": "11:40"
+        },
+        {
+          "title": "Learning To Fly",
+          "duration": "5:15"
+        },
+        {
+          "title": "Yet Another Movie",
+          "duration": "6:15"
+        },
+        {
+          "title": "Round And Around",
+          "duration": "0:58"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Sorrow",
+          "duration": "9:46"
+        },
+        {
+          "title": "The Dogs Of War",
+          "duration": "7:00"
+        },
+        {
+          "title": "On The Turning Away",
+          "duration": "7:54"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5793285-Pink-Floyd-Delicate-Sound-Of-Thunder-1"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "148",
+  "catalogNumber": "33 С60-11543-4",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Fix"
+  ],
+  "album": "Värviline Maailm",
+  "year": 1979,
+  "genre": [
+    "Rock",
+    "Funk / Soul"
+  ],
+  "format": "Vinyl, LP",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/bU9jzs9HG0djJFqZeSjW9PRCcrTmKRkfS-qxJYcspSU/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDQ3/NzkxLTE1MTU2MTYx/MTQtMzYyMy5qcGVn.jpeg",
+  "imageUrl": "data/covers/148.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Rough Road",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ulila",
+          "duration": "0:00"
+        },
+        {
+          "title": "Colourful Road",
+          "duration": "0:00"
+        },
+        {
+          "title": "Fire",
+          "duration": "0:00"
+        },
+        {
+          "title": "After Birds",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Fire In The Prairies",
+          "duration": "0:00"
+        },
+        {
+          "title": "Doors",
+          "duration": "0:00"
+        },
+        {
+          "title": "Town At Night",
+          "duration": "0:00"
+        },
+        {
+          "title": "Up To The Peaks",
+          "duration": "0:00"
+        },
+        {
+          "title": "My Island",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/10047791-Fix-6-Värviline-Maailm"
+  }
+}

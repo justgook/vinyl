@@ -1,0 +1,88 @@
+{
+  "id": "146",
+  "catalogNumber": "33 С 01409-10",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Giovanni Battista Pergolesi",
+    "Galina Pisarenko",
+    "Ирина Архипова",
+    "Moscow Chamber Orchestra",
+    "Rudolf Barshai"
+  ],
+  "album": "Stabat Mater",
+  "year": 1977,
+  "genre": [
+    "Classical"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/g74tOzbeylcbdg0u3aIKoTNkSTGgQlFobUomtwnI2iQ/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxOTk5/MDUtMTQxMzU1NDgz/Mi04NjU1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/146.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Дуэт (Хор)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ария (Сопрано)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дуэт (Хор)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ария (Меццо-сопрано)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дуэт (Сопрано, Меццо-сопрано, Хор)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ария (Сопрано)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ария (Меццо-сопрано)",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Дуэт (Хор)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дуэт (Сопрано И Меццо-сопрано)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Ария (Меццо-сопрано)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дуэт (Сопрано И Меццо-сопрано)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дуэт (Хор)",
+          "duration": "0:00"
+        },
+        {
+          "title": "Дуэт (Хор)",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6199905-Дж-Перголези-Галина-Писаренко-Ирина-Архипова-Московск"
+  }
+}

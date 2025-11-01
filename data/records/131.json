@@ -1,0 +1,72 @@
+{
+  "id": "131",
+  "catalogNumber": "C60 29141 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Центр"
+  ],
+  "album": "Сделано В Париже",
+  "year": 1990,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/YrsZ0zxqCW0MGrvysqo2r8F6yQf2_EgF9SfM4sD119s/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1NTQ0/NTktMTQ4MjY0NTM1/NS02MjQ3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/131.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Привет Тебе",
+          "duration": "3:30"
+        },
+        {
+          "title": "Навсегда",
+          "duration": "3:40"
+        },
+        {
+          "title": "Тургеневские Женщины",
+          "duration": "3:50"
+        },
+        {
+          "title": "Бесполезная Песня",
+          "duration": "3:20"
+        },
+        {
+          "title": "Радиоактивность",
+          "duration": "2:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Человек",
+          "duration": "3:50"
+        },
+        {
+          "title": "Жалобы",
+          "duration": "3:10"
+        },
+        {
+          "title": "Мужчины",
+          "duration": "3:00"
+        },
+        {
+          "title": "Комиссия",
+          "duration": "4:40"
+        },
+        {
+          "title": "Алексеев",
+          "duration": "3:40"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/9554459-Центр-Сделано-В-Париже"
+  }
+}

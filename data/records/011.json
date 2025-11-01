@@ -1,33 +1,46 @@
 {
   "id": "011",
-  "catalogNumber": "FACT25",
-  "recordLabel": "Factory",
-  "artists": ["Joy Division"],
-  "album": "Unknown Pleasures",
-  "year": 1979,
-  "genre": ["Post-Punk", "Darkwave"],
-  "format": "LP, Album",
-  "condition": "Very Good",
-  "imageUrl": "https://placeholdit.com/400/FF1744/FFFFFF?text=Joy+Division",
+  "catalogNumber": "С60-14761-2",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Песни",
+  "year": 1981,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Stereo, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/cR7SV_bOUrJfAcFhNCGq9YEgWhWxjRow_jZJMM2LCEM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwODE0/MjktMTQ1NDc3ODAx/OC05ODI5LmpwZWc.jpeg",
+  "imageUrl": "data/covers/011.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "Disorder",
-          "duration": "3:15"
+          "title": "Песня О Друге = Song Of A Friend",
+          "duration": "2:51"
         },
         {
-          "title": "Day of the Lords",
-          "duration": "4:48"
+          "title": "Он Не Вернулся Из Боя = He Didn't Come Back From The Battle",
+          "duration": "3:18"
         },
         {
-          "title": "Candidate",
-          "duration": "3:28"
+          "title": "Скалолазка = A Cliffclamberer",
+          "duration": "2:40"
         },
         {
-          "title": "Insight",
-          "duration": "4:13"
+          "title": "Прощание С Горами = Farewell To Mountains",
+          "duration": "2:45"
+        },
+        {
+          "title": "Жираф = Giraffe",
+          "duration": "2:13"
+        },
+        {
+          "title": "Вершина = A Summit",
+          "duration": "2:37"
         }
       ]
     },
@@ -35,29 +48,33 @@
       "name": "Side B",
       "tracks": [
         {
-          "title": "New Dawn Fades",
-          "duration": "4:47"
+          "title": "Сыновья Уходят В Бой = Sons Leave For Battle",
+          "duration": "2:28"
         },
         {
-          "title": "She's Lost Control",
-          "duration": "3:57"
+          "title": "Лирическая = Lyric Song",
+          "duration": "3:17"
         },
         {
-          "title": "Shadowplay",
-          "duration": "4:09"
+          "title": "Ноль Семь = 07 (Trunk Line Number)",
+          "duration": "2:30"
         },
         {
-          "title": "Wilderness",
-          "duration": "2:59"
+          "title": "Песня О Переселении Душ = Moving Of Souls",
+          "duration": "2:40"
         },
         {
-          "title": "Interzone",
-          "duration": "4:06"
+          "title": "Утренняя Гимнастика = Morning Gymnastics",
+          "duration": "3:06"
+        },
+        {
+          "title": "Корабли = Ships",
+          "duration": "2:57"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/278935"
+    "discogs": "https://www.discogs.com/release/8081429-Владимир-Высоцкий-Песни"
   }
 }

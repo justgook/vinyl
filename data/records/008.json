@@ -1,63 +1,79 @@
 {
   "id": "008",
-  "catalogNumber": "PCS7251",
-  "recordLabel": "Polar",
-  "artists": ["ABBA"],
-  "album": "Arrival",
-  "year": 1976,
-  "genre": ["Pop", "Disco"],
-  "format": "LP, Album",
-  "condition": "Very Good Plus",
-  "imageUrl": "https://placeholdit.com/400/FF10F0/FFFFFF?text=ABBA",
+  "catalogNumber": "М60 48259 000",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Владимир Высоцкий"
+  ],
+  "album": "Песня О Друге",
+  "year": 1988,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/jvf0i-bEVVel1CsKfpdhDD-TLov-IpfzsLSz_bz-QxA/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MjQz/MDAtMTYzNzQwNzU0/OS01MDA1LmpwZWc.jpeg",
+  "imageUrl": "data/covers/008.jpg",
   "sides": [
     {
       "name": "Side A",
       "tracks": [
         {
-          "title": "When I Kissed the Teacher",
-          "duration": "3:11"
+          "title": "Песня О Друге",
+          "duration": "0:00"
         },
         {
-          "title": "Dancing Queen",
-          "duration": "3:51"
+          "title": "Памяти М. Хергиани",
+          "duration": "0:00"
         },
         {
-          "title": "My Love, My Life",
-          "duration": "4:02"
+          "title": "Песенка О Старой Одессе",
+          "duration": "0:00"
         },
         {
-          "title": "Zing Went the Strings of My Heart",
-          "duration": "2:47"
-        }
-      ]
-    },
-    {
-      "name": "Side B",
-      "tracks": [
-        {
-          "title": "Why Did It Have to Be Me?",
-          "duration": "3:06"
+          "title": "О Моем Старшине",
+          "duration": "0:00"
         },
         {
-          "title": "Mamma Mia",
-          "duration": "3:34"
+          "title": "Снайпер",
+          "duration": "0:00"
         },
         {
-          "title": "The Arrival",
-          "duration": "0:50"
+          "title": "Я Не Люблю",
+          "duration": "0:00"
         },
         {
-          "title": "Knowing Me, Knowing You",
-          "duration": "3:57"
+          "title": "О Переселении Душ",
+          "duration": "0:00"
         },
         {
-          "title": "Monster",
-          "duration": "3:54"
+          "title": "Плагиатор",
+          "duration": "0:00"
+        },
+        {
+          "title": "Жираф",
+          "duration": "0:00"
+        },
+        {
+          "title": "Слухи",
+          "duration": "0:00"
+        },
+        {
+          "title": "Поездка В Город",
+          "duration": "0:00"
+        },
+        {
+          "title": "Черное Золото",
+          "duration": "0:00"
+        },
+        {
+          "title": "На Судне Бунт",
+          "duration": "0:00"
         }
       ]
     }
   ],
   "externalIds": {
-    "discogs": "release/387265"
+    "discogs": "https://www.discogs.com/release/3724300-Владимир-Высоцкий-Песня-О-Друге"
   }
 }

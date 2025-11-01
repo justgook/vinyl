@@ -1,0 +1,60 @@
+{
+  "id": "070",
+  "catalogNumber": "С60 26141 004",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Круиз"
+  ],
+  "album": "Круиз-1",
+  "year": 1988,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/BeKsiLbPvhCQwIz7ou_FY9eqt4c4jx9cF7XnIgtErrU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxOTgy/MjAtMTU0NDkwMjQ0/OS04OTA3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/070.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Intro",
+          "duration": "4:40"
+        },
+        {
+          "title": "Дальний Свет • Distant Light",
+          "duration": "4:25"
+        },
+        {
+          "title": "Случилось • It Happened So",
+          "duration": "4:52"
+        },
+        {
+          "title": "Последний Рассвет • Last Dawn",
+          "duration": "5:42"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Иди Же С Нами... • Come With Us...",
+          "duration": "10:05"
+        },
+        {
+          "title": "Мираж • Mirage",
+          "duration": "3:30"
+        },
+        {
+          "title": "Время • Time",
+          "duration": "4:32"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5198220-Круиз-Круиз-1"
+  }
+}

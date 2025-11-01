@@ -1,0 +1,73 @@
+{
+  "id": "052",
+  "catalogNumber": "С60 17209 10",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Various"
+  ],
+  "album": "Для Вас, Женщины!",
+  "year": 1982,
+  "genre": [
+    "Pop",
+    "Classical"
+  ],
+  "format": "Vinyl, LP, Compilation",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/jmazpKag2xRJfFXv7ssOjrcNNl4kgtFNR98r3LO1mNU/rs:fit/g:sm/q:90/h:200/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxNjQ5/NzAtMTI2NzUyMDU2/My5qcGVn.jpeg",
+  "imageUrl": "data/covers/052.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Вино, Женщины, Песни",
+          "duration": "5:04"
+        },
+        {
+          "title": "Когда Растаяли Снега",
+          "duration": "3:45"
+        },
+        {
+          "title": "Темно-вишневая Шаль",
+          "duration": "3:23"
+        },
+        {
+          "title": "Я У Бабушки Живу",
+          "duration": "3:50"
+        },
+        {
+          "title": "Старинные Часы",
+          "duration": "4:38"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Мамины Глаза",
+          "duration": "3:22"
+        },
+        {
+          "title": "Я Сегодня Весна",
+          "duration": "3:51"
+        },
+        {
+          "title": "Синяя Птица",
+          "duration": "3:41"
+        },
+        {
+          "title": "Газовая Косынка",
+          "duration": "3:01"
+        },
+        {
+          "title": "Ты Для Меня - Всё",
+          "duration": "5:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2164970-Various-Для-Вас-Женщины"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "093",
+  "catalogNumber": "С60 23581 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "The Beatles"
+  ],
+  "album": "A Taste Of Honey",
+  "year": 1986,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Compilation, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/0SRKNubUmsGUcfX5vTVoIKdUOJEW7Zl4_Rn1GrpCVf4/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MzM0/NDU4LTE2NzgxOTAy/NTQtNzEwMy5qcGVn.jpeg",
+  "imageUrl": "data/covers/093.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "P.S. Я Люблю Тебя = P.S. I Love You",
+          "duration": "2:01"
+        },
+        {
+          "title": "Хочешь Узнать Тайну? = Do You Want To Know A Secret?",
+          "duration": "1:55"
+        },
+        {
+          "title": "Вкус Мёда = A Taste Of Honey",
+          "duration": "2:00"
+        },
+        {
+          "title": "Я Увидел Её = I Saw Her Standing There",
+          "duration": "2:50"
+        },
+        {
+          "title": "Она В Трауре = Baby's In Black",
+          "duration": "2:05"
+        },
+        {
+          "title": "Ответа Нет = No Reply",
+          "duration": "2:15"
+        },
+        {
+          "title": "Я Пойду За Солнцем = I'll Follow The Sun",
+          "duration": "1:47"
+        },
+        {
+          "title": "Восемь Дней В Неделю = Eight Days A Week",
+          "duration": "2:42"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Не Хочу Испортить Вечер = I Don't Want To Spoil The Party",
+          "duration": "2:32"
+        },
+        {
+          "title": "Рок-н-ролл = Rock And Roll Music",
+          "duration": "2:31"
+        },
+        {
+          "title": "Мистер Почтальон = Please Mister Postman",
+          "duration": "2:27"
+        },
+        {
+          "title": "Это Не Надолго = It Won't Be Long",
+          "duration": "2:11"
+        },
+        {
+          "title": "Пока Была Ты = Till There Was You",
+          "duration": "2:12"
+        },
+        {
+          "title": "Детка = Little Child",
+          "duration": "1:44"
+        },
+        {
+          "title": "Злое Сердце = Devil In Her Heart",
+          "duration": "2:23"
+        },
+        {
+          "title": "Хочу Быть Твоим = I Wanna Be Your Man",
+          "duration": "1:58"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/26334458-The-Beatles-A-Taste-Of-Honey"
+  }
+}

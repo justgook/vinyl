@@ -1,0 +1,76 @@
+{
+  "id": "152",
+  "catalogNumber": "С60 23483 007",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Kikki Danielsson"
+  ],
+  "album": "Полуночное Солнце",
+  "year": 1986,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/6LkoDjsw0rWdKJs_u7-RslcVcFC46O4YzNMsxaSKXnA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MzMw/NDgtMTM4MzA4Mjcy/OS05NDM2LmpwZWc.jpeg",
+  "imageUrl": "data/covers/152.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Кто Идет",
+          "duration": "4:01"
+        },
+        {
+          "title": "Тайные Влюбленные",
+          "duration": "2:50"
+        },
+        {
+          "title": "Кто-To Другой",
+          "duration": "3:14"
+        },
+        {
+          "title": "Влюбиться, Разлюбить",
+          "duration": "3:24"
+        },
+        {
+          "title": "Сегодняшний Вальс Любви",
+          "duration": "3:30"
+        },
+        {
+          "title": "Не Хлопай Дверью",
+          "duration": "2:56"
+        },
+        {
+          "title": "Полуночное Солнце",
+          "duration": "2:36"
+        },
+        {
+          "title": "Хороший День",
+          "duration": "3:08"
+        },
+        {
+          "title": "Если Я Снова Полюблю",
+          "duration": "2:16"
+        },
+        {
+          "title": "Малютка На Руках",
+          "duration": "3:15"
+        },
+        {
+          "title": "Звезда",
+          "duration": "2:40"
+        },
+        {
+          "title": "Очень Люблю Тебя",
+          "duration": "2:50"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2833048-Кикки-Полуночное-Солнце"
+  }
+}

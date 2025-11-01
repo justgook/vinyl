@@ -1,0 +1,73 @@
+{
+  "id": "130",
+  "catalogNumber": "C60-10433",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Весёлые Ребята"
+  ],
+  "album": "Дружить Нам Надо",
+  "year": 1978,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/519DsnaR0G3oRm4vXNrq4AmNLkEYXEeuBLlZELs7KvU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxMDUy/MTgtMTQxMTIyMTk3/Ni0yMzE3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/130.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Напиши Мне Письмо",
+          "duration": "3:15"
+        },
+        {
+          "title": "Наш Дом",
+          "duration": "3:10"
+        },
+        {
+          "title": "Летние Каникулы",
+          "duration": "3:01"
+        },
+        {
+          "title": "В Синем Омуте",
+          "duration": "4:37"
+        },
+        {
+          "title": "Встреча",
+          "duration": "3:02"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Песенка Для Всех",
+          "duration": "4:02"
+        },
+        {
+          "title": "Мамина Пластинка",
+          "duration": "3:10"
+        },
+        {
+          "title": "Дальняя Песня",
+          "duration": "3:33"
+        },
+        {
+          "title": "Проходят Годы",
+          "duration": "3:05"
+        },
+        {
+          "title": "Дружить Нам Надо",
+          "duration": "3:55"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6105218-Веселые-Ребята-Дружить-Нам-Надо"
+  }
+}

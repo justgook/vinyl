@@ -1,0 +1,74 @@
+{
+  "id": "117",
+  "catalogNumber": "С60 23927 005",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Bobbysocks"
+  ],
+  "album": "Боббисокс",
+  "year": 1986,
+  "genre": [
+    "Electronic",
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ko9aG4OHeDJMMBRqqX0Wtc5_rMcN4uP63v5GSDZgiDA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzOTgx/MTQtMTQxODI0Mjg2/My03NDkyLmpwZWc.jpeg",
+  "imageUrl": "data/covers/117.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Свинг • Let It Swing",
+          "duration": "2:50"
+        },
+        {
+          "title": "Рок-Н-Ролл • Midnight Rocks",
+          "duration": "2:50"
+        },
+        {
+          "title": "Радио • Radio",
+          "duration": "4:00"
+        },
+        {
+          "title": "Хочу Танцевать С Тобой • Don't Bring Lulu",
+          "duration": "2:37"
+        },
+        {
+          "title": "Постепенно • Little By Little",
+          "duration": "4:14"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Тише • Shoo-Shoo-Baby",
+          "duration": "2:20"
+        },
+        {
+          "title": "Прощай • Adios",
+          "duration": "3:34"
+        },
+        {
+          "title": "Решайся • Gross Over The Bridge",
+          "duration": "2:27"
+        },
+        {
+          "title": "Буги-Вуги • The Booglie-Woogliу Piggy",
+          "duration": "2:21"
+        },
+        {
+          "title": "Шейк • Go On Shakin'",
+          "duration": "3:58"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6398114-Боббисокс-Боббисокс"
+  }
+}

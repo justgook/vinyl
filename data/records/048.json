@@ -1,0 +1,60 @@
+{
+  "id": "048",
+  "catalogNumber": "С90 28449 003",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Магнит"
+  ],
+  "album": "День Гнева",
+  "year": 1989,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/8dNq0RygCCZCy2HN9KNr8XxsGZYI0Q1NlUZPHCitwgI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NDgy/NDAtMTQ0MzU4ODY5/My01NjQ3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/048.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Работай!",
+          "duration": "7:46"
+        },
+        {
+          "title": "Мы Живем, Под Собой Не Чуя Страны",
+          "duration": "6:53"
+        },
+        {
+          "title": "Интродукция И Ария На Тему Б. Марчелло",
+          "duration": "4:34"
+        },
+        {
+          "title": "Элеонора",
+          "duration": "4:39"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Меморандум",
+          "duration": "4:31"
+        },
+        {
+          "title": "Ностальгия",
+          "duration": "3:52"
+        },
+        {
+          "title": "Храни Огонь",
+          "duration": "6:41"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/6548240-Магнит-День-Гнева"
+  }
+}

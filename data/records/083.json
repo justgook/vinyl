@@ -1,0 +1,69 @@
+{
+  "id": "083",
+  "catalogNumber": "ВТА 11999",
+  "recordLabel": "Балкантон",
+  "artists": [
+    "Madonna",
+    "Madonna"
+  ],
+  "album": "Like A Virgin = Като Дева",
+  "year": 1990,
+  "genre": [
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Reissue, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/a4y1CNOy7eXmbZ7FN-HtmUYH2djuL8vRbaaRNG7NxbA/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyOTE4/OTc2LTE3Mzc2MTky/NjMtNDQ0NC5qcGVn.jpeg",
+  "imageUrl": "data/covers/083.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Material Girl = Материално Момиче",
+          "duration": "0:00"
+        },
+        {
+          "title": "Angel = Ангел",
+          "duration": "0:00"
+        },
+        {
+          "title": "Like A Virgin = Като дева",
+          "duration": "0:00"
+        },
+        {
+          "title": "Over And Over = Отново И Отново",
+          "duration": "0:00"
+        },
+        {
+          "title": "Dress You Up = Облечи Се Официално",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Love Don't Live Here Anymore = Любовта Не Живее Вече Тук",
+          "duration": "0:00"
+        },
+        {
+          "title": "Shoo-Bee-Doo = Шу-Би-Ду",
+          "duration": "0:00"
+        },
+        {
+          "title": "Pretender = Измамник",
+          "duration": "0:00"
+        },
+        {
+          "title": "Stay = Остани",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/32918976-Madonna-Мадона-Like-A-Virgin-Като-Дева"
+  }
+}

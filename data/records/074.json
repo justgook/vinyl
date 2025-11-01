@@ -1,0 +1,72 @@
+{
+  "id": "074",
+  "catalogNumber": "С60 20963 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Arabesque"
+  ],
+  "album": "Ансамбль Арабеска",
+  "year": 1984,
+  "genre": [
+    "Electronic"
+  ],
+  "format": "Vinyl, LP, Compilation, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/K5m17KJu0FTld5vkiwBMJwF2BOQgyu8OOGCA3p22fHE/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMjA2/NjQyLTE2NjAwNDMz/NDItMTE0Mi5qcGVn.jpeg",
+  "imageUrl": "data/covers/074.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Все Начинается С Малого = In For A Penny, In For A Pound",
+          "duration": "0:00"
+        },
+        {
+          "title": "Не Ускользай От Меня = Don't Fall Away From Me",
+          "duration": "0:00"
+        },
+        {
+          "title": "Я С Тобой = I Stand By You",
+          "duration": "0:00"
+        },
+        {
+          "title": "Занзибар = Zanzibar",
+          "duration": "0:00"
+        },
+        {
+          "title": "Рождена, Чтобы Танцевать Регги = Born To Reggae",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "На Празднике У Билла = Billy's Barbeque",
+          "duration": "0:00"
+        },
+        {
+          "title": "Молодость Неопытна = Young Fingers Get Burnt",
+          "duration": "0:00"
+        },
+        {
+          "title": "Кабальеро = Caballero",
+          "duration": "0:00"
+        },
+        {
+          "title": "Гаснет Свет = Blackout",
+          "duration": "0:00"
+        },
+        {
+          "title": "Концерт Окончен = The End Of The Show",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/13206642-Arabesque-Ансамбль-Арабеска"
+  }
+}

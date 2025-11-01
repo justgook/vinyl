@@ -1,0 +1,80 @@
+{
+  "id": "025",
+  "catalogNumber": "А60 00551 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Bon Jovi"
+  ],
+  "album": "New Jersey",
+  "year": 1990,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/YL-UZolc_qnpDBi-gIsKPaQZp8Gv4N_BXtK0neI69OA/rs:fit/g:sm/q:90/h:501/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MzU2/NjMtMTI5ODY3Njcz/My5qcGVn.jpeg",
+  "imageUrl": "data/covers/025.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Lay Your Hands On Me",
+          "duration": "5:58"
+        },
+        {
+          "title": "Bad Medicine",
+          "duration": "5:14"
+        },
+        {
+          "title": "Born To Be My Baby",
+          "duration": "4:38"
+        },
+        {
+          "title": "Living In Sin",
+          "duration": "4:36"
+        },
+        {
+          "title": "Blood On Blood",
+          "duration": "6:14"
+        },
+        {
+          "title": "Homebound Train",
+          "duration": "5:09"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Wild Is The Wind",
+          "duration": "5:04"
+        },
+        {
+          "title": "Ride Cowboy Ride",
+          "duration": "1:24"
+        },
+        {
+          "title": "Stick To Your Guns",
+          "duration": "4:43"
+        },
+        {
+          "title": "I'll Be There For You",
+          "duration": "5:43"
+        },
+        {
+          "title": "99 In The Shade",
+          "duration": "4:25"
+        },
+        {
+          "title": "Love For Sale",
+          "duration": "3:56"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2735663-Bon-Jovi-New-Jersey"
+  }
+}

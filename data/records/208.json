@@ -1,0 +1,42 @@
+{
+  "id": "208",
+  "catalogNumber": "Д24707-08",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Василий Ливанов",
+    "Юрий Энтин"
+  ],
+  "album": "Бременские Музыканты",
+  "year": 1980,
+  "genre": [
+    "Non-Music",
+    "Children's"
+  ],
+  "format": "Vinyl, LP, 10\", Repress, Mono",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/t_-zfFBY42B70QJLg5PCcJBWF7E6JqvQzord2rIz9XA/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NDk3/NDktMTI5NTM2NDAx/MS5qcGVn.jpeg",
+  "imageUrl": "data/covers/208.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Бременские Музыканты",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Бременские Музыканты (Окончание)",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/2649749-В-Ливанов-Ю-Энтин-Бременские-Музыканты"
+  }
+}

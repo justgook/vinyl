@@ -1,0 +1,81 @@
+{
+  "id": "198",
+  "catalogNumber": "SX 1557",
+  "recordLabel": "Pronit",
+  "artists": [
+    "Andrzej I Eliza"
+  ],
+  "album": "Buty, Buty...",
+  "year": 1977,
+  "genre": [
+    "Pop",
+    "Folk, World, & Country"
+  ],
+  "format": "Vinyl, LP, Album",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/ZbCRjLaxz6Q-AwRH1xuGkecsRSA2jNuWce1dkNxb8CE/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3OTM2/NDQtMTQwMjg0MjMz/My00NjI3LmpwZWc.jpeg",
+  "imageUrl": "data/covers/198.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Ballada O Butach",
+          "duration": "0:00"
+        },
+        {
+          "title": "Mój Powrót",
+          "duration": "0:00"
+        },
+        {
+          "title": "Daj Czas Nauczyć Się",
+          "duration": "0:00"
+        },
+        {
+          "title": "Gdy Mi Będzie Głupio",
+          "duration": "0:00"
+        },
+        {
+          "title": "Królem Bądź, Głową Rusz",
+          "duration": "0:00"
+        },
+        {
+          "title": "Dzieląc Świat Na Pół",
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Idzie Na Deszcz",
+          "duration": "0:00"
+        },
+        {
+          "title": "Czeka Na Nas Świat",
+          "duration": "0:00"
+        },
+        {
+          "title": "Wspomnienie O Rydze",
+          "duration": "0:00"
+        },
+        {
+          "title": "Czy Pamiętasz, Jak To Było",
+          "duration": "0:00"
+        },
+        {
+          "title": "Siedem Minut Na Lotnisko",
+          "duration": "0:00"
+        },
+        {
+          "title": "Spotkanie Z Życiem",
+          "duration": "0:00"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/5793644-Andrzej-I-Eliza-Buty-Buty"
+  }
+}

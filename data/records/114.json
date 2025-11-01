@@ -1,0 +1,68 @@
+{
+  "id": "114",
+  "catalogNumber": "С60 27767 008",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Рок-Ателье"
+  ],
+  "album": "Мы Знаем",
+  "year": 1990,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/IkfWcqCqZaquykgOYKR3gbHys_VsB9yNl-rOBmwcoe4/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODc4/NzU4LTE2MDg2NjI3/MjAtMjUyMy5qcGVn.jpeg",
+  "imageUrl": "data/covers/114.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Мы Знаем • We Know",
+          "duration": "4:20"
+        },
+        {
+          "title": "Альбатрос • Albatross",
+          "duration": "3:36"
+        },
+        {
+          "title": "Хамелеон • Chameleon",
+          "duration": "4:02"
+        },
+        {
+          "title": "В Лабиринте • In A Labirynth",
+          "duration": "4:01"
+        },
+        {
+          "title": "Спор • Argument",
+          "duration": "3:27"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Ночное Рандеву • Night Rendez-Vous",
+          "duration": "4:40"
+        },
+        {
+          "title": "Усталое Такси • Tired Taxi",
+          "duration": "4:05"
+        },
+        {
+          "title": "Как Всегда • As Usual",
+          "duration": "4:33"
+        },
+        {
+          "title": "Вниз По Реке • Down The River",
+          "duration": "4:10"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/14878758-Рок-Ателье-Криса-Кельми-Мы-Знаем"
+  }
+}

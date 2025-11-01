@@ -1,0 +1,63 @@
+{
+  "id": "080",
+  "catalogNumber": "С60 26139 006",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Чёрный Кофе"
+  ],
+  "album": "Переступи Порог",
+  "year": 1990,
+  "genre": [
+    "Rock"
+  ],
+  "format": "Vinyl, LP, Album, Repress",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/Yov_qNXuWDQHXE3ZiFhT82yghm8F8TXIPhD3k3BT5PI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5MzUx/NjEtMTM3OTg5MzY4/MC04Nzk4LmpwZWc.jpeg",
+  "imageUrl": "data/covers/080.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Переступи Порог",
+          "duration": "4:22"
+        },
+        {
+          "title": "Владимирская Русь",
+          "duration": "5:18"
+        },
+        {
+          "title": "Жизни Рассвет",
+          "duration": "3:31"
+        },
+        {
+          "title": "Я Ищу...",
+          "duration": "4:28"
+        },
+        {
+          "title": "Мой Дом",
+          "duration": "3:20"
+        },
+        {
+          "title": "Звездный Водоем",
+          "duration": "3:25"
+        },
+        {
+          "title": "Пылает За Окном Звезда",
+          "duration": "2:58"
+        },
+        {
+          "title": "Незнакомец",
+          "duration": "4:06"
+        },
+        {
+          "title": "Черный Кофе",
+          "duration": "2:48"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/4935161-Черный-Кофе-Переступи-Порог"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "033",
+  "catalogNumber": "С 60—14203-04",
+  "recordLabel": "Мелодия",
+  "artists": [
+    "Группа Стаса Намина"
+  ],
+  "album": "Гимн Солнцу",
+  "year": 1980,
+  "genre": [
+    "Rock",
+    "Pop"
+  ],
+  "format": "Vinyl, LP, Album, Stereo",
+  "condition": "Near Mint",
+  "sourceImageUrl": "https://i.discogs.com/frvejoySJwsCMu9loDpcBKf2itzpsUtrdwGtrIZ9c6c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzMw/ODg0LTE1NTIyMTk2/MTktMTM5Ny5qcGVn.jpeg",
+  "imageUrl": "data/covers/033.jpg",
+  "sides": [
+    {
+      "name": "Side A",
+      "tracks": [
+        {
+          "title": "Вступление И «Гимн Солнцу»",
+          "duration": "4:38"
+        },
+        {
+          "title": "После Дождя",
+          "duration": "5:45"
+        },
+        {
+          "title": "Где Живет Ветер",
+          "duration": "2:25"
+        },
+        {
+          "title": "Ты Только Слушай",
+          "duration": "3:43"
+        },
+        {
+          "title": "Богатырская Сила",
+          "duration": "3:50"
+        }
+      ]
+    },
+    {
+      "name": "Side B",
+      "tracks": [
+        {
+          "title": "Скажи Мне «Да»",
+          "duration": "4:55"
+        },
+        {
+          "title": "Посвящение «Битлз»",
+          "duration": "3:17"
+        },
+        {
+          "title": "Утро — Вечер",
+          "duration": "2:41"
+        },
+        {
+          "title": "Музыкант",
+          "duration": "4:10"
+        }
+      ]
+    }
+  ],
+  "externalIds": {
+    "discogs": "https://www.discogs.com/release/13330884-Группа-Стаса-Намина-Гимн-Солнцу"
+  }
+}
