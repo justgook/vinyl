@@ -275,6 +275,15 @@
       padding: 16px 24px;
       font-size: 16px;
     }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
   </style>
 </head>
 
@@ -286,7 +295,14 @@
       <div>
         <button class="btn btn-primary" onclick="app.showListView()">📋 All Records</button>
         <button class="btn btn-success" onclick="app.createNewRecord()">➕ New Record</button>
+        <button class="btn btn-secondary" id="regenerate-filters-btn" onclick="app.regenerateFilters()" style="display: none;">🔄 Regenerate Filters</button>
       </div>
+    </div>
+
+    <!-- Filter Status Alert -->
+    <div id="filter-status-alert" class="alert alert-warning hidden">
+      <strong>⚠️ Filter Index Outdated</strong><br>
+      Your filter index files are older than your record data. Click "Regenerate Filters" to update them.
     </div>
 
     <!-- File System Access Alert -->
@@ -356,6 +372,7 @@
     const app = {
       directoryHandle: null,
       recordsHandle: null,
+      filtersHandle: null,
       currentRecord: null,
       currentRecordId: null,
       allRecords: [],
@@ -439,6 +456,8 @@
           // Check for records folder
           await dirHandle.getDirectoryHandle('records');
           this.recordsHandle = await dirHandle.getDirectoryHandle('records');
+          // Get filters folder reference
+          this.filtersHandle = await dirHandle.getDirectoryHandle('filters');
           return true;
         } catch (err) {
           return false;
@@ -506,6 +525,7 @@
         document.getElementById('list-view').classList.remove('hidden');
 
         await this.loadAllRecords();
+        await this.checkFilterStatus();
       },
 
       /**
@@ -888,6 +908,287 @@
         const modal = document.getElementById('success-modal');
         modal.classList.remove('active');
         this.createNewRecord();
+      },
+
+      /**
+       * Check if filter indexes are outdated
+       */
+      async checkFilterStatus() {
+        try {
+          // Show the button once we have directory access
+          document.getElementById('regenerate-filters-btn').style.display = 'inline-block';
+
+          // Get the newest record file timestamp
+          let newestRecordTime = 0;
+          for await (const entry of this.recordsHandle.values()) {
+            if (entry.kind === 'file' && entry.name.endsWith('.json')) {
+              const file = await entry.getFile();
+              if (file.lastModified > newestRecordTime) {
+                newestRecordTime = file.lastModified;
+              }
+            }
+          }
+
+          // Get the oldest filter file timestamp
+          let oldestFilterTime = Infinity;
+          const filterFiles = ['artists.json', 'genres.json', 'labels.json', 'years.json'];
+          
+          for (const fileName of filterFiles) {
+            try {
+              const fileHandle = await this.filtersHandle.getFileHandle(fileName);
+              const file = await fileHandle.getFile();
+              if (file.lastModified < oldestFilterTime) {
+                oldestFilterTime = file.lastModified;
+              }
+            } catch (err) {
+              // File doesn't exist, definitely need to regenerate
+              oldestFilterTime = 0;
+              break;
+            }
+          }
+
+          // Show alert if filters are outdated
+          const alert = document.getElementById('filter-status-alert');
+          const btn = document.getElementById('regenerate-filters-btn');
+          
+          if (newestRecordTime > oldestFilterTime) {
+            alert.classList.remove('hidden');
+            btn.style.backgroundColor = '#FFFF00';
+            btn.style.animation = 'pulse 2s infinite';
+          } else {
+            alert.classList.add('hidden');
+            btn.style.backgroundColor = '';
+            btn.style.animation = '';
+          }
+        } catch (err) {
+          console.error('Error checking filter status:', err);
+        }
+      },
+
+      /**
+       * Regenerate filter index files
+       */
+      async regenerateFilters() {
+        const btn = document.getElementById('regenerate-filters-btn');
+        const originalText = btn.textContent;
+        
+        try {
+          btn.textContent = '⏳ Regenerating...';
+          btn.disabled = true;
+
+          // Load all records
+          const records = [];
+          for await (const entry of this.recordsHandle.values()) {
+            if (entry.kind === 'file' && entry.name.endsWith('.json')) {
+              const file = await entry.getFile();
+              const content = await file.text();
+              const record = JSON.parse(content);
+              records.push(record);
+            }
+          }
+
+          // Load records-all.json for minimal data
+          const recordsAllHandle = await this.directoryHandle.getFileHandle('records-all.json');
+          const recordsAllFile = await recordsAllHandle.getFile();
+          const recordsAllData = JSON.parse(await recordsAllFile.text());
+          const recordsAllMap = {};
+          for (const record of recordsAllData.records) {
+            recordsAllMap[record.id] = record;
+          }
+
+          // Generate filters
+          await this.generateArtistsIndex(records, recordsAllMap);
+          await this.generateGenresIndex(records, recordsAllMap);
+          await this.generateYearsIndex(records, recordsAllMap);
+          await this.generateLabelsIndex(records, recordsAllMap);
+
+          // Update UI
+          btn.textContent = '✅ Filters Updated!';
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+            this.checkFilterStatus();
+          }, 2000);
+
+          alert('✅ Filter indexes regenerated successfully!');
+        } catch (err) {
+          console.error('Error regenerating filters:', err);
+          alert('❌ Error regenerating filters: ' + err.message);
+          btn.textContent = originalText;
+          btn.disabled = false;
+        }
+      },
+
+      /**
+       * Generate artists filter index
+       */
+      async generateArtistsIndex(records, recordsAllMap) {
+        const artistsMap = {};
+
+        for (const record of records) {
+          for (const artist of record.artists) {
+            if (!artistsMap[artist]) {
+              artistsMap[artist] = {
+                name: artist,
+                count: 0,
+                records: []
+              };
+            }
+            
+            artistsMap[artist].count++;
+            artistsMap[artist].records.push({
+              id: record.id,
+              album: record.album,
+              artists: record.artists,
+              year: record.year,
+              imageUrl: recordsAllMap[record.id]?.imageUrl || record.imageUrl
+            });
+          }
+        }
+
+        // Sort records within each artist by year
+        for (const artist in artistsMap) {
+          artistsMap[artist].records.sort((a, b) => b.year - a.year);
+        }
+
+        const output = {
+          artists: artistsMap,
+          total: Object.keys(artistsMap).length
+        };
+
+        await this.writeJsonFile('artists.json', output);
+      },
+
+      /**
+       * Generate genres filter index
+       */
+      async generateGenresIndex(records, recordsAllMap) {
+        const genresMap = {};
+
+        for (const record of records) {
+          if (record.genre) {
+            for (const genre of record.genre) {
+              if (!genresMap[genre]) {
+                genresMap[genre] = {
+                  name: genre,
+                  count: 0,
+                  records: []
+                };
+              }
+              
+              genresMap[genre].count++;
+              genresMap[genre].records.push({
+                id: record.id,
+                album: record.album,
+                artists: record.artists,
+                year: record.year,
+                imageUrl: recordsAllMap[record.id]?.imageUrl || record.imageUrl
+              });
+            }
+          }
+        }
+
+        // Sort records within each genre by year (newest first)
+        for (const genre in genresMap) {
+          genresMap[genre].records.sort((a, b) => b.year - a.year);
+        }
+
+        const output = {
+          genres: genresMap,
+          total: Object.keys(genresMap).length
+        };
+
+        await this.writeJsonFile('genres.json', output);
+      },
+
+      /**
+       * Generate years filter index
+       */
+      async generateYearsIndex(records, recordsAllMap) {
+        const yearsMap = {};
+
+        for (const record of records) {
+          const year = record.year.toString();
+          
+          if (!yearsMap[year]) {
+            yearsMap[year] = {
+              year: record.year,
+              count: 0,
+              records: []
+            };
+          }
+          
+          yearsMap[year].count++;
+          yearsMap[year].records.push({
+            id: record.id,
+            album: record.album,
+            artists: record.artists,
+            year: record.year,
+            imageUrl: recordsAllMap[record.id]?.imageUrl || record.imageUrl
+          });
+        }
+
+        // Sort records within each year alphabetically by album
+        for (const year in yearsMap) {
+          yearsMap[year].records.sort((a, b) => a.album.localeCompare(b.album));
+        }
+
+        const output = {
+          years: yearsMap,
+          total: Object.keys(yearsMap).length
+        };
+
+        await this.writeJsonFile('years.json', output);
+      },
+
+      /**
+       * Generate labels filter index
+       */
+      async generateLabelsIndex(records, recordsAllMap) {
+        const labelsMap = {};
+
+        for (const record of records) {
+          const label = record.recordLabel;
+          
+          if (!labelsMap[label]) {
+            labelsMap[label] = {
+              name: label,
+              count: 0,
+              records: []
+            };
+          }
+          
+          labelsMap[label].count++;
+          labelsMap[label].records.push({
+            id: record.id,
+            album: record.album,
+            artists: record.artists,
+            year: record.year,
+            imageUrl: recordsAllMap[record.id]?.imageUrl || record.imageUrl
+          });
+        }
+
+        // Sort records within each label by year (newest first)
+        for (const label in labelsMap) {
+          labelsMap[label].records.sort((a, b) => b.year - a.year);
+        }
+
+        const output = {
+          labels: labelsMap,
+          total: Object.keys(labelsMap).length
+        };
+
+        await this.writeJsonFile('labels.json', output);
+      },
+
+      /**
+       * Write JSON file to filters directory
+       */
+      async writeJsonFile(fileName, data) {
+        const fileHandle = await this.filtersHandle.getFileHandle(fileName, {create: true});
+        const writable = await fileHandle.createWritable();
+        await writable.write(JSON.stringify(data, null, 2));
+        await writable.close();
       },
     };
 

@@ -26,6 +26,12 @@ A local-first admin panel for managing your vinyl record collection using the **
 - Edit existing records
 - Delete records
 
+🔄 **Filter Index Management**
+- Automatic outdated filter detection
+- One-click filter regeneration
+- Smart timestamp comparison
+- Updates artists, genres, years, and labels indexes
+
 ## Browser Support
 
 The File System Access API is supported in:
@@ -88,6 +94,33 @@ To use Discogs search:
 
 Your token is stored in browser localStorage and will be remembered.
 
+### 5. Filter Index Management
+
+The admin panel automatically monitors your filter index files and alerts you when they need updating:
+
+**Automatic Detection:**
+- When viewing the record list, the panel checks if any filter files are outdated
+- A yellow warning appears if `data/filters/*.json` files are older than `data/records/*.json`
+- The **"🔄 Regenerate Filters"** button will pulse yellow when updates are needed
+
+**Regenerating Filters:**
+1. Click **"🔄 Regenerate Filters"** in the header
+2. The button will show **"⏳ Regenerating..."** while processing
+3. When complete, you'll see **"✅ Filters Updated!"**
+4. The warning disappears once filters are up-to-date
+
+**What Gets Updated:**
+- `data/filters/artists.json` - All artists with their records
+- `data/filters/genres.json` - All genres with their records
+- `data/filters/labels.json` - All record labels with their records
+- `data/filters/years.json` - All years with their records
+
+**Note:** The `data/filter-tags/` directory is not updated by the admin panel (as requested). Use the command line script for that:
+
+```bash
+npm run generate-filters
+```
+
 ## File Structure
 
 ```
@@ -104,7 +137,7 @@ When you save a record, the admin panel updates:
 1. **Individual record file:** `data/records/{id}.json`
 2. **All records index:** `data/records-all.json` (automatically)
 
-You'll need to manually regenerate filters if you add new artists/genres/labels/years:
+After adding or editing records, regenerate filters using the **"🔄 Regenerate Filters"** button in the admin panel, or via command line:
 
 ```bash
 npm run generate-filters

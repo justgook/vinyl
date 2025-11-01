@@ -168,6 +168,12 @@ http://localhost:8000/admin/
 - Edit existing records
 - Delete records
 
+🔄 **Filter Index Management**
+- Automatic outdated filter detection
+- One-click filter regeneration
+- Smart timestamp comparison
+- Updates artists, genres, years, and labels indexes
+
 ### Browser Support
 
 The File System Access API is supported in:
@@ -201,7 +207,12 @@ The File System Access API is supported in:
    - **Edit:** Click on a record card to edit
    - **Delete:** Open a record and click "🗑️ Delete"
 
-5. **Commit Changes**
+5. **Update Filter Indexes**
+   - The admin panel automatically detects when filters are outdated
+   - Click "🔄 Regenerate Filters" when the yellow warning appears
+   - Filter files (`data/filters/*.json`) are updated instantly
+
+6. **Commit Changes**
    ```bash
    git add data/
    git commit -m "✨ Add new records via admin panel"
